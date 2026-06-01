@@ -1,0 +1,347 @@
+<!-- Chosen Palette: Calm Neutrals (Tailwind 'stone' for background, 'blue' for accents) -->
+<!-- Application Structure Plan: A single-page vertical scroll application. The navigation bar is sticky and allows users to smoothly scroll to three distinct content sections: 'O que é um Plano?', 'Business Model Canvas', and 'Análise SWOT'. This structure replaces the tabbed view to create a more fluid, linear browsing experience, while scroll-spy JavaScript highlights the user's current section in the nav. This is more intuitive for a "single-page" feel. The interactive grids for BMC and SWOT are retained, allowing non-linear exploration *within* their respective linear sections. -->
+<!-- Visualization & Content Choices: 1. Report Intro -> Goal: Inform -> Viz/Method: Static Text Block (HTML) -> Interaction: None (Baseline info) -> Justification: Direct presentation of introductory concepts. 2. Business Model Canvas (9 Blocks) -> Goal: Organize & Explore -> Viz/Method: Interactive 3x3 Grid (Diagram via HTML/CSS/Tailwind) -> Interaction: On-click event for each grid cell. -> Justification: This mimics the actual visual layout of the BMC, making its structure tangible. 3. BMC Details & Nespresso Example -> Goal: Inform/Explain -> Viz/Method: Dynamic Text Block (JS `innerHTML` update) -> Interaction: Content is dynamically loaded based on the user's grid selection. -> Justification: Connects abstract concepts and examples (Nespresso) directly to the specific BMC block being explored, enhancing learning. 4. SWOT Analysis (4 Quadrants) -> Goal: Organize & Explore -> Viz/Method: Interactive 2x2 Grid (Diagram via HTML/CSS/Tailwind) -> Interaction: On-click event for each quadrant. -> Justification: Visually reinforces the 2-axis (Internal/External, Positive/Negative) nature of the SWOT framework. 5. SWOT Details -> Goal: Inform/Explain -> Viz/Method: Dynamic Text Block (JS `innerHTML` update) -> Interaction: Content loaded based on quadrant selection. -> Justification: Provides immediate, focused explanations for each part of the SWOT analysis. -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula #013: Mapa Interativo da Viagem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .nav-button {
+            @apply py-3 px-5 text-sm md:text-base font-semibold text-stone-600 border-b-4 border-transparent transition-all duration-300;
+        }
+        .nav-button.active {
+            @apply text-blue-700 border-blue-600;
+        }
+        .nav-button:hover:not(.active) {
+            @apply text-stone-900 border-stone-300;
+        }
+        .bmc-block, .swot-block {
+            @apply p-4 md:p-6 rounded-lg shadow-md cursor-pointer transition-all duration-300 transform;
+        }
+        .bmc-block.active {
+            @apply ring-4 ring-blue-500 scale-105 shadow-xl;
+        }
+        .bmc-block:hover:not(.active) {
+            @apply shadow-lg scale-102;
+        }
+        .swot-block.active {
+            @apply ring-4 ring-blue-500 scale-105 shadow-xl;
+        }
+        .swot-block:hover:not(.active) {
+            @apply shadow-lg scale-102;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-900">
+
+        <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="hidden md:flex space-x-8">
+                <a id="nav-intro" class="nav-button active" href="#intro">O que é um Plano?</a>
+                <a id="nav-bmc" class="nav-button" href="#bmc">Business Model Canvas</a>
+                <a id="nav-swot" class="nav-button" href="#swot">Análise SWOT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-6 lg:p-12">
+
+        <section id="intro" class="bg-white p-6 md:p-10 rounded-xl shadow-lg scroll-mt-28">
+            <h2 class="text-3xl font-bold text-blue-800 mb-6">1. Introdução: O Mapa</h2>
+            <div class="space-y-4 text-lg text-stone-800 leading-relaxed">
+                <p>Nas últimas aulas, passámos por duas fases cruciais: aprendemos a ver problemas (Aula #011) e a validar se um problema é real e vale a pena resolver (Aula #012).</p>
+                <p>Agora, imaginem que validámos a nossa ideia. Temos um "skate" (o nosso MVP) e as pessoas gostam dele. E agora? Como é que isto se transforma num negócio? Como explicamos a nossa ideia a um colega, a um investidor ou até a nós mesmos, sem nos perdermos?</p>
+                <p class="font-semibold text-xl">Precisamos de um <span class="text-blue-700">mapa</span>.</p>
+                <p>A palavra "Plano de Negócios" assusta. Antigamente, era um documento de 100 páginas que ninguém lia. Hoje, vamos aprender a usar ferramentas visuais e ágeis que nos ajudam a ver a "fotografia completa" do nosso negócio numa só página.</p>
+            </div>
+
+            <hr class="my-8 border-stone-300">
+
+            <h3 class="text-3xl font-bold text-blue-800 mb-6">2. Para que serve um Plano de Negócios?</h3>
+            <div class="space-y-4 text-lg text-stone-800 leading-relaxed">
+                <p>Um plano de negócios não serve (apenas) para pedir dinheiro. Serve, acima de tudo, para <strong class="text-blue-700">clarificar o pensamento</strong>. Obriga-nos a responder a perguntas difíceis:</p>
+                <ul class="list-disc list-inside space-y-3 pl-4">
+                    <li>Quem são exatamente os nossos clientes?</li>
+                    <li>O que é que lhes estamos *realmente* a vender (a nossa Proposta de Valor)?</li>
+                    <li>Como é que vamos ganhar dinheiro?</li>
+                    <li>Quanto vai custar?</li>
+                </ul>
+                <p>É o "mapa" que liga a nossa ideia (Ponto A) a um negócio sustentável (Ponto B).</p>
+            </div>
+        </section>
+
+        <section id="bmc" class="mt-12 scroll-mt-28">
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Business Model Canvas (BMC)</h2>
+                <p class="text-lg text-stone-800 leading-relaxed mb-8">
+                    Esta secção permite-lhe explorar interativamente o Business Model Canvas. O Canvas é um mapa visual de 9 blocos que descreve a lógica do seu negócio. Clique em cada bloco na grelha abaixo para ver uma explicação detalhada e como se aplica a exemplos reais como o da Nespresso.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    
+                    <div class="md:col-span-1 space-y-5">
+                        <div id="bmc-parcerias" class="bmc-block bg-purple-100 text-purple-900" onclick="showBmcDetail('parcerias')">
+                            <h4 class="font-bold text-lg">Parcerias-Chave</h4>
+                            <p class="text-sm hidden md:block">Quem são os nossos parceiros?</p>
+                        </div>
+                        <div id="bmc-atividades" class="bmc-block bg-purple-100 text-purple-900" onclick="showBmcDetail('atividades')">
+                            <h4 class="font-bold text-lg">Atividades-Chave</h4>
+                            <p class="text-sm hidden md:block">Que atividades temos de executar?</p>
+                        </div>
+                        <div id="bmc-recursos" class="bmc-block bg-purple-100 text-purple-900" onclick="showBmcDetail('recursos')">
+                            <h4 class="font-bold text-lg">Recursos-Chave</h4>
+                            <p class="text-sm hidden md:block">De que recursos precisamos?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-1 space-y-5">
+                        <div id="bmc-valor" class="bmc-block bg-green-100 text-green-900 active" onclick="showBmcDetail('valor')">
+                            <h4 class="font-bold text-lg">Proposta de Valor</h4>
+                            <p class="text-sm hidden md:block">O coração. O que oferecemos?</p>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-1 space-y-5">
+                        <div id="bmc-relacao" class="bmc-block bg-blue-100 text-blue-900" onclick="showBmcDetail('relacao')">
+                            <h4 class="font-bold text-lg">Relação com Clientes</h4>
+                            <p class="text-sm hidden md:block">Como interagimos?</p>
+                        </div>
+                        <div id="bmc-canais" class="bmc-block bg-blue-100 text-blue-900" onclick="showBmcDetail('canais')">
+                            <h4 class="font-bold text-lg">Canais</h4>
+                            <p class="text-sm hidden md:block">Como entregamos o valor?</p>
+                        </div>
+                        <div id="bmc-clientes" class="bmc-block bg-blue-100 text-blue-900" onclick="showBmcDetail('clientes')">
+                            <h4 class="font-bold text-lg">Segmentos de Clientes</h4>
+                            <p class="text-sm hidden md:block">Para quem criamos valor?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+                        <div id="bmc-custos" class="bmc-block bg-yellow-100 text-yellow-900" onclick="showBmcDetail('custos')">
+                            <h4 class="font-bold text-lg">Estrutura de Custos</h4>
+                            <p class="text-sm hidden md:block">Quais são os nossos custos?</p>
+                        </div>
+                        <div id="bmc-receitas" class="bmc-block bg-yellow-100 text-yellow-900" onclick="showBmcDetail('receitas')">
+                            <h4 class="font-bold text-lg">Fontes de Receita</h4>
+                            <p class="text-sm hidden md:block">Como ganhamos dinheiro?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bmc-detail-wrapper" class="mt-8">
+                <div id="bmc-detail-content" class="bg-white p-6 md:p-10 rounded-xl shadow-lg transition-all duration-300">
+                </div>
+            </div>
+        </section>
+
+        <section id="swot" class="mt-12 scroll-mt-28">
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Análise SWOT</h2>
+                <p class="text-lg text-stone-800 leading-relaxed mb-8">
+                    A Análise SWOT (ou FOFA, em português) é uma ferramenta de diagnóstico estratégico. Ajuda a identificar os fatores internos (que controla) e externos (que não controla) que afetam o seu projeto. Clique em cada um dos quatro quadrantes para compreender o seu propósito.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div id="swot-forcas" class="swot-block bg-green-100 text-green-900 active" onclick="showSwotDetail('forcas')">
+                        <h3 class="text-2xl font-bold">S. Forças (Strengths)</h3>
+                        <p class="text-lg mt-1">Interno / Positivo</p>
+                    </div>
+                    <div id="swot-fraquezas" class="swot-block bg-red-100 text-red-900" onclick="showSwotDetail('fraquezas')">
+                        <h3 class="text-2xl font-bold">W. Fraquezas (Weaknesses)</h3>
+                        <p class="text-lg mt-1">Interno / Negativo</p>
+                    </div>
+                    <div id="swot-oportunidades" class="swot-block bg-green-100 text-green-900" onclick="showSwotDetail('oportunidades')">
+                        <h3 class="text-2xl font-bold">O. Oportunidades (Opportunities)</h3>
+                        <p class="text-lg mt-1">Externo / Positivo</p>
+                    </div>
+                    <div id="swot-ameacas" class="swot-block bg-red-100 text-red-900" onclick="showSwotDetail('ameacas')">
+                        <h3 class="text-2xl font-bold">T. Ameaças (Threats)</h3>
+                        <p class="text-lg mt-1">Externo / Negativo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="swot-detail-wrapper" class="mt-8">
+                <div id="swot-detail-content" class="bg-white p-6 md:p-10 rounded-xl shadow-lg transition-all duration-300">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-800 text-stone-300 mt-12 p-8 text-center">
+        <p>&copy; 2025 Xplorers | Aula Interativa: Empreendedorismo #013</p>
+    </footer>
+
+    <script>
+        const bmcData = {
+            'clientes': {
+                title: '1. Segmentos de Clientes (Clientes)',
+                text: 'Para quem estamos a criar valor? Quem são os nossos clientes mais importantes? Não podemos dizer "toda a gente", temos de ser específicos.',
+                example: '<strong>Exemplos:</strong> "Estudantes universitários que vivem longe de casa", "Restaurantes locais que não têm serviço de entregas".<br><strong>Nespresso:</strong> Utilizadores domésticos que querem café de luxo em casa, de forma prática.'
+            },
+            'valor': {
+                title: '2. Proposta de Valor (Valor)',
+                text: 'O coração do negócio. O que oferecemos? Que "dor" (analgésico) estamos a resolver? Porque é que um cliente nos escolheria a nós e não à concorrência?',
+                example: '<strong>Exemplos:</strong> "Conveniência", "Preço mais baixo", "Design único", "Poupança de tempo".<br><strong>Nespresso:</strong> "O café perfeito, uma chávena de cada vez, em casa e sem confusão."'
+            },
+            'canais': {
+                title: '3. Canais (Canais)',
+                text: 'Como é que a nossa proposta de valor chega aos nossos clientes? Como é que eles descobrem, compram e recebem o nosso produto/serviço?',
+                example: '<strong>Exemplos:</strong> Website, App Store, Redes Sociais, Lojas físicas, Revendedores.<br><strong>Nespresso:</strong> Clube Nespresso (online) e Boutiques próprias. (Inicialmente, recusaram vender em supermercados para manter a exclusividade).'
+            },
+            'relacao': {
+                title: '4. Relação com Clientes (Relação)',
+                text: 'Que tipo de relação esperamos ter com os nossos clientes? É automatizada ou pessoal?',
+                example: '<strong>Exemplos:</strong> Self-service (como o Google), Assistência pessoal (como uma loja de roupa), Comunidade (como os jogos online).<br><strong>Nespresso:</strong> Uma comunidade de "membros" exclusiva (o "Clube Nespresso").'
+            },
+            'recursos': {
+                title: '5. Recursos-Chave (Recursos)',
+                text: 'O que é *essencial* termos para o negócio funcionar? Que ativos são indispensáveis?',
+                example: '<strong>Exemplos:</strong> Programadores, uma marca forte, uma máquina específica, a receita secreta, uma loja bem localizada.<br><strong>Nespresso:</strong> A marca, as patentes das cápsulas, as máquinas de produção.'
+            },
+            'atividades': {
+                title: '6. Atividades-Chave (Atividades)',
+                text: 'O que é que a empresa tem de *fazer* (processos) todos os dias para entregar o valor?',
+                example: '<strong>Exemplos:</strong> Programar o software, fazer marketing, gerir a logística de entregas, fabricar o produto.<br><strong>Nespresso:</strong> Produção das cápsulas, Marketing de luxo, Gestão da cadeia de logística.'
+            },
+            'parcerias': {
+                title: '7. Parcerias-Chave (Parcerias)',
+                text: 'Quem são os nossos parceiros e fornecedores essenciais que nos ajudam a focarmo-nos no que fazemos melhor?',
+                example: '<strong>Exemplos:</strong> Fornecedores de materiais, processadores de pagamento (como o Multibanco), serviços de entregas.<br><strong>Nespresso:</strong> Fabricantes das máquinas (a Nespresso não faz as máquinas), produtores de café.'
+            },
+            'custos': {
+                title: '8. Estrutura de Custos (Custos)',
+                text: 'Quais são os custos mais importantes e mais caros para o nosso negócio funcionar?',
+                example: '<strong>Exemplos:</strong> Salários, servidores, marketing e publicidade, rendas de lojas físicas, custo de materiais.<br><strong>Nespresso:</strong> Marketing e as Boutiques de luxo. (O custo das cápsulas é baixo, mas o do marketing é alto).'
+            },
+            'receitas': {
+                title: '9. Fontes de Receita (Receitas)',
+                text: 'Como é que fazemos dinheiro? De que forma é que os clientes pagam pelo valor que oferecemos?',
+                example: '<strong>Exemplos:</strong> Venda direta do produto, subscrição mensal (como a Netflix), publicidade, comissão.<br><strong>Nespresso:</strong> Vender as máquinas baratas (quase sem lucro) e ganhar muito dinheiro nas cápsulas (lucrativas). A isto chama-se o modelo <strong>"Isco e Anzol"</strong>.'
+            }
+        };
+
+        const swotData = {
+            'forcas': {
+                title: 'S. Forças (Strengths)',
+                text: 'Fatores <strong>Internos</strong> e <strong>Positivos</strong>. São as coisas que <strong>controlamos</strong> e em que somos bons.',
+                example: '<strong>Exemplo:</strong> "A nossa equipa sabe programar muito bem", "Temos uma marca forte", "O nosso produto é mais rápido que a concorrência".'
+            },
+            'fraquezas': {
+                title: 'W. Fraquezas (Weaknesses)',
+                text: 'Fatores <strong>Internos</strong> e <strong>Negativos</strong>. São as coisas que <strong>controlamos</strong>, mas em que somos maus ou temos limitações.',
+                example: '<strong>Exemplo:</strong> "Não percebemos nada de marketing", "Temos pouco dinheiro para começar", "A nossa equipa é inexperiente".'
+            },
+            'oportunidades': {
+                title: 'O. Oportunidades (Opportunities)',
+                text: 'Fatores <strong>Externos</strong> e <strong>Positivos</strong>. São tendências ou eventos que <strong>não controlamos</strong>, mas que podemos aproveitar.',
+                example: '<strong>Exemplo:</strong> "A escola está a incentivar projetos digitais", "Uma nova lei que beneficia o nosso mercado", "A concorrência está a fazer um mau trabalho".'
+            },
+            'ameacas': {
+                title: 'T. Ameaças (Threats)',
+                text: 'Fatores <strong>Externos</strong> e <strong>Negativos</strong>. São tendências ou eventos que <strong>não controlamos</strong> e que nos podem prejudicar.',
+                example: '<strong>Exemplo:</strong> "Outro grupo de alunos teve a mesma ideia", "Uma nova tecnologia que torna a nossa obsoleta", "Uma crise económica".'
+            }
+        };
+
+        let activeBmcBlock = 'valor';
+        let activeSwotBlock = 'forcas';
+
+        function showBmcDetail(blockId) {
+            activeBmcBlock = blockId;
+            const contentArea = document.getElementById('bmc-detail-content');
+            const data = bmcData[blockId];
+            
+            contentArea.innerHTML = `
+                <h3 class="text-2xl md:text-3xl font-bold ${data.title.includes('Valor') ? 'text-green-800' : (data.title.includes('Clientes') || data.title.includes('Relação') || data.title.includes('Canais') ? 'text-blue-800' : (data.title.includes('Custos') || data.title.includes('Receita') ? 'text-yellow-900' : 'text-purple-800'))} mb-4">${data.title}</h3>
+                <p class="text-lg text-stone-800 leading-relaxed mb-5">${data.text}</p>
+                <div class="bg-stone-50 p-5 rounded-lg border border-stone-200">
+                    <p class="text-base text-stone-700 leading-relaxed">${data.example}</p>
+                </div>
+            `;
+            
+            document.querySelectorAll('.bmc-block').forEach(block => {
+                block.classList.remove('active');
+            });
+            document.getElementById(`bmc-${blockId}`).classList.add('active');
+        }
+
+        function showSwotDetail(quadrantId) {
+            activeSwotBlock = quadrantId;
+            const contentArea = document.getElementById('swot-detail-content');
+            const data = swotData[quadrantId];
+            
+            contentArea.innerHTML = `
+                <h3 class="text-2xl md:text-3xl font-bold ${data.title.includes('Forças') || data.title.includes('Oportunidades') ? 'text-green-800' : 'text-red-800'} mb-4">${data.title}</h3>
+                <p class="text-lg text-stone-800 leading-relaxed mb-5">${data.text}</p>
+                <div class="bg-stone-50 p-5 rounded-lg border border-stone-200">
+                    <p class="text-base text-stone-700 leading-relaxed">${data.example}</p>
+                </div>
+            `;
+
+            document.querySelectorAll('.swot-block').forEach(block => {
+                block.classList.remove('active');
+            });
+            document.getElementById(`swot-${quadrantId}`).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showBmcDetail(activeBmcBlock);
+            showSwotDetail(activeSwotBlock);
+
+            const navLinks = document.querySelectorAll('nav a.nav-button');
+            const sections = document.querySelectorAll('main section');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.4
+            };
+
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

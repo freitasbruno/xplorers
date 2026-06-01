@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Sustentabilidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chosen Palette: Warm Neutrals (Stone) with a Green Accent (Emerald) -->
+    <!-- Application Structure Plan: A 3-section SPA ("Fundamentos", "Desafios", "O Dilema") with top navigation. "Fundamentos" usa uma grelha HTML/CSS para os 3 pilares. "Desafios" usa 'tabs' interativas em JS para alternar entre Clima, Biodiversidade e Plástico, com uma visualização Chart.js para o Clima. "O Dilema" usa botões JS para permitir que os utilizadores façam uma escolha e vejam as consequências. Esta estrutura transforma um documento linear numa experiência interativa, impulsionada pela escolha, agrupando conceitos logicamente para exploração em vez de leitura passiva. -->
+    <!-- Visualization & Content Choices: 1. Pilares (Organizar): Info -> 3 Pilares. Objetivo -> Informar. Viz -> Grelha HTML/Tailwind (cards). Interação -> N/A. Justificação -> Forma clara e semântica de apresentar 3 conceitos paralelos. Método -> HTML/Tailwind. | 2. Desafios (Organizar): Info -> 3 Desafios. Objetivo -> Organizar/Comparar. Viz -> Interface de 'Tabs' (JS). Interação -> Clique nas 'tabs' para mostrar/ocultar conteúdo. Justificação -> Evita um longo bloco de texto, permite ao utilizador focar-se num desafio de cada vez. Método -> JS (DOM). | 3. CO2 (Mudança): Info -> "CO2... mais alta dos últimos 800.000 anos". Objetivo -> Mostrar mudança. Viz -> Gráfico de Linha Chart.js. Interação -> Hover (tooltip). Justificação -> Reforça visualmente o conceito abstrato do aumento de CO2. Método -> Chart.js (Canvas). | 4. Dilema (Interagir): Info -> Atividade de Aula. Objetivo -> Aplicar conceitos. Viz -> HTML texto + 2 botões. Interação -> Clique no botão revela bloco de "consequência". Justificação -> Transforma uma discussão passiva numa escolha ativa, reforçando o 'trade-off' dos pilares. Método -> JS (DOM). -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .nav-link {
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+        .tab-btn {
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .choice-btn {
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .choice-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="space-x-4 md:space-x-6">
+                <a href="#fundamentos" class="nav-link text-stone-600 hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 py-2 text-sm md:text-base font-medium">Fundamentos</a>
+                <a href="#desafios" class="nav-link text-stone-600 hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 py-2 text-sm md:text-base font-medium">Desafios</a>
+                <a href="#dilema" class="nav-link text-stone-600 hover:text-emerald-600 border-b-2 border-transparent hover:border-emerald-600 py-2 text-sm md:text-base font-medium">O Dilema</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="fundamentos" class="my-8 md:my-12 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-stone-900 mb-4">Fundamentos da Sustentabilidade</h2>
+            <p class="text-lg text-stone-700 max-w-3xl mb-8">
+                Sustentabilidade não é apenas "salvar o ambiente". É a capacidade de a humanidade continuar a prosperar durante gerações, sem esgotar os recursos de que todos dependemos. É a resposta à pergunta: <strong>Podemos viver bem hoje, sem roubar a capacidade dos nossos filhos e netos de viverem bem amanhã?</strong>
+            </p>
+            
+            <h3 class="text-2xl font-semibold text-stone-900 mb-6">As Regras do Jogo: Os Três Pilares</h3>
+            <p class="text-base text-stone-700 max-w-3xl mb-6">
+                Para que um sistema seja verdadeiramente sustentável, tem de se equilibrar em três pilares, como um banco de três pernas. Se um falhar, tudo colapsa.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-emerald-500">
+                    <h4 class="text-xl font-bold text-emerald-700 mb-2 flex items-center"><span class="text-3xl mr-3">🌳</span>Pilar Ambiental</h4>
+                    <p class="text-stone-700">Refere-se à saúde dos nossos ecossistemas. É sobre usar os recursos (água, ar, florestas) a um ritmo que lhes permita regenerar-se.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+                    <h4 class="text-xl font-bold text-blue-700 mb-2 flex items-center"><span class="text-3xl mr-3">🤝</span>Pilar Social</h4>
+                    <p class="text-stone-700">Foca-se na equidade, justiça, saúde, educação e qualidade de vida para todas as pessoas. Inclui direitos humanos e condições de trabalho justas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-amber-500">
+                    <h4 class="text-xl font-bold text-amber-700 mb-2 flex items-center"><span class="text-3xl mr-3">📈</span>Pilar Económico</h4>
+                    <p class="text-stone-700">Significa criar uma economia viável, que gera riqueza e emprego de forma responsável, sem destruir os outros dois pilares.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-semibold text-stone-900 mt-10 mb-4">Exemplo Prático: A Fábrica de Roupa</h4>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                    <h5 class="font-bold text-red-700 mb-2">Cenário A (Não Sustentável)</h5>
+                    <p class="text-stone-700">Usa químicos baratos que poluem o rio (falha Ambiental) e paga muito mal aos trabalhadores (falha Social). Pode ter lucro, mas o "banco" vai cair.</p>
+                </div>
+                <div class="bg-emerald-50 p-6 rounded-lg border-l-4 border-emerald-500">
+                    <h5 class="font-bold text-emerald-700 mb-2">Cenário B (Sustentável)</h5>
+                    <p class="text-stone-700">Investe para tratar 100% da sua água (Ambiental), garante salários justos (Social) e, mesmo assim, consegue ser lucrativa (Económico).</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-stone-300">
+
+        <section id="desafios" class="my-12 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-stone-900 mb-4">Desafios Globais</h2>
+            <p class="text-lg text-stone-700 max-w-3xl mb-8">
+                O nosso "tabuleiro de jogo" tem vários desafios urgentes. Estes são os três mais críticos que ameaçam o equilíbrio dos pilares. Explore cada um deles para perceber o que está em causa.
+            </p>
+
+            <div class="flex flex-wrap space-x-1 md:space-x-2 mb-6 border-b border-stone-300">
+                <button id="tab-clima" class="tab-btn py-2 px-3 md:py-3 md:px-6 text-sm md:text-base font-medium rounded-t-lg">Alterações Climáticas</button>
+                <button id="tab-bio" class="tab-btn py-2 px-3 md:py-3 md:px-6 text-sm md:text-base font-medium rounded-t-lg">Crise da Biodiversidade</button>
+                <button id="tab-plastico" class="tab-btn py-2 px-3 md:py-3 md:px-6 text-sm md:text-base font-medium rounded-t-lg">O Problema do Plástico</button>
+            </div>
+
+            <div id="content-clima" class="tab-content bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Desafio 1: Alterações Climáticas</h3>
+                <p class="text-stone-700 mb-4">Desde a Revolução Industrial, a queima massiva de combustíveis fósseis (carvão, petróleo) libertou uma quantidade gigantesca de gases de efeito de estufa, como o CO2. Isto tornou o "cobertor" natural da Terra demasiado espesso, prendendo calor e causando o Aquecimento Global.</p>
+                <p class="font-semibold text-stone-800 mb-2">Impactos Reais:</p>
+                <ul class="list-disc list-inside text-stone-700 space-y-1 mb-6">
+                    <li>Mais eventos extremos: ondas de calor, secas longas e cheias violentas.</li>
+                    <li>Degelo dos glaciares e calotas polares, causando a subida do nível do mar.</li>
+                </ul>
+                
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-6">
+                    <p class="font-bold text-amber-800">Sabias que...?</p>
+                    <p class="text-amber-700">A concentração de CO2 na atmosfera é a mais alta dos últimos 800.000 anos. Os últimos 10 anos foram a década mais quente alguma vez registada.</p>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="co2Chart"></canvas>
+                </div>
+                <p class="text-center text-sm text-stone-600 mt-2">Representação visual do aumento da concentração de CO2 atmosférico ao longo do tempo.</p>
+            </div>
+
+            <div id="content-bio" class="tab-content hidden bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Desafio 2: A Crise da Biodiversidade</h3>
+                <p class="text-stone-700 mb-4">Biodiversidade é a incrível variedade de vida na Terra. Dependemos desta "teia da vida" para tudo: as abelhas polinizam as nossas culturas, as florestas produzem o nosso oxigénio e muitas plantas fornecem-nos medicamentos.</p>
+                <p class="font-semibold text-stone-800 mb-2">O Problema:</p>
+                <p class="text-stone-700 mb-6">Estamos a destruir habitats (desflorestação), a poluir e a caçar em excesso. Como consequência, as espécies estão a extinguir-se a um ritmo 100 a 1000 vezes mais rápido do que a taxa natural.</p>
+                
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+                    <p class="font-bold text-amber-800">Sabias que...?</p>
+                    <p class="text-amber-700">O Lince-Ibérico, um símbolo do nosso país, esteve muito perto da extinção total. Foi salvo por programas de conservação, mostrando que a ação humana pode reverter danos, mas muitas outras espécies não terão a mesma sorte.</p>
+                </div>
+            </div>
+
+            <div id="content-plastico" class="tab-content hidden bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-4">Desafio 3: O Problema do Plástico</h3>
+                <p class="text-stone-700 mb-4">O plástico é um material milagroso: barato, leve e resistente. O seu maior trunfo é o seu maior defeito: é *demasiado* resistente. Não se biodegrada; apenas se parte em pedaços mais pequenos (microplásticos).</p>
+                <p class="font-semibold text-stone-800 mb-2">Impactos:</p>
+                <ul class="list-disc list-inside text-stone-700 space-y-1 mb-6">
+                    <li>Milhões de toneladas acabam nos oceanos todos os anos.</li>
+                    <li>Animais (tartarugas, aves) confundem o plástico com comida e morrem de fome.</li>
+                    <li>Os microplásticos entram na cadeia alimentar e chegam até nós.</li>
+                </ul>
+
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+                    <p class="font-bold text-amber-800">Sabias que...?</p>
+                    <p class="text-amber-700">Uma garrafa de plástico pode demorar mais de 450 anos a decompor-se. Se nada mudar, estima-se que em 2050 haverá, em peso, mais plástico nos oceanos do que peixes.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-12 border-stone-300">
+
+        <section id="dilema" class="my-12 scroll-mt-20 text-center">
+            <h2 class="text-3xl font-bold text-stone-900 mb-4">O Dilema dos Pilares</h2>
+            <p class="text-lg text-stone-700 max-w-3xl mb-8 mx-auto">
+                Agora é a tua vez de aplicar estes conceitos. A sustentabilidade raramente é fácil; é quase sempre sobre gerir 'trade-offs' difíceis entre os três pilares.
+            </p>
+            <div class="bg-white p-8 rounded-lg shadow-xl max-w-3xl mx-auto">
+                <h3 class="text-2xl font-semibold text-stone-900 mb-4">O Teu Desafio: Presidente da Câmara</h3>
+                <p class="text-stone-700 mb-6">Imagina que és o(a) Presidente da Câmara de uma pequena vila costeira com muito desemprego. Tens duas propostas em cima da mesa. O que farias?</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 text-left mb-8">
+                    <div class="bg-stone-100 p-4 rounded-lg">
+                        <p class="font-bold text-stone-800">Opção 1: A FÁBRICA</p>
+                        <p class="text-sm text-stone-700"><strong>Aprovar uma grande fábrica</strong> que cria 500 empregos (Pilares Económico e Social <strong>BONS</strong>), mas que vai poluir o rio e afetar os pescadores (Pilar Ambiental <strong>MAU</strong>).</p>
+                    </div>
+                    <div class="bg-stone-100 p-4 rounded-lg">
+                        <p class="font-bold text-stone-800">Opção 2: A PROTEÇÃO</p>
+                        <p class="text-sm text-stone-700"><strong>Rejeitar a fábrica</strong> para proteger o rio e a pesca (Pilar Ambiental <strong>BOM</strong>), mas a vila continuará com desemprego alto (Pilares Económico e Social <strong>MAUS</strong>).</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <button id="choice-fabrica" class="choice-btn bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg shadow-md">
+                        Aprovar a Fábrica
+                    </button>
+                    <button id="choice-rejeitar" class="choice-btn bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-md">
+                        Rejeitar a Fábrica
+                    </button>
+                </div>
+
+                <div id="result-fabrica" class="hidden mt-8 p-4 bg-emerald-50 border-l-4 border-emerald-500 rounded-r-lg text-left">
+                    <h4 class="font-bold text-emerald-800">Consequência da Escolha: Aprovar</h4>
+                    <p class="text-emerald-700">Priorizaste os pilares <strong>Económico</strong> e <strong>Social</strong> a curto prazo. A vila ganha empregos, mas o pilar <strong>Ambiental</strong> foi sacrificado. A longo prazo, a poluição do rio pode destruir a pesca, criando um novo problema social e económico. A "terceira opção" sustentável seria exigir que a fábrica investisse em tecnologia de poluição zero (equilibrando os 3 pilares).</p>
+                </div>
+                
+                <div id="result-rejeitar" class="hidden mt-8 p-4 bg-red-50 border-l-4 border-red-500 rounded-r-lg text-left">
+                    <h4 class="font-bold text-red-800">Consequência da Escolha: Rejeitar</h4>
+                    <p class="text-red-700">Priorizaste o pilar <strong>Ambiental</strong>. O rio está salvo, mas os pilares <strong>Económico</strong> e <strong>Social</strong> continuam a falhar. O desemprego pode levar as pessoas a abandonar a vila. A "terceira opção" sustentável poderia ser rejeitar esta fábrica, mas procurar ativamente um investimento alternativo (ex: turismo ecológico) que crie empregos *porque* o rio está limpo.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-800 text-stone-300 text-center p-6 mt-12">
+        <p>&copy; 2025 Exploradores do Conhecimento. Criado com base no documento da Aula #008.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            
+            const co2Data = {
+                labels: ['Há 800.000 Anos', 'Há 400.000 Anos', 'Há 10.000 Anos', 'Ano 1800', 'Hoje'],
+                datasets: [{
+                    label: 'Concentração de CO2 (ppm)',
+                    data: [185, 210, 265, 280, 420],
+                    fill: true,
+                    backgroundColor: 'rgba(20, 83, 45, 0.1)',
+                    borderColor: 'rgb(5, 150, 105)',
+                    tension: 0.1
+                }]
+            };
+
+            const co2Config = {
+                type: 'line',
+                data: co2Data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: 'Partes por Milhão (ppm)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            intersect: false,
+                            mode: 'index',
+                        }
+                    }
+                }
+            };
+            
+            const co2Ctx = document.getElementById('co2Chart');
+            if(co2Ctx) {
+                new Chart(co2Ctx.getContext('2d'), co2Config);
+            }
+
+            const tabs = [
+                document.getElementById('tab-clima'),
+                document.getElementById('tab-bio'),
+                document.getElementById('tab-plastico')
+            ].filter(Boolean);
+            
+            const contents = [
+                document.getElementById('content-clima'),
+                document.getElementById('content-bio'),
+                document.getElementById('content-plastico')
+            ].filter(Boolean);
+
+            const activeTabClasses = ['bg-emerald-600', 'text-white'];
+            const inactiveTabClasses = ['bg-stone-100', 'text-stone-700', 'hover:bg-stone-200'];
+
+            function switchTab(activeTabId) {
+                tabs.forEach(tab => {
+                    const isTabActive = tab.id === `tab-${activeTabId}`;
+                    if (isTabActive) {
+                        tab.classList.remove(...inactiveTabClasses);
+                        tab.classList.add(...activeTabClasses);
+                    } else {
+                        tab.classList.remove(...activeTabClasses);
+                        tab.classList.add(...inactiveTabClasses);
+                    }
+                });
+
+                contents.forEach(content => {
+                    if (content.id === `content-${activeTabId}`) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                const tabId = tab.id.split('-')[1];
+                tab.addEventListener('click', () => switchTab(tabId));
+            });
+
+            if(tabs.length > 0) {
+                switchTab('clima');
+            }
+
+            const choiceFabrica = document.getElementById('choice-fabrica');
+            const choiceRejeitar = document.getElementById('choice-rejeitar');
+            const resultFabrica = document.getElementById('result-fabrica');
+            const resultRejeitar = document.getElementById('result-rejeitar');
+
+            if (choiceFabrica && resultFabrica && resultRejeitar) {
+                choiceFabrica.addEventListener('click', () => {
+                    resultFabrica.classList.remove('hidden');
+                    resultRejeitar.classList.add('hidden');
+                });
+            }
+            
+            if (choiceRejeitar && resultFabrica && resultRejeitar) {
+                choiceRejeitar.addEventListener('click', () => {
+                    resultRejeitar.classList.remove('hidden');
+                    resultFabrica.classList.add('hidden');
+                });
+            }
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetEl = document.querySelector(this.getAttribute('href'));
+                    if(targetEl) {
+                        targetEl.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

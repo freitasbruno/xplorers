@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r \"D:/CLAUDE/bstack/.claude/skills/build/.\" \"D:/CLAUDE/xplorers/.claude/skills/build/\")",
+      "Bash(cp -r \"D:/CLAUDE/bstack/.claude/skills/evolve/.\" \"D:/CLAUDE/xplorers/.claude/skills/evolve/\")",
+      "Bash(cp -r \"D:/CLAUDE/bstack/.claude/skills/import/.\" \"D:/CLAUDE/xplorers/.claude/skills/import/\")",
+      "Bash(cp -r \"D:/CLAUDE/bstack/.claude/skills/new/.\" \"D:/CLAUDE/xplorers/.claude/skills/new/\")",
+      "Bash(cp -r \"D:/CLAUDE/bstack/.claude/skills/note/.\" \"D:/CLAUDE/xplorers/.claude/skills/note/\")"
+    ]
+  }
+}

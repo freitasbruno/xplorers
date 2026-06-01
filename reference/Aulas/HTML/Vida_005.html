@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula #028 - A Evolução Humana | Xplorers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-bg { 
+            background: linear-gradient(rgba(20, 184, 166, 0.9), rgba(15, 23, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .section-tag { @apply text-teal-500 font-mono text-xs uppercase tracking-widest mb-2 block; }
+        .scientific-card { @apply bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all; }
+        .chart-container { position: relative; height: 400px; width: 100%; }
+        .timeline-item { @apply border-l-2 border-teal-200 pl-6 pb-10 relative; }
+        .timeline-item::before { content: ''; @apply absolute left-[-9px] top-0 w-4 h-4 bg-teal-500 rounded-full border-4 border-white; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold">X</div>
+                <span class="font-bold text-lg tracking-tight">XPLORERS <span class="text-slate-400 font-normal">| Aula #028</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+                <a href="#anatomia" class="hover:text-teal-600 transition">Anatomia</a>
+                <a href="#cronologia" class="hover:text-teal-600 transition">Hominídeos</a>
+                <a href="#cerebro" class="hover:text-teal-600 transition">Cérebro</a>
+                <a href="#genetica" class="hover:text-teal-600 transition">Genética</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white py-24 px-6 relative">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-3 py-1 bg-white/10 text-teal-200 rounded-full text-xs font-bold mb-6 border border-white/20">ESTUDO DA LINHAGEM</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">O Caminho <br>até Nós</h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl leading-relaxed">
+                Da savana africana ao espaço: uma jornada de 7 milhões de anos codificada no nosso DNA e escrita nos estratos da Terra.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <!-- Secção Anatomia do Bipedismo -->
+        <section id="anatomia" class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="section-tag">// ADAPTAÇÃO MORFOLÓGICA</span>
+                <h2 class="text-4xl font-bold">A Revolução de Estar de Pé</h2>
+                <p class="text-slate-600">
+                    O bipedismo não foi apenas uma forma de andar; foi o catalisador que permitiu a libertação das mãos para a manipulação de ferramentas. Analisemos as mudanças esqueléticas cruciais:
+                </p>
+                <div class="space-y-4">
+                    <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                        <div class="text-teal-600 font-bold">01</div>
+                        <div>
+                            <h4 class="font-bold">Foramen Magnum</h4>
+                            <p class="text-sm text-slate-500">O orifício na base do crânio moveu-se para a frente, permitindo que a cabeça se equilibrasse sobre a coluna vertical.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                        <div class="text-teal-600 font-bold">02</div>
+                        <div>
+                            <h4 class="font-bold">Pélvis em "Bacia"</h4>
+                            <p class="text-sm text-slate-500">Tornou-se mais larga e curta para suportar o peso dos órgãos internos na posição vertical.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                        <div class="text-teal-600 font-bold">03</div>
+                        <div>
+                            <h4 class="font-bold">Valgo do Fémur</h4>
+                            <p class="text-sm text-slate-500">O ângulo do fémur permite que os joelhos fiquem mais próximos do centro de gravidade durante a marcha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-teal-900 rounded-3xl p-8 text-white flex flex-col items-center justify-center space-y-6">
+                <div class="text-center">
+                    <p class="text-sm text-teal-400 font-mono uppercase tracking-widest mb-2">Hipótese da Savana</p>
+                    <p class="text-lg">"Ver mais longe, gastar menos energia e carregar o futuro."</p>
+                </div>
+                <!-- Simple SVG representation of evolutionary steps -->
+                <svg viewBox="0 0 200 100" class="w-full max-w-sm">
+                    <circle cx="20" cy="80" r="5" fill="#14b8a6" />
+                    <circle cx="60" cy="70" r="5" fill="#14b8a6" />
+                    <circle cx="100" cy="50" r="5" fill="#14b8a6" />
+                    <circle cx="140" cy="30" r="5" fill="#14b8a6" />
+                    <path d="M20 80 Q 60 70 100 50 T 140 30" stroke="#14b8a6" fill="none" stroke-width="2" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Cronologia dos Hominídeos -->
+        <section id="cronologia" class="space-y-12">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="section-tag">A LINHA DO TEMPO</span>
+                <h2 class="text-4xl font-bold">O Arbusto Humano</h2>
+                <p class="text-slate-600 mt-4">Várias espécies coexistiram no tempo e no espaço. Não somos uma linha, somos um legado de sobrevivência.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <span class="text-xs font-mono text-teal-600 font-bold">7 - 6 Ma</span>
+                    <h3 class="text-xl font-bold">Sahelanthropus tchadensis</h3>
+                    <p class="text-slate-500 text-sm">O provável início da separação. Encontrado no Chade, apresenta uma mistura intrigante de traços de símios e humanos.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="text-xs font-mono text-teal-600 font-bold">3.2 Ma</span>
+                    <h3 class="text-xl font-bold">Australopithecus afarensis (Lucy)</h3>
+                    <p class="text-slate-500 text-sm">Totalmente adaptada ao bipedismo, mas com um cérebro do tamanho de um chimpanzé. Habitava a Etiópia.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="text-xs font-mono text-teal-600 font-bold">1.9 Ma - 100 mil anos</span>
+                    <h3 class="text-xl font-bold">Homo erectus</h3>
+                    <p class="text-slate-500 text-sm">O primeiro a dominar o fogo e a sair de África. Proporções corporais muito semelhantes às nossas.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="text-xs font-mono text-teal-600 font-bold">400 mil - 40 mil anos</span>
+                    <h3 class="text-xl font-bold">Homo neanderthalensis</h3>
+                    <p class="text-slate-500 text-sm">Os nossos primos europeus. Enterravam os mortos e tinham cultura simbólica. 1-4% do nosso DNA é deles.</p>
+                </div>
+                <div class="timeline-item border-none">
+                    <span class="text-xs font-mono text-teal-600 font-bold">Hoje</span>
+                    <h3 class="text-xl font-bold">Homo sapiens</h3>
+                    <p class="text-slate-500 text-sm">A única espécie de hominídeo sobrevivente. Caracterizada pelo pensamento simbólico abstrato e tecnologia global.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gráfico de Encefalização -->
+        <section id="cerebro" class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 order-2 md:order-1">
+                <div class="chart-container">
+                    <canvas id="brainEvolutionChart"></canvas>
+                </div>
+                <p class="text-center text-[10px] text-slate-400 mt-4 uppercase tracking-widest font-bold">Aumento do Volume Craniano (cm³)</p>
+            </div>
+            <div class="space-y-6 order-1 md:order-2">
+                <span class="section-tag">// ENCEFALIZAÇÃO</span>
+                <h2 class="text-4xl font-bold">O Custo de Pensar</h2>
+                <p class="text-slate-600">
+                    O cérebro humano triplicou de tamanho em 3 milhões de anos. Este crescimento exponencial está ligado à <strong class="text-slate-900 underline decoration-teal-500">dieta de alta qualidade</strong> (carne e alimentos cozinhados) e à complexidade social.
+                </p>
+                <div class="p-6 bg-amber-50 border border-amber-100 rounded-2xl">
+                    <h4 class="font-bold text-amber-900 mb-2">Hipótese do Tecido Dispendioso</h4>
+                    <p class="text-sm text-amber-800 italic">
+                        "Para alimentar um cérebro maior, tivemos de desenvolver um sistema digestivo menor e mais eficiente através do cozimento dos alimentos."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genética e Hibridização -->
+        <section id="genetica" class="bg-slate-900 text-white rounded-[3rem] p-12 md:p-20 relative overflow-hidden">
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-teal-400 font-mono text-sm tracking-widest">GÉNOME HUMANO</span>
+                    <h2 class="text-4xl font-bold">Não Estamos Sozinhos</h2>
+                    <p class="text-slate-400">
+                        O Projeto Genoma Neandertal provou que, quando o *Homo sapiens* saiu de África, encontrou e misturou-se com outros hominídeos.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-teal-500">1-4%</p>
+                            <p class="text-xs uppercase text-slate-500">DNA Neandertal em Não-Africanos</p>
+                        </div>
+                        <div class="h-12 w-px bg-slate-700"></div>
+                        <div class="text-center">
+                            <p class="text-4xl font-bold text-indigo-500">5%</p>
+                            <p class="text-xs uppercase text-slate-500">DNA Denisovano em Melanésios</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-md">
+                    <h4 class="font-bold mb-4 text-teal-300">Implicações Evolutivas</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Muitas destas sequências genéticas antigas ajudaram-nos a adaptar-nos a novos climas, combater vírus locais e até a sobreviver em altitudes elevadas (como o gene EPAS1 herdado dos Denisovanos pelos Tibetanos).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 py-16 px-6 text-center border-t border-slate-200">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h3 class="text-slate-900 font-bold text-xl uppercase tracking-tighter">Xplorers Academy</h3>
+            <p class="text-xs text-slate-500">Biologia e Geologia • 10º Ano • Unidade: História da Vida</p>
+            <div class="pt-8 text-[10px] font-mono text-slate-400 uppercase tracking-widest">#028-HUMAN-EVOLUTION-FINAL</div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('brainEvolutionChart').getContext('2d');
+            
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(20, 184, 166, 0.4)');
+            gradient.addColorStop(1, 'rgba(20, 184, 166, 0)');
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['A. afarensis', 'A. africanus', 'H. habilis', 'H. erectus', 'H. neanderthalensis', 'H. sapiens'],
+                    datasets: [{
+                        label: 'Volume Craniano (cm³)',
+                        data: [450, 480, 650, 950, 1500, 1400],
+                        borderColor: '#14b8a6',
+                        borderWidth: 4,
+                        backgroundColor: gradient,
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 6,
+                        pointBackgroundColor: '#0f172a'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { backgroundColor: '#0f172a' }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true,
+                            grid: { color: '#f1f5f9' },
+                            title: { display: true, text: 'cm³' }
+                        },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Poder das Nossas Escolhas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chosen Palette: Calm Harmony (Stone, White, Emerald, Sky) -->
+    <!-- Application Structure Plan: A thematic single-page application with a sticky top navigation bar ("Consumo", "Moda", "5 R's", "Pegada") for easy, non-linear exploration. The structure breaks the document into four distinct, full-screen sections. This design was chosen to transform the linear text document into an interactive dashboard. Key interactions include: 1) A clickable card section for the '3 Perguntas' to reveal details on demand. 2) An interactive HTML/CSS-based funnel for the '5 R's' where clicking a level displays its description, visually reinforcing the hierarchy. 3) Two Chart.js bar charts to visualize the 'Fast Fashion' water usage and the 'Ecological Footprint' data, making abstract numbers tangible. This structure prioritizes user engagement and understanding by segmenting complex topics into manageable, interactive parts. -->
+    <!-- Visualization & Content Choices: 1. '3 Perguntas': Report Info -> 3 key questions. Goal -> Organize/Inform. Method -> Interactive clickable cards (HTML/JS). Justification -> More engaging than a static list. 2. 'Fast Fashion Water': Report Info -> 2,500L water/T-shirt. Goal -> Compare/Inform. Method -> Chart.js Bar Chart (comparing T-shirt to daily water needs, providing vital context). Justification -> Provides context to an abstract number. 3. 'Fast vs Slow Fashion': Report Info -> Problems vs Solutions. Goal -> Compare. Method -> Two-column HTML/Tailwind layout. Justification -> Direct comparison is clearest. 4. '5 R's Hierarchy': Report Info -> 5 R's in order. Goal -> Organize. Method -> Interactive vertical funnel (HTML/CSS/JS). Justification -> Visually represents the 'hierarchy' concept effectively. 5. 'Pegada Ecológica': Report Info -> 1.0, 1.7, 3.0 planets. Goal -> Compare. Method -> Chart.js Horizontal Bar Chart. Justification -> Clearly visualizes the overshoot of global and national averages vs. available resources. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #334155; /* slate-700 */
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            max-height: 300px;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 350px;
+            }
+        }
+        .funnel-segment {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .funnel-segment:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+        .funnel-segment.active {
+            border-width: 4px;
+            transform: scale(1.03);
+        }
+        .question-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .question-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#consumo" class="font-medium text-slate-600 hover:text-emerald-600">Consumo</a>
+                <a href="#moda" class="font-medium text-slate-600 hover:text-emerald-600">Moda</a>
+                <a href="#hierarquia" class="font-medium text-slate-600 hover:text-emerald-600">Os 5 R's</a>
+                <a href="#pegada" class="font-medium text-slate-600 hover:text-emerald-600">Pegada</a>
+                <a href="#acao" class="font-medium text-slate-600 hover:text-emerald-600">Ação</a>
+            </div>
+            <div class="md:hidden">
+                <select id="mobile-nav" class="border border-slate-300 rounded-md py-1 px-2 bg-white">
+                    <option value="#consumo">Consumo</option>
+                    <option value="#moda">Moda</option>
+                    <option value="#hierarquia">Os 5 R's</option>
+                    <option value="#pegada">Pegada</option>
+                    <option value="#acao">Ação</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao" class="text-center py-16 md:py-24 px-4 bg-white">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-4">O Poder das Nossas Escolhas</h2>
+                <p class="text-lg md:text-xl text-slate-600">
+                    Nas últimas aulas vimos os grandes desafios e as grandes soluções. É fácil pensar que são problemas para governos e empresas. Esta aula liga tudo ao teu dia a dia. Vais descobrir que o verdadeiro poder de mudança está nas tuas mãos, em cada escolha que fazes.
+                </p>
+            </div>
+        </section>
+
+        <section id="consumo" class="py-16 md:py-24 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">1. O Voto Diário: Consumo Consciente</h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        Cada vez que compras algo, estás a "votar" no mundo que queres. Estás a apoiar a empresa que fez esse produto e todo o seu processo. Esta secção explora como podemos "votar" de forma mais consciente, fazendo perguntas simples antes de comprar.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">Exemplo Prático: Fruta Fora de Época</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="text-lg font-bold text-red-700 mb-2">❌ Voto "Não Sustentável"</h4>
+                                <p class="text-slate-600 text-sm">Comprar morangos em dezembro. Vêm de avião do outro hemisfério, com uma pegada de carbono gigante (Pilar Ambiental péssimo).</p>
+                            </div>
+                            <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
+                                <h4 class="text-lg font-bold text-emerald-700 mb-2">✔ Voto "Sustentável"</h4>
+                                <p class="text-slate-600 text-sm">Comprar laranjas no inverno. São da época em Portugal, exigem menos transporte e apoiam a economia local.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">As Perguntas-Chave</h3>
+                        <p class="text-slate-600 mb-4">Clica em cada pergunta para ver a reflexão.</p>
+                        <div class="space-y-3">
+                            <div class="question-card border border-slate-200 rounded-lg p-4" onclick="toggleDetails('q1')">
+                                <h4 class="text-lg font-semibold text-emerald-700">Preciso mesmo disto?</h4>
+                                <p id="q1-details" class="text-slate-600 mt-2 hidden">
+                                    Esta é a pergunta do <span class="font-bold">Reduzir</span>. Quantas vezes compramos por impulso e não por necessidade? Evitar a compra é a ação mais sustentável de todas.
+                                </p>
+                            </div>
+                            <div class="question-card border border-slate-200 rounded-lg p-4" onclick="toggleDetails('q2')">
+                                <h4 class="text-lg font-semibold text-emerald-700">Como é que isto foi feito?</h4>
+                                <p id="q2-details" class="text-slate-600 mt-2 hidden">
+                                    Esta é a pergunta do <span class="font-bold">Pilar Ambiental</span>. Gastou muita água? Usou químicos tóxicos? Feito de plástico?
+                                </p>
+                            </div>
+                            <div class="question-card border border-slate-200 rounded-lg p-4" onclick="toggleDetails('q3')">
+                                <h4 class="text-lg font-semibold text-emerald-700">Quem fez este produto?</h4>
+                                <p id="q3-details" class="text-slate-600 mt-2 hidden">
+                                    Esta é a pergunta do <span class="font-bold">Pilar Social</span>. Os trabalhadores receberam um salário justo? Trabalharam em condições seguras?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="moda" class="py-16 md:py-24 px-4 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">2. O Custo Real da T-shirt: <i>Fast Fashion</i></h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        A *Fast Fashion* (moda rápida) é um exemplo perfeito de um sistema que falha nos três pilares. Analisamos o impacto real da roupa barata e as soluções que podemos adotar, como a *Slow Fashion*.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">O Impacto Ambiental</h3>
+                        <p class="text-slate-600 mb-4">
+                            O impacto ambiental da *fast fashion* é imenso. O documento destaca o consumo de 2.500 litros de água para uma T-shirt e as emissões de C02, superiores às dos voos e transporte marítimo combinados.
+                        </p>
+                        <div class="chart-container">
+                            <canvas id="waterChart"></canvas>
+                        </div>
+                        <p class="text-center text-sm text-slate-500 mt-2">Comparação do uso de água para 1 T-shirt vs. água potável para 1 pessoa.</p>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2 mt-4">
+                            <li><b>Químicos:</b> Tintas tóxicas poluem rios.</li>
+                            <li><b>Microplásticos:</b> Roupas de poliéster (plástico) libertam milhões de microplásticos em cada lavagem, que acabam no oceano.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">O Impacto Social e a Solução</h3>
+                        <p class="text-slate-600 mb-4">
+                            Para a roupa ser tão barata, alguém está a pagar o preço. O Pilar Social é muitas vezes ignorado, com trabalhadores em condições inseguras por salários miseráveis.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-bold text-red-700 mb-2">👎 Fast Fashion</h4>
+                                <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                                    <li>Descartável</li>
+                                    <li>Muitas coleções/ano</li>
+                                    <li>Barato e de má qualidade</li>
+                                    <li>Poluente</li>
+                                    <li>Opaca (não sabes quem fez)</li>
+                                </ul>
+                            </div>
+                            <div class="bg-emerald-50 p-4 rounded-lg">
+                                <h4 class="text-lg font-bold text-emerald-700 mb-2">👍 Slow Fashion</h4>
+                                <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                                    <li>Duradouro</li>
+                                    <li>Comprar em 2ª mão</li>
+                                    <li>Qualidade sobre quantidade</li>
+                                    <li>Reparar o que tens</li>
+                                    <li>Trocar roupa</li>
+                                    <li>Transparente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hierarquia" class="py-16 md:py-24 px-4">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-700 mb-4">3. A Hierarquia do Lixo: Os 5 R's</h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        Muitas pessoas pensam que "reciclar" é a melhor solução para o lixo. Na verdade, é a última. Existe uma hierarquia de ações, e "Reciclar" está no fundo. Clica em cada nível para perceber porquê.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="w-full max-w-md mx-auto">
+                        <div id="r-recusar" class="funnel-segment active w-full mx-auto p-4 bg-emerald-600 text-white text-center font-bold text-xl rounded-t-lg border-emerald-800" onclick="showRDescription('recusar')">
+                            1. Recusar
+                        </div>
+                        <div id="r-reduzir" class="funnel-segment w-10/12 mx-auto p-4 bg-emerald-500 text-white text-center font-bold text-xl border-emerald-700" onclick="showRDescription('reduzir')">
+                            2. Reduzir
+                        </div>
+                        <div id="r-reutilizar" class="funnel-segment w-8/12 mx-auto p-4 bg-emerald-400 text-white text-center font-bold text-xl border-emerald-600" onclick="showRDescription('reutilizar')">
+                            3. Reutilizar
+                        </div>
+                        <div id="r-reparar" class="funnel-segment w-6/12 mx-auto p-4 bg-sky-400 text-white text-center font-bold text-xl border-sky-600" onclick="showRDescription('reparar')">
+                            4. Reparar
+                        </div>
+                        <div id="r-reciclar" class="funnel-segment w-4/12 mx-auto p-4 bg-slate-400 text-white text-center font-bold text-xl rounded-b-lg border-slate-600" onclick="showRDescription('reciclar')">
+                            5. Reciclar
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg min-h-[250px] md:min-h-[300px]">
+                        <h3 id="r-title" class="text-2xl font-bold text-slate-800 mb-3">1. Recusar</h3>
+                        <p id="r-description" class="text-lg text-slate-600">
+                            É o R mais poderoso. Impede o lixo de ser gerado. É dizer "não, obrigado" a um saco de plástico, a uma palhinha, a um panfleto que não te interessa. Se não aceitas, não se torna um problema teu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pegada" class="py-16 md:py-24 px-4 bg-white">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-sky-700 mb-4">4. A Tua Medida: Pegada Ecológica</h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        Esta é a métrica que junta tudo: o teu consumo, transportes, comida, e lixo. Define-se de forma simples: "Quantos planetas Terra seriam necessários se todos vivessem como tu?". O gráfico mostra o problema.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container">
+                        <canvas id="footprintChart"></canvas>
+                    </div>
+                    <div class="bg-slate-100 p-6 rounded-xl">
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">A Ler o Gráfico</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-emerald-500 font-bold text-xl mr-3">✔</span>
+                                <p class="text-slate-600"><b class="text-slate-700">Recursos Disponíveis (1.0 Planeta):</b> É o que a Terra nos consegue dar num ano sem entrar em colapso. É o nosso "orçamento" anual.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-amber-500 font-bold text-xl mr-3">❗</span>
+                                <p class="text-slate-600"><b class="text-slate-700">Média Mundial (1.7 Planetas):</b> A humanidade já está a "gastar" 70% a mais do que o planeta consegue regenerar por ano. Estamos a viver a "crédito".</p>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-500 font-bold text-xl mr-3">❌</span>
+                                <p class="text-slate-600"><b class="text-slate-700">Média de Portugal (~3 Planetas):</b> O nosso estilo de vida em Portugal está muito acima da média mundial e é profundamente insustentável. Precisaríamos de 3 planetas se todos vivessem como nós.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acao" class="py-16 md:py-24 px-4 bg-emerald-700 text-white">
+            <div class="container mx-auto max-w-3xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">O Teu Desafio de 7 Dias</h2>
+                <p class="text-lg text-emerald-100 mb-8">
+                    Esta semana, o desafio é passar da teoria à prática. Traz os teus resultados para a aula!
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-emerald-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">1. Calcula (em casa)</h3>
+                        <p class="text-emerald-200">Pesquisa por "Calculadora de Pegada Ecológica" online (ex: WWF ou Global Footprint Network) e descobre a tua pegada.</p>
+                    </div>
+                    <div class="bg-emerald-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">2. Escolhe o teu R</h3>
+                        <p class="text-emerald-200">Escolhe UM dos 5 R's e foca-te em aplicá-lo ao máximo durante 7 dias. Regista as vezes que o aplicaste (ex: "Recusei 4 sacos de plástico").</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-8 bg-slate-800 text-slate-300">
+        <p>&copy; 2025 Xplorers. A exploração da sustentabilidade começa contigo.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            initWaterChart();
+            initFootprintChart();
+
+            const rDescriptions = {
+                recusar: {
+                    title: "1. Recusar",
+                    text: "É o R mais poderoso. Impede o lixo de ser gerado. É dizer 'não, obrigado' a um saco de plástico, a uma palhinha, a um panfleto que não te interessa. Se não aceitas, não se torna um problema teu."
+                },
+                reduzir: {
+                    title: "2. Reduzir",
+                    text: "É comprar menos e comprar melhor. É a pergunta 'Preciso mesmo disto?'. É a melhor forma de combater a fast fashion e o desperdício."
+                },
+                reutilizar: {
+                    title: "3. Reutilizar",
+                    text: "É dar uma nova vida a um objeto, em vez de o deitar fora. Usar uma garrafa de água reutilizável, um copo de café reutilizável, ou usar frascos de vidro para guardar comida."
+                },
+                reparar: {
+                    title: "4. Reparar",
+                    text: "A nossa sociedade habituou-se a 'deitar fora' quando algo se estraga. Reparar um telemóvel, coser umas calças, arranjar um eletrodoméstico. É a base da Slow Fashion."
+                },
+                reciclar: {
+                    title: "5. Reciclar",
+                    text: "É o último recurso. É melhor que o aterro, mas gasta muita energia e recursos para transformar lixo em algo novo. Deve ser a nossa última opção, quando não conseguimos fazer os outros 4 R's."
+                }
+            };
+            
+            window.showRDescription = (r) => {
+                document.getElementById('r-title').innerText = rDescriptions[r].title;
+                document.getElementById('r-description').innerText = rDescriptions[r].text;
+
+                document.querySelectorAll('.funnel-segment').forEach(el => {
+                    el.classList.remove('active', 'border-emerald-800', 'border-emerald-700', 'border-emerald-600', 'border-sky-600', 'border-slate-600');
+                    if(el.id.includes('reciclar')) {
+                        el.classList.add('border-slate-600');
+                    } else if (el.id.includes('reparar')) {
+                        el.classList.add('border-sky-600');
+                    } else if (el.id.includes('reutilizar')) {
+                        el.classList.add('border-emerald-600');
+                    } else if (el.id.includes('reduzir')) {
+                        el.classList.add('border-emerald-700');
+                    } else {
+                        el.classList.add('border-emerald-800');
+                    }
+                });
+                
+                document.getElementById(`r-${r}`).classList.add('active');
+            };
+
+            window.toggleDetails = (id) => {
+                const el = document.getElementById(`${id}-details`);
+                el.classList.toggle('hidden');
+            };
+
+            const mobileNav = document.getElementById('mobile-nav');
+            mobileNav.addEventListener('change', (e) => {
+                document.querySelector(e.target.value).scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                if(this.hash === '#introducao' || this.hash === '') return;
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+        });
+        
+        function initWaterChart() {
+            const ctx = document.getElementById('waterChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['1 T-shirt de Algodão', 'Água potável (100 dias)'],
+                    datasets: [{
+                        label: 'Litros de Água',
+                        data: [2500, 2500],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.6)', // blue-500
+                            'rgba(14, 165, 233, 0.6)' // sky-500
+                        ],
+                        borderColor: [
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(14, 165, 233, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Consumo de Água: 1 T-shirt',
+                            font: { size: 16, family: 'Inter' },
+                            color: '#334155'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let val = context.parsed.y;
+                                    let label = context.label;
+                                    if (label.includes('100 dias')) {
+                                        return `${label}: ${val} Litros (2.5L/dia)`;
+                                    }
+                                    return `${label}: ${val} Litros`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Litros (L)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        function initFootprintChart() {
+            const ctx = document.getElementById('footprintChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Média de Portugal', 'Média Mundial', 'Recursos Disponíveis'],
+                    datasets: [{
+                        label: 'Número de Planetas Terra',
+                        data: [3.0, 1.7, 1.0],
+                        backgroundColor: [
+                            'rgba(239, 68, 68, 0.6)', // red-500
+                            'rgba(245, 158, 11, 0.6)', // amber-500
+                            'rgba(16, 185, 129, 0.6)' // emerald-500
+                        ],
+                        borderColor: [
+                            'rgba(239, 68, 68, 1)',
+                            'rgba(245, 158, 11, 1)',
+                            'rgba(16, 185, 129, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Pegada Ecológica (em Planetas)',
+                            font: { size: 16, family: 'Inter' },
+                            color: '#334155'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.parsed.x} Planetas`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Nº de Planetas Terra'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
+

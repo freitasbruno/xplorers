@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador Olímpico: Coroas de Oliveira e Fama Eterna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Grecian Sun -->
+    <!-- Application Structure Plan: A single-page application following the 'Journey of a Champion' narrative. It's structured into three thematic, scrollable sections: 'O Prémio em Olímpia', 'O Contraste da Recompensa', and 'O Legado Imortal'. The core of the application is an interactive comparison in the second section, contrasting the symbolic prize at Olympia with the material rewards at home. This narrative structure was chosen to transform the report's distinct sections into a cohesive, engaging story, allowing users to understand the full scope of a champion's rewards in a logical progression. -->
+    <!-- Visualization & Content Choices: 1. Reward Comparison: Report Info -> Symbolic vs. Material rewards -> Goal: Compare -> Viz: Grouped Bar Chart (Chart.js) -> Interaction: Static visualization with hover tooltips -> Justification: Provides an immediate, powerful visual summary of the report's central argument, making the abstract concept of value tangible. 2. Homecoming Privileges: Report Info -> List of rewards (meals, statues, etc.) -> Goal: Organize/Inform -> Presentation: Interactive HTML/JS cards -> Interaction: Click to reveal details -> Justification: Breaks down a text-heavy list into bite-sized, interactive elements, increasing user engagement and information retention. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FBF9F4; /* Parchment White */
+            color: #4A4A4A; /* Dark Slate Gray */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(251, 249, 244, 0.6), rgba(251, 249, 244, 1)), url('https://placehold.co/1200x600/D4B282/FFFFFF?text=Grécia+Antiga') no-repeat center center/cover;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .card-content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease-out, margin-top 0.5s ease-out;
+        }
+        .card.active .card-content {
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            height: 350px;
+            max-height: 60vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="hidden md:flex space-x-8">
+                <p class="text-lg md:text-xl text-[#6B4F2E] max-w-3xl mx-auto">Uma coroa de oliveira em Olímpia era a chave para a imortalidade e uma vida de honra. Explore a verdadeira recompensa de um campeão olímpico.</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        
+        <section id="symbolic-prize" class="mb-20 text-center">
+            <h2 class="text-3xl font-bold text-[#B08968] mb-4">🌿 O Prémio em Olímpia: O *Kotinos*</h2>
+            <p class="max-w-3xl mx-auto text-lg leading-relaxed">No clímax dos Jogos, o vencedor não recebia ouro, mas sim um prémio de valor imensurável: uma coroa feita de ramos de uma oliveira sagrada, cortada com uma foice de ouro. Este gesto simples não representava riqueza, mas sim a mais alta honra e o favor dos deuses. Era um símbolo puro de glória (*kleos*), competindo-se apenas pelo prestígio de ser o melhor.</p>
+        </section>
+
+        <section id="reward-contrast" class="py-16 bg-white rounded-lg shadow-md mb-20">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-[#B08968]">O Contraste da Recompensa</h2>
+                <p class="max-w-3xl mx-auto text-lg mt-2">A humilde coroa de Olímpia contrastava drasticamente com as recompensas materiais que aguardavam o herói na sua cidade-natal. O gráfico abaixo visualiza a diferença entre o valor simbólico e material dos prémios, o cerne da motivação de um atleta.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="rewardsChart"></canvas>
+            </div>
+        </section>
+
+        <section id="immortal-legacy" class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#B08968]">🏆 O Legado Imortal: De Atleta a Semideus</h2>
+                <p class="max-w-3xl mx-auto text-lg mt-2">O verdadeiro prémio era a fama eterna, o *kleos*. Ao regressar a casa, o campeão era recebido como um herói e recebia privilégios para toda a vida. Clique em cada recompensa para descobrir mais sobre o seu regresso triunfal.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Entrada Triunfal</h3>
+                    <div class="card-content">
+                        <p>O herói não entrava pela porta da cidade. Por vezes, abria-se uma brecha na muralha para ele passar, simbolizando que uma cidade com tais campeões não precisava de defesas.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Refeições Vitalícias</h3>
+                    <div class="card-content">
+                        <p>Recebia o direito a refeições gratuitas para o resto da vida no *prytaneion*, o edifício público principal, uma honra reservada a grandes benfeitores da cidade.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Prémios em Dinheiro</h3>
+                    <div class="card-content">
+                        <p>A cidade-natal oferecia generosas recompensas monetárias, que podiam garantir o sustento do atleta e da sua família por muitos anos.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Isenção de Impostos</h3>
+                    <div class="card-content">
+                        <p>Como reconhecimento do prestígio trazido à cidade, o campeão podia ser isento do pagamento de impostos, um privilégio económico significativo.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Estátuas de Honra</h3>
+                    <div class="card-content">
+                        <p>Ganhava o direito de erguer uma estátua de si mesmo, imortalizando a sua forma física perfeita no mercado da cidade ou até no próprio santuário de Olímpia.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg p-6 shadow-sm border border-gray-200" onclick="toggleCard(this)">
+                    <h3 class="text-xl font-bold text-[#6B4F2E]">Poemas de Louvor</h3>
+                    <div class="card-content">
+                        <p>Poetas famosos, como Píndaro, eram contratados para compor odes que narravam a sua vitória, comparando o atleta a heróis míticos e garantindo que a sua fama ecoaria para sempre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="did-you-know" class="mt-20">
+             <div class="bg-[#EDE4D4] p-8 rounded-lg border-l-4 border-[#B08968]">
+                 <h3 class="text-2xl font-bold text-[#6B4F2E] mb-2">Sabias que...?</h3>
+                 <p class="text-lg text-gray-800">O famoso lutador Milão de Crotona, que venceu seis vezes em Olímpia, era tão celebrado que se dizia que ele carregava um touro adulto nos ombros. Após a sua morte, a sua cidade continuou a honrá-lo como um herói, mostrando que a sua glória era verdadeiramente imortal.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#4A4A4A] mt-16">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-300">
+            <p>&copy; 2025 Explorador Olímpico. Uma visualização interativa baseada nos materiais de aula.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCard(element) {
+            element.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctx = document.getElementById('rewardsChart').getContext('2d');
+            const rewardsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Valor Simbólico (Glória, Honra)', 'Valor Material (Dinheiro, Bens)'],
+                    datasets: [
+                        {
+                            label: 'Em Olímpia',
+                            data: [10, 1],
+                            backgroundColor: '#B08968',
+                            borderColor: '#9C7C5F',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Na Pólis Natal',
+                            data: [8, 9],
+                            backgroundColor: '#6B4F2E',
+                            borderColor: '#5A4226',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10,
+                            title: {
+                                display: true,
+                                text: 'Nível de Importância (Escala de 1 a 10)',
+                                font: {
+                                    family: "'Roboto', sans-serif",
+                                    size: 14,
+                                }
+                            },
+                            ticks: {
+                                font: {
+                                    family: "'Roboto', sans-serif"
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                font: {
+                                    family: "'Roboto', sans-serif",
+                                    size: 14
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                             labels: {
+                                font: {
+                                    family: "'Roboto', sans-serif",
+                                    size: 14
+                                }
+                            }
+                        },
+                        tooltip: {
+                            titleFont: {
+                                family: "'Roboto', sans-serif"
+                            },
+                            bodyFont: {
+                                family: "'Roboto', sans-serif"
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

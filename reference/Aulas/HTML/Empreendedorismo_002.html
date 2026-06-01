@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula #012: Da Ideia ao Conceito</title>
+    <!-- Carregar Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carregar Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte base, tal como nos ficheiros de exemplo */
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+
+        /* Estilos para os tabs interativos (Conceitos-Chave) */
+        /* Botão inativo */
+        .tab-button {
+            transition: all 0.3s ease;
+            background-color: #ffffff; /* bg-white */
+            color: #155e75; /* text-cyan-800 */
+            border: 1px solid #e7e5e4; /* border-stone-200 */
+        }
+        /* Botão ativo (selecionado) */
+        .tab-button.active {
+            background-color: #0e7490; /* bg-cyan-700 */
+            color: #ffffff; /* text-white */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        /* Painel de conteúdo inativo (escondido) */
+        .content-panel {
+            display: none;
+        }
+        /* Painel de conteúdo ativo (visível) */
+        .content-panel.active {
+            display: block;
+        }
+
+        /* Animação simples de fade-in para o conteúdo ativo */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content-panel.active {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header (adaptado para a Aula #012) -->
+         <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="hidden md:flex space-x-8">
+                <p class="text-sm text-stone-600">Da Ideia ao Conceito</p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Página -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Secção 1: Introdução (Conteúdo estático da Aula #012) -->
+        <section id="intro" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Como saber se uma ideia é boa?</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Bom dia! Na última aula, fizemos o exercício "O Caçador de Problemas" e descobrimos que há imensas coisas à nossa volta que nos irritam ou que podiam funcionar melhor.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Mas ter uma lista de problemas é só o começo. Ter uma ideia ("Ah, era preciso uma app para a fila da cantina!") é fácil. A parte difícil é saber se essa ideia é <strong>boa</strong>.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Hoje, vamos aprender a passar de "ter uma ideia" para "validar um conceito". Vamos focar-nos em encontrar <strong>problemas reais</strong>, porque a regra de ouro do empreendedorismo é esta: as pessoas não compram produtos, compram <strong>soluções para os seus problemas</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção 2: Conceitos-Chave (Conteúdo Interativo - Tabs) -->
+        <section id="conceitos" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Da Ideia à Validação</h2>
+            
+            <!-- Botões de Navegação (Tabs) -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6" id="conceitos-tabs">
+                <button class="tab-button px-5 py-3 rounded-lg shadow-sm font-medium" data-target="conceito-brainstorm">Brainstorming</button>
+                <button class="tab-button px-5 py-3 rounded-lg shadow-sm font-medium" data-target="conceito-dor">Analgésico ou Vitamina?</button>
+                <button class="tab-button px-5 py-3 rounded-lg shadow-sm font-medium" data-target="conceito-mvp">Validação e MVP</button>
+            </div>
+
+            <!-- Painéis de Conteúdo (Onde o conteúdo de cada tab aparece) -->
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 min-h-[300px]">
+                
+                <!-- Conteúdo para "Brainstorming" -->
+                <div id="conceito-brainstorm" class="content-panel">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-4">Brainstorming e Fontes de Inspiração</h3>
+                    <p class="text-gray-700 mb-4 text-lg">O <strong>Brainstorming</strong> (tempestade de ideias) é uma técnica para gerar o máximo de ideias possível num curto espaço de tempo. A regra principal é: <strong>quantidade sobre qualidade</strong>. Nesta fase, não há ideias más.</p>
+                    <p class="text-gray-700 mb-2 font-semibold">Fontes de Inspiração:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Problemas Pessoais:</strong> O que te frustra no dia-a-dia? (Ex: A Airbnb nasceu porque os fundadores não conseguiam pagar a renda).</li>
+                        <li><strong>Observação:</strong> Ver como as outras pessoas usam produtos ou fazem tarefas. Onde é que elas "encravam"?</li>
+                        <li><strong>Tendências de Mercado:</strong> O que é que está a mudar no mundo? (Ex: teletrabalho, preocupação ambiental).</li>
+                    </ul>
+                </div>
+
+                <!-- Conteúdo para "Analgésico ou Vitamina?" -->
+                <div id="conceito-dor" class="content-panel">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-4">O Problema: "Analgésico vs. Vitamina"</h3>
+                    <p class="text-gray-700 mb-4 text-lg">Esta é a metáfora mais importante para filtrar ideias. O teu produto/serviço resolve uma "dor" forte ou é apenas "bom ter"?</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="border border-red-200 bg-red-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-lg text-red-700">Analgésico (Resolve uma DOR) 💊</h4>
+                            <p class="text-gray-700 text-sm">Resolve um problema urgente, óbvio e doloroso. Os clientes sentem um alívio imediato. (Ex: Um serviço de reboques quando tens um pneu furado).</p>
+                        </div>
+                        <div class="border border-green-200 bg-green-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-lg text-green-700">Vitamina (É "Nice-to-Have") 🥦</h4>
+                            <p class="text-gray-700 text-sm">É bom ter, melhora a vida, mas não resolve uma dor imediata. (Ex: Uma app para aprender uma língua nova). É muito mais difícil vender vitaminas do que analgésicos.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-4 font-medium">Os melhores negócios são quase sempre analgésicos. Procura a "dor"!</p>
+                </div>
+
+                <!-- Conteúdo para "Validação e MVP" -->
+                <div id="conceito-mvp" class="content-panel">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-4">Validação (O MVP)</h3>
+                    <p class="text-gray-700 mb-4 text-lg">Tens uma ideia que parece ser um "analgésico". E agora? Não vais construir a solução! Vais <strong>validar</strong> se as pessoas querem *mesmo* isso.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>MVP (Minimum Viable Product):</strong> É a versão mais simples possível do teu produto que te permite aprender o máximo sobre os teus clientes com o mínimo de esforço.</li>
+                        <li>O objetivo do MVP não é fazer dinheiro; é <strong>aprender</strong>.</li>
+                        <li><strong>Exemplo de MVP (Landing Page):</strong> Em vez de criar a app para a cantina, podes criar uma página web simples (Landing Page) a descrever o produto e ver quantas pessoas se inscrevem ("Deixe o seu email para ser o primeiro a saber").</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secção 3: Exemplos e Curiosidades (Cards estáticos) -->
+        <section id="exemplos" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Sabias que...?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card Dropbox -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">O MVP do Dropbox 💻</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        O fundador do Dropbox, Drew Houston, queria saber se as pessoas iam usar um serviço de sincronização de ficheiros.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-2 font-medium bg-cyan-50 border border-cyan-200 p-3 rounded-md">
+                        Em vez de programar o sistema, ele fez um <strong>vídeo de 3 minutos</strong> que <strong>fingia</strong> que o produto funcionava. Publicou o vídeo e disse "Inscrevam-se".
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-2">A lista de espera passou de 5.000 para 75.000 pessoas numa noite. Ele validou a ideia sem (quase) ter escrito código.</p>
+                </div>
+                <!-- Card Uber -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">A "Dor" do Uber 🚕</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Travis Kalanick, um dos fundadores, estava em Paris numa noite de neve e não conseguia arranjar um táxi. A "dor" era tão forte que ele pensou:
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-2 font-medium bg-red-50 border border-red-200 p-3 rounded-md">
+                        "E se eu pudesse chamar um carro privado simplesmente carregando num botão no meu telemóvel?"
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-2">
+                        Ele não inventou os carros nem os motoristas; ele resolveu o problema da <strong>conveniência</strong> e da <strong>frustração</strong> (um analgésico!).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção 4: Atividade de Aula (Interativa - Lista Dinâmica com Classificação) -->
+        <section id="atividade" class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Atividade: Analgésico ou Vitamina? 💊/🥦</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <p class="text-lg text-gray-700 mb-6">Vamos praticar! Pensa num problema (da aula passada ou novo) e classifica-o. É uma "dor" real ou algo "bom de ter"?</p>
+                
+                <!-- Formulário de Input -->
+                <div class="mb-6">
+                    <input type="text" id="problema-input" placeholder="Ex: A fila da cantina é muito lenta..." class="w-full px-4 py-3 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                </div>
+                
+                <!-- Radio Buttons para Classificação -->
+                <div class="flex flex-wrap gap-x-6 gap-y-4 mb-6">
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="radio" name="tipo-problema" value="analgesico" class="text-cyan-600 focus:ring-cyan-500">
+                        <span class="font-medium text-red-600">Analgésico (Dor 💊)</span>
+                    </label>
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="radio" name="tipo-problema" value="vitamina" class="text-cyan-600 focus:ring-cyan-500">
+                        <span class="font-medium text-green-600">Vitamina (Nice-to-have 🥦)</span>
+                    </label>
+                </div>
+                
+                <button id="add-problema-btn" class="w-full bg-cyan-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-cyan-700 transition-colors shadow-md">Adicionar à Lista</button>
+                
+
+                <!-- Lista Dinâmica de Problemas -->
+                <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Lista de Problemas da Turma:</h3>
+                <div id="problemas-lista" class="space-y-3">
+                    <!-- O JavaScript vai adicionar itens aqui -->
+                    <p id="lista-placeholder" class="text-stone-500 italic">Ainda não foram adicionados problemas classificados.</p>
+                    <!-- Exemplo de como fica um item:
+                    <div class="flex justify-between items-center bg-stone-100 p-3 rounded-lg shadow-sm">
+                        <div>
+                            <span class="font-bold text-red-600 mr-2">[ANALGÉSICO]</span>
+                            <span class="text-gray-800">A fila da cantina é muito lenta.</span>
+                        </div>
+                        <button class="text-xs text-red-500 hover:text-red-700 font-medium remove-btn">Remover</button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 bg-stone-100 text-stone-600 text-sm border-t border-stone-200 mt-12">
+        Xplorers | Empreendedorismo | Aula #012 | 2025
+    </footer>
+
+    <!-- JavaScript para Interatividade -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Lógica para os Tabs de Conceitos-Chave ---
+            const tabsContainer = document.getElementById('conceitos-tabs');
+            const contentPanels = document.querySelectorAll('.content-panel');
+            const tabButtons = document.querySelectorAll('#conceitos-tabs .tab-button');
+
+            if (tabsContainer) {
+                // Ativar o primeiro tab por defeito
+                if (tabButtons.length > 0) {
+                    tabButtons[0].classList.add('active');
+                }
+                if (contentPanels.length > 0) {
+                    // O primeiro painel (conceito-brainstorm) é ativado
+                    const firstPanelId = tabButtons[0].getAttribute('data-target');
+                    document.getElementById(firstPanelId)?.classList.add('active');
+                }
+
+                // Adicionar listener ao contentor dos botões
+                tabsContainer.addEventListener('click', (e) => {
+                    // Garantir que clicámos num botão
+                    const clickedButton = e.target.closest('button');
+                    if (!clickedButton) return;
+
+                    const targetId = clickedButton.getAttribute('data-target');
+                    if (!targetId) return;
+
+                    // Remover classe 'active' de todos os botões e painéis
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    contentPanels.forEach(panel => panel.classList.remove('active'));
+
+                    // Adicionar 'active' ao botão clicado e ao painel correspondente
+                    clickedButton.classList.add('active');
+                    document.getElementById(targetId)?.classList.add('active');
+                });
+            }
+
+            // --- Lógica para a Atividade "Analgésico ou Vitamina?" ---
+            const problemaInput = document.getElementById('problema-input');
+            const addBtn = document.getElementById('add-problema-btn');
+            const listaProblemas = document.getElementById('problemas-lista');
+            const placeholder = document.getElementById('lista-placeholder');
+            const radioButtons = document.querySelectorAll('input[name="tipo-problema"]');
+
+            const addProblema = () => {
+                const textoProblema = problemaInput.value.trim();
+                const tipoProblema = document.querySelector('input[name="tipo-problema"]:checked');
+
+                if (textoProblema === '' || !tipoProblema) {
+                    // Não adicionar se estiver vazio ou sem tipo
+                    alert("Por favor, escreve um problema e classifica-o como Analgésico ou Vitamina.");
+                    return; 
+                }
+
+                // Esconder o placeholder se estiver visível
+                if (placeholder) {
+                    placeholder.style.display = 'none';
+                }
+                
+                const tipoValor = tipoProblema.value;
+
+                // Criar o novo item da lista
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'flex justify-between items-center bg-stone-100 p-3 rounded-lg shadow-sm';
+                
+                const contentDiv = document.createElement('div');
+
+                // Tag de classificação (Analgésico / Vitamina)
+                const tagSpan = document.createElement('span');
+                tagSpan.className = 'font-bold mr-2';
+                
+                if (tipoValor === 'analgesico') {
+                    tagSpan.textContent = '[ANALGÉSICO 💊]';
+                    tagSpan.classList.add('text-red-600');
+                } else {
+                    tagSpan.textContent = '[VITAMINA 🥦]';
+                    tagSpan.classList.add('text-green-600');
+                }
+                
+                const itemText = document.createElement('span');
+                itemText.textContent = textoProblema;
+                itemText.className = 'text-gray-800 break-words'; // break-words para texto longo
+
+                contentDiv.appendChild(tagSpan);
+                contentDiv.appendChild(itemText);
+                
+                // Botão de remover
+                const removeBtn = document.createElement('button');
+                removeBtn.textContent = 'Remover';
+                removeBtn.className = 'text-xs text-red-500 hover:text-red-700 font-medium remove-btn ml-4 flex-shrink-0';
+                
+                // Juntar conteúdo e botão ao item
+                itemDiv.appendChild(contentDiv);
+                itemDiv.appendChild(removeBtn);
+                
+                // Adicionar o item à lista
+                listaProblemas.appendChild(itemDiv);
+
+                // Limpar o input e focar
+                problemaInput.value = '';
+                // Limpar radios
+                radioButtons.forEach(radio => radio.checked = false);
+                problemaInput.focus();
+            };
+
+            // Adicionar ao clicar no botão
+            addBtn.addEventListener('click', addProblema);
+            
+            // Adicionar ao pressionar "Enter" no input
+            problemaInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    addProblema();
+                }
+            });
+
+            // Listener para remover (usando delegação de evento na lista)
+            listaProblemas.addEventListener('click', (e) => {
+                // Verificar se o clique foi num botão de remover
+                if (e.target.classList.contains('remove-btn')) {
+                    // Remover o 'parentElement' (o itemDiv)
+                    e.target.parentElement.remove();
+                    
+                    // Verificar se a lista está vazia para mostrar o placeholder
+                    if (listaProblemas.children.length === 1 && placeholder) {
+                         placeholder.style.display = 'block';
+                    }
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

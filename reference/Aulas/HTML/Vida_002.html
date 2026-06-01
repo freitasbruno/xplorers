@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplorers: A Revolução das Células</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #134e4a 0%, #0f172a 100%); }
+        .card-glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .step-active { border-left: 4px solid #0d9488; padding-left: 1.5rem; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navegação -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold">X</div>
+                <span class="font-bold text-xl tracking-tight">Xplorers <span class="text-teal-600">Bio</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#procariontes" class="hover:text-teal-600 transition">O Início</a>
+                <a href="#oxigenio" class="hover:text-teal-600 transition">A Grande Oxidação</a>
+                <a href="#endossimbiose" class="hover:text-teal-600 transition">Endossimbiose</a>
+                <a href="#desafio" class="text-teal-600 font-bold">Desafio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block bg-teal-500/20 text-teal-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">História da Vida • Aula #025</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Oxigénio e Endossimbiose</h1>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                Como um subproduto tóxico e uma "invasão amigável" criaram a complexidade que vês ao espelho.
+            </p>
+        </div>
+    </header>
+
+    <!-- Seção 1: Procariontes -->
+    <section id="procariontes" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">1. O Domínio dos Procariontes</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Durante os primeiros 2 mil milhões de anos, a Terra foi um laboratório de seres microscópicos. Sem núcleo e sem organelos complexos, estas bactérias e arqueas adaptaram-se aos ambientes mais extremos.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                        <span class="block text-2xl mb-2">🦠</span>
+                        <h4 class="font-bold text-sm uppercase">Simplicidade</h4>
+                        <p class="text-xs text-slate-500">ADN livre no citoplasma, sem barreiras internas.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                        <span class="block text-2xl mb-2">🌋</span>
+                        <h4 class="font-bold text-sm uppercase">Resistência</h4>
+                        <p class="text-xs text-slate-500">Sobrevivência em condições de calor e acidez extremas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-teal-900 rounded-[2rem] p-8 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-xl font-bold mb-4 italic">"O Planeta era uma sopa de químicos, e nós éramos os cozinheiros."</h3>
+                    <p class="text-teal-200 text-sm">Antes da fotossíntese como a conhecemos, a vida dependia de minerais e calor para obter energia.</p>
+                </div>
+                <!-- Decoração SVG -->
+                <svg class="absolute top-0 right-0 opacity-10" width="200" height="200" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="white" stroke-width="2" fill="none" />
+                    <circle cx="30" cy="30" r="5" fill="white" />
+                    <circle cx="70" cy="60" r="8" fill="white" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2: Grande Oxidação -->
+    <section id="oxigenio" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">2. A Grande Oxidação</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Há cerca de 2.4 mil milhões de anos, as Cianobactérias começaram a libertar um gás revolucionário: o Oxigénio.</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto bg-slate-50 p-6 md:p-10 rounded-3xl border border-slate-200">
+            <canvas id="oxygenChart" height="150"></canvas>
+            <p class="mt-6 text-xs text-center text-slate-400 font-medium uppercase tracking-widest">Evolução do Oxigénio Atmosférico (% do nível atual)</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
+            <div class="flex gap-4 p-6 bg-amber-50 rounded-2xl border border-amber-100">
+                <span class="text-3xl">⚠️</span>
+                <div>
+                    <h4 class="font-bold text-amber-900">Um Veneno Inicial</h4>
+                    <p class="text-sm text-amber-800">Para a maioria da vida da época, o oxigénio era altamente corrosivo e tóxico. Foi a primeira extinção em massa!</p>
+                </div>
+            </div>
+            <div class="flex gap-4 p-6 bg-emerald-50 rounded-2xl border border-emerald-100">
+                <span class="text-3xl">⚡</span>
+                <div>
+                    <h4 class="font-bold text-emerald-900">Turbo de Energia</h4>
+                    <p class="text-sm text-emerald-800">O oxigénio permitiu a respiração aeróbia, que gera 15x mais energia do que os métodos antigos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Endossimbiose -->
+    <section id="endossimbiose" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">3. A Teoria da Endossimbiose</h2>
+            <p class="text-slate-600">A proposta visionária de <strong>Lynn Margulis</strong>: a vida evoluiu por cooperação, não apenas por competição.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="step-active">
+                <span class="text-teal-600 font-bold text-4xl block mb-4">01</span>
+                <h4 class="font-bold text-lg mb-2">A Ingestão</h4>
+                <p class="text-slate-600 text-sm">Uma arquea grande "engoliu" uma bactéria pequena capaz de processar oxigénio.</p>
+            </div>
+            <div class="step-active">
+                <span class="text-teal-600 font-bold text-4xl block mb-4">02</span>
+                <h4 class="font-bold text-lg mb-2">O Acordo</h4>
+                <p class="text-slate-600 text-sm">Em vez de digerida, a bactéria pequena forneceu energia extra em troca de abrigo e nutrientes.</p>
+            </div>
+            <div class="step-active">
+                <span class="text-teal-600 font-bold text-4xl block mb-4">03</span>
+                <h4 class="font-bold text-lg mb-2">A Fusão</h4>
+                <p class="text-slate-600 text-sm">Com o tempo, a bactéria tornou-se um organelo inseparável: a <strong>Mitocôndria</strong>.</p>
+            </div>
+        </div>
+
+        <!-- Facto Curioso -->
+        <div class="mt-16 bg-slate-900 text-white p-8 md:p-12 rounded-[3rem] relative overflow-hidden">
+            <div class="md:flex items-center gap-12 relative z-10">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        💡 Sabias que...?
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        As tuas mitocôndrias têm o seu próprio ADN, separado do resto da célula. Elas dividem-se de forma independente e têm a sua própria "personalidade" genética. Basicamente, tens o "fantasma" de uma bactéria antiga a viver dentro de cada célula do teu corpo!
+                    </p>
+                </div>
+                <div class="w-32 h-32 bg-teal-500/20 rounded-full border-2 border-teal-500 flex items-center justify-center animate-pulse">
+                    <span class="text-teal-400 font-bold">DNA Bio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafio Final -->
+    <section id="desafio" class="py-20 px-6 bg-teal-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Missão de Investigação</h2>
+            <p class="text-xl mb-10 text-teal-100 italic">
+                "Se as mitocôndrias são tecnicamente 'outra espécie' a viver dentro de nós, ainda podemos dizer que somos um único organismo?"
+            </p>
+            <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm border border-white/20">
+                <h4 class="font-bold mb-4 uppercase tracking-widest text-sm">Debate na Aula</h4>
+                <p class="text-sm leading-relaxed mb-8">
+                    Prepara o teu argumento. Somos um indivíduo ou uma colónia de colaboração extrema? Pensa na reprodução, na dependência mútua e no ADN.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <button class="bg-white text-teal-700 px-6 py-2 rounded-full font-bold text-sm hover:bg-teal-50 transition">Sou um Indivíduo</button>
+                    <button class="bg-teal-800 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-teal-900 transition">Sou uma Colónia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm border-t border-slate-200">
+        <p>Projeto Xplorers Researcher — Criado para o 10.º Ano em Portugal</p>
+    </footer>
+
+    <script>
+        // Gráfico do Oxigénio
+        const ctx = document.getElementById('oxygenChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['4.5 bi', '3.5 bi', '2.4 bi', '1.8 bi', '0.6 bi', 'Hoje'],
+                datasets: [{
+                    label: 'Nível de O2 Atmosférico',
+                    data: [0, 0.001, 1, 10, 18, 21],
+                    borderColor: '#0d9488',
+                    backgroundColor: 'rgba(13, 148, 136, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 5,
+                    pointBackgroundColor: '#0d9488'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) { return value + '%'; }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

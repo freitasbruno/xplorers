@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplorers: A Origem do Voleibol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .bg-vintage { background-color: #fcfaf7; }
+        .accent-border { border-left: 4px solid #d97706; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-vintage text-slate-800 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-amber-700">Xplorers <span class="text-slate-400 font-light">| Volleyball</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="#intro" class="hover:text-amber-600 transition">1895</a>
+                <a href="#genes" class="hover:text-amber-600 transition">A Génese</a>
+                <a href="#evolucao" class="hover:text-amber-600 transition">Evolução</a>
+                <a href="#curiosidades" class="hover:text-amber-600 transition">Sabias que?</a>
+            </div>
+            <a href="https://gemini.google.com/share/daff09b006f2" target="_blank" class="bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-amber-700 transition">Fazer Quiz</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="intro" class="relative py-20 bg-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="inline-block px-3 py-1 bg-amber-600 text-xs font-bold rounded-full mb-4 uppercase">Aula #015</span>
+            <h1 class="text-4xl md:text-6xl mb-6">O Nascimento de um Desporto</h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto italic">
+                "O jogo deve ser focado no movimento e na recreação, não na força bruta." — William G. Morgan
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Section 1: O Inverno de 1895 -->
+        <section class="mb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl mb-6 text-slate-900 underline decoration-amber-500 underline-offset-8">Holyoke, Massachusetts</h2>
+                    <p class="mb-4">No inverno rigoroso de 1895, <strong>William G. Morgan</strong>, diretor de educação física da YMCA, enfrentava um desafio. O recém-criado Basquetebol era demasiado agressivo para os membros mais velhos.</p>
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100 accent-border">
+                        <p class="text-slate-600 italic">"Morgan precisava de um 'meio-termo': um jogo que exigisse esforço físico, mas sem o choque direto entre adversários."</p>
+                    </div>
+                </div>
+                <div class="bg-amber-100 p-8 rounded-3xl flex flex-col items-center justify-center text-center">
+                    <div class="w-20 h-20 bg-amber-600 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-amber-200">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.364l-.707-.707M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Alternativa ao Basquetebol</h3>
+                    <p class="text-sm text-amber-800">Menos contacto, mais estratégia. Criado para ser inclusivo e recreativo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: A Génese do Mintonette -->
+        <section id="genes" class="mb-20 py-12 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+            <div class="px-8 mb-10 text-center">
+                <h2 class="text-3xl mb-4">A Receita do "Mintonette"</h2>
+                <p class="text-slate-500">Morgan misturou elementos de quatro desportos para criar algo único.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4">
+                <div class="p-6 text-center border-r border-slate-100">
+                    <span class="text-4xl mb-2 block">🎾</span>
+                    <h4 class="font-bold">Ténis</h4>
+                    <p class="text-xs text-slate-500">A Rede (elevada para 1,98m)</p>
+                </div>
+                <div class="p-6 text-center border-r border-slate-100">
+                    <span class="text-4xl mb-2 block">🏀</span>
+                    <h4 class="font-bold">Basquetebol</h4>
+                    <p class="text-xs text-slate-500">A Bola (mas em versão leve)</p>
+                </div>
+                <div class="p-6 text-center border-r border-slate-100">
+                    <span class="text-4xl mb-2 block">⚾</span>
+                    <h4 class="font-bold">Basebol</h4>
+                    <p class="text-xs text-slate-500">Estrutura de "Innings"</p>
+                </div>
+                <div class="p-6 text-center">
+                    <span class="text-4xl mb-2 block">🤾</span>
+                    <h4 class="font-bold">Andebol</h4>
+                    <p class="text-xs text-slate-500">Uso das mãos e batimento</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-slate-50 p-8 flex flex-col md:flex-row items-center gap-8 border-t border-slate-100">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold mb-4">O Desafio da Bola (A.G. Spalding)</h3>
+                    <p class="text-sm">A primeira bola foi um pesadelo: a de basquetebol era pesada demais, e a câmara de ar era leve demais. Morgan pediu à <strong>Spalding</strong> para criar uma bola de couro específica entre 250-340g.</p>
+                </div>
+                <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-amber-500/20 shadow-inner">
+                    <span class="text-6xl">🏐</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Porquê Voleibol? -->
+        <section id="evolucao" class="mb-20">
+            <div class="bg-amber-600 text-white rounded-3xl p-10 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl mb-6">De Mintonette a "Volley Ball"</h2>
+                    <p class="text-lg opacity-90 mb-6">Em 1896, o Professor <strong>Alfred T. Halstead</strong> observou que os jogadores faziam "voleios" constantes por cima da rede. Sugeriu mudar o nome, e assim nasceu a marca que hoje conhecemos.</p>
+                    <div class="inline-flex items-center space-x-4 bg-white/20 p-4 rounded-xl">
+                        <span class="line-through opacity-50">Mintonette</span>
+                        <span class="text-2xl">➔</span>
+                        <span class="font-bold text-xl">Volley Ball</span>
+                    </div>
+                </div>
+                <span class="absolute -right-10 -bottom-10 text-[200px] opacity-10 font-bold">1896</span>
+            </div>
+        </section>
+
+        <!-- Section 4: Ficha Técnica Comparativa -->
+        <section class="mb-20">
+            <h2 class="text-3xl mb-8 text-center">Evolução Técnica</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left bg-white rounded-2xl shadow-sm border border-slate-200">
+                    <thead>
+                        <tr class="bg-slate-900 text-white">
+                            <th class="p-4 rounded-tl-2xl">Característica</th>
+                            <th class="p-4">Mintonette (1895)</th>
+                            <th class="p-4 rounded-tr-2xl">Voleibol Moderno</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-4 font-semibold">Altura da Rede</td>
+                            <td class="p-4">1,98 metros</td>
+                            <td class="p-4">2,43m (M) / 2,24m (F)</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-4 font-semibold">Jogadores</td>
+                            <td class="p-4">Ilimitado</td>
+                            <td class="p-4">6 por equipa</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">Toques na Bola</td>
+                            <td class="p-4">Ilimitados</td>
+                            <td class="p-4">Máximo de 3</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-4 font-semibold">Duração</td>
+                            <td class="p-4">9 "Innings"</td>
+                            <td class="p-4">À melhor de 5 sets</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-semibold">Serviço</td>
+                            <td class="p-4">2 tentativas</td>
+                            <td class="p-4">1 tentativa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 5: Sabias Que? -->
+        <section id="curiosidades" class="mb-20">
+            <h2 class="text-3xl mb-8 text-center">Sabias que...?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm card-hover border-t-4 border-amber-500">
+                    <h4 class="font-bold mb-3">O Início das 3 Toques</h4>
+                    <p class="text-sm text-slate-600">A regra dos 3 toques só surgiu em 1920, nas Filipinas. Antes disso, as equipas podiam trocar passes infinitos!</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm card-hover border-t-4 border-slate-800">
+                    <h4 class="font-bold mb-3">Drible de Voleibol?</h4>
+                    <p class="text-sm text-slate-600">Originalmente era permitido "driblar" a bola sozinho até à rede, batendo nela repetidamente para cima.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm card-hover border-t-4 border-amber-500">
+                    <h4 class="font-bold mb-3">Set and Spike</h4>
+                    <p class="text-sm text-slate-600">O conceito de remate (ataque) surgiu em 1916. Nas Filipinas, chamavam ao rematador de <em>bomberette</em>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Atividade -->
+        <section class="bg-slate-900 text-white p-10 rounded-3xl text-center">
+            <h2 class="text-2xl mb-4 italic">Inovação sob Pressão</h2>
+            <p class="mb-8 max-w-xl mx-auto opacity-80">Se fosses William G. Morgan hoje, que novo desporto criarias para ser jogado num pátio pequeno e inclusivo para todos? Mistura 3 desportos e dá-lhe um nome!</p>
+            <button class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-bold transition">Partilhar Ideia</button>
+        </section>
+
+    </main>
+
+    <footer class="py-12 border-t border-slate-200 text-center text-slate-400 text-sm">
+        <p>&copy; 2026 Xplorers Educational Project - História do Volleyball</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

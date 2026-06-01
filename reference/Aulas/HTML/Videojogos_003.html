@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplorers: O Futuro da Interatividade</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chosen Palette: Futuro Harmonioso (Fundo: Stone-50, Texto: Slate-800, Acentos: Teal-600) -->
+    <!-- Application Structure Plan: 
+         1. Hero: Introdução ao conceito de imersão.
+         2. Laboratório de Realidades: Interface interativa para comparar VR, AR e MR.
+         3. A Máquina Infinita: Simulação em Canvas de Geração Procedimental para demonstrar como a IA cria mundos.
+         4. O Fator Humano: Gráfico interativo sobre o 'Uncanny Valley' e psicologia.
+         5. Oficina Criativa: Secção dinâmica para o brainstorming 'Designers do Futuro'.
+         Esta estrutura foi escolhida para transformar conceitos abstratos de tecnologia em experiências visuais e táteis, facilitando a retenção de conceitos técnicos complexos através da experimentação direta na página. -->
+    <!-- Visualization & Content Choices: 
+         - Comparação de Realidades: Cards interativos com JS -> Facilita a distinção entre conceitos semelhantes.
+         - Geração Procedimental: Canvas Animation -> Demonstra visualmente a criação baseada em regras (algoritmos).
+         - Uncanny Valley: Line Chart (Chart.js) -> Visualiza a relação entre semelhança humana e resposta emocional.
+         - NO SVG / NO Mermaid: Utilização de Canvas e Tailwind para todos os elementos gráficos. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        .canvas-container {
+            width: 100%;
+            max-width: 800px;
+            height: 300px;
+            border-radius: 1rem;
+            overflow: hidden;
+            background: #1e293b;
+        }
+        .reality-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reality-card.active {
+            border-color: #0d9488;
+            background-color: #f0fdfa;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-stone-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-teal-600 rounded flex items-center justify-center text-white font-bold">X</div>
+                <span class="font-bold text-xl tracking-tight text-slate-900">XPLORERS <span class="text-teal-600 text-sm">FUTURE</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-500">
+                <a href="#realities" class="hover:text-teal-600">As 3 Realidades</a>
+                <a href="#procedural" class="hover:text-teal-600">Mundos de IA</a>
+                <a href="#psychology" class="hover:text-teal-600">Psicologia</a>
+                <a href="#activity" class="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">Designers do Futuro</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="py-20 px-6 bg-gradient-to-b from-stone-100 to-stone-50">
+        <div class="container mx-auto max-w-4xl text-center">
+            <span class="text-teal-600 font-bold tracking-widest uppercase text-xs mb-4 block">Aula #023 • O Futuro da Interatividade</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Já não somos apenas espetadores.</h1>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                Explora as tecnologias que estão a apagar a linha entre o real e o digital e como a Inteligência Artificial está a criar mundos que se constroem a si próprios.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pb-20 space-y-24">
+
+        <!-- Section 1: The 3 Realities -->
+        <section id="realities" class="scroll-mt-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">1. Laboratório de Realidades</h2>
+                <p class="text-slate-600 mb-10">
+                    A imersão não é binária. Existem diferentes níveis de profundidade entre o que é puramente físico e o que é totalmente digital. Seleciona uma realidade para ver a sua definição.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <button onclick="showReality('vr')" id="btn-vr" class="reality-card p-6 rounded-2xl border-2 border-stone-200 bg-white text-left shadow-sm hover:shadow-md">
+                        <div class="text-3xl mb-4">🕶️</div>
+                        <h3 class="font-bold text-lg mb-2">Virtual (VR)</h3>
+                        <p class="text-sm text-slate-500">Imersão Total</p>
+                    </button>
+                    <button onclick="showReality('ar')" id="btn-ar" class="reality-card p-6 rounded-2xl border-2 border-stone-200 bg-white text-left shadow-sm hover:shadow-md">
+                        <div class="text-3xl mb-4">📱</div>
+                        <h3 class="font-bold text-lg mb-2">Aumentada (AR)</h3>
+                        <p class="text-sm text-slate-500">Camadas Digitais</p>
+                    </button>
+                    <button onclick="showReality('mr')" id="btn-mr" class="reality-card p-6 rounded-2xl border-2 border-stone-200 bg-white text-left shadow-sm hover:shadow-md">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h3 class="font-bold text-lg mb-2">Mista (MR)</h3>
+                        <p class="text-sm text-slate-500">Fusão Total</p>
+                    </button>
+                </div>
+
+                <div id="reality-content" class="mt-10 p-8 bg-white border border-stone-200 rounded-3xl shadow-sm min-h-[200px] flex items-center justify-center text-center">
+                    <p class="text-slate-400 italic">Clica numa tecnologia acima para explorar...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Procedural Generation -->
+        <section id="procedural" class="scroll-mt-24 bg-slate-900 text-white rounded-[3rem] p-12 overflow-hidden relative">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold mb-6 text-teal-400">2. A Máquina Infinita</h2>
+                        <p class="text-slate-300 mb-6 leading-relaxed">
+                            Como é que jogos como o <em>Minecraft</em> ou o <em>No Man's Sky</em> criam planetas infinitos? Através da <strong>Geração Procedimental</strong>.
+                        </p>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex gap-3">
+                                <span class="text-teal-500 font-bold">●</span>
+                                <span>A IA utiliza algoritmos matemáticos para criar cenários baseados em regras.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-teal-500 font-bold">●</span>
+                                <span>Isto permite mundos imensos sem que um artista tenha de desenhar cada árvore.</span>
+                            </li>
+                        </ul>
+                        <button onclick="generateNewWorld()" class="mt-8 bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-xl transition-all">
+                            Gerar Novo Mundo (IA)
+                        </button>
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="canvas-container relative">
+                            <canvas id="proceduralCanvas"></canvas>
+                            <div class="absolute bottom-4 left-4 bg-black/50 backdrop-blur-md px-3 py-1 rounded text-[10px] font-mono uppercase tracking-widest text-teal-300">
+                                Procedural Engine V1.0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Psychology (Uncanny Valley) -->
+        <section id="psychology" class="scroll-mt-24">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-slate-900">3. O Fator Humano</h2>
+                <p class="text-slate-600 mb-10 leading-relaxed">
+                    À medida que a tecnologia avança, enfrentamos um desafio psicológico: o <strong>Vale da Estranheza (Uncanny Valley)</strong>. Por que razão ficamos desconfortáveis com robôs "quase" humanos?
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm">
+                        <div class="chart-container">
+                            <canvas id="uncannyChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-5 bg-stone-100 rounded-2xl">
+                            <h4 class="font-bold text-slate-800 mb-2">O Desafio do Realismo</h4>
+                            <p class="text-sm text-slate-600 italic">"Quanto mais um personagem digital se parece com um humano, mais simpático nos parece... até certo ponto."</p>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Quando o realismo é de 99%, o nosso cérebro foca-se no 1% que está errado (olhos mortos, pele sem poros), criando uma sensação de repulsa. É um dos maiores obstáculos da IA e da animação atual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Brainstorming Activity -->
+        <section id="activity" class="scroll-mt-24">
+            <div class="bg-teal-50 border-2 border-teal-100 rounded-[3rem] p-12 text-center">
+                <h2 class="text-3xl font-extrabold text-teal-900 mb-4">4. Workshop: Designers do Futuro</h2>
+                <p class="text-teal-700 max-w-2xl mx-auto mb-10 text-lg">
+                    Imaginem que estamos em 2040. Como usariam estas tecnologias para resolver um problema real? Preparem o vosso Pitch!
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <span class="text-teal-600 font-bold block mb-2">Fase 1</span>
+                        <h4 class="font-bold text-slate-800 mb-2">O Conceito</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Identifica um problema (Educação, Desporto, Saúde) e como a interatividade o resolve.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <span class="text-teal-600 font-bold block mb-2">Fase 2</span>
+                        <h4 class="font-bold text-slate-800 mb-2">A Tech</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Qual é o papel da VR, AR ou da IA neste projeto? Como é que o utilizador interage?</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <span class="text-teal-600 font-bold block mb-2">Fase 3</span>
+                        <h4 class="font-bold text-slate-800 mb-2">O Pitch</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">Prepara uma apresentação de 2 minutos que convença a turma a investir na tua ideia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-100 py-12 px-6 border-t border-stone-200">
+        <div class="container mx-auto max-w-4xl flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm text-slate-400 italic">© 2026 Xplorers Researcher • Módulo de Videojogos Finalizado</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-teal-600 font-bold hover:underline transition">Início do Módulo Biologia →</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic -->
+    <script>
+        // 1. Reality Interaction Logic
+        const realityData = {
+            vr: {
+                title: "Realidade Virtual (VR)",
+                content: "Substitui totalmente a tua visão. O teu cérebro 'esquece' o quarto e acredita que estás noutro mundo. Perfeito para videojogos de alta imersão ou treinos de risco (ex: cirurgia).",
+                case: "Exemplo: Half-Life: Alyx"
+            },
+            ar: {
+                title: "Realidade Aumentada (AR)",
+                content: "Adiciona informação digital sobre o que vês no real. Não te isolas do mundo; 'aumentas' o que já lá está. Usado em navegação GPS, filtros de redes sociais e jogos de rua.",
+                case: "Exemplo: Pokémon GO"
+            },
+            mr: {
+                title: "Realidade Mista (MR)",
+                content: "Os objetos digitais interagem com os físicos. O personagem digital 'sabe' que a tua mesa é sólida e pode saltar por cima dela. É a fusão definitiva dos dois mundos.",
+                case: "Exemplo: Microsoft HoloLens"
+            }
+        };
+
+        function showReality(key) {
+            const contentArea = document.getElementById('reality-content');
+            const data = realityData[key];
+
+            // Update UI Active classes
+            document.querySelectorAll('.reality-card').forEach(c => c.classList.remove('active'));
+            document.getElementById(`btn-${key}`).classList.add('active');
+
+            // Update Content
+            contentArea.innerHTML = `
+                <div class="max-w-xl">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-4">${data.title}</h3>
+                    <p class="text-slate-700 mb-4">${data.content}</p>
+                    <span class="inline-block px-3 py-1 bg-stone-100 rounded text-xs font-mono text-stone-500">${data.case}</span>
+                </div>
+            `;
+        }
+
+        // 2. Procedural Canvas Simulation
+        const canvas = document.getElementById('proceduralCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        function resizeCanvas() {
+            canvas.width = canvas.parentElement.offsetWidth;
+            canvas.height = canvas.parentElement.offsetHeight;
+            generateNewWorld();
+        }
+
+        function generateNewWorld() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Generate Stars
+            for (let i = 0; i < 50; i++) {
+                ctx.fillStyle = "white";
+                ctx.beginPath();
+                ctx.arc(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Generate "Planets" procedurally
+            const colors = ['#0d9488', '#0891b2', '#4f46e5', '#db2777'];
+            for (let i = 0; i < 3; i++) {
+                const x = 100 + Math.random() * (canvas.width - 200);
+                const y = 100 + Math.random() * (canvas.height - 200);
+                const r = 20 + Math.random() * 40;
+                
+                ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                ctx.beginPath();
+                ctx.arc(x, y, r, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Texture lines (the 'procedural' part)
+                ctx.strokeStyle = "rgba(255,255,255,0.2)";
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(x - r, y);
+                ctx.lineTo(x + r, y);
+                ctx.stroke();
+            }
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        window.onload = resizeCanvas;
+
+        // 3. Uncanny Valley Chart
+        const uncannyCtx = document.getElementById('uncannyChart').getContext('2d');
+        new Chart(uncannyCtx, {
+            type: 'line',
+            data: {
+                labels: ['Cesto', 'Boneco', 'Androide', 'Zombi/Uncanny', 'Humano'],
+                datasets: [{
+                    label: 'Afinidade Emocional',
+                    data: [0, 20, 50, -40, 90],
+                    borderColor: '#0d9488',
+                    backgroundColor: 'rgba(13, 148, 136, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#0d9488'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grid: { display: false },
+                        ticks: { display: false }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { font: { size: 10 } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => context.parsed.y < 0 ? "Zona de Repulsa (Vale)" : "Afinidade Positiva"
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

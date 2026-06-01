@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador do Cosmos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals (Stone, Slate, Teal) -->
+    <!-- Application Structure Plan: A single-page vertical scroll design with a top navigation bar for quick access to three thematic sections: 'O Vácuo Silencioso', 'A Receita Secreta', and 'Zoo Cósmico'. This structure follows the logical flow of the source document, moving from the general concept of space to its composition and then to its inhabitants. The key interaction is a dashboard-style component in the 'Receita Secreta' section, where a donut chart visually represents the data and acts as a control to display detailed textual information. This design was chosen to transform a static document into an engaging, explorable experience, encouraging user interaction to reveal information rather than passive reading. -->
+    <!-- Visualization & Content Choices: 1. Universe Composition: Report Info -> 5%, 27%, 68% breakdown. Goal -> Compare proportions. Viz -> Interactive Donut Chart. Interaction -> Clicking chart segments (or related buttons) updates a description panel. Justification -> Visually intuitive for parts-of-a-whole data; interaction encourages exploration. Library -> Chart.js/Canvas. 2. Celestial Objects: Report Info -> List of objects and descriptions. Goal -> Organize/Inform. Viz -> Grid of styled cards with icons. Interaction -> Hover effects for feedback. Justification -> Modern, scannable layout superior to a simple list. Library/Method -> HTML/CSS/Tailwind. CONFIRMATION: NO SVG/Mermaid used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            min-height: 300px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                min-height: 400px;
+            }
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover {
+            color: #14b8a6; /* teal-500 */
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .control-button.active {
+            background-color: #14b8a6; /* teal-500 */
+            color: white;
+            border-color: #14b8a6;
+        }
+        .control-button {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-slate-900">
+                <a href="index.html" class="text-slate-600 nav-link">🌌 X.Plorers</a>
+            </h1>
+            <div class="hidden md:flex space-x-8">
+                <a href="#vacuum" class="text-slate-600 nav-link">O Vácuo Silencioso</a>
+                <a href="#recipe" class="text-slate-600 nav-link">A Receita Secreta</a>
+                <a href="#zoo" class="text-slate-600 nav-link">Zoo Cósmico</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <section class="text-center mb-20 md:mb-32">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Uma Viagem aos Ingredientes do Universo</h2>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                Bem-vindo à nossa primeira exploração do Cosmos. Este guia interativo revela a verdadeira natureza do espaço, a sua misteriosa composição e os incríveis objetos que nele habitam.
+            </p>
+        </section>
+
+        <section id="vacuum" class="mb-20 md:mb-32">
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-12">1. O Palco Invisível: O Grande Vácuo Silencioso</h3>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-stone-200">
+                    <h4 class="font-bold text-xl mb-3 text-teal-600">O que é um Vácuo?</h4>
+                    <p class="text-slate-700 leading-relaxed">
+                        O espaço não é "nada"; é o tecido do próprio universo. A sua característica principal é ser um **vácuo quase perfeito**, uma região com densidades de matéria extremamente baixas. Imagine um auditório gigante com apenas 3 ou 4 pessoas lá dentro. Não está vazio, mas está quase. Em cada metro cúbico do espaço flutuam apenas alguns átomos e partículas de poeira.
+                    </p>
+                </div>
+                <div class="bg-slate-800 text-white p-8 rounded-lg shadow-lg">
+                    <h4 class="font-bold text-xl mb-3 text-teal-400">🤫 Facto Curioso: O Silêncio Absoluto</h4>
+                    <p class="text-slate-300 leading-relaxed">
+                        O som precisa de um meio para viajar, como as partículas de ar. Como no espaço as partículas estão incrivelmente distantes umas das outras, as ondas sonoras não se conseguem propagar. Por isso, a famosa frase do filme *Alien*, "No espaço, ninguém te consegue ouvir a gritar", está cientificamente correta. É um lugar de **silêncio absoluto**.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipe" class="mb-20 md:mb-32">
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-4">2. A Receita Secreta do Universo</h3>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Se o universo fosse um bolo, a sua composição seria surpreendente. A maior parte dos ingredientes são invisíveis e misteriosos. Clique nos botões para explorar cada fatia do "bolo" cósmico.</p>
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="chart-container">
+                    <canvas id="universeChart"></canvas>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        <button onclick="updateContent('common')" class="control-button active border-2 border-slate-300 px-4 py-2 rounded-full text-slate-700" data-component="common">
+                           Matéria Comum (5%)
+                        </button>
+                        <button onclick="updateContent('darkMatter')" class="control-button border-2 border-slate-300 px-4 py-2 rounded-full text-slate-700" data-component="darkMatter">
+                           Matéria Escura (27%)
+                        </button>
+                        <button onclick="updateContent('darkEnergy')" class="control-button border-2 border-slate-300 px-4 py-2 rounded-full text-slate-700" data-component="darkEnergy">
+                           Energia Escura (68%)
+                        </button>
+                    </div>
+
+                    <div id="content-display" class="bg-white p-8 rounded-lg shadow-md border border-stone-200 min-h-[300px]">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="zoo" class="mb-20 md:mb-32">
+            <h3 class="text-2xl md:text-3xl font-bold text-center mb-4">3. Um Passeio pelo "Zoo" Cósmico</h3>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Apesar de ser uma pequena fração do todo, a matéria comum organiza-se numa variedade espetacular de objetos celestes. Conheça alguns dos mais fascinantes.</p>
+            <div id="zoo-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-stone-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-lg font-bold mb-2 text-white">Questão Final para Reflexão</h4>
+            <p class="max-w-3xl mx-auto">
+                Ao olharmos para esta "receita" do Cosmos, percebemos que a nossa existência visível é apenas a ponta do iceberg. Como se sente ao saber que faz parte de um universo cujo funcionamento é, na sua maior parte, um completo mistério?
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const contentData = {
+            common: {
+                title: 'Matéria Comum (~5%): O Mundo que Conhecemos',
+                description: 'Esta é a única fatia do bolo que conseguimos ver e tocar. Inclui tudo o que é feito de átomos: estrelas, planetas, galáxias, e até nós próprios. É tudo o que a humanidade já observou diretamente.',
+                analogy: '<strong>Analogia:</strong> É a parte visível e familiar do bolo cósmico, a cobertura e o recheio que conseguimos identificar e saborear.'
+            },
+            darkMatter: {
+                title: 'Matéria Escura (~27%): A Gravidade Invisível',
+                description: 'Esta é uma forma de matéria que não interage com a luz, sendo invisível. Sabemos que existe pelo seu efeito gravitacional, atuando como uma "cola" invisível que impede as galáxias de se desintegrarem.',
+                analogy: '<strong>Analogia:</strong> Imagine uma teia de aranha invisível. Não a vê, mas vê a forma como as purpurinas (estrelas) se organizam e movem ao longo da sua estrutura.'
+            },
+            darkEnergy: {
+                title: 'Energia Escura (~68%): O Motor da Expansão',
+                description: 'Esta é a componente dominante e mais enigmática do universo. É uma força repulsiva que atua contra a gravidade, fazendo com que o universo se expanda a um ritmo cada vez mais rápido.',
+                analogy: '<strong>Analogia:</strong> Se o universo fosse um carro, a gravidade seria o travão e a energia escura seria o acelerador, a pressionar cada vez com mais força.'
+            }
+        };
+
+        const zooData = [
+            { icon: '⭐', name: 'Estrelas', description: 'Motores do universo. Gigantescas bolas de plasma que produzem luz e calor através de fusão nuclear.' },
+            { icon: '🪐', name: 'Planetas', description: 'Corpos rochosos ou gasosos que orbitam uma estrela e não têm luz própria.' },
+            { icon: '✨', name: 'Nebulosas', description: 'Nuvens imensas de gás e poeira, funcionando como "berçários" onde nascem novas estrelas.' },
+            { icon: '🌌', name: 'Galáxias', description: '"Cidades" com biliões de estrelas, gás e poeira, todas unidas pela gravidade. A nossa é a Via Láctea.' },
+            { icon: '⚫', name: 'Buracos Negros', description: 'Regiões com uma gravidade tão esmagadora que nada, nem mesmo a luz, consegue escapar.' },
+            { icon: '☄️', name: 'Cometas e Asteroides', description: 'Pequenos corpos rochosos e gelados, restos da formação do nosso sistema solar.' }
+        ];
+
+        function updateContent(component) {
+            const display = document.getElementById('content-display');
+            const data = contentData[component];
+            display.innerHTML = `
+                <h4 class="text-xl font-bold mb-3 text-teal-600">${data.title}</h4>
+                <p class="text-slate-700 mb-4">${data.description}</p>
+                <p class="text-sm text-slate-600 bg-stone-100 p-3 rounded-md">${data.analogy}</p>
+            `;
+
+            document.querySelectorAll('.control-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.querySelector(`.control-button[data-component="${component}"]`).classList.add('active');
+        }
+
+        function populateZoo() {
+            const gallery = document.getElementById('zoo-gallery');
+            gallery.innerHTML = zooData.map(item => `
+                <div class="card bg-white p-6 rounded-lg shadow-md border border-stone-200 text-center">
+                    <div class="text-5xl mb-4">${item.icon}</div>
+                    <h4 class="font-bold text-xl mb-2">${item.name}</h4>
+                    <p class="text-slate-600 text-sm">${item.description}</p>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctx = document.getElementById('universeChart').getContext('2d');
+            const universeChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Matéria Comum', 'Matéria Escura', 'Energia Escura'],
+                    datasets: [{
+                        data: [5, 27, 68],
+                        backgroundColor: [
+                            '#14b8a6', // teal-500
+                            '#475569', // slate-600
+                            '#1e293b'  // slate-800
+                        ],
+                        borderColor: '#f5f5f4', // stone-100
+                        borderWidth: 4,
+                        hoverOffset: 16
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '60%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                font: {
+                                    size: 14,
+                                    family: 'Inter, sans-serif'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += context.parsed + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            updateContent('common');
+            populateZoo();
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
