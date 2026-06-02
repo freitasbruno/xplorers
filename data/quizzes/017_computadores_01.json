@@ -1,0 +1,115 @@
+{
+  "lesson_id": "computadores_001",
+  "questions": [
+    {
+      "question": "O que eram os 'Calculadores Humanos' na Europa dos séculos XVII e XVIII?",
+      "options": [
+        "Máquinas mecânicas de calcular movidas a vapor",
+        "Pessoas contratadas para fazer cálculos matemáticos à mão",
+        "Cientistas que estudavam astronomia",
+        "Engenheiros que construíam relógios de precisão"
+      ],
+      "correct": 1,
+      "explanation": "Antes dos computadores, 'computador' era literalmente uma profissão. Grupos de pessoas faziam cálculos matemáticos complexos à mão — tabelas de navegação, previsões de eclipses, trajetórias militares. A palavra 'computador' significava originalmente 'aquele que computa'."
+    },
+    {
+      "question": "Qual era o principal risco de um erro feito por um Calculador Humano?",
+      "options": [
+        "Perda de tempo e dinheiro",
+        "Resultados ligeiramente imprecisos em tabelas científicas",
+        "Navios a naufragar por erros nas tabelas de navegação",
+        "Impostos calculados incorretamente"
+      ],
+      "correct": 2,
+      "explanation": "Os erros humanos tinham consequências fatais. Um único erro numa tabela de navegação podia fazer um navio seguir o rumo errado e chocar contra rochas, matando toda a tripulação. Foi esta necessidade de precisão absoluta que impulsionou a criação de máquinas de calcular."
+    },
+    {
+      "question": "O que é a inovação do 'Vai Um' na Pascaline de Blaise Pascal?",
+      "options": [
+        "Um mecanismo que permitia multiplicar números automaticamente",
+        "A forma como a roda de dezenas avançava quando a roda das unidades chegava ao 9",
+        "Um sistema de cartões perfurados para inserir dados",
+        "Uma manivela que acelerava os cálculos"
+      ],
+      "correct": 1,
+      "explanation": "O 'Vai Um' é o equivalente mecânico do que fazemos na cabeça quando somamos, por exemplo, 9+1: a roda das unidades passa de 9 para 0, e a roda das dezenas avança um dígito. Pascal resolveu este problema com um mecanismo engenhoso de queda por gravidade."
+    },
+    {
+      "question": "Qual era a grande diferença entre a Máquina Diferencial e a Máquina Analítica de Babbage?",
+      "options": [
+        "A Máquina Diferencial era movida a vapor; a Analítica era elétrica",
+        "A Máquina Diferencial foi construída; a Analítica foi apenas planeada",
+        "A Máquina Analítica podia ser programada para qualquer cálculo; a Diferencial era limitada a polinómios",
+        "A Máquina Diferencial era mais pequena e portátil"
+      ],
+      "correct": 2,
+      "explanation": "A Máquina Diferencial era especializada — calculava polinómios e tabelas matemáticas. A Máquina Analítica era revolucionária porque era de uso geral: podia ser programada com cartões perfurados para executar qualquer tipo de cálculo, como um computador moderno."
+    },
+    {
+      "question": "O que corresponde ao 'Moinho' (Mill) da Máquina Analítica nos computadores modernos?",
+      "options": [
+        "A memória RAM",
+        "O disco rígido",
+        "O ecrã",
+        "O CPU (Unidade Central de Processamento)"
+      ],
+      "correct": 3,
+      "explanation": "O 'Moinho' era o componente onde os cálculos realmente aconteciam — o processador da máquina. Nos computadores modernos, esta função é desempenhada pelo CPU (Central Processing Unit). Babbage usou a metáfora do moinho porque, tal como um moinho transforma grão em farinha, o Mill transformava números em resultados."
+    },
+    {
+      "question": "Qual foi a contribuição de Ada Lovelace considerada o primeiro programa de computador do mundo?",
+      "options": [
+        "A criação dos cartões perfurados para a Máquina Analítica",
+        "O algoritmo para calcular os Números de Bernoulli nas notas sobre a Máquina Analítica",
+        "A invenção do sistema binário de zeros e uns",
+        "O desenho das engrenagens do 'Armazém' da Máquina Analítica"
+      ],
+      "correct": 1,
+      "explanation": "Nas suas notas sobre a Máquina Analítica, Ada Lovelace descreveu um método passo a passo para calcular os Números de Bernoulli — uma sequência lógica de instruções que a máquina deveria seguir. Este algoritmo é reconhecido como o primeiro programa de computador da história, escrito para uma máquina que ainda não existia."
+    },
+    {
+      "question": "O que Ada Lovelace previu que a Máquina Analítica poderia vir a fazer, além de calcular números?",
+      "options": [
+        "Traduzir textos entre línguas diferentes",
+        "Compor música e processar qualquer tipo de informação simbólica",
+        "Controlar máquinas industriais automaticamente",
+        "Comunicar através de sinais elétricos a longa distância"
+      ],
+      "correct": 1,
+      "explanation": "Ada escreveu que se as notas musicais fossem adaptadas para a máquina, esta poderia compor música. Esta visão — de que uma máquina podia manipular qualquer símbolo, não apenas números — é o conceito de Computação Universal, que hoje está na base de tudo o que os computadores fazem."
+    },
+    {
+      "question": "De onde vem a palavra 'calculadora'?",
+      "options": [
+        "Do árabe 'al-khawarizmi', nome de um matemático persa",
+        "Do grego 'arithmos', que significa número",
+        "Do latim 'calculus', que significa pedrinha",
+        "Do francês 'calculer', inventado no século XVII"
+      ],
+      "correct": 2,
+      "explanation": "A palavra 'calculadora' vem do latim 'calculus', que significa pedrinha. Os romanos usavam pedras pequenas num tabuleiro de areia para efetuar cálculos — os primeiros 'computadores' eram literalmente feitos de rocha. Esta origem revela como a computação nasceu do mais simples dos objetos."
+    },
+    {
+      "question": "Porque é que Babbage nunca conseguiu terminar as suas máquinas?",
+      "options": [
+        "Perdeu o interesse e dedicou-se a outras invenções",
+        "O governo britânico proibiu o desenvolvimento de máquinas de calcular",
+        "A metalurgia da época não era precisa o suficiente para fabricar as engrenagens necessárias",
+        "As suas fórmulas matemáticas continham erros que impossibilitavam a construção"
+      ],
+      "correct": 2,
+      "explanation": "O problema de Babbage era tecnológico, não conceptual. As suas ideias eram corretas, mas a capacidade de maquinar metal com a precisão necessária ainda não existia no século XIX. As engrenagens precisavam de tolerâncias muito pequenas — um grão de poeira ou uma imperfeição mínima bloqueava o mecanismo inteiro."
+    },
+    {
+      "question": "Qual é a principal diferença técnica entre computadores mecânicos e computadores digitais?",
+      "options": [
+        "Os mecânicos usavam números decimais; os digitais usam binário",
+        "Os mecânicos eram programáveis; os digitais não são",
+        "Os mecânicos representavam informação com peças móveis; os digitais usam eletrões sem partes móveis",
+        "Os mecânicos eram mais rápidos mas menos precisos que os digitais"
+      ],
+      "correct": 2,
+      "explanation": "A lógica fundamental — armazenar, processar, produzir output — é a mesma desde Babbage. O que mudou foi o meio físico: os computadores mecânicos usavam engrenagens e rodas dentadas (peças físicas em movimento) para representar estados lógicos, enquanto os digitais usam eletrões em circuitos de silício, sem partes móveis, o que os torna infinitamente mais rápidos e fiáveis."
+    }
+  ]
+}
