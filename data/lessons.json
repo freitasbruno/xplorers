@@ -345,7 +345,9 @@
     "description": "A origem dos videojogos: de experiências científicas ao fenómeno da Atari.",
     "image_url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
     "content_file": "lessons/021_videojogos_01.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/021_videojogos_01.json",
+    "md_file": "data/md/021_videojogos_01.md",
+    "has_quiz": true,
     "published_at": "2025-06-12",
     "featured": false,
     "global_class": 21
@@ -360,7 +362,9 @@
     "description": "A rivalidade Nintendo vs Sega e o salto tecnológico para os polígonos.",
     "image_url": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&q=80",
     "content_file": "lessons/022_videojogos_02.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/022_videojogos_02.json",
+    "md_file": "data/md/022_videojogos_02.md",
+    "has_quiz": true,
     "published_at": "2025-06-19",
     "featured": false,
     "global_class": 22
@@ -375,7 +379,9 @@
     "description": "Realidade Virtual, Aumentada e o papel da Inteligência Artificial.",
     "image_url": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&q=80",
     "content_file": "lessons/023_videojogos_03.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/023_videojogos_03.json",
+    "md_file": "data/md/023_videojogos_03.md",
+    "has_quiz": true,
     "published_at": "2025-06-26",
     "featured": false,
     "global_class": 23

@@ -1,0 +1,115 @@
+{
+  "lesson_id": "videojogos_003",
+  "questions": [
+    {
+      "question": "Qual é a diferença fundamental entre Realidade Virtual (VR) e Realidade Aumentada (AR)?",
+      "options": [
+        "A VR usa óculos; a AR usa projetores de hologramas no espaço físico",
+        "A VR substitui completamente o mundo real; a AR sobrepõe elementos digitais ao mundo real",
+        "A VR é para jogos; a AR é exclusivamente para aplicações médicas e industriais",
+        "A VR funciona sem internet; a AR requer ligação constante a servidores"
+      ],
+      "correct": 1,
+      "explanation": "A Realidade Virtual (VR) cria um ambiente 100% digital — quando usas os óculos, o mundo real desaparece completamente para os teus sentidos. A Realidade Aumentada (AR) mantém o mundo real visível, mas sobrepõe-lhe elementos digitais. O Pokémon GO é AR: vês a tua rua real, mas com Pokémons digitais nela. A diferença essencial é se o mundo real 'desaparece' ou 'é enriquecido' — dois paradigmas de interação muito diferentes."
+    },
+    {
+      "question": "O que distingue a Realidade Mista (MR) da Realidade Aumentada (AR)?",
+      "options": [
+        "A MR usa óculos mais avançados com maior resolução de ecrã e campo de visão mais amplo",
+        "Na MR, os objetos digitais interagem com o mundo real (podem esconder-se atrás de móveis reais); na AR, apenas se sobrepõem",
+        "A MR requer sempre um controlador físico; a AR pode ser controlada apenas com gestos",
+        "A MR é exclusivamente para ambientes profissionais; a AR é para entretenimento"
+      ],
+      "correct": 1,
+      "explanation": "A Realidade Aumentada sobrepõe elementos digitais ao mundo real, mas sem 'consciência' do ambiente — um personagem AR 'atravessa' paredes reais ou flutua sobre superfícies. A Realidade Mista vai mais longe: os objetos digitais compreendem e interagem com a geometria do mundo real. Um personagem MR pode esconder-se atrás do teu sofá, subir escadas reais ou sentar-se numa cadeira real. O Microsoft HoloLens usa MR — permite que engenheiros vejam e manipulem modelos 3D como se fossem objetos físicos na sala."
+    },
+    {
+      "question": "O que é a 'Geração Procedimental' em videojogos?",
+      "options": [
+        "Um método de desenvolvimento onde os jogos são criados por equipas de centenas de artistas divididos em procedimentos especializados",
+        "O uso de algoritmos para criar conteúdo (terrenos, objetos, histórias) automaticamente, seguindo regras, em vez de tudo ser desenhado manualmente",
+        "Uma técnica de compressão de dados que permite carregar os mundos dos jogos de forma gradual enquanto o jogador avança",
+        "Um sistema de geração automática de missões secundárias baseado no histórico de jogo do utilizador"
+      ],
+      "correct": 1,
+      "explanation": "Na Geração Procedimental, em vez de um artista criar manualmente cada elemento (cada árvore, cada montanha, cada sala), são definidas regras matemáticas e algoritmos que geram esses elementos automaticamente. O resultado é que o conteúdo é virtualmente infinito — o No Man's Sky tem 18 quintilhões de planetas gerados desta forma. O Minecraft garante que nenhum mundo seja idêntico a outro. Com a IA generativa, esta técnica está a tornar-se muito mais sofisticada, podendo criar narrativas e diálogos únicos para cada jogador."
+    },
+    {
+      "question": "O que foi a 'Espada de Dâmocles' de Ivan Sutherland (1968)?",
+      "options": [
+        "O primeiro videojogo com componentes de Realidade Virtual, que criava ilusão de profundidade com dois ecrãs",
+        "O primeiro sistema de Realidade Virtual — óculos tão pesados que tinham de ser suspensos do teto",
+        "Um periférico de jogo em forma de espada que dava choques ao jogador quando o personagem era atingido",
+        "O nome de código do primeiro projeto de Realidade Aumentada da NASA para treino de astronautas"
+      ],
+      "correct": 1,
+      "explanation": "Ivan Sutherland, um dos pioneiros da computação gráfica, criou em 1968 o primeiro sistema de visualização de Realidade Virtual. Os 'óculos' eram tão pesados (com os monitores CRT miniaturizados e circuitos eletrónicos de grande dimensão) que não podiam ser suportados pela cabeça humana — tinham de ser suspensos do teto por um braço mecânico. O nome 'Espada de Dâmocles' referia-se precisamente a este aparelho a pairar sobre a cabeça do utilizador. Cinquenta anos mais tarde, os óculos pesam menos de 500 gramas."
+    },
+    {
+      "question": "O que é o 'Vale da Estranheza' (Uncanny Valley) e porque desafia os designers de jogos?",
+      "options": [
+        "Uma região geográfica do Japão onde os primeiros jogos de Realidade Virtual foram testados com resultados perturbadores",
+        "O fenómeno onde personagens digitais quase-humanos causam desconforto e repulsa porque são 'humanos demais' sem ser perfeitos",
+        "A sensação de desorientação que alguns jogadores sentem após sessões longas de Realidade Virtual",
+        "O momento numa sessão de VR onde o cérebro 'aceita' o ambiente virtual como real — uma espécie de hipnose tecnológica"
+      ],
+      "correct": 1,
+      "explanation": "O 'Uncanny Valley' é um fenómeno psicológico descrito pelo roboticista Masahiro Mori: à medida que um personagem artificial se parece mais com um humano real, a nossa empatia por ele aumenta — mas numa certa zona 'quase-perfeita', a resposta inverte-se e sentimos repulsa ou desconforto intenso. O cérebro deteta as imperfeições subtis mais facilmente quando espera perfeição humana. É por isso que personagens completamente estilizados (Mario) ou completamente realistas causam menos estranheza do que personagens 'a meio caminho'."
+    },
+    {
+      "question": "Por que é o Half-Life: Alyx considerado o 'padrão de ouro' da Realidade Virtual?",
+      "options": [
+        "Foi o primeiro jogo a ter gráficos fotorrealistas em VR, com resolução indistinguível de vídeo real",
+        "Mostrou que ações físicas simples (abrir uma porta, carregar uma arma) se tornam experiências intensas e imersivas em VR",
+        "Foi o primeiro jogo multijogador em VR, permitindo que centenas de pessoas partilhassem o mesmo espaço virtual",
+        "Incluiu um sistema de IA que adaptava o jogo em tempo real ao estado emocional do jogador"
+      ],
+      "correct": 1,
+      "explanation": "Half-Life: Alyx (2020, Valve) demonstrou que a VR não é apenas 'jogos normais com óculos'. A grande revelação foi que ações triviais num jogo convencional — agarrar um objeto, abrir uma porta, recarregar uma arma inserindo um carregador — tornam-se experiências físicas e emocionalmente intensas quando feitas com as mãos reais num espaço 3D. A tensão de ter de recarregar fisicamente enquanto um monstro se aproxima é incomparável. Estabeleceu que a VR precisa de design de gameplay específico, não apenas de 'portar' jogos existentes."
+    },
+    {
+      "question": "Como utiliza o No Man's Sky a geração procedimental para criar o seu universo?",
+      "options": [
+        "Tem uma equipa de artistas que cria novos planetas em tempo real à medida que os jogadores os descobrem",
+        "Usa algoritmos matemáticos para gerar planetas, fauna, flora e atmosferas únicas a partir de sementes numéricas",
+        "Recorre a fotografias de satélite da NASA para recriar planetas reais do nosso sistema solar",
+        "Permite que os próprios jogadores criem e partilhem planetas, que depois ficam disponíveis para toda a comunidade"
+      ],
+      "correct": 1,
+      "explanation": "O No Man's Sky usa um sistema baseado em 'sementes' (seeds) numéricas: cada planeta, estrela e sistema tem um número único, e a partir desse número um conjunto de algoritmos matemáticos gera deterministicamente toda a sua aparência, fauna, flora, minerais e atmosfera. Dois jogadores com o mesmo número de 'semente' verão exatamente o mesmo planeta. O resultado são 18 quintilhões de planetas únicos — mais do que qualquer equipa de artistas poderia criar em milénios. O universo inteiro cabe em poucos gigabytes de código, porque o conteúdo é gerado no momento, não armazenado."
+    },
+    {
+      "question": "O que são 'fatos hápticos' e qual o seu papel nos jogos imersivos?",
+      "options": [
+        "Fatos que monitorizam os sinais vitais do jogador e ajustam a dificuldade do jogo conforme o nível de stress",
+        "Vestuário com sensores de vibração e impulsos que simulam o toque, textura e impacto de objetos virtuais",
+        "Equipamento de proteção que os jogadores de esports usam para evitar lesões por esforço repetitivo",
+        "Uniformes usados por atores durante a captura de movimentos para criar animações de personagens 3D"
+      ],
+      "correct": 1,
+      "explanation": "Os fatos e luvas hápticos contêm arrays de micro-atuadores (vibrotáteis, pneumáticos ou de estimulação elétrica) distribuídos pelo corpo que se ativam para simular sensações físicas: a textura de uma superfície, o impacto de uma explosão, o peso de um objeto virtual, o aperto de uma mão. Em VR, a visão e o som já são simulados — a háptica tenta completar o quadro com o toque. Ainda é uma tecnologia emergente e cara, mas alguns sistemas já permitem 'sentir' diferenças entre textura de rocha e de areia."
+    },
+    {
+      "question": "Como a IA generativa está a transformar os NPCs (personagens não-jogadores) nos jogos?",
+      "options": [
+        "Está a tornar os NPCs visualmente mais realistas, com expressões faciais e movimentos mais naturais",
+        "Está a permitir que os NPCs tenham conversas dinâmicas e contextuais em vez de frases pré-gravadas fixas",
+        "Está a fazer os NPCs aprender com o histórico de jogos do utilizador para oferecer desafios personalizados",
+        "Está a substituir completamente os NPCs por outros jogadores reais, tornando todos os jogos multijogador"
+      ],
+      "correct": 1,
+      "explanation": "Tradicionalmente, os NPCs tinham frases pré-gravadas e respostas fixas a condições específicas — 'limitados por árvores de diálogo'. Com modelos de linguagem baseados em IA generativa, os NPCs podem ter conversas abertas e dinâmicas com o jogador, reagindo ao contexto, à história passada e à forma como o jogador fala. Isto significa que uma personagem pode 'lembrar-se' de o que lhe aconteceu, mudar de opinião com base na conversa, e criar interações únicas para cada sessão. É potencialmente o maior salto na narrativa de jogos desde a transição para o 3D."
+    },
+    {
+      "question": "Qual é o impacto do 'Uncanny Valley' na estratégia de design visual dos jogos modernos?",
+      "options": [
+        "Faz com que os designers evitem completamente personagens humanoides e optem por robôs ou animais",
+        "Leva muitos estúdios a escolher deliberadamente estilos artísticos estilizados ou a investir em fotorrealismo completo, evitando o meio-termo",
+        "Obriga os estúdios a contratar atores humanos reais digitalizados para todos os personagens",
+        "Faz com que os jogos modernos evitem mostrar rostos humanos em close-up, focando-se em ação e não em diálogo"
+      ],
+      "correct": 1,
+      "explanation": "O Uncanny Valley cria um dilema de design: personagens completamente estilizados (Mario, Fortnite) são adorados sem constrangimento; personagens fotorrealistas de ponta (Death Stranding, The Last of Us) são impressionantes. O 'perigo' está no meio: personagens que parecem quase humanos mas com imperfeições subtis na pele, nos olhos ou no movimento. A resposta estratégica é ir claramente num dos dois extremos — ou arte deliberadamente não-realista, ou investimento massivo em captura de movimento e rendering fotorrealista que supere o limiar do Vale."
+    }
+  ]
+}

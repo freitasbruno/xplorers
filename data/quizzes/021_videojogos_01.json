@@ -1,0 +1,115 @@
+{
+  "lesson_id": "videojogos_001",
+  "questions": [
+    {
+      "question": "Onde surgiram os primeiros videojogos nas décadas de 1950 e 1960?",
+      "options": [
+        "Em estúdios de Hollywood que queriam criar experiências interativas para o cinema",
+        "Em laboratórios de investigação científica, criados por cientistas que testavam os limites dos computadores",
+        "Em fábricas de brinquedos japonesas que experimentavam novas formas de entretenimento eletrónico",
+        "Em arcades americanas que adaptaram máquinas de pinball para incluir ecrãs digitais"
+      ],
+      "correct": 1,
+      "explanation": "Os primeiros jogos eletrónicos não foram criados por empresas de entretenimento, mas por cientistas em laboratórios de investigação. O Tennis for Two (1958) foi criado por William Higinbotham num laboratório nacional dos EUA para animar uma exposição ao público. O Spacewar! (1962) foi desenvolvido no MIT por estudantes de informática. Eram experiências técnicas, não produtos comerciais — ninguém imaginava ainda que isto poderia tornar-se uma indústria."
+    },
+    {
+      "question": "O que tornava o Spacewar! (1962) revolucionário para a época?",
+      "options": [
+        "Foi o primeiro jogo com gráficos a cores e som estéreo",
+        "Foi o primeiro jogo a correr num computador e a ser partilhado entre universidades",
+        "Foi o primeiro jogo vendido comercialmente, custando 25 cêntimos por partida",
+        "Foi o primeiro jogo com múltiplos níveis de dificuldade e um sistema de pontuação"
+      ],
+      "correct": 1,
+      "explanation": "O Spacewar! foi revolucionário por várias razões: era o primeiro jogo a correr num computador verdadeiro (não num aparelho de medição como o Tennis for Two), tinha dois jogadores a competir em simultâneo, e foi distribuído gratuitamente entre universidades via fita perfurada — tornando-se o primeiro software a ser 'partilhado' em larga escala. Foi, em certo sentido, o primeiro fenómeno 'viral' da história da tecnologia."
+    },
+    {
+      "question": "Por que razão o Pong (1972) foi um marco na história dos videojogos?",
+      "options": [
+        "Foi o primeiro jogo com personagens com nomes e histórias, criando a narrativa nos jogos",
+        "Foi o primeiro sucesso comercial estrondoso, provando que os videojogos podiam ser um negócio",
+        "Foi o primeiro jogo a usar processadores gráficos dedicados, permitindo animações fluidas",
+        "Foi o primeiro jogo multijogador online, ligando arcades em diferentes cidades"
+      ],
+      "correct": 1,
+      "explanation": "O Pong, criado pela Atari de Nolan Bushnell, foi o primeiro videojogo a atingir um sucesso comercial massivo. O conceito era simples ao ponto de não precisar de manual de instruções — e essa simplicidade foi a chave. Deu origem à cultura dos salões de jogos (arcades), onde as pessoas faziam fila e gastavam moedas. Provou ao mundo que os videojogos podiam ser um negócio lucrativo, estabelecendo as bases para toda a indústria que se seguiu."
+    },
+    {
+      "question": "O que de novo introduziu o Atari 2600 (1977) que o tornou revolucionário?",
+      "options": [
+        "Foi a primeira consola com ecrã colorido integrado, não precisando de televisão",
+        "Introduziu os cartuchos amovíveis, permitindo que uma consola jogasse centenas de jogos diferentes",
+        "Foi a primeira consola com ligação à internet, permitindo jogar contra pessoas de outros países",
+        "Introduziu os comandos sem fios, libertando os jogadores dos cabos"
+      ],
+      "correct": 1,
+      "explanation": "O Atari 2600 introduziu o conceito de cartuchos amovíveis — pequenas cassetes que continham o código de um jogo e podiam ser trocadas facilmente. Antes disso, as consolas tinham os jogos incorporados (só jogavam aquilo com que saíam de fábrica). Com os cartuchos, uma única consola tornava-se uma plataforma aberta: podia jogar tantos jogos quantos os que fossem lançados. Este modelo — hardware separado do software — ainda é a base de todas as consolas modernas."
+    },
+    {
+      "question": "O que causou o Grande Crash do mercado de videojogos em 1983?",
+      "options": [
+        "A chegada dos computadores pessoais (PC) que tornaram as consolas obsoletas de um dia para o outro",
+        "Uma decisão governamental que proibiu a publicidade a videojogos, colapsando as vendas",
+        "A inundação do mercado com jogos de péssima qualidade, que destruiu a confiança dos consumidores",
+        "Um processo judicial da indústria cinematográfica que exigiu royalties exorbitantes pelos jogos baseados em filmes"
+      ],
+      "correct": 2,
+      "explanation": "O sucesso dos anos anteriores levou à ganância: qualquer empresa podia lançar jogos para o Atari 2600, e muitas lançaram produtos apressados e de péssima qualidade. O jogo E.T. the Extra-Terrestrial — feito em apenas 5 semanas para capitalizar o sucesso do filme — tornou-se o símbolo deste desastre. Os consumidores, queimados por tantos jogos maus, deixaram de comprar. As vendas colapsaram de 3,2 mil milhões de dólares em 1983 para 100 milhões em 1985. Muitas empresas faliram."
+    },
+    {
+      "question": "Que empresa salvou a indústria de videojogos após o crash de 1983 e como?",
+      "options": [
+        "A Sony, lançando a PlayStation com jogos de alta qualidade e gráficos revolucionários",
+        "A Nintendo, com o NES e um sistema rigoroso de aprovação de qualidade para jogos",
+        "A Microsoft, entrando no mercado com computadores que também podiam jogar jogos",
+        "A Sega, lançando o Mega Drive com processadores muito mais potentes que a concorrência"
+      ],
+      "correct": 1,
+      "explanation": "A Nintendo — uma empresa japonesa que vendia cartas de baralho e brinquedos — lançou nos EUA o Nintendo Entertainment System (NES) em 1985. A chave foi o rigoroso sistema de licenciamento: só empresas aprovadas pela Nintendo podiam desenvolver jogos para o NES, garantindo um mínimo de qualidade. Ao associar o NES ao robot R.O.B. (para o posicionar como brinquedo, não consola, e evitar o preconceito pós-crash), a Nintendo reconstruiu a confiança dos consumidores e ressuscitou a indústria."
+    },
+    {
+      "question": "Por que é memorável a história do primeiro Easter Egg da história dos videojogos?",
+      "options": [
+        "Foi encontrado por um jogador que passou mais de 1000 horas a jogar sem saber que estava lá",
+        "O programador Warren Robinett escondeu o seu nome num quarto secreto porque a Atari não creditava os criadores",
+        "Era uma mensagem secreta que revelava as coordenadas de um tesouro físico escondido nos EUA",
+        "Foi a primeira vez que um jogo tinha um final alternativo, abrindo caminho para a narrativa nos videojogos"
+      ],
+      "correct": 1,
+      "explanation": "Warren Robinett, criador do jogo Adventure para o Atari 2600, ficou frustrado com a política da Atari de não creditar os programadores nos manuais ou caixas dos jogos (para evitar que fossem 'roubados' pela concorrência). Em protesto, escondeu uma sala secreta no jogo com o texto 'Created by Warren Robinett'. Este foi o primeiro 'Easter Egg' (ovo de páscoa) da história dos videojogos — uma tradição de mensagens e segredos escondidos que os programadores continuam a incluir até hoje."
+    },
+    {
+      "question": "Porque é que a primeira máquina de Pong instalada num bar avariou tão rapidamente?",
+      "options": [
+        "O calor gerado pelo processador era tanto que a máquina sobreaquecia em menos de 24 horas",
+        "O software tinha um bug que fazia a máquina bloquear após um número fixo de partidas",
+        "O depósito de moedas estava tão cheio que a máquina encravou — foi um sucesso demasiado grande",
+        "Os jogadores perceberam rapidamente como enganar a máquina e jogar de graça, reduzindo as receitas"
+      ],
+      "correct": 2,
+      "explanation": "Esta história revela o inesperado do sucesso do Pong: a máquina foi instalada num bar em Sunnyvale, Califórnia, e avariou no primeiro dia — não por defeito técnico, mas porque o depósito de moedas ficou tão cheio que a máquina encravou. Era literalmente dinheiro a mais para um sistema concebido para um sucesso moderado. Quando os técnicos da Atari foram verificar a avaria e encontraram moedas a transbordar, perceberam que tinham criado algo extraordinário."
+    },
+    {
+      "question": "Qual era a principal limitação do Magnavox Odyssey (1972), a primeira consola doméstica?",
+      "options": [
+        "Só funcionava com televisores a preto e branco de determinadas marcas",
+        "Era tão primitiva que os jogadores tinham de colar plásticos transparentes na TV para simular cenários",
+        "Só tinha um jogo disponível e nunca lançou mais títulos durante os seus 3 anos no mercado",
+        "Precisava de ser ligada a uma linha telefónica para funcionar, o que a tornava impraticável"
+      ],
+      "correct": 1,
+      "explanation": "O Magnavox Odyssey não tinha capacidade para gerar gráficos coloridos ou cenários — apenas movia pontos de luz no ecrã. Para criar a ilusão de jogos diferentes (ténis, hockey, ping-pong), a consola vinha com folhas de plástico translúcido colorido que os jogadores colavam fisicamente por cima da televisão. Cada 'jogo' tinha uma folha diferente. Era uma solução engenhosa para as limitações tecnológicas da época, mas também mostra como os videojogos estavam ainda numa infância absoluta."
+    },
+    {
+      "question": "O que significa dizer que a indústria de videojogos 'fatura mais do que o cinema e a música juntos'?",
+      "options": [
+        "Significa que os jogos são mais caros de produzir, exigindo mais investimento que filmes ou álbuns musicais",
+        "Significa que os videojogos geraram mais receitas globais anuais do que o cinema e a música combinados",
+        "Significa que mais pessoas trabalham na indústria dos jogos do que nas outras indústrias culturais juntas",
+        "Significa que os jogos têm uma audiência mais jovem, garantindo-lhes um futuro mais sustentável"
+      ],
+      "correct": 1,
+      "explanation": "A indústria global de videojogos gerou receitas superiores a 180 mil milhões de dólares em 2023 — superando as receitas combinadas da indústria cinematográfica global (~90 mil milhões) e da música (~26 mil milhões). Esta escala só foi possível porque os jogos combinam múltiplas formas de receita: venda de jogos, subscrições, microtransações, esports e streaming. O que começou como um ponto de luz num osciloscópio em 1958 tornou-se a maior indústria de entretenimento do mundo."
+    }
+  ]
+}

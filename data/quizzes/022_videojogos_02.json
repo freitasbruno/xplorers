@@ -1,0 +1,115 @@
+{
+  "lesson_id": "videojogos_002",
+  "questions": [
+    {
+      "question": "Qual era o principal argumento de marketing da Sega contra a Nintendo nos anos 90?",
+      "options": [
+        "Que os seus jogos eram mais baratos e portanto mais acessíveis a todas as famílias",
+        "Que a sua consola era mais 'fixe' e radical, com o slogan 'Genesis does what Nintendon't'",
+        "Que os seus gráficos eram superiores porque usava chips importados do Japão",
+        "Que os seus jogos eram educativos e aprovados por especialistas em desenvolvimento infantil"
+      ],
+      "correct": 1,
+      "explanation": "A Sega adotou uma estratégia de marketing agressiva e irreverente, posicionando-se como a alternativa 'cool' à Nintendo (vista como conservadora e infantil). O slogan 'Genesis does what Nintendon't' atacava diretamente a concorrência — algo incomum na publicidade da época. A Sega queria capturar o público mais velho e adolescente que a Nintendo estava a perder. Esta rivalidade foi a primeira grande 'guerra de consolas' e estabeleceu o modelo de marketing agressivo que a indústria usa até hoje."
+    },
+    {
+      "question": "Por que razão a Sega criou o Sonic the Hedgehog como mascote?",
+      "options": [
+        "Para mostrar a capacidade gráfica da Mega Drive com animações de alta velocidade",
+        "Para ter uma personagem que apelasse ao público mais velho e adolescente, em contraste com o Mario",
+        "Para substituir o seu mascote anterior, Alex Kidd, que nunca atingiu popularidade internacional",
+        "Para ter uma personagem que pudesse ser licenciada para brinquedos e merchandise de forma rentável"
+      ],
+      "correct": 1,
+      "explanation": "O Mario da Nintendo era simpático, rechonchudo e familiar — ideal para crianças. A Sega precisava de uma personagem com mais 'atitude' para capturar o público adolescente. O Sonic foi desenhado para ser tudo o que o Mario não era: esguio, rápido, rebelde, com expressão de tédio entediado. O azul da sua pele contrastava com o vermelho do Mario. A sua velocidade era também uma demonstração técnica da potência da Mega Drive. Foi um sucesso calculado de branding."
+    },
+    {
+      "question": "O que significava na prática ter uma consola de 16-bit em vez de 8-bit?",
+      "options": [
+        "A consola durava o dobro do tempo com uma única pilha",
+        "O processador podia lidar com o dobro de jogadores em simultâneo",
+        "Muito mais cores simultâneas, melhor som e fundos que se moviam de forma independente",
+        "Os jogos podiam ser gravados internamente, sem precisar de passwords para continuar"
+      ],
+      "correct": 2,
+      "explanation": "Os 'bits' referem-se à largura do barramento de dados do processador — um processador de 16-bit processa o dobro da informação por ciclo que um de 8-bit. Na prática, para os jogadores, isto traduzia-se em: muito mais cores simultâneas (de ~50 para milhares), qualidade de som dramaticamente superior (de beeps simples para música quase de qualidade CD) e capacidade para efeitos visuais como o Parallax Scrolling (fundos a diferentes velocidades criando ilusão de profundidade). Era um salto percetível a olho nu."
+    },
+    {
+      "question": "Qual foi a vantagem decisiva do CD-ROM sobre os cartuchos nos videojogos?",
+      "options": [
+        "Os CDs carregavam os jogos instantaneamente, sem os 'ecrãs de loading' que os cartuchos exigiam",
+        "Armazenava ~700 MB vs. ~12 MB de um cartucho — permitindo música, vídeo e gráficos 3D ricos",
+        "Os CDs eram inquebrá veis e à prova de pó, ao contrário dos cartuchos que se estragavam facilmente",
+        "Permitia que os jogos fossem atualizados automaticamente via internet, corrigindo bugs após a venda"
+      ],
+      "correct": 1,
+      "explanation": "A diferença de capacidade era colossal: um cartucho armazenava entre 4 e 12 MB de dados; um CD-ROM comportava 700 MB — mais de 50 vezes mais. Esta diferença permitiu à PlayStation (e aos jogos que corriam nela) incluir músicas orquestradas completas, vídeos cinematográficos de introdução (FMV), texturas 3D detalhadas e histórias mais longas e complexas. Os cartuchos eram mais rápidos (sem 'loading'), mas o espaço limitado tornava-os cada vez mais obsoletos conforme os jogos cresciam em ambição."
+    },
+    {
+      "question": "Qual foi a origem inesperada da PlayStation da Sony?",
+      "options": [
+        "Surgiu de uma divisão da Sony que fabricava televisores e queria integrar jogos nos seus produtos",
+        "Começou como um projeto de leitor de CDs para a consola da Nintendo, que cancelou o acordo",
+        "Foi desenvolvida por ex-engenheiros da Atari que fundaram uma subsidiária da Sony no Japão",
+        "Nasceu da compra da empresa de jogos Hudson Soft, que já tinha um protótipo de consola"
+      ],
+      "correct": 1,
+      "explanation": "Na década de 80, a Nintendo e a Sony tinham um acordo para desenvolver em conjunto um add-on de CD-ROM para a Super Nintendo, chamado 'Play Station'. Em 1991, a Nintendo cancelou o acordo de forma humilhante — anunciando uma parceria com a Philips no mesmo evento onde a Sony apresentou o protótipo. Ken Kutaragi, engenheiro da Sony, convenceu os seus superiores a prosseguir sozinhos. A PlayStation lançada em 1994 foi literalmente uma resposta à traição da Nintendo — e tornou-se a consola mais vendida do mundo até então."
+    },
+    {
+      "question": "O que mudou fundamentalmente na forma de jogar com a transição do 2D para o 3D?",
+      "options": [
+        "Os jogos passaram a precisar de dois jogadores para funcionar, tornando o multijogador obrigatório",
+        "O jogador passou a ter de controlar não só o personagem, mas também a câmara num espaço tridimensional",
+        "Os jogos tornaram-se lineares pela primeira vez, com um caminho único e sem exploração livre",
+        "A inteligência artificial dos inimigos melhorou drasticamente, tornando os jogos muito mais difíceis"
+      ],
+      "correct": 1,
+      "explanation": "Em 2D, a câmara era fixa — o jogador só se movia para a esquerda, direita, cima ou baixo. Em 3D, surgiram três eixos (X, Y, Z), o que introduziu a noção de profundidade. Mas a grande revolução conceptual foi o controlo da câmara: pela primeira vez, o jogador tinha de gerir onde estava o personagem E de onde estava a olhar. Jogos como Super Mario 64 (1996) foram literalmente 'escolas' para ensinar esta nova linguagem de interação — incluíam tutoriais extensos porque a mecânica era completamente nova para todos os jogadores."
+    },
+    {
+      "question": "O que era o 'Blast Processing' da Sega e por que é um exemplo clássico de marketing enganoso?",
+      "options": [
+        "Era um chip extra que a Sega incluía na Mega Drive e que de facto tornava os jogos mais rápidos",
+        "Era um termo técnico inventado pela Sega que soava impressionante mas não correspondia a nenhuma vantagem real",
+        "Era o nome do modo multijogador da Mega Drive, que permitia ligar até 4 consolas em simultâneo",
+        "Era uma tecnologia de compressão de dados que permitia à Mega Drive ler cartuchos mais rapidamente"
+      ],
+      "correct": 1,
+      "explanation": "O 'Blast Processing' foi um dos maiores bluffs da história do marketing tecnológico. A Sega usou o termo nas suas campanhas para sugerir que a Mega Drive processava dados de forma fundamentalmente superior à Super Nintendo. Na realidade, o termo referia-se a uma técnica de programação bastante banal disponível em qualquer sistema da época. A Nintendo ficou tão desconcertada que demorou semanas a responder — não porque fosse verdade, mas porque não sabia como rebater algo que tecnicamente não significava nada."
+    },
+    {
+      "question": "Por que razão a Sony conseguiu atrair mais estúdios a desenvolver para a PlayStation do que a Nintendo para a N64?",
+      "options": [
+        "A Sony pagava adiantamentos maiores aos estúdios do que a Nintendo",
+        "Os jogos em CD eram muito mais baratos de produzir e publicar do que os cartuchos da N64",
+        "A Nintendo exigia exclusividade total, enquanto a Sony permitia que os jogos fossem lançados noutras plataformas",
+        "A PlayStation tinha uma comunidade online ativa que garantia vendas mais altas para os desenvolvedores"
+      ],
+      "correct": 1,
+      "explanation": "Produzir um cartucho para a N64 custava entre 25 e 35 dólares por unidade — e os estúdios tinham de encomendá-los com antecedência, sem saber quantos venderiam. Produzir um CD para a PlayStation custava cerca de 1 dólar por unidade e podia ser replicado rapidamente. Esta diferença de custo e risco foi decisiva: estúdios médios e pequenos simplesmente não podiam dar-se ao luxo de apostar na N64. A PlayStation tornou-se a plataforma de eleição dos criadores independentes — um padrão que a Sony mantém até hoje."
+    },
+    {
+      "question": "O que representou a Parallax Scrolling nas consolas de 16-bit?",
+      "options": [
+        "Uma forma de scroll horizontal que dava a ilusão de profundidade ao mover fundos a velocidades diferentes",
+        "Uma técnica de compressão de sprites que permitia ter mais personagens no ecrã simultaneamente",
+        "Um efeito de zoom que aproximava ou afastava a câmara durante as sequências de ação",
+        "Um sistema de câmara rotativa que permitia ver o nível de ângulos diferentes"
+      ],
+      "correct": 0,
+      "explanation": "O Parallax Scrolling é uma técnica visual onde diferentes planos do fundo (céu, montanhas distantes, árvores próximas) se movem a velocidades diferentes quando o personagem avança. O plano mais distante move-se lentamente; o mais próximo, rapidamente. Esta diferença de velocidade cria uma poderosa ilusão de profundidade e tridimensionalidade num ecrã 2D — imitando o que os nossos olhos percebem no mundo real (paralaxe binocular). Tornou-se uma das características visuais mais marcantes dos jogos de 16-bit."
+    },
+    {
+      "question": "Qual foi o impacto da rivalidade Nintendo vs. Sega na cultura dos anos 90?",
+      "options": [
+        "Forçou os governos a regulamentar a indústria de videojogos pela primeira vez por causa da violência nos jogos",
+        "Definiu identidades sociais — ser 'da Nintendo' ou 'da Sega' era uma declaração de personalidade e estilo",
+        "Fez os videojogos mainstream pela primeira vez, tornando-os tão populares quanto o cinema",
+        "Criou a primeira comunidade online de jogadores, que trocavam estratégias por modem"
+      ],
+      "correct": 1,
+      "explanation": "A rivalidade Nintendo vs. Sega transcendeu o hardware e tornou-se cultural. Tal como ser 'da Coca-Cola' ou 'da Pepsi', escolher a tua consola era uma declaração de identidade — e era um assunto sério no recreio. A Nintendo representava tradição, família, estabilidade. A Sega representava atitude, velocidade, rebeldia. Esta foi a primeira vez que uma marca de tecnologia conseguiu criar comunidades de pertença tão fortes. O modelo que a Apple e a Microsoft (e mais tarde a PlayStation vs. Xbox) replicaram com tanta eficácia nos anos seguintes."
+    }
+  ]
+}
