@@ -1,0 +1,115 @@
+{
+  "lesson_id": "vida_002",
+  "questions": [
+    {
+      "question": "O que são Procariontes e quanto tempo dominaram a Terra?",
+      "options": [
+        "Organismos multicelulares que dominaram a Terra durante 500 milhões de anos",
+        "Organismos unicelulares sem núcleo (como bactérias) que dominaram os primeiros 2 mil milhões de anos",
+        "Organismos com núcleo definido que surgiram após a Grande Oxidação",
+        "Vírus primitivos que infectavam as primeiras células e controlavam a sua evolução"
+      ],
+      "correct": 1,
+      "explanation": "Os Procariontes são organismos unicelulares sem núcleo definido — as bactérias e as arqueas. Durante os primeiros 2 mil milhões de anos de vida na Terra, foram os únicos habitantes do planeta. A sua estrutura simples era muito eficiente para sobreviver, mas limitava-os: sem organelos especializados, não podiam tornar-se muito grandes ou complexos."
+    },
+    {
+      "question": "O que fez das Cianobactérias um ponto de viragem na história da vida?",
+      "options": [
+        "Foram as primeiras a desenvolver um núcleo celular, tornando-se os primeiros Eucariontes",
+        "Inventaram a fotossíntese oxigénica, libertando oxigénio como subproduto e transformando a atmosfera",
+        "Criaram o primeiro sistema nervoso primitivo, permitindo comportamentos coordenados",
+        "Foram as primeiras a colonizar a terra firme, preparando o ambiente para os animais"
+      ],
+      "correct": 1,
+      "explanation": "As Cianobactérias foram os primeiros organismos a realizar fotossíntese oxigénica — um processo que usa a luz solar para produzir energia, libertando oxigénio (O₂) como subproduto. Este oxigénio acumulou-se na atmosfera ao longo de milhões de anos, transformando radicalmente o planeta. Ironicamente, para a maioria dos seres vivos da época, este oxigénio era um veneno mortal."
+    },
+    {
+      "question": "Por que razão a 'Grande Oxidação' é considerada por alguns cientistas o 'primeiro desastre ambiental'?",
+      "options": [
+        "Porque destruiu a camada de ozono e expôs a Terra a radiação UV letal",
+        "Porque o oxigénio libertado pelas Cianobactérias era tóxico para a maioria dos organismos da época, causando uma extinção em massa",
+        "Porque o oxigénio reagiu com a água e tornou os oceanos ácidos",
+        "Porque o oxigénio aqueceu o planeta, derretendo os glaciares e inundando a maioria das ilhas"
+      ],
+      "correct": 1,
+      "explanation": "Para os organismos que viviam num mundo sem oxigénio, este gás era um veneno: reagia com as suas moléculas vitais e destruía-as. A Grande Oxidação (há ~2,4 mil milhões de anos) causou uma extinção em massa de organismos anaeróbios. Porém, os sobreviventes que conseguiram adaptar-se ao oxigénio ganharam acesso a uma fonte de energia muito mais eficiente — a respiração aeróbia —, abrindo caminho para toda a vida complexa."
+    },
+    {
+      "question": "O que explica a Teoria da Endossimbiose, proposta por Lynn Margulis?",
+      "options": [
+        "Que os primeiros animais evoluíram quando bactérias diferentes se fundiram completamente num único organismo",
+        "Que uma célula maior engoliu bactérias menores que, em vez de serem digeridas, passaram a viver em simbiose no interior",
+        "Que as células eucarióticas surgiram por mutação gradual das células procarióticas ao longo de mil milhões de anos",
+        "Que o ADN foi transferido entre bactérias diferentes através de vírus, criando células com maior complexidade"
+      ],
+      "correct": 1,
+      "explanation": "Lynn Margulis propôs que a célula eucariótica complexa surgiu de um evento extraordinário: uma célula maior engoliu (por fagocitose) uma bactéria menor — provavelmente uma proteobactéria capaz de respiração aeróbia. Em vez de ser digerida, a bactéria estabeleceu uma relação simbiótica, fornecendo energia à célula hospedeira. Esta bactéria interna tornou-se, ao longo de gerações, a mitocôndria. Nas plantas, um segundo evento similar transformou uma cianobactéria no cloroplasto."
+    },
+    {
+      "question": "O que se tornou a bactéria engolida pela célula hospedeira, segundo a teoria da Endossimbiose?",
+      "options": [
+        "O núcleo celular, que passou a guardar o ADN da célula",
+        "A membrana celular, que se tornou mais espessa e resistente",
+        "A Mitocôndria, o organelo que produz energia para a célula",
+        "O ribossoma, a 'fábrica' que produz proteínas dentro da célula"
+      ],
+      "correct": 2,
+      "explanation": "A bactéria engolida era provavelmente capaz de realizar respiração aeróbia — um processo muito eficiente de produzir energia usando oxigénio. Em vez de ser destruída, estabeleceu uma simbiose: fornecia energia à célula hospedeira em troca de proteção e nutrientes. Ao longo de milhões de anos de coevolução, esta bactéria perdeu a sua autonomia e tornou-se a mitocôndria — o organelo que, até hoje, produz a maior parte da energia das células eucarióticas."
+    },
+    {
+      "question": "Qual é a prova mais convincente de que as mitocôndrias tiveram origem em bactérias independentes?",
+      "options": [
+        "Têm uma forma esférica idêntica às bactérias mais antigas conhecidas",
+        "Têm o seu próprio ADN e dividem-se por um processo semelhante ao das bactérias",
+        "São encontradas exclusivamente em organismos que vivem em ambientes ricos em oxigénio",
+        "Produzem oxigénio como subproduto, tal como as primeiras cianobactérias"
+      ],
+      "correct": 1,
+      "explanation": "As mitocôndrias possuem o seu próprio ADN circular (à semelhança das bactérias, e não do ADN linear do núcleo celular), os seus próprios ribossomas e dividem-se de forma independente por um processo chamado fissão binária — exatamente como as bactérias. Estas características só fazem sentido se as mitocôndrias forem, de facto, bactérias que foram 'domesticadas' por células maiores há centenas de milhões de anos."
+    },
+    {
+      "question": "Porque é que a Grande Oxidação teve também consequências positivas para a evolução da vida?",
+      "options": [
+        "Criou condições para o surgimento da vida nos continentes, que até então eram estéreis",
+        "Formou a camada de ozono e permitiu a respiração aeróbia, muito mais eficiente que a fermentação",
+        "Reduziu a temperatura global, criando um clima mais estável e propício à vida complexa",
+        "Eliminou os vírus e parasitas que impediam as células de crescer e tornar-se complexas"
+      ],
+      "correct": 1,
+      "explanation": "A Grande Oxidação teve dois efeitos positivos cruciais: (1) o oxigénio acumulado na atmosfera formou a camada de ozono, que bloqueou a radiação UV letal e permitiu que a vida colonizasse a terra firme muito mais tarde; (2) a respiração aeróbia — usar oxigénio para queimar glucose — é 18 vezes mais eficiente do que a fermentação anaeróbia. Esta vantagem energética enorme foi o motor que permitiu o desenvolvimento de organismos grandes e complexos."
+    },
+    {
+      "question": "O que aconteceu ao ferro dissolvido nos oceanos durante a Grande Oxidação?",
+      "options": [
+        "Tornou-se tóxico para as cianobactérias, limitando a sua proliferação",
+        "Reagiu com o oxigénio, precipitou e depositou-se no fundo, formando jazidas de minério de ferro",
+        "Subiu à superfície e foi libertado para a atmosfera sob a forma de poeira metálica",
+        "Reagiu com o sal marinho, criando compostos que aceleraram a evolução das primeiras células"
+      ],
+      "correct": 1,
+      "explanation": "Antes da Grande Oxidação, os oceanos eram ricos em ferro dissolvido (Fe²⁺), dando-lhes uma tonalidade esverdeada. Quando o oxigénio libertado pelas cianobactérias começou a dissolver-se nos oceanos, reagiu com este ferro e oxidou-o (Fe³⁺), formando óxidos de ferro insolúveis que precipitaram e se depositaram no fundo oceânico. Estas 'Formações de Ferro em Faixas' (Banded Iron Formations) são a origem das maiores jazidas de minério de ferro do mundo — os depósitos que hoje explorámos para fabricar aço."
+    },
+    {
+      "question": "Por que é que Lynn Margulis teve dificuldade em convencer a comunidade científica da sua teoria?",
+      "options": [
+        "Porque não tinha experiência em biologia celular e era vista como uma investigadora de fora da área",
+        "Porque a ideia de que um organismo pode viver permanentemente dentro de outro era considerada impossível na época",
+        "Porque os seus dados eram baseados em fósseis, e os fósseis de células são raros e difíceis de interpretar",
+        "Porque a teoria contradiz a ideia de Darwin de que a evolução ocorre apenas por mutação e seleção"
+      ],
+      "correct": 1,
+      "explanation": "Em 1967, quando Margulis publicou a sua teoria, a ideia de que organelos como as mitocôndrias tinham origem em bactérias independentes parecia bizarra. A biologia celular dominante via a célula como uma unidade coerente, não como uma 'colónia'. O seu artigo foi rejeitado por mais de uma dezena de revistas científicas. Só quando as técnicas de sequenciação de ADN confirmaram que o ADN das mitocôndrias era bacteriano é que a teoria foi amplamente aceite — hoje é considerada um dos factos mais bem estabelecidos da biologia."
+    },
+    {
+      "question": "Porque é que as mitocôndrias são herdadas exclusivamente pela linha materna?",
+      "options": [
+        "Porque o ADN mitocondrial é mais frágil e não sobrevive no espermatozoide durante a fertilização",
+        "Porque o óvulo contém o citoplasma (e as mitocôndrias) da mãe, enquanto o espermatozoide contribui apenas com o núcleo",
+        "Porque as mitocôndrias do pai são destruídas pelo sistema imunitário após a fertilização",
+        "Porque as mitocôndrias do espermatozoide têm ADN diferente e são rejeitadas pelo óvulo"
+      ],
+      "correct": 1,
+      "explanation": "Quando um espermatozoide fertiliza um óvulo, contribui essencialmente com o seu núcleo (ADN nuclear). O citoplasma do óvulo — que contém todos os organelos, incluindo as mitocôndrias — vem da mãe. Como as mitocôndrias se reproduzem no citoplasma, todas as mitocôndrias de um novo ser vivo são herdadas da mãe. Esta característica tem sido usada em estudos de genética de populações e arqueologia para rastrear linhas matrilineares ao longo de milénios ('ADN mitocondrial de Eva')."
+    }
+  ]
+}

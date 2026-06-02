@@ -1,0 +1,115 @@
+{
+  "lesson_id": "vida_003",
+  "questions": [
+    {
+      "question": "O que foi a 'Explosão Câmbrica' e quando ocorreu?",
+      "options": [
+        "Uma erupção vulcânica massiva há 541 milhões de anos que extinguiu 90% das espécies marinhas",
+        "Um período de diversificação biológica explosiva há ~541 milhões de anos, onde surgiram quase todos os grupos de animais",
+        "A colonização da terra firme pelas plantas, que criou os primeiros ecossistemas terrestres",
+        "O momento em que as primeiras células eucarióticas se dividiram e deram origem a organismos multicelulares"
+      ],
+      "correct": 1,
+      "explanation": "A Explosão Câmbrica (há ~541 milhões de anos) foi um período geológicamente breve — poucos milhões de anos — durante o qual surgiu a grande maioria dos filos animais conhecidos. Antes do Câmbrico, a vida era maioritariamente microscópica e 'mole'. Depois, surgiram animais com olhos, garras, conchas, dentes — toda a diversidade morfológica que vemos hoje nos animais tem raízes neste período extraordinário."
+    },
+    {
+      "question": "O que de novo surgiu durante a Explosão Câmbrica que transformou a dinâmica da vida?",
+      "options": [
+        "A fotossíntese, que permitiu às plantas produzir energia a partir da luz solar",
+        "A reprodução sexual, que acelerou a evolução ao aumentar a diversidade genética",
+        "A predação ativa e os exoesqueletos, iniciando uma 'corrida ao armamento' evolutiva",
+        "A endossimbiose, que criou células com organelos especializados"
+      ],
+      "correct": 2,
+      "explanation": "Pela primeira vez na história da vida, animais passaram a caçar outros animais ativamente. Esta inovação — a predação — desencadeou uma 'corrida ao armamento' evolutiva: para sobreviver, os organismos precisavam de defesas (conchas, carapaças, espinhos) ou de atacar mais eficazmente (garras, olhos, velocidade). Esta pressão seletiva intensa explica, em parte, a velocidade da diversificação câmbrica."
+    },
+    {
+      "question": "Por que são os fósseis do Burgess Shale (Canadá) tão importantes para a paleontologia?",
+      "options": [
+        "Contêm os fósseis de dinossauros mais antigos alguma vez descobertos",
+        "Preservaram criaturas do Câmbrico com detalhes extraordinários, revelando a fauna desta época",
+        "Mostraram que os primeiros vertebrados já existiam há 541 milhões de anos",
+        "Provaram que a vida terrestre surgiu antes da vida marinha"
+      ],
+      "correct": 1,
+      "explanation": "O Burgess Shale, nas Rochas Rochosas canadianas, é uma formação geológica única que preservou organismos câmbricos com um detalhe extraordinário — incluindo tecidos moles que normalmente não fossilizam. As criaturas encontradas (Opabinia, Anomalocaris, Hallucigenia, Pikaia) deram-nos uma janela sem precedentes para o período Câmbrico e mostraram como a vida era estranha e diversa antes de 'encontrar' os planos corporais que persistem até hoje."
+    },
+    {
+      "question": "O que tornava o Anomalocaris tão singular no seu tempo?",
+      "options": [
+        "Era o único organismo câmbrico capaz de fotossíntese, tornando-o independente de outros seres para se alimentar",
+        "Era o maior predador dos oceanos câmbricos, com quase 1 metro de comprimento",
+        "Tinha 5 olhos e uma tromba, tornando-o o animal mais complexo do período",
+        "Foi o primeiro animal com coluna vertebral, sendo o antepassado direto dos peixes"
+      ],
+      "correct": 1,
+      "explanation": "O Anomalocaris ('camarão anormal') era um gigante para os padrões câmbricos — podia atingir quase 1 metro de comprimento. Com garras dianteiras para agarrar presas e uma boca circular com dentes, era o ápice da cadeia alimentar dos oceanos câmbricos. A sua existência confirma que a predação ativa estava bem estabelecida há 540 milhões de anos."
+    },
+    {
+      "question": "Por que é a Pikaia considerada especialmente importante para os humanos?",
+      "options": [
+        "Era o maior animal do Câmbrico e os seus descendentes evoluíram para os primeiros dinossauros",
+        "Possuía um esboço de coluna vertebral, tornando-a um dos nossos antepassados mais antigos conhecidos",
+        "Foi o primeiro animal a desenvolver olhos compostos, que mais tarde evoluíram para os olhos humanos",
+        "Tinha pulmões primitivos, tornando-a o primeiro animal capaz de respirar fora de água"
+      ],
+      "correct": 1,
+      "explanation": "A Pikaia era um pequeno verme do Câmbrico, aparentemente insignificante. Mas possuía uma característica crucial: um esboço de notocorda (a estrutura que precede a coluna vertebral nos Cordados). Isto faz dela um dos antepassados mais antigos conhecidos do nosso próprio grupo — os Cordados. Se a Pikaia tivesse extinguido no Câmbrico, não haveria peixes, anfíbios, répteis, aves, mamíferos — nem humanos."
+    },
+    {
+      "question": "Porque foi a terra firme um ambiente tão hostil para os primeiros colonizadores?",
+      "options": [
+        "As temperaturas na terra eram muito mais altas do que nos oceanos, destruindo as moléculas orgânicas",
+        "Não havia minerais na terra firme, tornando impossível a nutrição dos primeiros organismos",
+        "Radiação UV intensa, falta de suporte físico para os corpos e risco de dessecação (perda de água)",
+        "A terra estava coberta de lava vulcânica, tornando impossível o estabelecimento de qualquer ser vivo"
+      ],
+      "correct": 2,
+      "explanation": "A terra firme apresentava três grandes desafios: (1) Radiação UV letal — sem a proteção da água e com uma camada de ozono ainda incipiente, a radiação ultravioleta era muito mais intensa; (2) Gravidade sem suporte — no oceano, a água sustenta o peso do corpo; em terra, o organismo tem de suportar o seu próprio peso, exigindo esqueletos e musculatura adequados; (3) Dessecação — sem estar imerso em água, o corpo resseca rapidamente, exigindo revestimentos impermeáveis e sistemas de retenção de água."
+    },
+    {
+      "question": "Qual foi o papel das plantas na conquista da terra firme pelos animais?",
+      "options": [
+        "As plantas forneceram sombra, protegendo os primeiros animais da radiação UV letal",
+        "As plantas foram as pioneiras, criando oxigénio e alimento, preparando o ambiente para os animais",
+        "As plantas criaram solos ricos em minerais que os primeiros animais podiam filtrar para se alimentar",
+        "As plantas atraíram insetos aquáticos para a terra, que por sua vez atraíram os primeiros peixes"
+      ],
+      "correct": 1,
+      "explanation": "As plantas foram as verdadeiras pioneiras da conquista da terra. Chegaram antes dos animais, e a sua colonização foi gradual: primeiro os musgos e hepáticas (sem raízes nem vasos), depois as plantas vasculares (como os fetos). Ao colonizarem a terra, as plantas transformaram o solo (tornando-o mais rico em nutrientes), criaram abrigo, e forneceram a base alimentar necessária para que os animais as seguissem. Sem plantas, não havia razão para um animal sair do oceano."
+    },
+    {
+      "question": "O que tornava o Tiktaalik um 'elo perdido' entre peixes e anfíbios?",
+      "options": [
+        "Tinha pulmões e pernas totalmente formadas, sendo capaz de andar na terra como um lagarto",
+        "Tinha características de ambos — escamas e barbatanas de peixe, mas pescoço móvel, pulmões e 'proto-membros'",
+        "Era metade peixe, metade anfíbio — nadava na água e punha ovos em terra",
+        "Tinha os mesmos genes que os anfíbios modernos, provando uma descendência direta"
+      ],
+      "correct": 1,
+      "explanation": "O Tiktaalik (descoberto no Canadá em 2004) era exatamente a forma de transição prevista pelas teorias evolutivas: tinha escamas e barbatanas como um peixe, mas também possuía um pescoço móvel (os peixes não giram a cabeça), pulmões primitivos e — crucialmente — ossos nas barbatanas pectorais homólogos ao úmero, rádio e cúbito do braço humano. Conseguia fazer 'flexões', sustentando o peso do corpo fora de água. Era um peixe que estava a caminho de se tornar um anfíbio."
+    },
+    {
+      "question": "O que explica o gigantismo dos insetos no período Carbonífero?",
+      "options": [
+        "A ausência de predadores terrestres que permitia aos insetos crescer sem restrições",
+        "Níveis de oxigénio na atmosfera muito superiores aos atuais, que permitiam uma respiração mais eficiente",
+        "Temperaturas muito mais quentes que aceleravam o metabolismo e o crescimento",
+        "A existência de florestas de fetos gigantes que forneciam alimento em abundância"
+      ],
+      "correct": 1,
+      "explanation": "No período Carbonífero, as vastas florestas de árvores primitivas libertavam enormes quantidades de oxigénio. Estima-se que o teor de O₂ na atmosfera chegou a 35% (hoje é de 21%). Os insetos respiram por difusão através de tubos (traquéias) — quanto mais O₂ disponível, mais facilmente o oxigénio chega aos tecidos internos, permitindo corpos maiores. O resultado: libelinhas com 70 cm de envergadura (Meganeura) e centopeias com 2 metros de comprimento (Arthropleura)."
+    },
+    {
+      "question": "Que frase descreve melhor a relação entre a Explosão Câmbrica e o filme de 24 horas da Terra?",
+      "options": [
+        "A vida começou logo no início — ao meio-dia — e foi crescendo gradualmente até ao fim",
+        "Quase 21 horas de micróbios; depois, por volta das 21h10, uma explosão de diversidade animal",
+        "Os primeiros animais surgem à meia-noite, já nos últimos segundos do 'filme'",
+        "A vida multicelular ocupa exatamente metade do 'filme', surgindo ao meio-dia"
+      ],
+      "correct": 1,
+      "explanation": "A analogia do 'filme de 24 horas' ajuda a perceber as proporções do tempo geológico. A Terra tem ~4,6 mil milhões de anos. Se comprimirmos isso num dia de 24 horas, os primeiros 3 mil milhões de anos (o domínio dos micróbios) ocupam as primeiras 15 horas e meia. A Explosão Câmbrica, há 541 milhões de anos, acontece por volta das 21h10 — e os humanos só aparecem nos últimos 1-2 segundos antes da meia-noite."
+    }
+  ]
+}

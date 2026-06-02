@@ -390,7 +390,9 @@
     "description": "Exploração das origens da Terra e das primeiras formas de vida. As teorias sobre a abiogénese e o LUCA.",
     "image_url": "https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?w=800&q=80",
     "content_file": "lessons/024_vida_01.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/024_vida_01.json",
+    "md_file": "data/md/024_vida_01.md",
+    "has_quiz": true,
     "published_at": "2025-07-01",
     "featured": false,
     "global_class": 24
@@ -405,7 +407,9 @@
     "description": "A Grande Oxidação que mudou o planeta e o salto evolutivo da célula eucariótica.",
     "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
     "content_file": "lessons/025_vida_02.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/025_vida_02.json",
+    "md_file": "data/md/025_vida_02.md",
+    "has_quiz": true,
     "published_at": "2025-07-08",
     "featured": false,
     "global_class": 25
@@ -420,7 +424,9 @@
     "description": "O Big Bang da biologia e a subsequente colonização da terra por plantas e animais.",
     "image_url": "https://images.unsplash.com/photo-1688586168450-2b1ed5f7f6bf?w=800&q=80",
     "content_file": "lessons/026_vida_03.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/026_vida_03.json",
+    "md_file": "data/md/026_vida_03.md",
+    "has_quiz": true,
     "published_at": "2025-07-15",
     "featured": false,
     "global_class": 26
@@ -435,7 +441,9 @@
     "description": "As grandes mortandades da história da Terra e as extinções que moldaram a vida como a conhecemos.",
     "image_url": "https://images.unsplash.com/photo-1525877442103-5ddb2089b2bb?w=800&q=80",
     "content_file": "lessons/027_vida_04.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/027_vida_04.json",
+    "md_file": "data/md/027_vida_04.md",
+    "has_quiz": true,
     "published_at": "2025-07-22",
     "featured": false,
     "global_class": 27

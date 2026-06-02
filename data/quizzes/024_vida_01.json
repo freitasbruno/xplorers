@@ -1,0 +1,115 @@
+{
+  "lesson_id": "vida_001",
+  "questions": [
+    {
+      "question": "Que tipo de atmosfera tinha a Terra primitiva, há cerca de 4 mil milhões de anos?",
+      "options": [
+        "Rica em oxigénio e azoto, semelhante à atmosfera atual",
+        "Composta por metano, amoníaco, hidrogénio e vapor de água, sem oxigénio livre",
+        "Maioritariamente dióxido de carbono, como a atmosfera de Marte",
+        "Quase vazia, pois a Terra ainda não tinha atmosfera formada"
+      ],
+      "correct": 1,
+      "explanation": "A atmosfera primitiva era 'redutora' — composta por metano (CH₄), amoníaco (NH₃), hidrogénio (H₂) e vapor de água (H₂O). A ausência de oxigénio livre era fundamental: o oxigénio é muito reativo e destruiria as primeiras moléculas orgânicas antes de estas se tornarem suficientemente complexas para dar origem à vida."
+    },
+    {
+      "question": "O que explica a Hipótese de Oparin-Haldane (a 'Sopa Primordial')?",
+      "options": [
+        "Que a vida chegou à Terra transportada por asteroides vindos de outros planetas",
+        "Que a energia de raios e radiação UV criou moléculas orgânicas na atmosfera, que se acumularam nos oceanos",
+        "Que as primeiras células se formaram em fontes hidrotermais no fundo dos oceanos",
+        "Que Deus criou a vida a partir de elementos químicos simples"
+      ],
+      "correct": 1,
+      "explanation": "Oparin e Haldane propuseram que a energia das tempestades elétricas e a intensa radiação UV solar (ainda sem camada de ozono) provocaram reações químicas na atmosfera primitiva, criando moléculas orgânicas simples como aminoácidos. Estas moléculas caíram com a chuva nos oceanos e acumularam-se ao longo de milhões de anos, formando um 'caldo nutritivo' — a Sopa Primordial."
+    },
+    {
+      "question": "Por que razão a ausência de oxigénio na atmosfera primitiva era essencial para o surgimento da vida?",
+      "options": [
+        "Porque os primeiros seres vivos precisavam de respirar metano em vez de oxigénio",
+        "Porque o oxigénio livre destruiria as moléculas orgânicas complexas antes de estas se formarem",
+        "Porque o oxigénio impediria a formação de nuvens e, consequentemente, de chuva",
+        "Porque o oxigénio tornaria os oceanos ácidos demais para qualquer química orgânica"
+      ],
+      "correct": 1,
+      "explanation": "O oxigénio é um elemento altamente reativo que 'oxidaria' (destruiria) as moléculas orgânicas complexas assim que se formassem. Só numa atmosfera sem oxigénio livre é que as moléculas orgânicas simples podiam acumular-se durante tempo suficiente para crescer em complexidade. Paradoxalmente, o mesmo oxigénio que é essencial para a vida animal seria letal para as primeiras moléculas de vida."
+    },
+    {
+      "question": "Qual é a 'receita' básica para a origem da vida, segundo a metáfora do bolo?",
+      "options": [
+        "Água + Sal + Luz solar + Tempo",
+        "Átomos CHON + Oceanos primitivos + Energia (raios, vulcões, radiação)",
+        "Aminoácidos + DNA + Oxigénio + Calor vulcânico",
+        "Bactérias + Minerais + Oceanos frios + Pressão"
+      ],
+      "correct": 1,
+      "explanation": "Os 'ingredientes' são os átomos CHON (Carbono, Hidrogénio, Oxigénio e Azoto), os blocos básicos de toda a matéria orgânica. O 'recipiente de mistura' são os oceanos primitivos onde tudo se acumulou. A 'energia do forno' vinha de raios, vulcões e radiação solar. O desafio da ciência é perceber como estas peças se 'montaram sozinhas' para formar a primeira célula verdadeira."
+    },
+    {
+      "question": "O que nos revelam os cristais de zircão encontrados na Austrália?",
+      "options": [
+        "Que a Terra foi bombardeada por asteroides ricos em aminoácidos há 4 mil milhões de anos",
+        "Que a Terra já tinha água líquida há 4,4 mil milhões de anos, logo após a sua formação",
+        "Que existiam organismos microscópicos na Terra há mais de 4 mil milhões de anos",
+        "Que a atmosfera primitiva da Terra era idêntica à de Vénus"
+      ],
+      "correct": 1,
+      "explanation": "Os cristais de zircão (ZrSiO₄) são extremamente resistentes e preservam-se durante mil milhões de anos. Os analisados na Austrália têm composições químicas que indicam que foram formados na presença de água líquida há cerca de 4,4 mil milhões de anos — apenas 150 milhões de anos após a formação do planeta. Isto sugere que as condições para o surgimento da vida existiram muito mais cedo do que se pensava."
+    },
+    {
+      "question": "O 'Paradoxo do Ovo e da Galinha' na origem da vida refere-se a que problema?",
+      "options": [
+        "Não se saber se a vida surgiu na terra ou no mar",
+        "O facto de o DNA precisar de proteínas para se replicar, mas as proteínas precisarem do DNA para serem fabricadas",
+        "A dificuldade em saber se a vida surgiu primeiro em ambientes quentes ou frios",
+        "A questão de saber se os aminoácidos chegaram à Terra via asteroides ou se foram criados aqui"
+      ],
+      "correct": 1,
+      "explanation": "Para a vida existir, são necessárias proteínas (que executam as funções biológicas) e DNA/RNA (que guardam as instruções genéticas). O paradoxo é: o DNA precisa de proteínas para se replicar, mas as proteínas precisam do DNA para serem fabricadas. Como é que o primeiro sistema vivo surgiu se cada componente parece depender do outro? Uma das soluções propostas é o 'Mundo de RNA', onde o RNA fazia as duas funções em simultâneo."
+    },
+    {
+      "question": "O que tornava o ambiente da Terra primitiva tão hostil?",
+      "options": [
+        "Temperaturas abaixo de zero que congelavam todos os oceanos",
+        "Vulcões em erupção, bombardeamento de asteroides e atmosfera tóxica sem oxigénio",
+        "Ausência total de água líquida na superfície do planeta",
+        "Uma gravidade muito mais forte que impedia a formação de moléculas complexas"
+      ],
+      "correct": 1,
+      "explanation": "A Terra primitiva era um ambiente apocalíptico: vulcões em erupção constante libertavam gases tóxicos, asteroides bombardeavam a superfície com frequência, e a atmosfera era irrespirável — composta por metano, amoníaco e hidrogénio, sem oxigénio. Não havia camada de ozono, pelo que a radiação UV chegava à superfície com toda a intensidade. Paradoxalmente, esta energia intensa foi um dos motores da síntese das primeiras moléculas orgânicas."
+    },
+    {
+      "question": "Que elementos químicos formam os 'blocos de construção' de toda a matéria viva?",
+      "options": [
+        "Cálcio, Fósforo, Enxofre e Ferro (CPEF)",
+        "Carbono, Hidrogénio, Oxigénio e Azoto (CHON)",
+        "Silício, Oxigénio, Hidrogénio e Azoto (SOHN)",
+        "Carbono, Cálcio, Azoto e Potássio (CCAN)"
+      ],
+      "correct": 1,
+      "explanation": "Os quatro elementos fundamentais da vida são o Carbono (C), o Hidrogénio (H), o Oxigénio (O) e o Azoto (N) — frequentemente designados como CHON. O carbono é especialmente importante porque pode formar longas cadeias e estruturas complexas (química orgânica). Juntos, estes quatro elementos constituem mais de 96% da massa de todos os seres vivos."
+    },
+    {
+      "question": "Qual é o significado estatístico de existirem 40 mil milhões de planetas na 'zona habitável' da Via Láctea?",
+      "options": [
+        "Prova que já existiu vida noutros planetas da galáxia",
+        "Sugere que as condições para o surgimento da vida podem existir em muitos outros lugares no Universo",
+        "Confirma que a Sopa Primordial é o único mecanismo de origem da vida possível",
+        "Indica que a maioria desses planetas tem uma composição química idêntica à da Terra primitiva"
+      ],
+      "correct": 1,
+      "explanation": "A existência de ~40 mil milhões de planetas do tamanho da Terra na zona habitável das suas estrelas (nem demasiado quentes, nem demasiado frias para ter água líquida) não prova a existência de vida, mas sugere que as condições para o seu surgimento são comuns no Universo. Se o processo que criou a vida na Terra aconteceu espontaneamente, as probabilidades estatísticas de ter acontecido noutros locais são consideráveis — o que é o ponto de partida da astrobiologia."
+    },
+    {
+      "question": "Qual foi a fonte de energia que 'cozinhou' a Sopa Primordial, permitindo a formação de moléculas orgânicas?",
+      "options": [
+        "O calor interno do núcleo terrestre que aquecia os oceanos por baixo",
+        "A energia nuclear libertada pela radioatividade dos minerais primitivos",
+        "As tempestades elétricas, a radiação UV intensa do Sol e a atividade vulcânica",
+        "A energia cinética dos asteroides que bombardeavam a superfície"
+      ],
+      "correct": 2,
+      "explanation": "Três fontes de energia foram cruciais: as tempestades elétricas (raios que provocavam reações químicas na atmosfera), a radiação ultravioleta intensa do Sol (amplificada pela ausência de camada de ozono) e a atividade vulcânica (que fornecia calor e libertava gases). Esta foi a lógica do famoso Experimento de Miller-Urey (1953), que simulou estas condições em laboratório e conseguiu produzir aminoácidos, validando a hipótese da Sopa Primordial."
+    }
+  ]
+}

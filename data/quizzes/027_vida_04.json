@@ -1,0 +1,115 @@
+{
+  "lesson_id": "vida_004",
+  "questions": [
+    {
+      "question": "Qual é a diferença entre a 'taxa de extinção de fundo' e uma 'extinção em massa'?",
+      "options": [
+        "A taxa de fundo afeta apenas animais marinhos; as extinções em massa afetam apenas animais terrestres",
+        "A taxa de fundo é o ritmo normal de extinção (1-5 espécies/ano por milhão); uma extinção em massa elimina >75% das espécies em tempo geológico breve",
+        "A taxa de fundo é causada por asteroides; as extinções em massa são causadas por atividade vulcânica",
+        "Não há diferença real — 'extinção em massa' é apenas o nome dado a períodos com muitas extinções de fundo simultâneas"
+      ],
+      "correct": 1,
+      "explanation": "A taxa de extinção de fundo é o ritmo 'normal' — estima-se 1 a 5 espécies por ano por cada milhão de espécies, resultado da seleção natural e mudanças ambientais graduais. Uma extinção em massa é um desvio colossal: mais de 75% das espécies desaparecem, afetando múltiplos grupos em múltiplos ecossistemas, num intervalo inferior a 2 milhões de anos (um 'instante' na escala geológica). As 'Big Five' extinções em massa são eventos raros e catastróficos que reescreveram a história da vida."
+    },
+    {
+      "question": "Qual foi a extinção em massa mais devastadora da história da Terra?",
+      "options": [
+        "A extinção Cretácico-Paleogénica (K-Pg), há 66 Ma, que eliminou os dinossauros",
+        "A extinção Ordovícico-Silúrica, há 444 Ma, causada por glaciação intensa",
+        "A extinção Permiano-Triásica, há 252 Ma, que eliminou ~96% das espécies marinhas",
+        "A extinção Devónica Superior, há 375 Ma, que destruiu os recifes de coral"
+      ],
+      "correct": 2,
+      "explanation": "A extinção Permiano-Triásica, há 252 Ma, é a maior catástrofe biológica da história: estima-se que ~96% das espécies marinhas e ~70% dos vertebrados terrestres tenham desaparecido. É conhecida como a 'Grande Mortandade'. Comparada com esta, a extinção dos dinossauros (K-Pg) — que eliminou 'apenas' 75% das espécies — parece quase modesta. O Permiano destruiu quase tudo; a recuperação do ecossistema demorou ~10 milhões de anos."
+    },
+    {
+      "question": "O que foram as 'Traps Siberianas' e qual o seu papel no Apocalipse do Permiano?",
+      "options": [
+        "Armadilhas geológicas no solo siberiano que capturaram gases tóxicos e os libertaram subitamente",
+        "Uma erupção vulcânica contínua na Sibéria que libertou ~4 milhões de km³ de lava e CO₂ em massa",
+        "Glaciares siberianos que derreteram abruptamente, inundando vastas áreas e destruindo os ecossistemas",
+        "Uma cadeia de asteroides que atingiu a Sibéria ao longo de 1 milhão de anos"
+      ],
+      "correct": 1,
+      "explanation": "As Traps Siberianas foram uma das maiores erupções vulcânicas da história — não uma erupção explosiva única, mas um derramamento contínuo de lava ('flood basalt') ao longo de centenas de milhar de anos, cobrindo uma área do tamanho da Europa. Libertaram quantidades enormes de CO₂, metano e dióxido de enxofre, desencadeando um efeito de estufa descontrolado. Este aquecimento iniciou uma cascata: oceanos mais quentes → menos oxigénio → proliferação de bactérias anaeróbias → libertação de H₂S → envenenamento da atmosfera."
+    },
+    {
+      "question": "O que foi o 'sulfureto de hidrogénio (H₂S)' e como contribuiu para a extinção do Permiano?",
+      "options": [
+        "Um gás criado pelos vulcões que acidificou os oceanos e dissolveu as conchas calcárias dos animais marinhos",
+        "Um gás tóxico libertado por bactérias anaeróbias que envenenou a atmosfera e destruiu a camada de ozono",
+        "Um composto químico que bloqueou a luz solar, impedindo a fotossíntese durante milhões de anos",
+        "Um gás que aqueceu os oceanos para além dos 60°C, tornando-os inabitáveis para qualquer forma de vida"
+      ],
+      "correct": 1,
+      "explanation": "Com o aquecimento dos oceanos, estes perderam capacidade de reter oxigénio (fenómeno de anoxia oceânica). Sem O₂, floresceram bactérias anaeróbias que metabolizam sulfatos e libertam sulfureto de hidrogénio (H₂S) como subproduto — o mesmo gás com cheiro a ovo podre. Em concentrações elevadas, o H₂S é mortal para praticamente todos os seres aeróbios e também destrói a camada de ozono. Esta cascata de efeitos criou um planeta tóxico em múltiplas frentes simultaneamente."
+    },
+    {
+      "question": "Qual foi a 'impressão digital' que provou que um asteroide causou a extinção K-Pg?",
+      "options": [
+        "A descoberta de fragmentos de asteroide fundido na cratera de Chicxulub, no México",
+        "Uma camada de argila em todo o mundo com concentrações de Irídio centenas de vezes superiores ao normal",
+        "Fósseis de dinossauros com ossos partidos que indicam uma onda de choque global",
+        "Árvores carbonizadas em simultâneo nos quatro cantos do mundo, provando um incêndio global"
+      ],
+      "correct": 1,
+      "explanation": "Em 1980, o geólogo Luis Alvarez e o seu filho Walter descobriram que numa camada de argila fina — datada de exatamente 66 Ma e encontrada em todo o mundo — havia concentrações de Irídio (Ir) centenas de vezes superiores ao normal. Na crosta terrestre, o Irídio é extremamente raro; nos asteroides, é relativamente comum. Esta 'anomalia de irídio' global só podia ter uma explicação: o impacto de um asteroide que vaporizou e espalhou o seu material por toda a Terra. Esta descoberta revolucionou a paleontologia."
+    },
+    {
+      "question": "Como o impacto do asteroide K-Pg derrubou as cadeias alimentares?",
+      "options": [
+        "Criou tsunamis que inundaram os continentes e destruíram todos os ecossistemas terrestres",
+        "O calor do impacto vaporizou os oceanos, eliminando toda a vida marinha em dias",
+        "Aerossóis bloquearam a luz solar durante anos → fotossíntese parou → cadeias alimentares colapsaram da base",
+        "O impacto libertou toxinas que envenenaram a água e o solo, tornando-os estéreis por milhares de anos"
+      ],
+      "correct": 2,
+      "explanation": "O mecanismo mais devastador não foi o impacto em si, mas as suas consequências atmosféricas. O asteroide vaporizou rochas ricas em enxofre (na Península de Iucatão), criando aerossóis de sulfato que, combinados com fuligem de incêndios florestais globais, bloquearam a luz solar durante anos — o 'Inverno de Impacto'. Sem luz, a fotossíntese parou. Sem plantas, os herbívoros morreram. Sem herbívoros, os carnívoros morreram. A cadeia alimentar colapsou da base (as plantas) para o topo (os grandes predadores)."
+    },
+    {
+      "question": "Porque sobreviveram os pequenos mamíferos à extinção K-Pg quando os dinossauros não conseguiram?",
+      "options": [
+        "Os mamíferos eram imunes ao frio extremo do Inverno de Impacto graças ao seu sangue quente",
+        "Os mamíferos viviam em tocas subterrâneas, protegidos do impacto e das suas consequências imediatas",
+        "Metabolismo lento, capacidade de hibernar e dieta baseada em detritos permitiu-lhes sobreviver sem luz solar",
+        "Os mamíferos eram herbívoros que podiam comer as plantas mortas que cobriam o solo"
+      ],
+      "correct": 2,
+      "explanation": "O 'gargalo seletivo' do K-Pg favoreceu animais com certas características: metabolismo lento (precisavam de menos comida), capacidade de hibernar (para sobreviver ao inverno longo sem comida), e capacidade de comer detritos orgânicos (matéria morta, sementes, raízes). Os pequenos mamíferos reuniam estas características. Curiosamente, os crocodilos também sobreviveram — são ectotérmicos (metabolismo lento), vivem na água (que manteve temperatura) e comem carniça. Os dinossauros não aviários, sendo grandes e com metabolismo elevado, não conseguiram encontrar comida suficiente."
+    },
+    {
+      "question": "Qual foi a consequência positiva das extinções em massa para a evolução da vida?",
+      "options": [
+        "Nenhuma — as extinções em massa apenas destroçam ecossistemas e reduzem a biodiversidade para sempre",
+        "Criaram condições de maior estabilidade climática que permitiram às espécies sobreviventes especializar-se",
+        "Eliminaram grupos dominantes, abrindo nichos ecológicos para que outros grupos se diversificassem e florescessem",
+        "Forçaram os organismos a desenvolver reprodução sexual, acelerando a evolução"
+      ],
+      "correct": 2,
+      "explanation": "As extinções em massa funcionam como um 'reset' evolutivo: ao eliminar grupos dominantes, libertam nichos ecológicos que estavam 'bloqueados'. Após o K-Pg, com os dinossauros extintos, os mamíferos (antes pequenos e marginalizados) puderam diversificar-se explosivamente — num processo chamado 'radiação adaptativa'. Sem a extinção dos dinossauros, os mamíferos provavelmente nunca teriam saído do papel de pequenas criaturas noturnas. As extinções são trágicas, mas também são motores de inovação biológica."
+    },
+    {
+      "question": "Que evidência confirma que a recuperação do ecossistema após o Permiano foi extremamente lenta?",
+      "options": [
+        "Os fósseis mostram que só após 50 milhões de anos surgiram novos grupos animais",
+        "Estimativas científicas indicam que o ecossistema demorou ~10 milhões de anos a recuperar a sua complexidade anterior",
+        "O registo geológico mostra que a diversidade de espécies só voltou aos níveis pré-Permiano há 10 mil anos",
+        "A análise genética das espécies atuais mostra que todas descendem de apenas 3 espécies sobreviventes"
+      ],
+      "correct": 1,
+      "explanation": "A escala da destruição do Permiano foi tão colossal — 96% das espécies marinhas extintas — que o ecossistema necessitou de um tempo extraordinariamente longo para se reconstruir. Estimativas paleontológicas indicam ~10 milhões de anos até o planeta atingir níveis de complexidade e diversidade comparáveis aos pré-Permiano. Durante este tempo, o planeta estava num estado de 'ecologia empobrecida', com poucos organismos e pouca diversidade — o que aumentava a vulnerabilidade das espécies sobreviventes a novas perturbações."
+    },
+    {
+      "question": "O Lystrosaurus é significativo na história pós-Permiano por que razão?",
+      "options": [
+        "Foi o maior animal que sobreviveu ao Permiano e o antepassado direto dos dinossauros",
+        "Era um herbívoro parecido com um hipopótamo que chegou a representar 95% de todos os vertebrados terrestres após a crise",
+        "Foi o primeiro vertebrado terrestre a desenvolver sangue quente após a extinção do Permiano",
+        "Sobreviveu ao Permiano graças a uma mutação que o tornava imune ao sulfureto de hidrogénio"
+      ],
+      "correct": 1,
+      "explanation": "O Lystrosaurus era um antepassado distante dos mamíferos — um dicinodontes herbívoro do tamanho de um porco. A sua sobrevivência ao Permiano foi extraordinária: após a extinção, num mundo quase vazio de concorrentes, proliferou de tal forma que chegou a representar cerca de 95% de todos os vertebrados terrestres durante o início do Triásico. É um caso fascinante de como uma espécie 'mediana' pode tornar-se dominante quando o campo fica aberto após uma catástrofe."
+    }
+  ]
+}
