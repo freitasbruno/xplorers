@@ -68,7 +68,7 @@ $next_lesson         = $next_lesson         ?? null;
   </nav>
 <?php endif; ?>
 
-<script src="/assets/js/tabs.js"></script>
+<script src="assets/js/tabs.js"></script>
 <?php if ($footer_mode === 'lesson'): ?>
 <script>
   const TAB_NAMES = ['conteudo', 'quiz', 'texto'];
