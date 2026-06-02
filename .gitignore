@@ -1,3 +1,11 @@
-.claude/memory/wip/_archive/
-.claude/memory/**/_backup/
+# Local dev settings
+.claude/settings.local.json
+
+# Deploy exclusions — .claude/ is in git for memory but must not reach the web server
+# (enforced at SFTP deploy step in GitHub Actions)
+
+# Internal memory — never deploy
+.claude/*
+
+# App secrets
 admin/config.php
