@@ -1,0 +1,115 @@
+{
+  "lesson_id": "sustentabilidade_002",
+  "questions": [
+    {
+      "question": "O que torna as energias renováveis 'renováveis'?",
+      "options": [
+        "São produzidas localmente, sem necessidade de transporte internacional",
+        "Renovam-se naturalmente e não se esgotam à escala humana, libertando pouco ou nenhum CO₂",
+        "Podem ser armazenadas em baterias e reutilizadas múltiplas vezes",
+        "São mais baratas do que os combustíveis fósseis em todos os países do mundo"
+      ],
+      "correct": 1,
+      "explanation": "As energias renováveis são aquelas que se renovam naturalmente e não se esgotam — o sol continua a brilhar, o vento continua a soprar, a água continua a fluir. A sua principal vantagem ambiental é que a sua operação liberta pouco ou nenhum CO₂, ao contrário dos combustíveis fósseis que libertam carbono acumulado durante milhões de anos."
+    },
+    {
+      "question": "Qual é o principal desafio da energia solar, apesar da sua abundância?",
+      "options": [
+        "Os painéis solares são demasiado pesados para instalar em telhados normais",
+        "A energia solar só funciona em países com muito sol, excluindo a maioria da Europa",
+        "O desafio é capturar, armazenar (em baterias) e distribuir eficientemente a energia",
+        "Os painéis solares requerem materiais muito raros que são difíceis de extrair"
+      ],
+      "correct": 2,
+      "explanation": "A energia solar disponível é imensamente abundante — o que a Terra recebe em apenas uma hora excede o consumo anual da humanidade. O verdadeiro desafio não é a disponibilidade, mas a infraestrutura necessária para a aproveitar: painéis eficientes para capturar, baterias de alto desempenho para armazenar (para quando não há sol), e redes elétricas inteligentes para distribuir."
+    },
+    {
+      "question": "Qual é a diferença fundamental entre a Economia Linear e a Economia Circular?",
+      "options": [
+        "A Economia Linear usa tecnologia moderna; a Circular usa métodos tradicionais",
+        "Na Economia Linear os recursos entram e saem como lixo; na Circular os materiais são mantidos em uso o máximo de tempo possível",
+        "A Economia Linear é para países desenvolvidos; a Circular é para países em desenvolvimento",
+        "A Economia Linear maximiza o lucro; a Circular maximiza o emprego"
+      ],
+      "correct": 1,
+      "explanation": "A Economia Linear segue o modelo 'Extrair → Produzir → Usar → Deitar Fora' — os recursos entram num extremo e saem como lixo no outro. É insustentável porque os recursos são finitos. A Economia Circular, inspirada na natureza onde 'nada se perde', mantém os materiais em uso o máximo de tempo possível através de redução, reutilização, reparação e reciclagem."
+    },
+    {
+      "question": "Qual é a ordem correta dos 4 princípios da Economia Circular apresentados?",
+      "options": [
+        "Reciclar → Reutilizar → Reduzir → Reparar",
+        "Reparar → Reduzir → Reciclar → Reutilizar",
+        "Reduzir → Reutilizar → Reparar → Reciclar",
+        "Reutilizar → Reparar → Reciclar → Reduzir"
+      ],
+      "correct": 2,
+      "explanation": "Os quatro princípios da Economia Circular são aplicados por ordem de prioridade: primeiro Reduzir (usar menos em primeiro lugar), depois Reutilizar (dar novas vidas), depois Reparar (manter em funcionamento), e finalmente Reciclar (quando já não há mais alternativa). Esta ordem é importante: a reciclagem consome energia e recursos, por isso deve ser o último recurso."
+    },
+    {
+      "question": "Como ilustra o exemplo do telemóvel a diferença entre Economia Linear e Circular?",
+      "options": [
+        "Na Linear, o telemóvel é comprado por assinatura; na Circular, é comprado diretamente",
+        "Na Linear, quando avaria compra-se um novo e o velho é descartado; na Circular, apenas a peça avariada é substituída e os materiais são depois recuperados",
+        "Na Linear, o telemóvel é reparado por técnicos especializados; na Circular, o utilizador repara sozinho",
+        "Na Linear, os telemóveis são feitos para durar décadas; na Circular, são desenhados para serem substituídos frequentemente"
+      ],
+      "correct": 1,
+      "explanation": "O exemplo do telemóvel ilustra perfeitamente a diferença: no modelo linear, quando uma peça avaria, o custo de reparação é artificialmente alto (porque o produto não foi desenhado para ser reparado), levando à compra de um novo e ao descarte do antigo com todos os seus materiais valiosos. No modelo circular, o produto é desenhado por módulos para reparação fácil, e quando termina a sua vida útil, a empresa recupera e reutiliza os materiais."
+    },
+    {
+      "question": "O que são as 'Cidades de 15 Minutos'?",
+      "options": [
+        "Cidades onde o tempo máximo permitido para viajar de carro é de 15 minutos",
+        "Cidades desenhadas para que todas as necessidades básicas estejam a 15 minutos a pé ou de bicicleta",
+        "Cidades que completaram a transição para energias renováveis em 15 anos",
+        "Cidades com sistemas de transportes públicos que chegam a qualquer ponto em 15 minutos"
+      ],
+      "correct": 1,
+      "explanation": "As 'Cidades de 15 Minutos' são um conceito de urbanismo sustentável onde o espaço urbano é desenhado para que os residentes possam aceder a todas as suas necessidades básicas — escola, supermercado, farmácia, trabalho, parque — em no máximo 15 minutos a pé ou de bicicleta. Isto reduz drasticamente a dependência do automóvel, as emissões de CO₂ e melhora a qualidade de vida."
+    },
+    {
+      "question": "Porque é que as cidades são particularmente importantes no contexto da sustentabilidade?",
+      "options": [
+        "Porque concentram a maioria das indústrias poluidoras do mundo",
+        "Porque mais de metade da humanidade vive em cidades que são responsáveis por mais de 70% das emissões de CO₂",
+        "Porque as cidades têm mais recursos financeiros para investir em tecnologia verde",
+        "Porque a densidade populacional das cidades facilita a implementação de políticas ambientais"
+      ],
+      "correct": 1,
+      "explanation": "As cidades são o foco central da transição sustentável porque concentram mais de metade da população mundial e são responsáveis por mais de 70% das emissões globais de CO₂. Isto significa que transformar a forma como as cidades funcionam — nos transportes, na energia, nos edifícios e nos espaços verdes — tem um impacto desproporcional no combate às alterações climáticas."
+    },
+    {
+      "question": "O que torna Copenhaga um exemplo de cidade sustentável?",
+      "options": [
+        "Foi a primeira cidade do mundo a proibir completamente os carros a gasolina",
+        "Tem o maior parque solar urbano do mundo instalado nos telhados dos edifícios públicos",
+        "Tem o objetivo de ser neutra em carbono, com mais de 50% da população a usar a bicicleta como transporte principal",
+        "Toda a eletricidade da cidade é produzida por energia eólica offshore"
+      ],
+      "correct": 2,
+      "explanation": "Copenhaga é o exemplo de referência mundial: tem o objetivo declarado de ser a primeira capital do mundo neutra em carbono. Mais de 50% da população usa a bicicleta como principal meio de transporte para o trabalho ou escola, mesmo durante o frio inverno dinamarquês. Este resultado foi alcançado através de décadas de investimento em ciclovias protegidas e políticas urbanas que desincentivam o carro."
+    },
+    {
+      "question": "Qual é o principal argumento para usar a energia eólica offshore (no mar) em vez de em terra?",
+      "options": [
+        "É mais barata de construir no mar do que em terra",
+        "Os ventos no mar são mais constantes e fortes do que em terra",
+        "Não interfere com a paisagem e não é visível da costa",
+        "As turbinas offshore têm maior eficiência tecnológica do que as terrestres"
+      ],
+      "correct": 1,
+      "explanation": "A principal vantagem da energia eólica offshore é que os ventos sobre o mar são significativamente mais constantes e mais fortes do que em terra — porque não há obstáculos como colinas, florestas ou edifícios que interfiram com o fluxo do vento. Isto traduz-se em maior produção de energia e maior previsibilidade na geração. Portugal, com a sua extensa costa atlântica exposta aos ventos do Atlântico, tem um enorme potencial para esta tecnologia."
+    },
+    {
+      "question": "Porque é que, na Economia Circular, a reciclagem deve ser o 'último recurso'?",
+      "options": [
+        "Porque a tecnologia de reciclagem ainda não é suficientemente eficaz",
+        "Porque a reciclagem consome energia e recursos — reduzir, reutilizar e reparar são mais eficientes",
+        "Porque a reciclagem só funciona para alguns materiais como papel e vidro",
+        "Porque os processos de reciclagem libertam substâncias tóxicas no ambiente"
+      ],
+      "correct": 1,
+      "explanation": "A reciclagem, embora melhor do que o aterro, ainda consome energia significativa e nem sempre recupera a qualidade original dos materiais. É muito mais eficiente — em termos de energia e recursos — não gerar resíduo em primeiro lugar (reduzir), manter os produtos em uso (reutilizar), ou mantê-los funcionais (reparar). A reciclagem é o último recurso porque representa o fracasso dos três passos anteriores."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "lesson_id": "sustentabilidade_001",
+  "questions": [
+    {
+      "question": "Qual é a definição de sustentabilidade apresentada na aula?",
+      "options": [
+        "A prática de reciclar e usar energias renováveis para reduzir a poluição",
+        "A capacidade de a humanidade continuar a existir e a prosperar sem esgotar os recursos de que todos dependemos",
+        "A estratégia de reduzir o consumo global para zero nas próximas décadas",
+        "O movimento ambiental que defende a proteção de espécies em vias de extinção"
+      ],
+      "correct": 1,
+      "explanation": "A sustentabilidade é definida de forma ampla como a capacidade de a humanidade continuar a existir e a prosperar durante gerações, sem esgotar os recursos necessários para que as gerações futuras também possam viver bem. A pergunta central é: podemos viver bem hoje sem roubar a capacidade dos nossos filhos e netos de viverem bem amanhã?"
+    },
+    {
+      "question": "Quais são os três pilares da sustentabilidade?",
+      "options": [
+        "Ambiental, Económico e Tecnológico",
+        "Ambiental, Social e Económico",
+        "Natural, Humano e Financeiro",
+        "Planetário, Comunitário e Empresarial"
+      ],
+      "correct": 1,
+      "explanation": "Os três pilares da sustentabilidade são o Ambiental (saúde dos ecossistemas), o Social (equidade e qualidade de vida para todas as pessoas) e o Económico (criação de riqueza e emprego de forma responsável). A metáfora do banco de três pernas ilustra que nenhum pode ser sacrificado: se uma perna falha, todo o sistema colapsa."
+    },
+    {
+      "question": "Porque é que uma empresa com grandes lucros pode não ser 'sustentável'?",
+      "options": [
+        "Porque empresas com grandes lucros tendem a crescer demasiado e a tornar-se instáveis",
+        "Porque pode estar a destruir o pilar ambiental (poluição) ou o pilar social (salários injustos) enquanto maximiza o lucro",
+        "Porque os grandes lucros atraem concorrentes que acabam por destruir o negócio",
+        "Porque os lucros elevados criam inflação que prejudica os consumidores"
+      ],
+      "correct": 1,
+      "explanation": "Uma empresa é verdadeiramente sustentável apenas quando equilibra os três pilares. Uma fábrica com grandes lucros mas que polui rios (falha ambiental) e paga salários miseráveis (falha social) está a destruir dois dos três pilares. A longo prazo, o 'banco cai' — seja por regulação, por colapso ambiental, ou por instabilidade social. O sucesso económico isolado não é sustentabilidade."
+    },
+    {
+      "question": "Qual é a principal causa das alterações climáticas, segundo a aula?",
+      "options": [
+        "A desflorestação massiva que reduz a capacidade da Terra de absorver CO₂",
+        "A queima de combustíveis fósseis (carvão, petróleo, gás) desde a Revolução Industrial",
+        "A criação intensiva de gado que produz quantidades excessivas de metano",
+        "A utilização de refrigerantes e aerossóis que destroem a camada de ozono"
+      ],
+      "correct": 1,
+      "explanation": "A principal causa das alterações climáticas é a queima massiva de combustíveis fósseis desde a Revolução Industrial, há cerca de 200 anos. Esta queima liberta enormes quantidades de CO₂ e outros gases de efeito de estufa para a atmosfera, tornando o 'cobertor' atmosférico natural demasiado espesso e causando o aquecimento global."
+    },
+    {
+      "question": "A que ritmo estão as espécies a extinguir-se, comparado com a taxa natural?",
+      "options": [
+        "2 a 5 vezes mais rápido do que a taxa natural",
+        "10 a 50 vezes mais rápido",
+        "100 a 1.000 vezes mais rápido do que a taxa natural de extinção",
+        "Ao mesmo ritmo — a biodiversidade está estável globalmente"
+      ],
+      "correct": 2,
+      "explanation": "As espécies estão a extinguir-se a um ritmo estimado de 100 a 1.000 vezes superior à taxa natural de extinção. Isto significa que o que normalmente demoraria milénios está a acontecer em décadas. A principal causa é a destruição de habitats naturais pela atividade humana — desflorestação, poluição, pesca excessiva e caça."
+    },
+    {
+      "question": "Porque é que a perda de biodiversidade nos afeta diretamente como humanos?",
+      "options": [
+        "Principalmente por razões estéticas e emocionais — gostamos de ver animais selvagens",
+        "Porque as abelhas polinizam culturas, as florestas produzem oxigénio e as plantas fornecem compostos para medicamentos",
+        "Porque a perda de animais reduz o turismo ecológico que financia economias locais",
+        "Principalmente porque perturba as cadeias alimentares dos países em desenvolvimento"
+      ],
+      "correct": 1,
+      "explanation": "A biodiversidade não é apenas 'bonita' — é a infraestrutura da vida humana. As abelhas e outros insetos polinizam mais de 70% das culturas que nos alimentam. As florestas (como a Amazónia) e o plâncton dos oceanos produzem o oxigénio que respiramos. Plantas raras fornecem compostos para medicamentos que salvam vidas. A perda de biodiversidade ameaça diretamente a nossa sobrevivência e qualidade de vida."
+    },
+    {
+      "question": "O que torna o plástico particularmente problemático para o ambiente?",
+      "options": [
+        "O plástico liberta gases tóxicos quando aquece ao sol nos oceanos",
+        "É muito pesado, afundando-se rapidamente e destruindo os ecossistemas do fundo do mar",
+        "Não se biodegrada — apenas se parte em pedaços cada vez menores (microplásticos) que entram na cadeia alimentar",
+        "É produzido a partir de petróleo, contribuindo diretamente para as alterações climáticas"
+      ],
+      "correct": 2,
+      "explanation": "O principal problema do plástico não é a sua produção, mas a sua incrível durabilidade. Ao contrário de materiais orgânicos, o plástico não é decomposto por bactérias — apenas se fragmenta em pedaços cada vez menores chamados microplásticos. Estes entram na cadeia alimentar: são ingeridos por plâncton, que é comido por peixes pequenos, que são comidos por peixes maiores, que eventualmente chegam ao nosso prato."
+    },
+    {
+      "question": "Qual é a cidade portuguesa mais associada ao risco de alterações climáticas mencionada na aula?",
+      "options": [
+        "Braga e Guimarães, devido às cheias no interior norte",
+        "Lisboa, Porto, Faro e Aveiro estão em risco pela subida do nível do mar",
+        "Évora e Beja, pelas secas intensas no Alentejo",
+        "Coimbra, pela proximidade ao rio Mondego e às zonas de inundação"
+      ],
+      "correct": 1,
+      "explanation": "Lisboa, Porto, Faro e Aveiro são mencionadas como estando em risco a longo prazo pela subida do nível do mar causada pelo derretimento dos glaciares. Portugal tem uma extensa linha costeira e várias cidades costeiras de baixa altitude que seriam afetadas por uma subida significativa do nível do mar — um dos impactos diretos das alterações climáticas."
+    },
+    {
+      "question": "O que representa a 'teia da vida' mencionada na secção sobre biodiversidade?",
+      "options": [
+        "A rede de organizações ambientais que trabalham para proteger as espécies",
+        "As interconexões entre todas as espécies vivas, das quais os humanos dependem para sobreviver",
+        "O mapa genético partilhado por todas as espécies com origem na mesma célula primordial",
+        "A cadeia produtiva da indústria alimentar global"
+      ],
+      "correct": 1,
+      "explanation": "A 'teia da vida' refere-se às interconexões profundas entre todas as espécies vivas. Os humanos não vivem isolados — dependemos de polinizadores para os alimentos, de florestas para o oxigénio, de microrganismos para a saúde do solo, de plantas para os medicamentos. Cada espécie que desaparece remove um fio desta teia, podendo causar o colapso em cadeia de sistemas de que dependemos sem saber."
+    },
+    {
+      "question": "Segundo a aula, o que acontecerá em 2050 se nada mudar em relação ao plástico nos oceanos?",
+      "options": [
+        "Os oceanos ficarão completamente contaminados com microplásticos em todos os peixes",
+        "Haverá, em peso, mais plástico nos oceanos do que peixes",
+        "Os corais de todo o mundo terão desaparecido por completo",
+        "O plástico terá criado uma nova ilha permanente no Oceano Pacífico"
+      ],
+      "correct": 1,
+      "explanation": "As projeções científicas indicam que, se os padrões atuais de produção e descarte de plástico continuarem sem mudança, em 2050 haverá mais plástico (em peso) nos oceanos do que peixes. Esta projeção dramatiza a escala do problema: em poucas décadas, poderíamos transformar os oceanos de habitats ricos em vida para zonas dominadas por resíduos humanos."
+    }
+  ]
+}

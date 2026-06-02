@@ -1,0 +1,115 @@
+{
+  "lesson_id": "sustentabilidade_003",
+  "questions": [
+    {
+      "question": "Segundo a aula, cada vez que compramos algo estamos a 'votar'. O que significa esta analogia?",
+      "options": [
+        "Que os consumidores deveriam ter poder de voto nas decisões das empresas",
+        "Que o dinheiro gasto numa empresa é uma aprovação do seu modelo de negócio — os nossos hábitos de consumo moldam o mercado",
+        "Que deveríamos participar em inquéritos de satisfação após cada compra",
+        "Que o consumo é um direito democrático que não deve ser restringido"
+      ],
+      "correct": 1,
+      "explanation": "A analogia do 'voto' refere-se ao poder do consumidor como agente de mudança económica. Cada euro gasto numa empresa comunica: 'Aprovo a forma como fazes as coisas, continua assim.' Se milhões de pessoas redirecionarem os seus gastos para empresas sustentáveis, as insustentáveis perdem receita e são forçadas a mudar. O consumo consciente é, portanto, um ato político e económico."
+    },
+    {
+      "question": "Porque é que comprar morangos em dezembro é considerado uma escolha pouco sustentável?",
+      "options": [
+        "Os morangos de inverno têm menos nutrientes do que os de primavera",
+        "Têm de ser transportados de avião desde regiões distantes, com um impacto de CO₂ muito elevado",
+        "São cultivados com mais pesticidas do que os de estação",
+        "O seu preço mais alto prejudica as famílias com menos rendimento"
+      ],
+      "correct": 1,
+      "explanation": "Os morangos são uma fruta de primavera/verão. Em dezembro, para haver morangos frescos em Portugal, estes têm de ser transportados por avião desde o hemisfério sul ou regiões muito distantes — um meio de transporte com um impacto de carbono extremamente elevado por quilograma de produto. Escolher produtos da época e de origem local é uma das formas mais simples de reduzir a pegada ecológica alimentar."
+    },
+    {
+      "question": "Quantos litros de água são necessários para produzir uma única t-shirt de algodão?",
+      "options": [
+        "Cerca de 250 litros",
+        "Cerca de 2.500 litros",
+        "Cerca de 25.000 litros",
+        "Cerca de 500 litros"
+      ],
+      "correct": 1,
+      "explanation": "São necessários aproximadamente 2.500 litros de água para produzir uma única t-shirt de algodão — desde a irrigação das plantas de algodão até ao processo de tingimento e acabamento do tecido. Este número surpreendente ilustra por que a indústria da moda é uma das mais intensivas em recursos do mundo, mesmo para uma peça de roupa aparentemente simples e barata."
+    },
+    {
+      "question": "Qual é a comparação feita na aula sobre as emissões de carbono da indústria da moda?",
+      "options": [
+        "Equivale às emissões de todos os carros do mundo combinados",
+        "É responsável por cerca de 10% das emissões globais — mais do que todos os voos internacionais e transporte marítimo juntos",
+        "Representa apenas 2% das emissões globais, muito menos do que a indústria automóvel",
+        "É comparável às emissões de toda a indústria alimentar mundial"
+      ],
+      "correct": 1,
+      "explanation": "A indústria da moda é responsável por cerca de 10% de todas as emissões globais de carbono — mais do que todos os voos internacionais e transporte marítimo combinados. Este facto surpreende a maioria das pessoas porque a moda é frequentemente vista como uma indústria 'leve', mas a escala de produção global, o transporte internacional, os processos de tingimento e o descarte de roupas tornam-na numa das indústrias mais poluentes do mundo."
+    },
+    {
+      "question": "Qual é o primeiro e mais poderoso dos 5 R's?",
+      "options": [
+        "Reciclar — separar os resíduos corretamente para que possam ser reutilizados",
+        "Reduzir — diminuir a quantidade de produtos consumidos",
+        "Recusar — dizer não a produtos desnecessários antes de os aceitar",
+        "Reutilizar — dar uma segunda vida aos produtos"
+      ],
+      "correct": 2,
+      "explanation": "RECUSAR é o mais poderoso porque impede a criação do resíduo na sua origem — é o único dos 5 R's que não gera lixo para tratar. Recusar o saco de plástico, a palhinha, o panfleto ou a embalagem desnecessária elimina o problema antes de existir. Os outros quatro R's (Reduzir, Reutilizar, Reparar e Reciclar) lidam com produtos que já foram aceites — são reações; Recusar é prevenção."
+    },
+    {
+      "question": "Porque é que Reciclar deve ser o 'último recurso' na hierarquia dos 5 R's?",
+      "options": [
+        "Porque a reciclagem é cara e poucos municípios têm infraestrutura adequada",
+        "Porque a reciclagem consome energia e recursos — os quatro primeiros R's são mais eficientes energeticamente",
+        "Porque a reciclagem produz materiais de menor qualidade que não podem ser reutilizados",
+        "Porque a reciclagem só funciona para papel e vidro, não para plásticos"
+      ],
+      "correct": 1,
+      "explanation": "A reciclagem, embora preferível ao aterro, ainda consome energia e recursos, e os materiais resultantes são frequentemente de menor qualidade. Recusar, Reduzir, Reutilizar e Reparar são mais eficientes porque mantêm os produtos em uso sem processos industriais adicionais. A reciclagem é o último recurso porque representa o 'fracasso' dos quatro passos anteriores — significa que o produto chegou ao fim da vida sem ter sido mantido em uso."
+    },
+    {
+      "question": "O que mede a Pegada Ecológica?",
+      "options": [
+        "O total de emissões de CO₂ geradas por uma pessoa ao longo da sua vida",
+        "Quantos 'planetas Terra' seriam necessários se toda a população mundial vivesse com o mesmo estilo de vida",
+        "A área de terreno necessária para compensar as emissões de carbono de uma pessoa através de plantação de árvores",
+        "O número de espécies extintas causadas pelo estilo de vida de uma sociedade"
+      ],
+      "correct": 1,
+      "explanation": "A Pegada Ecológica é uma ferramenta que calcula quantos planetas Terra seriam necessários se toda a humanidade vivesse com o mesmo estilo de vida que um determinado indivíduo ou país. Considera a alimentação, o transporte, a energia em casa e as compras. É uma forma intuitiva de comparar estilos de vida com a capacidade regenerativa do planeta."
+    },
+    {
+      "question": "O que nos diz o facto de a Pegada Ecológica de Portugal ser de 3 planetas?",
+      "options": [
+        "Portugal é o país mais poluente da Europa por habitante",
+        "O estilo de vida médio português não é sustentável — precisaríamos de 3 Terras se toda a gente vivesse assim",
+        "Portugal precisa de triplicar as suas energias renováveis para compensar",
+        "Cada português gera o triplo de resíduos do que a média europeia"
+      ],
+      "correct": 1,
+      "explanation": "Uma pegada de 3 planetas significa que, se toda a humanidade vivesse como a média portuguesa, precisaríamos de 3 planetas Terra para fornecer os recursos necessários e absorver os resíduos gerados. Como só temos um planeta, isto confirma que o nosso estilo de vida atual não é sustentável a longo prazo — estamos a 'gastar o capital' natural do planeta sem o repor."
+    },
+    {
+      "question": "O que é a 'Slow Fashion' e como se diferencia da 'Fast Fashion'?",
+      "options": [
+        "A Slow Fashion usa métodos de costura tradicionais mais lentos, ao contrário da produção industrial",
+        "A Slow Fashion foca-se em comprar menos, melhor qualidade, de forma consciente — em vez de seguir tendências descartáveis",
+        "A Slow Fashion é uma tendência de moda de alta costura para um público de luxo",
+        "A Slow Fashion produz roupas que demoram mais tempo a ser entregues porque são feitas sob medida"
+      ],
+      "correct": 1,
+      "explanation": "A Slow Fashion é a antítese da Fast Fashion: em vez de comprar muita roupa barata que dura pouco, a Slow Fashion defende comprar menos, mas de melhor qualidade e de forma consciente. Inclui práticas como comprar em segunda mão, apoiar marcas transparentes e locais, reparar a roupa em vez de a deitar fora, e questionar se realmente precisamos de mais uma peça antes de comprar."
+    },
+    {
+      "question": "Qual é o alimento com maior impacto na pegada ecológica individual?",
+      "options": [
+        "O peixe capturado no mar, devido ao consumo de combustível dos barcos de pesca",
+        "A carne, especialmente a de vaca, que requer muito mais recursos do que os vegetais",
+        "As frutas exóticas transportadas de avião",
+        "O chocolate e o café, produzidos em regiões com elevada desflorestação"
+      ],
+      "correct": 1,
+      "explanation": "A carne, especialmente a de bovino, é o alimento com maior impacto ecológico. Para produzir 1 kg de carne de vaca são necessários cerca de 15.000 litros de água e 7-8 kg de cereais, além de grandes extensões de terra. A pecuária é também responsável por cerca de 14,5% das emissões globais de gases de efeito de estufa. Reduzir o consumo de carne é uma das mudanças individuais com maior impacto na pegada ecológica pessoal."
+    }
+  ]
+}
