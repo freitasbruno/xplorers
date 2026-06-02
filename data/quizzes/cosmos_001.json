@@ -1,0 +1,65 @@
+{
+  "lesson_id": "cosmos_001",
+  "questions": [
+    {
+      "question": "O que representa cerca de 68% da composição do universo?",
+      "options": ["Matéria comum", "Matéria escura", "Energia escura", "Galáxias visíveis"],
+      "correct": 2,
+      "explanation": "A energia escura representa cerca de 68% do universo. É uma força misteriosa que acelera a expansão do cosmos, mas ainda não compreendemos completamente a sua natureza."
+    },
+    {
+      "question": "Por que razão não existe som no espaço?",
+      "options": ["O espaço é demasiado frio", "Não há partículas suficientes para propagar ondas sonoras", "A luz absorve o som", "A gravidade bloqueia o som"],
+      "correct": 1,
+      "explanation": "O som precisa de um meio material para se propagar. No espaço, a densidade de partículas é tão baixa que as ondas sonoras não conseguem viajar — é um vácuo quase perfeito."
+    },
+    {
+      "question": "Que percentagem do universo é constituída por matéria comum (átomos)?",
+      "options": ["27%", "68%", "5%", "50%"],
+      "correct": 2,
+      "explanation": "Apenas 5% do universo é matéria comum — tudo o que conseguimos ver e tocar, incluindo estrelas, planetas e nós próprios. Os restantes 95% são matéria e energia escura."
+    },
+    {
+      "question": "O que é uma nebulosa?",
+      "options": ["Uma estrela em colapso", "Um buraco negro jovem", "Uma nuvem de gás e poeira onde nascem estrelas", "Um planeta gasoso gigante"],
+      "correct": 2,
+      "explanation": "As nebulosas são imensas nuvens de gás e poeira cósmica. São os 'berçários' do universo: a gravidade comprime gradualmente este material até formar novas estrelas."
+    },
+    {
+      "question": "Como se chama a galáxia onde vivemos?",
+      "options": ["Andrómeda", "Via Láctea", "Triângulo", "Magalhães"],
+      "correct": 1,
+      "explanation": "Vivemos na Via Láctea, uma galáxia espiral com cerca de 100 a 400 mil milhões de estrelas. O Sol encontra-se a aproximadamente 26 000 anos-luz do centro galáctico."
+    },
+    {
+      "question": "O que é um ano-luz?",
+      "options": ["A duração de um ano no espaço", "A distância que a luz percorre num ano", "A velocidade máxima de uma nave espacial", "A idade do universo em anos"],
+      "correct": 1,
+      "explanation": "Um ano-luz é a distância que a luz percorre num ano — cerca de 9,46 biliões de quilómetros. É uma unidade de distância, não de tempo, usada para medir as imensidões do cosmos."
+    },
+    {
+      "question": "O que acontece no interior de uma estrela para produzir luz e calor?",
+      "options": ["Combustão de oxigénio", "Fusão nuclear de hidrogénio em hélio", "Colisão de asteroides", "Reações químicas em cadeia"],
+      "correct": 1,
+      "explanation": "As estrelas brilham graças à fusão nuclear: no seu núcleo, átomos de hidrogénio fundem-se para formar hélio, libertando enormes quantidades de energia sob a forma de luz e calor."
+    },
+    {
+      "question": "O que é um buraco negro?",
+      "options": ["Uma zona do espaço sem estrelas", "Uma estrela que ficou fria", "Uma região com gravidade tão intensa que nada — nem a luz — consegue escapar", "Um planeta com atmosfera muito densa"],
+      "correct": 2,
+      "explanation": "Um buraco negro forma-se quando uma estrela muito massiva colapsa sobre si própria. A sua gravidade é tão intensa que nem a luz consegue escapar — daí o nome."
+    },
+    {
+      "question": "Há quanto tempo ocorreu o Big Bang, a origem do universo?",
+      "options": ["4,5 mil milhões de anos", "13,8 mil milhões de anos", "100 mil milhões de anos", "1 mil milhões de anos"],
+      "correct": 1,
+      "explanation": "O Big Bang ocorreu há cerca de 13,8 mil milhões de anos. A Terra tem apenas 4,5 mil milhões de anos — o universo existiu durante mais de 9 mil milhões de anos antes de o nosso planeta se formar."
+    },
+    {
+      "question": "Qual é a estrela mais próxima do Sistema Solar (para além do Sol)?",
+      "options": ["Sírio", "Proxima Centauri", "Betelgeuse", "Vega"],
+      "correct": 1,
+      "explanation": "Proxima Centauri, parte do sistema Alpha Centauri, é a estrela mais próxima de nós — a cerca de 4,24 anos-luz. Mesmo assim, uma viagem até lá demoraria dezenas de milhar de anos com as tecnologias atuais."
+    }
+  ]
+}

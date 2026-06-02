@@ -3,13 +3,15 @@
  * Shared header.
  *
  * Variables (set before including):
- *   $header_mode      — 'catalog' (default) | 'lesson'
+ *   $header_mode      — 'catalog' (default) | 'lesson' | 'quiz'
  *   $page_title       — <title> tag content
- *   $lesson           — array from get_lesson() — required when mode = 'lesson'
+ *   $lesson           — array from get_lesson() — required when mode = 'lesson' or 'quiz'
+ *   $quiz_total       — int, total questions — required when mode = 'quiz'
  */
 $header_mode = $header_mode ?? 'catalog';
 $page_title  = $page_title  ?? 'X.Plorers';
 $lesson      = $lesson      ?? null;
+$quiz_total  = $quiz_total  ?? 0;
 
 $badge_class = $lesson ? topic_badge_class($lesson['topic_slug']) : '';
 ?>
@@ -214,6 +216,39 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
       </button>
+    </div>
+
+  <?php elseif ($header_mode === 'quiz'): ?>
+
+    <!-- QUIZ HEADER -->
+    <div class="max-w-xl mx-auto px-4 h-14 flex items-center gap-3">
+      <a href="lesson.php?id=<?= htmlspecialchars($lesson ? $lesson['id'] : '') ?>"
+         aria-label="Voltar à aula"
+         class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 transition-colors"
+         style="background: rgba(0,0,0,0.05); color: #475569;">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="m15 18-6-6 6-6"/>
+        </svg>
+      </a>
+      <?php if ($lesson): ?>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm font-semibold text-slate-900 truncate">
+            <?= htmlspecialchars($lesson['topic_name']) ?> · Aula <?= $lesson['class_number'] ?>
+          </div>
+          <div class="text-xs" style="color:var(--muted);">Quiz</div>
+        </div>
+      <?php endif; ?>
+      <div id="quiz-progress-label"
+           class="text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0"
+           style="background:var(--accent-light);color:var(--accent);border:1px solid #fda4af;">
+        <?= $quiz_total > 0 ? '1 / ' . $quiz_total : '—' ?>
+      </div>
+    </div>
+    <!-- Quiz progress bar -->
+    <div class="h-1 w-full" style="background:var(--border);">
+      <div id="quiz-progress-bar"
+           class="progress-bar-fill h-1"
+           style="background:var(--accent);width:<?= $quiz_total > 0 ? round(100 / $quiz_total) : 0 ?>%;transition:width 0.4s ease;"></div>
     </div>
 
   <?php else: ?>
