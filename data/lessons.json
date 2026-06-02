@@ -179,7 +179,9 @@
     "description": "Introdução ao conceito de empreendedorismo, desmistificando o \"empreendedor\" como um herói e focando na mentalidade de resolução de problemas.",
     "image_url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
     "content_file": "lessons/011_empreendedorismo_01.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/011_empreendedorismo_01.json",
+    "md_file": "data/md/011_empreendedorismo_01.md",
+    "has_quiz": true,
     "published_at": "2025-04-01",
     "featured": false,
     "global_class": 11
@@ -194,7 +196,9 @@
     "description": "Foco na geração e validação de ideias. Aprender a identificar necessidades no mercado e a testar se uma ideia tem potencial.",
     "image_url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
     "content_file": "lessons/012_empreendedorismo_02.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/012_empreendedorismo_02.json",
+    "md_file": "data/md/012_empreendedorismo_02.md",
+    "has_quiz": true,
     "published_at": "2025-04-08",
     "featured": false,
     "global_class": 12
@@ -209,7 +213,9 @@
     "description": "Introdução às ferramentas de planeamento essenciais. Foco no Business Model Canvas como forma ágil de estruturar um negócio.",
     "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
     "content_file": "lessons/013_empreendedorismo_03.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/013_empreendedorismo_03.json",
+    "md_file": "data/md/013_empreendedorismo_03.md",
+    "has_quiz": true,
     "published_at": "2025-04-15",
     "featured": false,
     "global_class": 13
@@ -224,7 +230,9 @@
     "description": "Análise dos aspetos práticos de lançar um projeto: onde encontrar financiamento e como comunicar no mundo digital.",
     "image_url": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80",
     "content_file": "lessons/014_empreendedorismo_04.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/014_empreendedorismo_04.json",
+    "md_file": "data/md/014_empreendedorismo_04.md",
+    "has_quiz": true,
     "published_at": "2025-04-22",
     "featured": false,
     "global_class": 14

@@ -1,0 +1,115 @@
+{
+  "lesson_id": "empreendedorismo_001",
+  "questions": [
+    {
+      "question": "Segundo a aula, o empreendedorismo é principalmente:",
+      "options": [
+        "A criação de empresas tecnológicas de grande dimensão",
+        "Uma mentalidade de identificar problemas e criar valor para os resolver",
+        "A capacidade de arrecadar grandes investimentos de capital de risco",
+        "O talento inato que algumas pessoas têm para os negócios"
+      ],
+      "correct": 1,
+      "explanation": "O empreendedorismo é definido como uma mentalidade — a capacidade de olhar para o mundo, ver problemas e ter a inquietação de querer resolvê-los. Este valor pode ser económico, social ou cultural, e não está limitado à criação de empresas multimilionárias."
+    },
+    {
+      "question": "Qual destes é um exemplo de 'valor social' criado pelo empreendedorismo?",
+      "options": [
+        "Criar uma app de fitness que as pessoas pagam mensalmente",
+        "Abrir um restaurante num bairro sem oferta gastronómica",
+        "Desenvolver um projeto para reduzir o desperdício alimentar na escola",
+        "Lançar um festival de música para promover artistas locais"
+      ],
+      "correct": 2,
+      "explanation": "O valor social refere-se a soluções para problemas da comunidade — projetos que beneficiam as pessoas mesmo que não gerem lucro direto. Um projeto de redução de desperdício alimentar escolar é um exemplo claro. O festival seria valor cultural, e os outros dois são exemplos de valor económico."
+    },
+    {
+      "question": "O Google não foi o primeiro motor de busca, e o Facebook não foi a primeira rede social. O que nos ensina este facto sobre empreendedorismo?",
+      "options": [
+        "Que as primeiras empresas num mercado têm sempre vantagem competitiva",
+        "Que o sucesso não exige uma ideia completamente nova — a execução e a melhoria são o que conta",
+        "Que copiar a ideia de outra empresa é a estratégia mais eficaz",
+        "Que o timing de entrada no mercado é o fator mais importante"
+      ],
+      "correct": 1,
+      "explanation": "Este facto desmistifica o mito de que é preciso uma ideia genial e única. O Google melhorou motores de busca que já existiam; o Facebook melhorou redes sociais anteriores. O que os distinguiu foi a execução superior, a experiência do utilizador e a escalabilidade — não a originalidade da ideia em si."
+    },
+    {
+      "question": "Qual é a característica empreendedora descrita como 'a Super-Cola'?",
+      "options": [
+        "Criatividade — a capacidade de ligar pontos inesperados",
+        "Networking — construir uma rede de contactos forte",
+        "Resiliência — ouvir 'não' 99 vezes e continuar",
+        "Visão — a capacidade de prever tendências futuras"
+      ],
+      "correct": 2,
+      "explanation": "A resiliência é descrita como 'a Super-Cola' porque é ela que mantém um empreendedor unido quando tudo parece falhar. É a capacidade de ouvir 'não' repetidamente, de falhar, aprender com o erro e levantar-se depressa. O falhanço não é o fim da linha — é parte integrante do processo de aprendizagem."
+    },
+    {
+      "question": "O que é o 'intra-empreendedorismo'?",
+      "options": [
+        "Empreendedorismo dentro de mercados internacionais",
+        "A fase inicial de criação de uma empresa, antes do financiamento",
+        "Ser empreendedor dentro de uma empresa já existente — sugerir melhorias e criar novos projetos",
+        "Empreendedorismo focado em produtos digitais e tecnologia"
+      ],
+      "correct": 2,
+      "explanation": "O intra-empreendedorismo é aplicar a mentalidade empreendedora dentro de uma empresa existente. Um funcionário que propõe e desenvolve um novo produto, melhora um processo ou cria um projeto interno está a ser intra-empreendedor — sem necessitar de abandonar a segurança do emprego tradicional."
+    },
+    {
+      "question": "Qual foi a ideia original que deu origem à Airbnb?",
+      "options": [
+        "Criar uma plataforma global para reserva de hotéis de luxo",
+        "Digitalizar o processo de check-in em hotéis para ser mais rápido",
+        "Alugar um colchão de ar a designers que vinham a uma conferência sem hotel",
+        "Criar um sistema de partilha de apartamentos para estudantes universitários"
+      ],
+      "correct": 2,
+      "explanation": "Os fundadores da Airbnb não conseguiam pagar a renda em São Francisco. A ideia inicial foi surpreendentemente simples: tinham um colchão de ar sobresselente e pensaram em alugá-lo a designers que vinham à cidade para uma conferência e não encontravam hotel. Esta pequena solução para um problema imediato tornou-se numa das maiores plataformas do mundo."
+    },
+    {
+      "question": "Por que razão a Blockbuster recusou comprar a Netflix em 2000?",
+      "options": [
+        "A Netflix pedia demasiado dinheiro — 500 milhões de dólares",
+        "A Blockbuster já tinha o seu próprio serviço de streaming",
+        "A Blockbuster não via valor no modelo de negócio da Netflix e riu-se da proposta de 50 milhões",
+        "Existia uma disputa legal sobre os direitos de distribuição de filmes"
+      ],
+      "correct": 2,
+      "explanation": "Reed Hastings propôs vender a Netflix à Blockbuster por 50 milhões de dólares em 2000. A Blockbuster rejeitou a proposta, não conseguindo reconhecer o potencial do modelo de streaming que a Netflix estava a desenvolver. Dez anos depois, a Blockbuster faliu; a Netflix tornou-se numa das empresas mais valiosas do mundo."
+    },
+    {
+      "question": "Qual a principal diferença entre empreendedorismo e emprego tradicional?",
+      "options": [
+        "No empreendedorismo, trabalha-se menos horas mas ganha-se mais dinheiro",
+        "No emprego tradicional nunca há criatividade ou iniciativa",
+        "No empreendedorismo, o empreendedor cria a estrutura — com maior autonomia mas sem salário garantido",
+        "O empreendedorismo é apenas para pessoas com formação em gestão de empresas"
+      ],
+      "correct": 2,
+      "explanation": "A diferença fundamental é que num emprego tradicional encaixes numa estrutura já existente, com um salário garantido e responsabilidades definidas. No empreendedorismo, tu crias a estrutura. A responsabilidade é total (não há salário garantido), mas a autonomia nas decisões e o potencial de impacto também são muito maiores."
+    },
+    {
+      "question": "Segundo a aula, o empreendedorismo é comparado a um 'músculo'. O que significa esta analogia?",
+      "options": [
+        "Que os empreendedores precisam de estar fisicamente em boa forma",
+        "Que as competências empreendedoras podem ser desenvolvidas e fortalecidas com prática",
+        "Que o empreendedorismo é um esforço físico intenso que esgota rapidamente",
+        "Que apenas as pessoas naturalmente fortes podem ser empreendedoras"
+      ],
+      "correct": 1,
+      "explanation": "Dizer que o empreendedorismo é 'um músculo' significa que, tal como um músculo, pode ser desenvolvido através da prática e do exercício. Não é um talento inato reservado a algumas pessoas — é uma capacidade que qualquer pessoa pode treinar e fortalecer ao longo do tempo, tomando pequenas iniciativas e aprendendo com os erros."
+    },
+    {
+      "question": "Qual destes exemplos melhor ilustra a criatividade empreendedora tal como descrita na aula?",
+      "options": [
+        "Um artista que pinta quadros originais e os vende online",
+        "Um programador que usa uma linguagem de programação existente para resolver um problema logístico de restaurantes",
+        "Um inventor que cria uma tecnologia completamente nova que nunca existiu",
+        "Um gestor que implementa rigorosamente os processos definidos pela sede da empresa"
+      ],
+      "correct": 1,
+      "explanation": "A criatividade empreendedora descrita na aula não é criar algo do zero, mas 'ligar pontos que parecem não ter ligação para encontrar soluções novas para problemas antigos'. Um programador que aplica tecnologia existente a um setor diferente (restaurantes) está a ser criativo da forma empreendedora — recombinando o que já existe de uma forma nova e útil."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "lesson_id": "empreendedorismo_004",
+  "questions": [
+    {
+      "question": "O que é o 'Bootstrapping' no contexto do financiamento de um negócio?",
+      "options": [
+        "Obter financiamento de grandes fundos de capital de risco",
+        "Começar um negócio usando apenas os próprios recursos, sem dívidas externas",
+        "Copiar o modelo de negócio de uma empresa já existente",
+        "Fazer uma campanha de crowdfunding online para financiar o projeto"
+      ],
+      "correct": 1,
+      "explanation": "Bootstrapping é a prática de começar e crescer um negócio usando apenas os seus próprios recursos, sem recorrer a investimento externo. O empreendedor usa as suas poupanças, os lucros gerados pelo próprio negócio, ou até vende outras coisas para financiar a operação. A grande vantagem é a independência total — não há investidores a quem dever explicações."
+    },
+    {
+      "question": "O que são os '3 F's' no vocabulário de financiamento de startups?",
+      "options": [
+        "Fatores, Financiamento, Foco — os três pilares de uma startup",
+        "Friends, Family and Fools — as primeiras pessoas que investem na ideia",
+        "Forecast, Funding, Framework — as três fases do planeamento financeiro",
+        "First, Fast, Forward — a filosofia de lançamento rápido ao mercado"
+      ],
+      "correct": 1,
+      "explanation": "Os '3 Fs' referem-se a Friends (amigos), Family (família) e Fools (tolos) — as primeiras pessoas que costumam investir numa startup muito jovem. São chamados 'Fools' não por serem estúpidos, mas porque investem numa fase tão incipiente que o risco é enorme. O importante é perceber que investem maioritariamente na pessoa do empreendedor, não no negócio em si."
+    },
+    {
+      "question": "Qual é a principal vantagem dos Investidores-Anjo em relação aos 3 F's?",
+      "options": [
+        "Investem quantias muito maiores, normalmente acima de um milhão de euros",
+        "Não pedem participação na empresa em troca do investimento",
+        "Trazem 'Smart Money' — capital + experiência de empreendedores + rede de contactos",
+        "São mais fáceis de convencer porque conhecem pessoalmente o empreendedor"
+      ],
+      "correct": 2,
+      "explanation": "A grande vantagem dos Investidores-Anjo é o 'Smart Money' — não é apenas capital financeiro, mas também a experiência prática de ex-empreendedores que já passaram pelos mesmos desafios, e a sua rede de contactos (futuros clientes, parceiros, outros investidores). Este conjunto de recursos vai muito além do que a família e amigos conseguem oferecer."
+    },
+    {
+      "question": "O que é um 'Elevator Pitch' e de onde vem o nome?",
+      "options": [
+        "Uma apresentação detalhada de 30 minutos para grandes investidores, normalmente em andares altos de edifícios",
+        "Uma apresentação de 30-60 segundos, com o nome baseado na lenda de convencer investidores durante uma viagem de elevador",
+        "Uma técnica de vendas para produtos de elevada gama que requerem demonstração presencial",
+        "Um discurso de motivação dirigido à equipa antes de lançar um produto"
+      ],
+      "correct": 1,
+      "explanation": "O Elevator Pitch é uma apresentação muito curta e convincente de uma ideia de negócio — com duração de 30 a 60 segundos. O nome vem da lenda dos anos 80-90, quando fundadores de startups tentavam literalmente apanhar investidores nos elevadores dos edifícios no Vale do Silício, aproveitando os escassos 30 segundos de viagem para apresentar as suas ideias."
+    },
+    {
+      "question": "Qual é a estrutura correta de um pitch eficaz, segundo a aula?",
+      "options": [
+        "Empresa → Equipa → Produto → Preço → Concorrência",
+        "Problema → Solução → Oportunidade → Pedido",
+        "Visão → Missão → Valores → Objetivos → Estratégia",
+        "História pessoal → Produto → Testemunhos → Chamada à ação"
+      ],
+      "correct": 1,
+      "explanation": "A estrutura eficaz de um pitch é: 1) O Problema (identificar a dor que o ouvinte reconhece), 2) A Solução (o teu 'analgésico' numa frase), 3) A Oportunidade (porque é que isto é um negócio — quantas pessoas têm esta dor e quanto pagariam) e 4) O Pedido (ser específico sobre o que precisas). Esta sequência cria uma narrativa lógica que leva o ouvinte da empatia com o problema até ao pedido de apoio."
+    },
+    {
+      "question": "Porque é que as Redes Sociais não devem ser usadas principalmente para 'vender, vender, vender'?",
+      "options": [
+        "Porque os algoritmos das redes sociais penalizam o conteúdo comercial",
+        "Porque as redes sociais têm regras que proibem anúncios diretos de pequenas empresas",
+        "Porque as pessoas usam redes sociais para entretenimento e conexão — conteúdo de venda pura é ignorado ou mal recebido",
+        "Porque o custo de publicidade nas redes sociais é demasiado elevado para startups"
+      ],
+      "correct": 2,
+      "explanation": "As redes sociais são espaços de entretenimento e conexão humana. As pessoas abrem o Instagram para se inspirar ou divertir — não para ver anúncios. Quando uma marca usa as redes apenas para vender, o público ignora ou rejeita. A estratégia eficaz é construir uma comunidade através da história — os bastidores, o processo, os valores — que cria confiança e desejo. A venda é a consequência natural, não o objetivo direto."
+    },
+    {
+      "question": "O que é o SEO e porque é que é considerado uma fonte de tráfego valiosa?",
+      "options": [
+        "Search Engine Optimization — aparecer nos resultados do Google quando alguém já procura a solução que ofereces",
+        "Social Engagement Online — a taxa de interação nas publicações das redes sociais",
+        "Strategic Email Outreach — envio de emails em massa para potenciais clientes",
+        "Sales Enhancement Operations — técnicas para aumentar as taxas de conversão num website"
+      ],
+      "correct": 0,
+      "explanation": "SEO (Search Engine Optimization) é o processo de otimizar o teu conteúdo para aparecer nos resultados de pesquisa do Google. É especialmente valioso porque captura intenção já existente — quando alguém pesquisa 'como organizar TPCs', já tem o problema e está a procurar ativamente a solução. Isto é muito diferente das redes sociais, onde interrompemos a navegação de alguém. Com SEO, eles chegam até ti."
+    },
+    {
+      "question": "O que tornou a estratégia de marketing da Gleba (padaria) tão eficaz?",
+      "options": [
+        "Investiu fortemente em publicidade paga nas redes sociais antes de abrir",
+        "Criou uma história autêntica sobre o processo artesanal, construindo uma comunidade fiel antes de abrir",
+        "Ofereceu desconto de 50% na primeira semana para atrair os primeiros clientes",
+        "Abriu numa localização estratégica de elevado tráfego pedonal"
+      ],
+      "correct": 1,
+      "explanation": "O fundador da Gleba não vendeu pão — contou uma história sobre 'pão a sério', partilhando o processo artesanal, a farinha, o forno, a massa. Quando a loja abriu, já existia uma comunidade de pessoas que queriam especificamente aquele produto, feito daquela forma. As filas no primeiro dia não foram fruto de publicidade — foram fruto de uma história que criou desejo genuíno e antecipação."
+    },
+    {
+      "question": "Porque é que a 'App Fantasma' falhou, segundo a aula?",
+      "options": [
+        "O produto técnico tinha demasiados bugs que afastaram os utilizadores",
+        "O preço era demasiado alto para o mercado-alvo",
+        "Não validaram se o problema era real e não tinham história — apenas publicidade",
+        "Lançaram a app demasiado cedo, antes de estar completamente desenvolvida"
+      ],
+      "correct": 2,
+      "explanation": "A 'App Fantasma' é o contra-exemplo clássico: construíram um produto 'perfeito' durante meses, depois gastaram dinheiro em anúncios — e ninguém usou. O problema duplo foi: não validaram se a dor que estavam a resolver era real (a lição da Aula #2) e não construíram uma história ou comunidade em torno do produto (a lição de marketing desta aula). Tinham publicidade, não tinham confiança."
+    },
+    {
+      "question": "Qual a diferença entre um 'influenciador' e publicidade tradicional, do ponto de vista do marketing?",
+      "options": [
+        "Os influenciadores são mais baratos do que anúncios de televisão",
+        "A recomendação de um influenciador é percebida como genuína pelo público que o segue, ao contrário de um anúncio pago",
+        "Os influenciadores têm mais seguidores do que qualquer canal de televisão ou rádio",
+        "Os influenciadores só promovem produtos que usam pessoalmente, garantindo mais autenticidade"
+      ],
+      "correct": 1,
+      "explanation": "A diferença fundamental é a percepção de autenticidade. Um anúncio televisivo é claramente pago e o público filtra-o automaticamente com ceticismo. A recomendação de um influenciador é percebida pelo seu público como uma escolha pessoal e genuína — mesmo que seja paga. Esta confiança transfere-se para o produto recomendado, tornando-a muito mais eficaz do que publicidade direta."
+    }
+  ]
+}

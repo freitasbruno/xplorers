@@ -1,0 +1,115 @@
+{
+  "lesson_id": "empreendedorismo_003",
+  "questions": [
+    {
+      "question": "Qual é a principal utilidade de um plano de negócios, segundo a aula?",
+      "options": [
+        "Impressionar os investidores com projeções financeiras detalhadas",
+        "Clarificar o pensamento e obrigar a responder às perguntas difíceis sobre o negócio",
+        "Cumprir os requisitos legais para registar uma empresa",
+        "Definir o salário de cada funcionário antes de contratar"
+      ],
+      "correct": 1,
+      "explanation": "Segundo a aula, um plano de negócios serve, acima de tudo, para clarificar o próprio pensamento — obriga-nos a responder a perguntas como: Quem são os nossos clientes? O que lhes estamos realmente a oferecer? Como vamos ganhar dinheiro? É o 'mapa' que liga a ideia a um negócio sustentável, não apenas um documento para mostrar a terceiros."
+    },
+    {
+      "question": "No Business Model Canvas, o que é a 'Proposta de Valor'?",
+      "options": [
+        "O montante total de investimento necessário para lançar o negócio",
+        "A razão pela qual um cliente te escolheria a ti e não à concorrência — a 'dor' que resolves",
+        "A lista de parceiros estratégicos que ajudam o negócio a funcionar",
+        "O preço a que vendes o teu produto ou serviço"
+      ],
+      "correct": 1,
+      "explanation": "A Proposta de Valor é o coração do Business Model Canvas — é o que torna o teu negócio único e valioso para o cliente. Define que 'dor' estás a resolver (o 'analgésico' da aula anterior) e porque é que um cliente te escolheria a ti e não a outra opção disponível. Pode ser conveniência, preço, design, qualidade, ou uma combinação."
+    },
+    {
+      "question": "O que são os 'Canais' no Business Model Canvas?",
+      "options": [
+        "As redes sociais que a empresa utiliza para comunicar",
+        "A forma como a proposta de valor chega aos clientes (website, app, loja física, etc.)",
+        "Os meios de comunicação internos da empresa",
+        "Os canais de televisão onde a empresa faz publicidade"
+      ],
+      "correct": 1,
+      "explanation": "No BMC, os Canais definem como a proposta de valor chega ao cliente — pode ser um website, uma app, uma loja física, distribuidores parceiros, redes sociais ou qualquer combinação. A Nespresso, por exemplo, escolheu deliberadamente vender através de boutiques próprias e do clube online, evitando os supermercados para manter a aura de exclusividade."
+    },
+    {
+      "question": "Qual é a diferença entre 'Atividades-Chave' e 'Recursos-Chave' no BMC?",
+      "options": [
+        "As Atividades são o que a empresa faz; os Recursos são o que a empresa tem para poder fazê-lo",
+        "As Atividades são externas; os Recursos são internos",
+        "Os Recursos são mais importantes do que as Atividades para o sucesso",
+        "São sinónimos — referem-se à mesma dimensão do negócio"
+      ],
+      "correct": 0,
+      "explanation": "Os Recursos-Chave são o que a empresa precisa de TER para funcionar — podem ser físicos (equipamentos), intelectuais (patentes, marca), humanos (talentos específicos) ou financeiros. As Atividades-Chave são o que a empresa precisa de FAZER todos os dias para entregar o seu valor — programar software, gerir a cadeia de fornecimento, fazer marketing. Ambos estão nos 'bastidores' do negócio."
+    },
+    {
+      "question": "O modelo de negócio da Nespresso é descrito como 'Isco e Anzol'. O que significa isto?",
+      "options": [
+        "A empresa usa táticas agressivas de marketing para captar clientes",
+        "Vende a 'ferramenta' (máquina) barata e ganha o dinheiro nos consumíveis (cápsulas) que são exclusivos",
+        "O negócio é arriscado, como pescar — pode funcionar ou não",
+        "Os clientes ficam 'presos' a contratos de longa duração"
+      ],
+      "correct": 1,
+      "explanation": "O modelo 'Isco e Anzol' consiste em oferecer o produto principal (a máquina) a um preço muito baixo ou quase sem lucro, e depois ganhar o dinheiro real nas recargas ou consumíveis que são proprietários (as cápsulas, que só a Nespresso vende). A Gillette usa o mesmo modelo: máquinas de barbear baratas, lâminas caras. O cliente compra o 'isco' barato e fica dependente do 'anzol'."
+    },
+    {
+      "question": "Quais são as quatro letras da análise SWOT e o que representam?",
+      "options": [
+        "Speeds, Wins, Opportunities, Targets",
+        "Strengths, Weaknesses, Opportunities, Threats",
+        "Strategy, Workflow, Operations, Tactics",
+        "Sales, Website, Online, Technology"
+      ],
+      "correct": 1,
+      "explanation": "SWOT é um acrónimo para Strengths (Forças), Weaknesses (Fraquezas), Opportunities (Oportunidades) e Threats (Ameaças). Os dois primeiros são internos (o que a empresa controla); os dois últimos são externos (o que acontece no mercado e no ambiente). Esta análise ajuda a ter uma visão honesta e completa da posição de um negócio."
+    },
+    {
+      "question": "Qual é a diferença entre os fatores internos e externos na análise SWOT?",
+      "options": [
+        "Os fatores internos são mais importantes que os externos",
+        "Internos (Forças e Fraquezas) são o que a empresa controla; externos (Oportunidades e Ameaças) são o que acontece no mercado",
+        "Os fatores externos são sempre negativos; os internos são sempre positivos",
+        "Internos referem-se ao produto; externos referem-se aos clientes"
+      ],
+      "correct": 1,
+      "explanation": "Na SWOT, os fatores internos (Forças e Fraquezas) são dimensões que a empresa pode controlar e mudar — as suas competências, recursos, capacidades e limitações. Os fatores externos (Oportunidades e Ameaças) são o que acontece no mundo exterior — tendências de mercado, concorrência, mudanças legais, tecnologia emergente — sobre os quais a empresa tem pouco ou nenhum controlo."
+    },
+    {
+      "question": "Que tipo de 'Relação com Clientes' tem um serviço como o Netflix ou o Spotify?",
+      "options": [
+        "Self-service — o cliente resolve tudo sozinho sem interação com a empresa",
+        "Assistência pessoal — há um gestor de conta dedicado para cada cliente",
+        "Comunidade — os utilizadores interagem entre si numa plataforma partilhada",
+        "Automatizada e personalizada — o sistema aprende as preferências e faz recomendações automáticas"
+      ],
+      "correct": 3,
+      "explanation": "O Netflix e o Spotify usam uma relação automatizada e personalizada: os algoritmos aprendem os gostos de cada utilizador e fazem recomendações automáticas sem interação humana. Este tipo de relação escala para milhões de utilizadores sem custo incremental — o que seria impossível com assistência pessoal. É um dos modelos de negócio mais eficientes que existem."
+    },
+    {
+      "question": "Por que razão é importante definir um 'Segmento de Clientes' específico em vez de dizer 'toda a gente'?",
+      "options": [
+        "Porque as leis de proteção do consumidor exigem uma definição clara do público-alvo",
+        "Porque focar num segmento específico permite criar uma proposta de valor mais precisa e uma comunicação mais eficaz",
+        "Porque é impossível tecnicamente servir todos os tipos de clientes ao mesmo tempo",
+        "Porque os investidores preferem negócios com mercados mais pequenos"
+      ],
+      "correct": 1,
+      "explanation": "Quando dizes 'toda a gente', a tua proposta de valor tem de ser suficientemente genérica para servir todos — o que a torna vaga e ineficaz. Ao definir um segmento específico (ex: 'profissionais urbanos 25-40 anos que bebem café em casa'), podes criar uma proposta de valor precisa, uma comunicação direcionada e um produto que resolve exatamente a dor desse grupo. A Nespresso não serve todos os amantes de café — serve os que valorizam conveniência e prestígio."
+    },
+    {
+      "question": "Quem criou o Business Model Canvas e por quem é usado hoje?",
+      "options": [
+        "Peter Drucker, usado principalmente em programas de MBA",
+        "Alexander Osterwalder, usado por startups e gigantes como Microsoft, 3M e Nestlé",
+        "Steve Jobs, criado internamente na Apple e depois partilhado com o público",
+        "Warren Buffett, desenvolvido como ferramenta de análise de investimentos"
+      ],
+      "correct": 1,
+      "explanation": "O Business Model Canvas foi criado por Alexander Osterwalder, um académico e empreendedor suíço. Hoje é uma das ferramentas de negócio mais amplamente usadas no mundo — não só por startups mas também por gigantes como Microsoft, 3M e Nestlé para visualizar os seus modelos de negócio, identificar oportunidades de inovação e comunicar estratégia de forma clara."
+    }
+  ]
+}
