@@ -122,19 +122,19 @@ function featuredCardHTML(lesson) {
 function galleryCardHTML(lesson, delay) {
   const m = TOPIC_META[lesson.topic_slug] || { label: lesson.topic_name, badge: 'bg-slate-500' };
   const quizBtn = lesson.has_quiz
-    ? `<a href="quiz.php?id=${lesson.id}" class="text-xs font-medium py-1.5 px-2.5 rounded-lg" style="background:#f0ede7;color:var(--muted);">Quiz</a>`
+    ? `<button onclick="event.preventDefault();event.stopPropagation();window.location.href='quiz.php?id=${lesson.id}'" class="text-xs font-medium py-1.5 px-2.5 rounded-lg" style="background:#f0ede7;color:var(--muted);">Quiz</button>`
     : '';
   return `
-    <a href="lesson.php?id=${lesson.id}" class="lesson-card paper rounded-2xl overflow-hidden shadow-sm card-appear block" style="animation-delay:${delay}ms;">
-      <div class="relative h-36">
+    <a href="lesson.php?id=${lesson.id}" class="lesson-card paper rounded-2xl overflow-hidden shadow-sm card-appear flex flex-col" style="animation-delay:${delay}ms;">
+      <div class="relative h-36 flex-shrink-0">
         <img src="${escHtml(lesson.image_url)}" alt="" class="wc-img w-full h-full object-cover" loading="lazy">
         <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(10,5,20,0.55) 0%,transparent 55%);"></div>
         <span class="absolute top-2.5 left-2.5 text-white text-xs font-semibold px-2 py-0.5 rounded-full ${m.badge}">${escHtml(m.label)}</span>
         <span class="absolute bottom-2.5 left-2.5 text-white/80 text-xs px-1.5 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);">Aula ${lesson.class_number} / ${lesson.class_total}</span>
       </div>
-      <div class="p-3.5">
+      <div class="p-3.5 flex flex-col flex-1">
         <h3 class="font-bold text-slate-900 text-sm leading-snug mb-3">${escHtml(lesson.title)}</h3>
-        <div class="flex gap-1.5">
+        <div class="flex gap-1.5 mt-auto">
           <span class="text-xs font-semibold py-1.5 px-3 rounded-lg flex-1 text-center" style="background:var(--accent-light);color:var(--accent);">Ver aula →</span>
           ${quizBtn}
         </div>
