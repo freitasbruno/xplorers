@@ -35,3 +35,21 @@ Components are PHP partials or reusable HTML+JS patterns.
 ## Status key
 - `—` = not yet built
 - path = built, file exists
+
+---
+
+## Built in layout-foundation
+
+| Component | File | Notes |
+|-----------|------|-------|
+| Header (catalog) | `includes/header.php` | `$header_mode='catalog'` — logo + search |
+| Header (lesson) | `includes/header.php` | `$header_mode='lesson'` — back + badge + progress + desktop tabs |
+| Footer (brand) | `includes/footer.php` | Always rendered — brand line |
+| Footer (reflection) | `includes/footer.php` | `$footer_mode='lesson'` + `$reflection_question` — dark card + next lesson CTA |
+| Mobile tab bar | `includes/footer.php` | Fixed bottom, rendered when `$footer_mode='lesson'` |
+| Topic badge | `assets/css/app.css` | `.badge .badge-{slug}` classes |
+| Paper card | `assets/css/app.css` | `.paper` class — card-bg + border |
+| Card hover | `assets/css/app.css` | `.card-hover` class |
+| Watercolor image | `assets/css/app.css` | `.wc-img` filter class |
+| Load spinner | `assets/css/app.css` | `.load-spinner` |
+| Paper grain texture | `assets/css/app.css` | `body::before` — SVG feTurbulence noise |

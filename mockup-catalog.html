@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X.Plorers — Catálogo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+
+    :root {
+      --accent: #14b8a6;
+      --accent-light: #f0fdfa;
+      --bg: #f5f0e8;
+      --card-bg: #fdfaf4;
+      --border: #e3d9c8;
+      --text: #1e293b;
+      --muted: #7c7264;
+    }
+
+    body { background-color: var(--bg); color: var(--text); min-height: 100vh; position: relative; }
+
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 0;
+      opacity: 0.08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      background-repeat: repeat; background-size: 300px 300px;
+    }
+
+    header, main, footer { position: relative; z-index: 1; }
+
+    .wc-img {
+      filter: saturate(0.68) sepia(0.2) brightness(1.05) contrast(0.87);
+      transition: filter 0.3s ease;
+    }
+
+    .paper { background: var(--card-bg); border: 1px solid var(--border); }
+
+    .lesson-card {
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      cursor: pointer;
+    }
+    .lesson-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px -6px rgba(80,55,20,0.16);
+    }
+
+    .featured-card {
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      cursor: pointer;
+    }
+    .featured-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 48px -8px rgba(80,55,20,0.2);
+    }
+
+    /* Topic dropdown */
+    .topic-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%237c7264' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 32px;
+      cursor: pointer;
+    }
+    .topic-select:focus { outline: none; border-color: var(--accent); }
+
+    /* Active filter chip */
+    .filter-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--accent); color: white;
+      font-size: 12px; font-weight: 600;
+      padding: 4px 10px 4px 12px; border-radius: 999px;
+    }
+    .filter-chip button { opacity: 0.75; line-height: 1; }
+    .filter-chip button:hover { opacity: 1; }
+
+    /* Load spinner */
+    .load-spinner {
+      width: 26px; height: 26px;
+      border: 2.5px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .card-appear { animation: fadeUp 0.3s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-star {
+      width: 30px; height: 30px;
+      background: var(--accent); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="sticky top-0 z-50 border-b" style="background: rgba(245,240,232,0.9); backdrop-filter: blur(14px); border-color: var(--border);">
+    <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="logo-star">✦</div>
+        <div>
+          <div class="font-black text-slate-900 text-base leading-tight tracking-tight">X.Plorers</div>
+          <div class="text-xs font-medium leading-none" style="color:var(--accent);">Aulas que ficam</div>
+        </div>
+      </div>
+      <button class="w-9 h-9 rounded-full flex items-center justify-center transition-colors" style="background:rgba(0,0,0,0.05);color:#64748b;">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8">
+
+    <!-- EM DESTAQUE -->
+    <section class="mb-12">
+      <div class="flex items-center gap-3 mb-5">
+        <h2 class="text-xl font-bold text-slate-900">Em Destaque</h2>
+        <div class="flex-1 h-px" style="background:var(--border);"></div>
+        <span class="text-xs font-semibold uppercase tracking-wide" style="color:var(--accent);">Novo</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div class="featured-card paper rounded-2xl overflow-hidden shadow-sm">
+          <div class="relative h-48">
+            <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&q=80" alt="" class="wc-img w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(15,8,35,0.68) 0%,transparent 55%);"></div>
+            <span class="absolute top-3 left-3 bg-indigo-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Cosmos</span>
+            <span class="absolute bottom-3 left-3 text-white/90 text-xs font-medium px-2 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);">Aula 1</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base mb-1 leading-snug">O que é o Espaço? Uma Viagem aos Ingredientes do Universo</h3>
+            <p class="text-sm mb-4 leading-relaxed" style="color:var(--muted);">Análise dos fundamentos: o que é o espaço, os materiais que o compõem, e os objetos celestes que nele habitam.</p>
+            <div class="flex gap-2">
+              <button class="flex-1 text-sm font-semibold py-2 rounded-xl" style="border:1.5px solid var(--accent);color:var(--accent);">Ver aula →</button>
+              <button class="flex-1 text-sm font-medium py-2 rounded-xl" style="border:1.5px solid var(--border);color:var(--muted);">Quiz 🎯</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card paper rounded-2xl overflow-hidden shadow-sm">
+          <div class="relative h-48">
+            <img src="https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?w=800&q=80" alt="" class="wc-img w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(5,25,10,0.65) 0%,transparent 55%);"></div>
+            <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">Vida</span>
+            <span class="absolute bottom-3 left-3 text-white/90 text-xs font-medium px-2 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);">Aula 1</span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-slate-900 text-base mb-1 leading-snug">A Sopa Primordial: Onde e Como Começou a Vida?</h3>
+            <p class="text-sm mb-4 leading-relaxed" style="color:var(--muted);">As origens da Terra e as primeiras formas de vida. O que é a vida? As teorias sobre a abiogénese e o LUCA.</p>
+            <div class="flex gap-2">
+              <button class="flex-1 text-sm font-semibold py-2 rounded-xl" style="border:1.5px solid var(--accent);color:var(--accent);">Ver aula →</button>
+              <button class="flex-1 text-sm font-medium py-2 rounded-xl" style="border:1.5px solid var(--border);color:var(--muted);">Quiz 🎯</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section>
+      <!-- Filter bar: compact dropdown + active chip -->
+      <div class="flex items-center justify-between gap-4 mb-6">
+        <h2 class="text-xl font-bold text-slate-900 flex-shrink-0">Todas as Aulas</h2>
+        <div class="flex items-center gap-2">
+          <!-- Active filter chip (shown when a topic is selected) -->
+          <div id="active-chip" class="hidden">
+            <div class="filter-chip">
+              <span id="chip-label"></span>
+              <button onclick="clearFilter()" aria-label="Limpar filtro">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              </button>
+            </div>
+          </div>
+          <!-- Topic dropdown -->
+          <div class="relative">
+            <select id="topic-select" class="topic-select paper text-sm font-medium px-3 py-2 rounded-xl" style="color:var(--muted);" onchange="applyFilter(this)">
+              <option value="">Filtrar por tema</option>
+              <option value="cosmos">Cosmos</option>
+              <option value="computadores">Computadores</option>
+              <option value="videojogos">Videojogos</option>
+              <option value="vida">Vida</option>
+              <option value="sustentabilidade">Sustentabilidade</option>
+              <option value="empreendedorismo">Empreendedorismo</option>
+              <option value="olimpicos">Olímpicos da Grécia</option>
+              <option value="volley">Volleyball</option>
+              <option value="wwii">WWII</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Count -->
+      <p id="count-label" class="text-xs mb-5" style="color:var(--muted);"></p>
+
+      <!-- Cards grid -->
+      <div id="cards-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+
+      <!-- Load more sentinel -->
+      <div id="load-sentinel" class="flex justify-center py-10">
+        <div class="load-spinner"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-8 py-8 border-t text-center text-sm relative z-10" style="border-color:var(--border);color:var(--muted);">
+    <span class="font-semibold" style="color:#475569;">X.Plorers</span> · Aulas que ficam
+  </footer>
+
+  <script>
+    const TOPIC_META = {
+      cosmos:          { label: 'Cosmos',           badge: 'bg-indigo-500', light: 'bg-indigo-100 text-indigo-700' },
+      computadores:    { label: 'Computadores',     badge: 'bg-blue-500',   light: 'bg-blue-100 text-blue-700' },
+      videojogos:      { label: 'Videojogos',       badge: 'bg-purple-500', light: 'bg-purple-100 text-purple-700' },
+      vida:            { label: 'História da Vida', badge: 'bg-green-500',  light: 'bg-green-100 text-green-700' },
+      sustentabilidade:{ label: 'Sustentabilidade', badge: 'bg-emerald-500',light: 'bg-emerald-100 text-emerald-700' },
+      empreendedorismo:{ label: 'Empreendedorismo', badge: 'bg-amber-500',  light: 'bg-amber-100 text-amber-700' },
+      olimpicos:       { label: 'Jogos Olímpicos',  badge: 'bg-yellow-500', light: 'bg-yellow-100 text-yellow-700' },
+      volley:          { label: 'Volleyball',        badge: 'bg-orange-500', light: 'bg-orange-100 text-orange-700' },
+      wwii:            { label: 'WWII',              badge: 'bg-red-500',    light: 'bg-red-100 text-red-700' },
+    };
+
+    const ALL_LESSONS = [
+      { id:'cosmos_001',    topic:'cosmos',           n:1, total:3, title:'O que é o Espaço?', img:'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=400&q=80' },
+      { id:'cosmos_002',    topic:'cosmos',           n:2, total:3, title:'A Nossa Morada Cósmica', img:'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80' },
+      { id:'cosmos_003',    topic:'cosmos',           n:3, total:3, title:'A Dimensão do Universo', img:'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400&q=80' },
+      { id:'olimpicos_001', topic:'olimpicos',        n:1, total:4, title:'Ser Atleta em Olímpia', img:'https://images.unsplash.com/photo-1728246950291-2a51a1fc8add?w=400&q=80' },
+      { id:'olimpicos_002', topic:'olimpicos',        n:2, total:4, title:'O Festival Sagrado', img:'https://images.unsplash.com/photo-1728245029367-95c454e0fb4d?w=400&q=80' },
+      { id:'olimpicos_003', topic:'olimpicos',        n:3, total:4, title:'Arena dos Deuses', img:'https://images.unsplash.com/photo-1728245029367-95c454e0fb4d?w=400&q=80' },
+      { id:'olimpicos_004', topic:'olimpicos',        n:4, total:4, title:'Mil Anos de Glória', img:'https://heavenlytours.com/wp-content/uploads/2017/06/athens.jpg' },
+      { id:'sust_001',      topic:'sustentabilidade', n:1, total:3, title:'O Planeta em Jogo', img:'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&q=80' },
+      { id:'sust_002',      topic:'sustentabilidade', n:2, total:3, title:'As Grandes Soluções', img:'https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400&q=80' },
+      { id:'sust_003',      topic:'sustentabilidade', n:3, total:3, title:'O Poder das Escolhas', img:'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80' },
+      { id:'emp_001',       topic:'empreendedorismo', n:1, total:4, title:'O Bichinho Empreendedor', img:'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80' },
+      { id:'emp_002',       topic:'empreendedorismo', n:2, total:4, title:'Da Ideia ao Conceito', img:'https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&q=80' },
+      { id:'emp_003',       topic:'empreendedorismo', n:3, total:4, title:'O Mapa da Viagem', img:'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80' },
+      { id:'emp_004',       topic:'empreendedorismo', n:4, total:4, title:'Fazer Acontecer', img:'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&q=80' },
+      { id:'volley_001',    topic:'volley',           n:1, total:2, title:'De Mintonette a Desporto Global', img:'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=400&q=80' },
+      { id:'volley_002',    topic:'volley',           n:2, total:2, title:'Da Praia à Glória', img:'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=400&q=80' },
+      { id:'comp_001',      topic:'computadores',     n:1, total:4, title:'Antes do Silício', img:'https://images.unsplash.com/photo-1605658782229-892fd044b24a?w=400&q=80' },
+      { id:'comp_002',      topic:'computadores',     n:2, total:4, title:'A Era dos Mainframes', img:'https://images.unsplash.com/photo-1580192984971-1f0a3dcc535e?w=400&q=80' },
+      { id:'comp_003',      topic:'computadores',     n:3, total:4, title:'A Revolução Pessoal', img:'https://images.unsplash.com/photo-1605658782229-892fd044b24a?w=400&q=80' },
+      { id:'comp_004',      topic:'computadores',     n:4, total:4, title:'O Mundo em Rede', img:'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80' },
+      { id:'video_001',     topic:'videojogos',       n:1, total:3, title:'Dos Laboratórios ao Salão', img:'https://images.unsplash.com/photo-1636576109679-6f23fdc040c8?w=400&q=80' },
+      { id:'video_002',     topic:'videojogos',       n:2, total:3, title:'Guerra de Bits e 3D', img:'https://images.unsplash.com/photo-1636576109679-6f23fdc040c8?w=400&q=80' },
+      { id:'video_003',     topic:'videojogos',       n:3, total:3, title:'O Futuro da Interatividade', img:'https://images.unsplash.com/photo-1636576109679-6f23fdc040c8?w=400&q=80' },
+      { id:'vida_001',      topic:'vida',             n:1, total:5, title:'A Sopa Primordial', img:'https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?w=400&q=80' },
+      { id:'vida_002',      topic:'vida',             n:2, total:5, title:'A Revolução do Oxigénio', img:'https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?w=400&q=80' },
+      { id:'vida_003',      topic:'vida',             n:3, total:5, title:'A Explosão Câmbrica', img:'https://images.unsplash.com/photo-1688586168450-2b1ed5f7f6bf?w=400&q=80' },
+      { id:'vida_004',      topic:'vida',             n:4, total:5, title:'Gigantes e Catástrofes', img:'https://images.unsplash.com/photo-1525877442103-5ddb2089b2bb?w=400&q=80' },
+      { id:'vida_005',      topic:'vida',             n:5, total:5, title:'O Caminho até Nós', img:'https://images.unsplash.com/photo-1742328114689-f9db0118d3bb?w=400&q=80' },
+    ];
+
+    const BATCH = 8;
+    let currentFilter = '';
+    let shownCount = 0;
+    let filtered = [...ALL_LESSONS];
+
+    function getFiltered() {
+      return currentFilter
+        ? ALL_LESSONS.filter(l => l.topic === currentFilter)
+        : ALL_LESSONS;
+    }
+
+    function cardHTML(lesson, delay) {
+      const m = TOPIC_META[lesson.topic];
+      return `
+        <a href="mockup-lesson.html" class="lesson-card paper rounded-2xl overflow-hidden shadow-sm card-appear block" style="animation-delay:${delay}ms;">
+          <div class="relative h-36">
+            <img src="${lesson.img}" alt="" class="wc-img w-full h-full object-cover">
+            <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(10,5,20,0.55) 0%,transparent 55%);"></div>
+            <span class="absolute top-2.5 left-2.5 text-white text-xs font-semibold px-2 py-0.5 rounded-full ${m.badge}">${m.label}</span>
+            <span class="absolute bottom-2.5 left-2.5 text-white/80 text-xs px-1.5 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);">Aula ${lesson.n} / ${lesson.total}</span>
+          </div>
+          <div class="p-3.5">
+            <h3 class="font-bold text-slate-900 text-sm leading-snug mb-3">${lesson.title}</h3>
+            <div class="flex gap-1.5">
+              <span class="text-xs font-semibold py-1.5 px-3 rounded-lg flex-1 text-center" style="background:var(--accent-light);color:var(--accent);">Ver aula →</span>
+              <span class="text-xs font-medium py-1.5 px-2.5 rounded-lg" style="background:#f0ede7;color:var(--muted);">Quiz</span>
+            </div>
+          </div>
+        </a>`;
+    }
+
+    function loadBatch() {
+      filtered = getFiltered();
+      const grid = document.getElementById('cards-grid');
+      const sentinel = document.getElementById('load-sentinel');
+      const slice = filtered.slice(shownCount, shownCount + BATCH);
+
+      if (slice.length === 0) { sentinel.style.display = 'none'; return; }
+
+      slice.forEach((lesson, i) => {
+        grid.insertAdjacentHTML('beforeend', cardHTML(lesson, i * 50));
+      });
+      shownCount += slice.length;
+
+      document.getElementById('count-label').textContent =
+        `${Math.min(shownCount, filtered.length)} de ${filtered.length} aula${filtered.length !== 1 ? 's' : ''}`;
+
+      if (shownCount >= filtered.length) sentinel.style.display = 'none';
+      else sentinel.style.display = 'flex';
+    }
+
+    function applyFilter(select) {
+      currentFilter = select.value;
+      shownCount = 0;
+      document.getElementById('cards-grid').innerHTML = '';
+
+      const chip = document.getElementById('active-chip');
+      if (currentFilter) {
+        document.getElementById('chip-label').textContent = TOPIC_META[currentFilter]?.label || currentFilter;
+        chip.classList.remove('hidden');
+        select.value = '';
+      } else {
+        chip.classList.add('hidden');
+      }
+
+      document.getElementById('load-sentinel').style.display = 'flex';
+      loadBatch();
+    }
+
+    function clearFilter() {
+      currentFilter = '';
+      document.getElementById('active-chip').classList.add('hidden');
+      document.getElementById('topic-select').value = '';
+      shownCount = 0;
+      document.getElementById('cards-grid').innerHTML = '';
+      document.getElementById('load-sentinel').style.display = 'flex';
+      loadBatch();
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) loadBatch();
+    }, { rootMargin: '200px' });
+    observer.observe(document.getElementById('load-sentinel'));
+
+    loadBatch();
+  </script>
+</body>
+</html>

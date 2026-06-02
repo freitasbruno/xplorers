@@ -4,7 +4,7 @@
 
 | # | Feature | Slug | Status |
 |---|---------|------|--------|
-| 1 | Shared layout system (header/footer PHP includes, design tokens) | `layout-foundation` | pending |
+| 1 | Shared layout system (header/footer PHP includes, design tokens) | `layout-foundation` | in progress |
 | 2 | Catalog page (highlight strip + grouped topic gallery with filters) | `catalog` | pending |
 | 3 | Lesson detail page (interactive content + tab bar) | `lesson-detail` | pending |
 | 4 | Quiz engine (generic JS renderer + per-lesson JSON, interactive) | `quiz-engine` | pending |

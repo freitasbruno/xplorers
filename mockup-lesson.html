@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos · Aula 1 — X.Plorers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+
+    :root {
+      --accent: #14b8a6;
+      --accent-light: #f0fdfa;
+      --bg: #f7f3ec;
+      --card-bg: #fdfaf5;
+      --border: #e8e0d4;
+      --text: #1e293b;
+      --muted: #7c7264;
+    }
+
+    body { background-color: var(--bg); color: var(--text); min-height: 100vh; position: relative; }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 300px 300px;
+    }
+
+    header, main, nav, footer, div[id^="tab-"] { position: relative; z-index: 1; }
+
+    .wc-img {
+      filter: saturate(0.72) sepia(0.18) brightness(1.04) contrast(0.88);
+    }
+
+    .paper { background: var(--card-bg); border: 1px solid var(--border); }
+
+    .comp-card {
+      transition: all 0.2s ease;
+      cursor: pointer;
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+    }
+    .comp-card.active {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+    .comp-card.active .comp-pct { color: var(--accent); }
+    .comp-card.active .comp-label { color: #0f766e; }
+
+    .zoo-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .zoo-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px -4px rgba(80,60,20,0.12); }
+
+    /* Mobile bottom tab bar */
+    .tab-bar-mobile { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+    .tab-item { transition: color 0.15s ease; }
+    .tab-item.active { color: var(--accent); }
+    .tab-item .tab-bar-indicator { opacity: 0; transition: opacity 0.15s ease; }
+    .tab-item.active .tab-bar-indicator { opacity: 1; }
+
+    @media (min-width: 768px) {
+      .tab-bar-mobile { display: none !important; }
+      .tab-bar-desktop { display: flex !important; }
+      body { padding-bottom: 0; }
+    }
+    .tab-bar-desktop { display: none; }
+    body { padding-bottom: 72px; }
+
+    .prose-content { font-size: 17px; line-height: 1.75; color: #334155; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- MINIMAL STICKY HEADER -->
+  <header class="sticky top-0 z-50 border-b" style="background: rgba(247,243,236,0.92); backdrop-filter: blur(12px); border-color: var(--border);">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex items-center gap-3">
+      <a href="mockup-catalog.html" class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 transition-colors" style="background: rgba(0,0,0,0.05); color: #475569;">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <div class="flex-1 flex items-center gap-2 min-w-0">
+        <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0">Cosmos</span>
+        <span class="text-sm font-medium truncate hidden sm:block" style="color: var(--muted);">O que é o Espaço?</span>
+      </div>
+      <span class="text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0" style="background: var(--accent-light); color: var(--accent); border: 1px solid #99f6e4;">1 / 3</span>
+    </div>
+
+    <!-- Desktop inline tabs -->
+    <div class="tab-bar-desktop border-t max-w-3xl mx-auto" style="border-color: var(--border);">
+      <button onclick="setTab('conteudo')" id="dt-conteudo" class="tab-item active flex-1 flex items-center justify-center gap-1.5 py-2.5 text-sm font-medium relative" style="color: var(--accent);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-10 rounded-full" style="background: var(--accent);"></div>
+        <span>📖</span><span>Conteúdo</span>
+      </button>
+      <button onclick="setTab('quiz')" id="dt-quiz" class="tab-item flex-1 flex items-center justify-center gap-1.5 py-2.5 text-sm font-medium relative" style="color: var(--muted);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-10 rounded-full" style="background: var(--accent);"></div>
+        <span>🎯</span><span>Quiz</span>
+      </button>
+      <button onclick="setTab('texto')" id="dt-texto" class="tab-item flex-1 flex items-center justify-center gap-1.5 py-2.5 text-sm font-medium relative" style="color: var(--muted);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-10 rounded-full" style="background: var(--accent);"></div>
+        <span>📄</span><span>Texto</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO TAB -->
+  <main id="tab-conteudo" class="max-w-3xl mx-auto px-4 py-8">
+
+    <div class="mb-8">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--muted);">Aula 1 de 3</span>
+        <span class="w-1 h-1 rounded-full" style="background: var(--border);"></span>
+        <span class="text-xs font-semibold uppercase tracking-widest" style="color: var(--muted);">Cosmos</span>
+      </div>
+      <h1 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">
+        O que é o Espaço?<br>
+        <span class="font-semibold" style="color: var(--muted);">Uma Viagem aos Ingredientes do Universo</span>
+      </h1>
+      <div class="w-12 h-1 rounded-full" style="background: var(--accent);"></div>
+    </div>
+
+    <!-- Cover image -->
+    <div class="rounded-2xl overflow-hidden mb-8 shadow-sm" style="border: 1px solid var(--border);">
+      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&q=80" alt="Cosmos" class="wc-img w-full h-52 md:h-64 object-cover">
+    </div>
+
+    <!-- Intro -->
+    <div class="prose-content mb-10">
+      <p>Bem-vindo à nossa primeira exploração do Cosmos. O espaço não é simplesmente "nada" — é o próprio tecido do universo. A sua característica mais marcante é ser um <strong>vácuo quase perfeito</strong>: não completamente vazio, mas com densidades de matéria tão baixas que, em cada metro cúbico, flutuam apenas alguns átomos e partículas de poeira.</p>
+    </div>
+
+    <!-- Interactive: Composition -->
+    <section class="mb-10">
+      <h2 class="text-lg font-bold text-slate-900 mb-1">A Receita Secreta do Universo</h2>
+      <p class="text-sm mb-5" style="color: var(--muted);">Clica em cada componente para saber mais.</p>
+
+      <div class="grid grid-cols-3 gap-3 mb-4">
+        <div class="comp-card active rounded-2xl p-3 text-center" onclick="selectComp(this, 'common')">
+          <div class="comp-pct text-2xl font-black mb-0.5" style="color: var(--accent);">5%</div>
+          <div class="comp-label text-xs font-semibold leading-tight" style="color: #0f766e;">Matéria Comum</div>
+        </div>
+        <div class="comp-card rounded-2xl p-3 text-center" onclick="selectComp(this, 'dark-matter')">
+          <div class="comp-pct text-2xl font-black text-slate-700 mb-0.5">27%</div>
+          <div class="comp-label text-xs font-semibold leading-tight" style="color: var(--muted);">Matéria Escura</div>
+        </div>
+        <div class="comp-card rounded-2xl p-3 text-center" onclick="selectComp(this, 'dark-energy')">
+          <div class="comp-pct text-2xl font-black text-slate-700 mb-0.5">68%</div>
+          <div class="comp-label text-xs font-semibold leading-tight" style="color: var(--muted);">Energia Escura</div>
+        </div>
+      </div>
+
+      <div id="comp-desc" class="paper rounded-2xl p-5 text-sm leading-relaxed text-slate-600 shadow-sm">
+        <strong class="text-slate-900 block mb-1">Matéria Comum (~5%): O Mundo que Conhecemos</strong>
+        Esta é a única fatia do bolo que conseguimos ver e tocar. Inclui tudo o que é feito de átomos: estrelas, planetas, galáxias, e até nós próprios.
+        <div class="mt-3 text-xs italic" style="color: var(--muted);">Analogia: É a parte visível do bolo cósmico — a cobertura que conseguimos identificar e saborear.</div>
+      </div>
+    </section>
+
+    <!-- Sabias que -->
+    <div class="mb-10 rounded-r-2xl px-5 py-4" style="border-left: 4px solid var(--accent); background: #f0fdf9;">
+      <div class="text-xs font-bold uppercase tracking-wider mb-1.5" style="color: var(--accent);">🤫 Sabias que...</div>
+      <p class="text-sm leading-relaxed italic text-slate-700">O som precisa de um meio para viajar. Como no espaço as partículas estão incrivelmente distantes, as ondas sonoras não conseguem propagar-se. Por isso, a famosa frase do filme <em>Alien</em> — "No espaço, ninguém te consegue ouvir a gritar" — está cientificamente correta.</p>
+    </div>
+
+    <!-- Zoo -->
+    <section class="mb-10">
+      <h2 class="text-lg font-bold text-slate-900 mb-1">Zoo Cósmico</h2>
+      <p class="text-sm mb-5" style="color: var(--muted);">Os objetos mais fascinantes do universo visível.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="zoo-card rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-2">⭐</div>
+          <div class="font-bold text-slate-900 text-sm mb-1">Estrelas</div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">Gigantescas bolas de plasma que produzem luz e calor através de fusão nuclear.</p>
+        </div>
+        <div class="zoo-card rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-2">⚫</div>
+          <div class="font-bold text-slate-900 text-sm mb-1">Buracos Negros</div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">Regiões com gravidade tão esmagadora que nada, nem a luz, consegue escapar.</p>
+        </div>
+        <div class="zoo-card rounded-2xl p-4 text-center">
+          <div class="text-3xl mb-2">✨</div>
+          <div class="font-bold text-slate-900 text-sm mb-1">Nebulosas</div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">Nuvens imensas de gás e poeira — os "berçários" onde nascem novas estrelas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection footer -->
+    <footer class="rounded-2xl p-6 mb-6 text-center" style="background: #1e293b;">
+      <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--accent);">Questão para Reflexão</div>
+      <p class="text-base leading-relaxed mb-5" style="color: #cbd5e1;">
+        Ao olharmos para esta "receita" do Cosmos, percebemos que a nossa existência visível é apenas a ponta do iceberg. Como se sente ao saber que faz parte de um universo cujo funcionamento é, na sua maior parte, um completo mistério?
+      </p>
+      <a href="#" class="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3 rounded-xl transition-colors" style="background: var(--accent); color: white;">
+        Próxima aula
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+    </footer>
+  </main>
+
+  <!-- QUIZ TAB -->
+  <div id="tab-quiz" class="hidden max-w-3xl mx-auto px-4 py-8">
+    <div class="text-center py-16">
+      <div class="text-5xl mb-4">🎯</div>
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Quiz — Cosmos Aula 1</h2>
+      <p class="text-sm mb-6" style="color: var(--muted);">Testa o que aprendeste. 6 perguntas.</p>
+      <button class="font-semibold px-8 py-3 rounded-xl transition-colors" style="background: var(--accent); color: white;">Começar Quiz →</button>
+    </div>
+  </div>
+
+  <!-- TEXTO TAB -->
+  <div id="tab-texto" class="hidden max-w-3xl mx-auto px-4 py-8">
+    <div class="paper rounded-2xl p-6 shadow-sm">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-1 rounded-full">Cosmos · Aula 1</span>
+        <span class="text-xs" style="color: var(--muted);">2025-01-01</span>
+      </div>
+      <h1 class="text-xl font-black text-slate-900 mb-4">O que é o Espaço? Uma Viagem aos Ingredientes do Universo</h1>
+      <div class="space-y-4 text-base leading-relaxed" style="color: #334155;">
+        <h2 class="text-base font-bold text-slate-800">1. O Vácuo Silencioso</h2>
+        <p>O espaço não é "nada"; é o tecido do próprio universo. A sua característica principal é ser um vácuo quase perfeito, uma região com densidades de matéria extremamente baixas...</p>
+        <h2 class="text-base font-bold text-slate-800">2. A Receita Secreta do Universo</h2>
+        <p>Se o universo fosse um bolo, a sua composição seria surpreendente: 68% energia escura, 27% matéria escura, apenas 5% matéria comum — tudo o que conseguimos ver e tocar.</p>
+        <blockquote class="pl-4 italic text-sm" style="border-left: 4px solid var(--accent); color: var(--muted);">Sabias que o som não viaja no espaço? É por isso que "No espaço, ninguém te consegue ouvir a gritar."</blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED BOTTOM TAB BAR (mobile) -->
+  <nav class="tab-bar-mobile fixed bottom-0 left-0 right-0 z-50 border-t" style="background: rgba(247,243,236,0.96); border-color: var(--border);">
+    <div class="flex">
+      <button onclick="setTab('conteudo')" id="mt-conteudo" class="tab-item active flex-1 flex flex-col items-center pt-2 pb-3 relative gap-0.5" style="color: var(--accent);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-8 rounded-full" style="background: var(--accent);"></div>
+        <span class="text-lg">📖</span>
+        <span class="text-xs font-medium">Conteúdo</span>
+      </button>
+      <button onclick="setTab('quiz')" id="mt-quiz" class="tab-item flex-1 flex flex-col items-center pt-2 pb-3 relative gap-0.5" style="color: var(--muted);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-8 rounded-full" style="background: var(--accent);"></div>
+        <span class="text-lg">🎯</span>
+        <span class="text-xs font-medium">Quiz</span>
+      </button>
+      <button onclick="setTab('texto')" id="mt-texto" class="tab-item flex-1 flex flex-col items-center pt-2 pb-3 relative gap-0.5" style="color: var(--muted);">
+        <div class="tab-bar-indicator absolute top-0 left-1/2 -translate-x-1/2 h-0.5 w-8 rounded-full" style="background: var(--accent);"></div>
+        <span class="text-lg">📄</span>
+        <span class="text-xs font-medium">Texto</span>
+      </button>
+    </div>
+  </nav>
+
+  <script>
+    const tabs = ['conteudo', 'quiz', 'texto'];
+
+    function setTab(name) {
+      tabs.forEach(t => {
+        document.getElementById(`tab-${t}`).classList.toggle('hidden', t !== name);
+        ['mt', 'dt'].forEach(prefix => {
+          const el = document.getElementById(`${prefix}-${t}`);
+          if (!el) return;
+          el.classList.toggle('active', t === name);
+          el.style.color = t === name ? 'var(--accent)' : 'var(--muted)';
+        });
+      });
+    }
+
+    const compData = {
+      common: {
+        title: 'Matéria Comum (~5%): O Mundo que Conhecemos',
+        body: 'Esta é a única fatia do bolo que conseguimos ver e tocar. Inclui tudo o que é feito de átomos: estrelas, planetas, galáxias, e até nós próprios.',
+        note: 'Analogia: É a parte visível do bolo cósmico — a cobertura que conseguimos identificar e saborear.'
+      },
+      'dark-matter': {
+        title: 'Matéria Escura (~27%): A Gravidade Invisível',
+        body: 'Uma forma de matéria que não interage com a luz, sendo invisível. Sabemos que existe pelo seu efeito gravitacional — atua como uma "cola" invisível que impede as galáxias de se desintegrarem.',
+        note: 'Analogia: Uma teia de aranha invisível. Não a vê, mas vê como as estrelas se organizam ao longo da sua estrutura.'
+      },
+      'dark-energy': {
+        title: 'Energia Escura (~68%): O Motor da Expansão',
+        body: 'A componente dominante e mais enigmática do universo. Uma força repulsiva que atua contra a gravidade, fazendo com que o universo se expanda a ritmo crescente.',
+        note: 'Analogia: Se o universo fosse um carro, a gravidade seria o travão e a energia escura o acelerador — sempre a pressionar mais forte.'
+      }
+    };
+
+    function selectComp(el, key) {
+      document.querySelectorAll('.comp-card').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+      const d = compData[key];
+      document.getElementById('comp-desc').innerHTML = `
+        <strong class="text-slate-900 block mb-1">${d.title}</strong>
+        ${d.body}
+        <div class="mt-3 text-xs italic" style="color: var(--muted);">${d.note}</div>
+      `;
+    }
+  </script>
+</body>
+</html>

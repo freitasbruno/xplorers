@@ -12,6 +12,6 @@
 - **Credentials:** Stored as GitHub Actions secrets (`FTP_HOST`, `FTP_USER`, `FTP_PASS`)
 
 ## GitHub
-- **Repo:** TBD (to be created)
+- **Repo:** https://github.com/freitasbruno/xplorers
 - **Main branch:** `main`
 - **Deploy trigger:** push to `main`
