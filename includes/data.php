@@ -34,6 +34,23 @@ function get_quiz(string $lesson_id): ?array {
     return json_decode(file_get_contents($path), true);
 }
 
+function parse_md_lesson(string $filepath): ?array {
+    if (!file_exists($filepath)) return null;
+    $content = str_replace("\r\n", "\n", file_get_contents($filepath));
+
+    if (preg_match('/^\-\-\-\s*\n(.*?)\n\-\-\-\s*\n(.*)$/s', $content, $m)) {
+        $meta = [];
+        foreach (explode("\n", trim($m[1])) as $line) {
+            if (preg_match('/^(\w+):\s*(.+)$/', $line, $kv)) {
+                $meta[trim($kv[1])] = trim($kv[2]);
+            }
+        }
+        return ['meta' => $meta, 'body' => trim($m[2])];
+    }
+
+    return ['meta' => [], 'body' => trim($content)];
+}
+
 function topic_badge_class(string $slug): string {
     $map = [
         'cosmos'           => 'badge-cosmos',

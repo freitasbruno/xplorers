@@ -390,5 +390,21 @@
     "has_quiz": false,
     "published_at": "2025-07-29",
     "featured": false
+  },
+  {
+    "id": "wwii_001",
+    "topic_slug": "wwii",
+    "topic_name": "Segunda Guerra Mundial",
+    "class_number": 1,
+    "class_total": 3,
+    "global_class": 36,
+    "title": "Um Mundo em Guerra Total",
+    "description": "A Blitzkrieg, a Batalha de Inglaterra, o Dia D e o Holocausto — como a Segunda Guerra Mundial transformou o conflito num esforço que envolveu toda a sociedade.",
+    "image_url": "https://images.unsplash.com/photo-1580196969807-cc6de06c05be?w=800&q=80",
+    "content_file": "lessons/wwii/001.php",
+    "md_file": "data/md/wwii/001.md",
+    "has_quiz": false,
+    "published_at": "2026-06-02",
+    "featured": false
   }
 ]

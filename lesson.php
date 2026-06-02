@@ -61,6 +61,8 @@ $reflection_question = null;
 .prose-lesson li { margin-bottom: 0.35rem; }
 .prose-lesson strong { color: #1e293b; font-weight: 700; }
 .prose-lesson blockquote { border-left: 4px solid var(--accent); padding-left: 1rem; font-style: italic; color: var(--muted); margin: 1.5rem 0; }
+.prose-lesson h4 { font-size: 0.95rem; font-weight: 700; color: #1e293b; margin: 1.25rem 0 0.25rem; }
+.prose-lesson hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 </style>
 
 <!-- CONTEÚDO TAB -->
@@ -168,11 +170,49 @@ $reflection_question = null;
 
 <!-- TEXTO TAB -->
 <div id="tab-texto" class="hidden max-w-3xl mx-auto px-4 py-8">
+<?php
+$md_data = null;
+if (!empty($lesson['md_file'])) {
+    $md_data = parse_md_lesson(__DIR__ . '/' . $lesson['md_file']);
+}
+if ($md_data): ?>
+
+  <!-- Title card -->
+  <div class="paper rounded-2xl p-6 mb-8">
+    <div class="flex flex-wrap items-center gap-2 mb-4">
+      <span class="badge <?= topic_badge_class($lesson['topic_slug']) ?>">
+        <?= htmlspecialchars($md_data['meta']['topic'] ?? $lesson['topic_name']) ?>
+      </span>
+    </div>
+    <h2 class="text-xl font-black text-slate-900 leading-tight mb-2">
+      <?= htmlspecialchars($md_data['meta']['title'] ?? $lesson['title']) ?>
+    </h2>
+    <?php if (!empty($md_data['meta']['class'])): ?>
+      <div class="text-xs font-semibold mb-3" style="color:var(--muted);">
+        Aula #<?= htmlspecialchars($md_data['meta']['class']) ?>
+      </div>
+    <?php endif; ?>
+    <?php if (!empty($md_data['meta']['description'])): ?>
+      <p class="text-sm leading-relaxed" style="color:var(--muted);">
+        <?= htmlspecialchars($md_data['meta']['description']) ?>
+      </p>
+    <?php endif; ?>
+  </div>
+
+  <!-- Markdown body -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <div id="md-body" class="prose-lesson"></div>
+  <script>
+    document.getElementById('md-body').innerHTML = marked.parse(<?= json_encode($md_data['body']) ?>);
+  </script>
+
+<?php else: ?>
   <div class="text-center py-24">
     <div class="text-5xl mb-5">📄</div>
     <p class="font-semibold text-slate-700 mb-2">Texto em breve</p>
     <p class="text-sm" style="color:var(--muted);">A versão em texto desta aula estará disponível em breve.</p>
   </div>
+<?php endif; ?>
 </div>
 
 <script src="assets/js/lesson.js"></script>
