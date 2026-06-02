@@ -1,0 +1,115 @@
+{
+  "lesson_id": "olimpicos_004",
+  "questions": [
+    {
+      "question": "Quando começaram e quando terminaram os Jogos Olímpicos da Antiguidade?",
+      "options": [
+        "Começaram em 500 a.C. e terminaram em 500 d.C.",
+        "Começaram em 776 a.C. e terminaram em 393 d.C., durando quase 1.200 anos",
+        "Começaram em 776 a.C. e terminaram em 146 a.C., quando Roma conquistou a Grécia",
+        "Começaram em 1000 a.C. e terminaram em 393 d.C."
+      ],
+      "correct": 1,
+      "explanation": "A primeira edição registada dos Jogos ocorreu em 776 a.C., data que os gregos usaram como base do seu calendário (as 'Olimpíadas'). Os Jogos terminaram em 393 d.C. por ordem do imperador romano cristão Teodósio I, que os proibiu por os considerar um festival pagão. No total, duraram cerca de 1.169 anos — um dos eventos culturais mais duradouros da história da humanidade."
+    },
+    {
+      "question": "Qual era a profissão do primeiro vencedor olímpico registado, Corebo de Élis?",
+      "options": [
+        "Guerreiro profissional de Esparta",
+        "Filho de um aristocrata de Atenas",
+        "Cozinheiro",
+        "Médico e atleta olímpico"
+      ],
+      "correct": 2,
+      "explanation": "Corebo de Élis, vencedor do stadion na primeira edição registada em 776 a.C., era cozinheiro de profissão. Este facto é historicamente significativo porque demonstra que a origem profissional humilde não era obstáculo à glória olímpica — o que importava era ser homem livre e grego. A vitória de um cozinheiro tornou-se a base do calendário grego."
+    },
+    {
+      "question": "Porque é que Teodósio I proibiu os Jogos Olímpicos em 393 d.C.?",
+      "options": [
+        "Porque os Jogos representavam uma ameaça política ao poder imperial romano",
+        "Porque os Jogos tinham degenerado em violência e corrupção",
+        "Porque eram um festival pagão dedicado a Zeus, incompatível com o Cristianismo que se tornara a religião oficial do Império",
+        "Porque a Grécia já não tinha atletas competitivos para participar"
+      ],
+      "correct": 2,
+      "explanation": "Teodósio I era um cristão fervoroso que, em 380 d.C., tinha tornado o Cristianismo a religião oficial do Império Romano. Os Jogos Olímpicos eram fundamentalmente um festival religioso dedicado a Zeus — um deus pagão. Para Teodósio, permitir os Jogos seria tolerar o culto a deuses falsos. Em 393 d.C., proibiu todos os cultos pagãos, incluindo os Jogos. Após quase 1.200 anos, a tradição terminou."
+    },
+    {
+      "question": "O que eram os 'Zanes' nos Jogos Olímpicos gregos?",
+      "options": [
+        "Os árbitros-chefe responsáveis pelas decisões polémicas",
+        "Estátuas de Zeus erguidas com o dinheiro das multas pagas pelos batoteiros, com o nome e o crime inscrito na base",
+        "Os prémios alternativos dados ao segundo e terceiro classificados",
+        "Os guardas responsáveis pela segurança do santuário de Olímpia"
+      ],
+      "correct": 1,
+      "explanation": "Os Zanes eram estátuas de bronze de Zeus financiadas pelas multas cobradas aos atletas apanhados a fazer batota. Cada estátua tinha inscrito na base o nome do batoteiro, o seu crime e uma mensagem sobre o valor do mérito. Estavam colocadas no caminho de entrada para o estádio, obrigando todos os atletas a passar por elas antes de competir — um lembrete permanente e psicologicamente poderoso das consequências da desonra."
+    },
+    {
+      "question": "Qual era a pior consequência de ser apanhado a fazer batota nos Jogos, segundo a lógica grega?",
+      "options": [
+        "A expulsão imediata dos Jogos e a proibição de participar no futuro",
+        "O açoiatamento público perante todos os espectadores",
+        "A imortalidade da desonra — o nome gravado nos Zanes para sempre, o oposto do kleos glorioso",
+        "A confiscação de todos os bens do atleta e da sua família"
+      ],
+      "correct": 2,
+      "explanation": "Numa cultura que valorizava supremamente o kleos — a imortalidade do nome glorioso — a pior punição era a imortalidade da desonra. Os Zanes garantiam exactamente isso: o nome do batoteiro ficava gravado em bronze para sempre, no caminho que todos os futuros atletas percorriam. Em vez de ser lembrado como campeão, serias lembrado como desonrado. Era o inverso perfeito do kleos — a eternidade da infâmia."
+    },
+    {
+      "question": "Porque é que os mantos púrpuras dos juízes (*Hellanodikai*) eram significativos?",
+      "options": [
+        "A cor púrpura era facilmente visível à distância, permitindo identificar os juízes durante as provas",
+        "Era a cor do deus Zeus, tornando-os seus representantes simbólicos durante os Jogos",
+        "O púrpura era a cor mais cara e rara da Antiguidade, associada a reis e autoridade divina",
+        "Cada cidade-estado usava uma cor diferente, e o púrpura era reservado para os funcionários de Olímpia"
+      ],
+      "correct": 2,
+      "explanation": "O púrpura (obtido de moluscos marinhos, num processo laborioso e extremamente caro) era a cor mais rara e dispendiosa da Antiguidade. Estava associada à realeza, aos deuses e ao poder supremo — daí a expressão 'nascido na púrpura'. Os juízes de Olímpia usarem mantos desta cor era uma afirmação da sua autoridade excepcional e da importância sagrada do seu papel: eram os representantes da justiça de Zeus durante os Jogos."
+    },
+    {
+      "question": "Como é que os Jogos Olímpicos modernos se relacionam com os Jogos da Antiguidade?",
+      "options": [
+        "São uma continuação direta — houve uma pausa de 1.500 anos mas a mesma organização sobreviveu",
+        "Foram criados pelo Barão Pierre de Coubertin em 1896, inspirado pela redescoberta arqueológica dos sítios gregos no séc. XIX",
+        "Foram criados pelo governo grego como parte das celebrações do centenário da independência",
+        "Surgiram do trabalho de historiadores ingleses que encontraram os registos originais dos vencedores"
+      ],
+      "correct": 1,
+      "explanation": "Os Jogos Olímpicos Modernos foram criados de raiz pelo Barão Pierre de Coubertin, um pedagogo e historiador francês. O crescente interesse arqueológico pela Grécia Antiga no século XIX (incluindo as escavações de Olímpia) inspirou Coubertin a recriar o espírito dos Jogos como uma forma de promover a paz internacional através do desporto. A primeira edição dos Jogos modernos realizou-se em Atenas em 1896 — exactamente 1.503 anos após o fim dos Jogos Antigos."
+    },
+    {
+      "question": "Qual era o objetivo das competições de arautos e trompetistas nos Jogos?",
+      "options": [
+        "Entretenimento do público nos intervalos entre as provas atléticas",
+        "Selecionar os melhores arautos e trompetistas para anunciar as provas e os vencedores durante os Jogos",
+        "Uma forma de homenagear os músicos que acompanhavam os rituais religiosos",
+        "Competições patrocinadas pelas cidades mais ricas para mostrar o seu refinamento cultural"
+      ],
+      "correct": 1,
+      "explanation": "As competições de arautos e trompetistas tinham um propósito prático e simbólico: os vencedores tornavam-se a 'voz oficial' dos Jogos. O arauto campeão anunciava os nomes dos competidores e dos vencedores; o trompetista campeão tocava os sinais que regulavam as provas. Ter a voz ou a música mais poderosa e clara de Olímpia era uma honra significativa — a tua habilidade estaria literalmente no centro de todos os momentos mais gloriosos dos Jogos."
+    },
+    {
+      "question": "Que facto curioso existe sobre a sacerdotisa de Deméter nos Jogos?",
+      "options": [
+        "Era a única pessoa autorizada a entrar no recinto sagrado de Zeus sem escolta",
+        "Era a única mulher casada autorizada a estar em Olímpia durante os Jogos, com um lugar de honra no estádio",
+        "Era responsável por cortar os ramos da oliveira sagrada para as coroas dos vencedores",
+        "Tinha o poder de desclassificar atletas que violassem as regras de conduta religiosa"
+      ],
+      "correct": 1,
+      "explanation": "A sacerdotisa de Deméter era a única exceção à proibição geral de mulheres casadas em Olímpia durante os Jogos. Mais do que meramente tolerada, tinha um lugar de honra reservado no estádio — algumas fontes indicam que era no lugar mais elevado e privilegiado, acima de muitos dignatários. Esta exceção reconhecia a importância do culto de Deméter no panteão grego e o papel essencial das sacerdotisas na vida religiosa."
+    },
+    {
+      "question": "Porque é que a presença dos Zanes no caminho de entrada para o estádio era psicologicamente eficaz?",
+      "options": [
+        "Porque os atletas tinham de tocá-los como ritual de boa sorte antes de competir",
+        "Porque, ao passar pelos nomes dos desonrados, cada atleta era lembrado das consequências da batota no momento de maior tensão — antes da prova da sua vida",
+        "Porque as estátuas tinham a aparência aterradora de Zeus em cólera, intimidando os atletas",
+        "Porque os nomes escritos eram os dos adversários, dando vantagem psicológica ao atleta que os decorava"
+      ],
+      "correct": 1,
+      "explanation": "O posicionamento dos Zanes no caminho de entrada para o estádio era uma escolha deliberada e brilhante. No momento de maior pressão — imediatamente antes de competir, com todos os nervos à flor da pele — o atleta era obrigado a passar pelos nomes gravados dos batoteiros. A mensagem era clara: a tentação existe, o caminho para a desonra está ali representado, e as consequências são eternas. Era um lembrete final de que a vitória pela batota seria uma derrota permanente."
+    }
+  ]
+}

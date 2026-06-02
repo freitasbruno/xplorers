@@ -1,0 +1,115 @@
+{
+  "lesson_id": "olimpicos_001",
+  "questions": [
+    {
+      "question": "Quais eram os três critérios para um indivíduo poder competir nos Jogos Olímpicos da Antiguidade?",
+      "options": [
+        "Ser jovem, ser grego e ter treinado pelo menos um ano",
+        "Ser homem, ser grego e ser livre",
+        "Ser homem, ser cidadão de Atenas ou Esparta, e ser livre",
+        "Ser homem, ser rico e ser patrocinado por uma cidade-estado"
+      ],
+      "correct": 1,
+      "explanation": "Para competir em Olímpia, era obrigatório ser homem (as mulheres eram proibidas de participar e até de assistir, sob pena de morte), ser grego (bárbaros não eram admitidos) e ser livre (os escravos estavam completamente excluídos). Estes três critérios refletiam o ideal do cidadão grego perfeito que os Jogos pretendiam celebrar."
+    },
+    {
+      "question": "Que simbolismo tinha a nudez dos atletas nos Jogos Olímpicos gregos?",
+      "options": [
+        "Era uma tradição prática para evitar que os atletas escondessem armas ou usassem trajes que dificultavam a arbitragem",
+        "Representava tributo aos deuses, igualdade entre atletas e liberdade de movimentos",
+        "Era uma forma de intimidar os adversários e mostrar superioridade física",
+        "Tinha apenas razões práticas — as roupas rasgavam durante as provas"
+      ],
+      "correct": 1,
+      "explanation": "A nudez tinha múltiplos significados: era um tributo aos deuses (mostrar a perfeição do corpo humano como criação divina), um símbolo de igualdade (sem uniformes, todos eram iguais independentemente da riqueza) e tinha uma vantagem prática (total liberdade de movimentos). Os atletas untavam-se com azeite para proteger a pele."
+    },
+    {
+      "question": "De onde vem a palavra 'ginásio'?",
+      "options": [
+        "Do latim 'gymnasium', que significa 'lugar de exercício físico'",
+        "Do grego 'gymnós', que significa 'nu'",
+        "Do nome de Gymnus, um atleta grego mítico",
+        "Do grego 'gymnasia', que significa 'treino da mente'"
+      ],
+      "correct": 1,
+      "explanation": "A palavra 'ginásio' deriva do grego antigo 'gymnós', que significa 'nu'. O 'gymnasion' era o espaço onde os jovens gregos treinavam o corpo e a mente, fazendo-o normalmente sem roupa. Esta etimologia revela como o treino físico estava intrinsecamente ligado à nudez na cultura grega, algo que a palavra sobreviveu milénios mas cujo significado original se perdeu."
+    },
+    {
+      "question": "O que era o 'stadion' nos Jogos Olímpicos gregos?",
+      "options": [
+        "O anfiteatro principal onde decorriam as cerimónias religiosas",
+        "Uma corrida de velocidade de aproximadamente 192 metros — o comprimento do estádio",
+        "O nome grego para o pentatlo — a prova das cinco modalidades",
+        "A corrida de fundo, com cerca de 4.800 metros de distância"
+      ],
+      "correct": 1,
+      "explanation": "O stadion era a corrida de velocidade mais curta e mais prestigiada dos Jogos — aproximadamente 192 metros, correspondendo ao comprimento do próprio estádio (daí o nome). Era a prova mais antiga, com registos desde a primeira olimpíada em 776 a.C., e vencer o stadion era considerado o maior feito individual nos Jogos."
+    },
+    {
+      "question": "Em que consistia o Pentatlo e por que era considerado a prova do 'atleta mais completo'?",
+      "options": [
+        "Cinco corridas de diferentes distâncias que testavam resistência e velocidade",
+        "Uma prova de combate com cinco fases distintas",
+        "Cinco modalidades diferentes: disco, salto em comprimento, dardo, corrida e luta",
+        "Uma competição de cinco dias com uma prova diferente por dia"
+      ],
+      "correct": 2,
+      "explanation": "O Pentatlo combinava cinco modalidades completamente distintas: lançamento do disco, salto em comprimento, lançamento do dardo, corrida (stadion) e luta. Um atleta especializado numa só disciplina tinha pouca hipótese de ganhar — era necessária versatilidade em todas as cinco. Por isso, o pentatleta era considerado o ideal atlético: não o mais forte nem o mais rápido, mas o mais equilibrado e completo."
+    },
+    {
+      "question": "Qual era a principal diferença entre o Pugilato e o Pancrácio?",
+      "options": [
+        "No Pugilato havia categorias de peso; no Pancrácio não havia",
+        "O Pugilato permitia golpes; o Pancrácio era apenas luta sem golpes",
+        "O Pancrácio combinava luta e pugilato e permitia quase tudo (exceto morder e enfiar dedos nos olhos)",
+        "O Pugilato era para atletas adultos; o Pancrácio era para jovens"
+      ],
+      "correct": 2,
+      "explanation": "O Pancrácio era essencialmente uma forma de combate sem regras significativas — podia bater, lutar, estrangular, torcer membros. As únicas proibições eram morder e enfiar os dedos nos olhos do adversário. O Pugilato era 'apenas' um combate de punhos, sem lutas no chão. O Pancrácio era a prova mais brutal e espetacular, e os seus campeões tornavam-se figuras heroicas."
+    },
+    {
+      "question": "Nas corridas de bigas e cavalos, quem recebia a glória da vitória?",
+      "options": [
+        "O jóquei ou condutor, que arriscava a vida na pista",
+        "O dono dos cavalos, independentemente de quem os montava",
+        "A cidade-estado que patrocinava o atleta",
+        "A glória era partilhada entre o dono e o condutor"
+      ],
+      "correct": 1,
+      "explanation": "Nas corridas de cavalos e de bigas, a glória olímpica ia inteiramente para o dono dos cavalos — não para o jóquei ou o condutor, que era frequentemente um escravo ou profissional contratado. Isto tornava estas provas as mais aristocráticas dos Jogos: só os muito ricos podiam ter cavalos de corrida. Cinisca de Esparta tornou-se assim a primeira mulher a ser proclamada vencedora olímpica, como proprietária dos cavalos vencedores."
+    },
+    {
+      "question": "O que tornava o Pancrácio a prova 'mais brutal' dos Jogos?",
+      "options": [
+        "Era disputado numa arena fechada sem árbitros",
+        "Era uma combinação de luta e pugilato onde quase tudo era permitido, exceto morder e enfiar dedos nos olhos",
+        "Os atletas usavam armas de madeira que podiam causar ferimentos graves",
+        "Não havia limite de tempo — decorria até um dos atletas morrer"
+      ],
+      "correct": 1,
+      "explanation": "O Pancrácio (do grego 'pan' = tudo, 'kratos' = força) era uma combinação de luta livre e pugilato. Eram permitidos estrangulamentos, torções de membros, golpes em posição caída — praticamente tudo, exceto morder e enfiar os dedos nos olhos. Era a prova mais perigosa e mais admirada. Terminava quando um dos atletas desistia, ficava inconsciente, ou morria — o que acontecia com alguma regularidade."
+    },
+    {
+      "question": "Porque é que as mulheres casadas eram proibidas de assistir aos Jogos?",
+      "options": [
+        "Por questões de decência religiosa — os Jogos eram um ritual exclusivamente masculino",
+        "Porque os atletas competiam nus e a presença de mulheres casadas violaria as normas sociais gregas",
+        "Porque as mulheres griegas não tinham permissão para viajar para Olímpia sem escolta masculina",
+        "Era uma lei criada para proteger as mulheres das multidões violentas que assistiam às provas"
+      ],
+      "correct": 1,
+      "explanation": "Como os atletas competiam completamente nus, a presença de mulheres casadas era considerada uma violação grave das normas sociais e morais gregas. As mulheres solteiras podiam assistir (embora houvesse restrições). A única exceção era a sacerdotisa de Deméter, que tinha um lugar de honra reservado no estádio. Apanhar uma mulher casada a assistir podia resultar em punição severa."
+    },
+    {
+      "question": "O que tornava as corridas de bigas as provas 'mais dispendiosas e aristocráticas'?",
+      "options": [
+        "Requeriam equipamento importado da Pérsia que só os ricos podiam pagar",
+        "Os organizadores dos Jogos cobravam uma taxa de inscrição muito elevada",
+        "Manter cavalos de corrida e bigas requeria uma riqueza que só uma elite aristocrática possuía",
+        "Os prémios em dinheiro eram tão grandes que apenas os ricos podiam cobrir os custos caso perdessem"
+      ],
+      "correct": 2,
+      "explanation": "Comprar, treinar e manter cavalos de corrida de alta qualidade, juntamente com as bigas e os cavalariços necessários, representava um investimento enorme que estava completamente fora do alcance da maioria dos gregos. Era uma prova reservada à elite aristocrática das cidades-estado mais ricas. O facto de a glória ir para o dono — e não para quem arriscava a vida na pista — tornava-as o símbolo supremo do poder e da riqueza."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "lesson_id": "olimpicos_003",
+  "questions": [
+    {
+      "question": "Qual era o prémio oficial que os vencedores recebiam em Olímpia?",
+      "options": [
+        "Uma medalha de ouro com a imagem de Zeus",
+        "Uma coroa de ramos de oliveira brava (kotinos)",
+        "Um escudo de prata e uma quantia em dinheiro",
+        "O direito de erguer uma estátua de si mesmo no santuário de Zeus"
+      ],
+      "correct": 1,
+      "explanation": "O prémio oficial em Olímpia era o kotinos — uma coroa feita de ramos de uma oliveira brava sagrada que crescia perto do Templo de Zeus. Os ramos eram cortados com uma foice de ouro por um rapaz cujos pais estivessem ambos vivos, tornando o ritual profundamente simbólico. O prémio intencional não tinha valor material — a mensagem era que se competia pela glória, não pela riqueza."
+    },
+    {
+      "question": "O que tornava a coroa de oliveira tão especial, apesar de não ter valor material?",
+      "options": [
+        "Era feita com ramos de uma oliveira plantada pelo próprio Zeus, segundo a tradição",
+        "Era o único prémio olímpico que podia ser guardado para sempre sem se deteriorar",
+        "O seu ritual de preparação envolvia foice de ouro e um rapaz cujos pais vivessem — o que a tornava um objeto sagrado",
+        "Era trocável por dinheiro no final dos Jogos, sendo o seu valor determinado por leilão"
+      ],
+      "correct": 2,
+      "explanation": "A coroa de oliveira era sagrada não pelo material, mas pelo ritual da sua preparação: os ramos eram cortados de uma oliveira sagrada especificamente associada ao santuário de Zeus, com uma foice de ouro (o ouro simbolizava pureza divina), por um rapaz com pais vivos (ausência de contato com a morte tornava-o ritualmente puro). Cada detalhe do processo reforçava a ideia de que a coroa era um objeto tocado pelo sagrado."
+    },
+    {
+      "question": "O que era o 'kleos' para os gregos antigos?",
+      "options": [
+        "O nome grego para a cerimónia de coroação nos Jogos",
+        "A fama e glória que sobrevivem à morte — a imortalidade do nome e dos feitos",
+        "O título concedido aos atletas que venciam três edições consecutivas dos Jogos",
+        "A honra paga em vida, através de recompensas materiais e privilégios sociais"
+      ],
+      "correct": 1,
+      "explanation": "O kleos era um dos conceitos mais importantes da cultura grega — a glória que sobrevive à morte do seu portador. Para os gregos, a imortalidade física era impossível, mas a imortalidade do nome era alcançável. Heróis como Aquiles preferiam uma vida curta e gloriosa a uma longa e esquecida. Vencer em Olímpia era a forma real de alcançar este kleos — o teu nome ficaria registado para sempre."
+    },
+    {
+      "question": "Qual era o papel de Píndaro na celebração dos vencedores olímpicos?",
+      "options": [
+        "Era o árbitro-chefe dos Jogos, responsável por declarar os vencedores",
+        "Era um escultor contratado para criar estátuas dos campeões olímpicos",
+        "Era um poeta que escrevia odes (poemas de louvor) celebrando as vitórias e ligando os atletas a heróis e deuses",
+        "Era o sacerdote principal que presidia às cerimónias de coroação em Olímpia"
+      ],
+      "correct": 2,
+      "explanation": "Píndaro foi um dos maiores poetas líricos da Grécia Antiga, famoso pelas suas Epínicas — odes que celebravam vitórias nos grandes Jogos pan-helénicos, incluindo os Olímpicos. Era contratado pelas famílias dos vencedores para criar poemas que imortalizavam a vitória, ligando o atleta a heróis mitológicos e à linhagem dos deuses. Ser celebrado por Píndaro era quase tão glorioso como a própria vitória."
+    },
+    {
+      "question": "O que simbolizava a 'entrada triunfal' do campeão pela brecha na muralha da cidade?",
+      "options": [
+        "Uma tradição arquitetónica para facilitar o acesso de multidões ao interior da cidade",
+        "Uma cidade com atletas assim não precisa de muros para se defender — os seus heróis são a melhor proteção",
+        "A brecha era criada para que o campeão pudesse entrar a cavalo sem precisar de desmontar",
+        "Era uma forma de punir a cidade por não ter construído uma porta suficientemente grande para a celebração"
+      ],
+      "correct": 1,
+      "explanation": "A entrada pela brecha na muralha era um gesto simbólico poderoso: significava que a cidade não precisava de muros para se defender porque tinha heróis como aquele atleta. Era também a afirmação de que o campeão estava acima dos cidadãos comuns — não entrava pela porta principal que todos usavam, mas por uma abertura especial criada em sua honra, demonstrando que transcendia as normas da vida quotidiana."
+    },
+    {
+      "question": "Que recompensas materiais esperavam um campeão olímpico na sua cidade natal?",
+      "options": [
+        "Um palácio construído especialmente para ele e um exército pessoal",
+        "Refeições gratuitas para sempre, prémios em dinheiro, isenção de impostos e lugares de honra em eventos públicos",
+        "O direito de não pagar impostos durante um ano e um prémio de 100 moedas de ouro",
+        "Um cargo de liderança na cidade e o poder de propor leis"
+      ],
+      "correct": 1,
+      "explanation": "Os privilégios eram numerosos e duradouros: refeições gratuitas para sempre no prytaneion (o edifício público principal), prémios substanciais em dinheiro, isenção permanente de impostos, lugares de honra em todos os eventos públicos, e o direito de erguer uma estátua de si mesmo. O paradoxo grego: em Olímpia competia-se pela glória (não pelo dinheiro), mas em casa as recompensas materiais eram muito reais."
+    },
+    {
+      "question": "Qual era o paradoxo do sistema de prémios dos Jogos Olímpicos gregos?",
+      "options": [
+        "As provas mais violentas tinham os prémios mais pequenos, incentivando a brutalidade",
+        "O prémio oficial em Olímpia era simbólico (a coroa), mas as recompensas na cidade natal eram muito materiais (dinheiro, isenções, privilégios)",
+        "Apenas os atletas de cidades ricas podiam participar, o que contradiz o ideal de igualdade",
+        "Os vencedores eram honrados mas os perdedores eram punidos, criando um sistema de desincentivo"
+      ],
+      "correct": 1,
+      "explanation": "O paradoxo central era filosófico: os Jogos pregavam que se competia pela honra e pelo kleos, não pela riqueza — daí a coroa de oliveira sem valor material. Mas na prática, os vencedores recebiam recompensas muito concretas nas suas cidades: dinheiro, isenções fiscais, refeições gratuitas para sempre. A retórica era de glória pura; a realidade incluía benefícios materiais substanciais."
+    },
+    {
+      "question": "Quem era Milão de Crotona e por que é mencionado na aula?",
+      "options": [
+        "Um filósofo que escreveu sobre o significado ético dos Jogos Olímpicos",
+        "Um lutador que venceu seis vezes em Olímpia e se tornou uma lenda — o exemplo perfeito de kleos",
+        "O juiz principal dos Jogos durante várias décadas, conhecido pela sua imparcialidade",
+        "O arquiteto que desenhou o Templo de Zeus em Olímpia"
+      ],
+      "correct": 1,
+      "explanation": "Milão de Crotona é o exemplo perfeito de kleos olímpico: venceu seis vezes (um feito extraordinário), tornou-se uma figura quase mítica com histórias sobre a sua força sobrehumana (carregar um touro adulto nos ombros), e foi honrado como herói pela sua cidade mesmo após a morte. Dois mil e quinhentos anos depois, o seu nome ainda é lembrado — é a definição de imortalidade pelo kleos."
+    },
+    {
+      "question": "Porque é que os gregos consideravam o kleos mais valioso do que a vida longa?",
+      "options": [
+        "Porque a medicina grega era tão limitada que uma vida longa era raramente possível de qualquer forma",
+        "Porque a filosofia epicurista ensinava que a vida deveria ser curta e intensa",
+        "Porque, na escala de valores grega, a imortalidade do nome depois da morte era superior à existência biológica prolongada mas esquecida",
+        "Porque os gregos acreditavam que os que viviam muito tempo eram punidos pelos deuses"
+      ],
+      "correct": 2,
+      "explanation": "A cultura grega valorizava profundamente o legado e a memória coletiva. Aquiles, o herói da Ilíada, é o modelo: escolhe uma vida curta e gloriosa a uma longa e obscura. Esta escala de valores dizia que a existência biológica era transitória e comum a todos, mas o kleos — ser lembrado e celebrado pelas gerações futuras — era o que distinguia os grandes dos ordinários. Uma vida longa e esquecida era, para os gregos, um fracasso existencial."
+    },
+    {
+      "question": "O que significava, na prática, receber refeições gratuitas para sempre no prytaneion?",
+      "options": [
+        "Uma honra simbólica sem consequências práticas — o prytaneion servia apenas cereais e água",
+        "Um privilégio de grande prestígio social e segurança económica, equivalente a uma pensão vitalícia num dos espaços mais importantes da cidade",
+        "O direito de comer primeiro nas festas públicas, antes dos outros cidadãos",
+        "Uma obrigação de se alimentar na taberna do estado, impedindo o atleta de comer em sua casa"
+      ],
+      "correct": 1,
+      "explanation": "O prytaneion era o coração cívico da cidade grega — onde os magistrados se reuniam, onde se realizavam banquetes de estado e onde eram recebidos hóspedes importantes. Comer gratuitamente ali para sempre era um privilégio de imensa importância social e económica: garantia alimentação sem custos, colocava o atleta em permanente companhia das elites da cidade, e afirmava publicamente o seu estatuto superior. Era equivalente a uma pensão vitalícia com prestígio."
+    }
+  ]
+}

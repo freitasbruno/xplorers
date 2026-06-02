@@ -1,0 +1,115 @@
+{
+  "lesson_id": "olimpicos_002",
+  "questions": [
+    {
+      "question": "Os Jogos Olímpicos gregos eram fundamentalmente um evento desportivo. Verdadeiro ou falso?",
+      "options": [
+        "Verdadeiro — o desporto era o elemento central e a religião era apenas um ritual de abertura",
+        "Falso — eram primariamente um festival religioso em honra de Zeus, onde o desporto era uma das formas de culto",
+        "Verdadeiro — a política e a religião foram acrescentadas mais tarde, nos séculos III e II a.C.",
+        "Falso — eram principalmente um evento político onde o desporto servia como pretexto para reunir as cidades"
+      ],
+      "correct": 1,
+      "explanation": "Os Jogos eram, antes de tudo, um festival religioso em honra de Zeus. Olímpia era um santuário sagrado, não uma cidade. Os atletas competiam como uma forma de homenagem aos deuses, os rituais e sacrifícios ocupavam um dia inteiro do festival, e o próprio prémio era uma coroa de oliveira sagrada cortada de uma árvore consagrada a Zeus. O desporto era inseparável da devoção religiosa."
+    },
+    {
+      "question": "De que era feito o Altar de Zeus em Olímpia, segundo a aula?",
+      "options": [
+        "De mármore de Paros, o mais branco e puro do mundo grego",
+        "Das cinzas acumuladas de séculos de sacrifícios de animais",
+        "De pedra local de Olímpia, esculpida por artesãos de Corinto",
+        "De bronze dourado, substituído periodicamente com as oferendas das cidades"
+      ],
+      "correct": 1,
+      "explanation": "O altar de Zeus em Olímpia era extraordinariamente incomum: não era feito de pedra ou metal, mas das cinzas comprimidas de séculos de sacrifícios de animais. Cada sacrifício adicionava uma nova camada, tornando-o num altar vivo que crescia com o tempo e com cada edição dos Jogos. Estima-se que chegou a ter vários metros de altura."
+    },
+    {
+      "question": "O que era a 'Hecatombe' que acontecia no terceiro dia dos Jogos?",
+      "options": [
+        "Uma grande corrida de 100 estadios em honra de Zeus",
+        "O sacrifício de 100 bois a Zeus, seguido de um banquete público",
+        "Uma cerimónia de coroação dos 100 melhores atletas de cada edição",
+        "Uma votação em que 100 juízes determinavam os vencedores de cada prova"
+      ],
+      "correct": 1,
+      "explanation": "A hecatombe (do grego 'hekaton' = cem, 'bous' = boi) era o sacrifício de 100 bois ao deus Zeus. Era a cerimónia religiosa central dos Jogos, realizada no terceiro dia — o mais sagrado do festival. Depois do sacrifício, a carne era distribuída num enorme banquete que reunia atletas, espectadores e representantes de cidades rivais à mesma mesa. Era um ato de comunhão além das rivalidades políticas."
+    },
+    {
+      "question": "O que era a 'Ekecheiria'?",
+      "options": [
+        "O nome grego para a cerimónia de entrega das coroas de oliveira aos vencedores",
+        "A Trégua Sagrada proclamada antes dos Jogos, que obrigava todas as cidades a depor as armas",
+        "O juramento que os atletas prestavam antes de competir",
+        "O conselho de juízes responsável pela organização dos Jogos"
+      ],
+      "correct": 1,
+      "explanation": "A Ekecheiria (do grego 'echein' = reter, 'cheir' = mão, ou seja, 'manter as mãos quietas') era a Trégua Sagrada proclamada meses antes dos Jogos. Obrigava todas as cidades participantes a suspender as suas guerras e garantia passagem segura a atletas e espectadores, mesmo por territórios inimigos. Violar a trégua era considerado um sacrilégio contra Zeus."
+    },
+    {
+      "question": "Porque é que a Ekecheiria era respeitada mesmo por cidades em guerra?",
+      "options": [
+        "Porque havia um exército permanente em Olímpia que enforçava a trégua militarmente",
+        "Porque a Grécia vivia períodos de paz permanente que tornavam a trégua fácil de cumprir",
+        "Porque violar a trégua era sacrilégio contra Zeus e punido com multas e expulsão — mas sobretudo porque as cidades partilhavam uma identidade cultural grega mais forte do que as rivalidades políticas",
+        "Porque a maioria das guerras gregas eram rituais simbólicos que facilmente paravam"
+      ],
+      "correct": 2,
+      "explanation": "A trégua era eficaz por duas razões combinadas: a sanção prática (multas pesadas e expulsão dos Jogos) e, mais profundamente, a identidade cultural helénica partilhada. Cidades que se odiavam reconheciam que partilhavam os mesmos deuses, a mesma língua e as mesmas histórias. Recusar a trégua seria negar a própria identidade grega. Esta combinação de medo da punição divina e orgulho cultural foi suficientemente poderosa para manter a paz por quase 1.200 anos."
+    },
+    {
+      "question": "Como eram usados os Jogos para fins diplomáticos e políticos?",
+      "options": [
+        "As cidades enviavam embaixadores formais que negociavam em sessões públicas no estádio",
+        "Era proibido qualquer discussão política em Olímpia — os Jogos eram uma zona desmilitarizada total",
+        "Políticos negociavam tratados nos bastidores, vitórias eram usadas como propaganda, e cidades ricas construíam tesouros para ostentar poder",
+        "Os Jogos eram usados exclusivamente para resolver disputas territoriais entre cidades-estado"
+      ],
+      "correct": 2,
+      "explanation": "Olímpia era o maior palco político do mundo grego. Com todas as cidades reunidas num só lugar, os bastidores fervilhavam de diplomacia — tratados, alianças, negociações. As vitórias atléticas eram instrumentalizadas como propaganda (prova da superioridade da cidade). E as cidades ricas construíam pequenos 'tesouros' — edifícios cheios de oferendas — para ostentar permanentemente a sua riqueza e devoção."
+    },
+    {
+      "question": "O que eram os 'Tesouros' que as cidades ricas construíam em Olímpia?",
+      "options": [
+        "Cofres onde guardavam o dinheiro das apostas nas provas atléticas",
+        "Edifícios semelhantes a templos onde guardavam oferendas valiosas a Zeus",
+        "Depósitos de prémios em dinheiro para os atletas vencedores",
+        "Arquivos onde conservavam os registos de todos os vencedores olímpicos"
+      ],
+      "correct": 1,
+      "explanation": "Os 'tesouros' eram pequenos edifícios construídos pelas cidades mais ricas do mundo grego ao longo do caminho que levava ao santuário de Zeus. Continham oferendas valiosas — obras de arte, armas capturadas em batalha, objetos de ouro e prata. Eram uma forma permanente e visível de demonstrar riqueza e devoção, mesmo quando os Jogos não estavam a decorrer. As cidades competiam também nesta forma de ostentação arquitectónica."
+    },
+    {
+      "question": "O que tornava o terceiro dia dos Jogos o 'mais sagrado'?",
+      "options": [
+        "Era o dia em que decorriam as provas mais prestigiadas, como o stadion e o pentatlo",
+        "Era dedicado inteiramente a rituais religiosos — a grande procissão e a hecatombe",
+        "Era o dia da cerimónia de coroação com as coroas de oliveira",
+        "Era o único dia em que as mulheres podiam assistir aos Jogos"
+      ],
+      "correct": 1,
+      "explanation": "O terceiro dia estava reservado exclusivamente para os rituais religiosos — não havia provas atléticas. Uma grande procissão de atletas, juízes, sacerdotes e representantes das cidades percorria Olímpia até ao templo de Zeus, onde era realizada a hecatombe (sacrifício de 100 bois). A carne era depois distribuída num banquete público. Era a afirmação suprema de que os Jogos eram, antes de tudo, um acto de devoção."
+    },
+    {
+      "question": "Qual era a consequência para uma cidade que violasse a Ekecheiria?",
+      "options": [
+        "Estava obrigada a pagar multas pesadas e podia ser excluída dos Jogos futuros",
+        "Os seus atletas eram desclassificados das provas em curso",
+        "Era obrigada a enviar os seus melhores guerreiros como escravos para Olímpia",
+        "Era proibida de receber visitantes durante quatro anos até aos próximos Jogos"
+      ],
+      "correct": 0,
+      "explanation": "Violar a Ekecheiria era considerado um grave sacrilégio contra Zeus — a ofensa mais séria que uma cidade grega podia cometer. As penalidades eram pesadas: multas financeiras significativas e, mais vergonhosamente, a expulsão dos Jogos futuros. Esta exclusão era uma desonra pública que manchava a reputação da cidade perante todo o mundo grego. A combinação de penalidade financeira e desonra social era suficientemente poderosa para dissuadir violações."
+    },
+    {
+      "question": "Porque é que Olímpia é descrita na aula como um 'microcosmo do mundo grego'?",
+      "options": [
+        "Porque tinha a maior população de toda a Grécia",
+        "Porque representava uma versão em miniatura do mundo grego, com todas as cidades, culturas e rivalidades reunidas num só lugar",
+        "Porque os melhores artistas, filósofos e arquitetos do mundo grego viviam permanentemente em Olímpia",
+        "Porque era a única cidade onde todas as leis gregas se aplicavam simultaneamente"
+      ],
+      "correct": 1,
+      "explanation": "Olímpia concentrava, no espaço de cinco dias, tudo o que definia o mundo grego: a religião (os rituais a Zeus), a competição atlética (as provas), a política (a diplomacia nos bastidores), a arte (os tesouros e as estátuas), e a identidade cultural partilhada (a Ekecheiria). Era um espelho da sociedade grega na sua totalidade, com todas as suas contradições — paz e guerra, unidade e rivalidade, sagrado e político."
+    }
+  ]
+}

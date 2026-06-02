@@ -60,7 +60,9 @@
     "description": "Conheça a experiência do atleta: quem competia, como competiam (nus), e o que significava vencer.",
     "image_url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&q=80",
     "content_file": "lessons/004_olimpicos_01.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/004_olimpicos_01.json",
+    "md_file": "data/md/004_olimpicos_01.md",
+    "has_quiz": true,
     "published_at": "2025-02-01",
     "featured": false,
     "global_class": 4
@@ -75,7 +77,9 @@
     "description": "Explore a dimensão religiosa, a trégua sagrada que parava as guerras e a organização do evento.",
     "image_url": "https://images.unsplash.com/photo-1728246950291-2a51a1fc8add?w=800&q=80",
     "content_file": "lessons/005_olimpicos_02.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/005_olimpicos_02.json",
+    "md_file": "data/md/005_olimpicos_02.md",
+    "has_quiz": true,
     "published_at": "2025-02-08",
     "featured": false,
     "global_class": 5
@@ -90,7 +94,9 @@
     "description": "Uma imersão nas competições: o prestigiado pentatlo, a violência do pancrácio e as perigosas corridas de bigas.",
     "image_url": "https://images.unsplash.com/photo-1728245029367-95c454e0fb4d?w=800&q=80",
     "content_file": "lessons/006_olimpicos_03.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/006_olimpicos_03.json",
+    "md_file": "data/md/006_olimpicos_03.md",
+    "has_quiz": true,
     "published_at": "2025-02-15",
     "featured": false,
     "global_class": 6
@@ -105,7 +111,9 @@
     "description": "Aborda a longevidade dos Jogos (mais de 1000 anos), o seu impacto, os heróis e o lado negro da batota.",
     "image_url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
     "content_file": "lessons/007_olimpicos_04.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/007_olimpicos_04.json",
+    "md_file": "data/md/007_olimpicos_04.md",
+    "has_quiz": true,
     "published_at": "2025-02-22",
     "featured": false,
     "global_class": 7
