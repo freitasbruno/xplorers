@@ -1,0 +1,115 @@
+{
+  "lesson_id": "computadores_004",
+  "questions": [
+    {
+      "question": "Porque foi criada a ARPANET, a precursora da internet?",
+      "options": [
+        "Para ligar as universidades americanas e facilitar a partilha de investigação científica",
+        "Para criar uma rede de comunicações militares que sobrevivesse à destruição de qualquer ponto central",
+        "Para permitir que os computadores dos anos 60 comunicassem mais rapidamente entre si",
+        "Para substituir o correio postal nas comunicações governamentais"
+      ],
+      "correct": 1,
+      "explanation": "A ARPANET nasceu da preocupação militar americana durante a Guerra Fria: se a União Soviética destruísse o centro de comunicações principal, toda a rede ficaria inoperante. A solução foi uma rede descentralizada — sem um único ponto de controlo — onde a informação encontra automaticamente outro caminho se um nó for eliminado. Esta arquitetura é a base da internet atual."
+    },
+    {
+      "question": "O que é a 'comutação de pacotes', a grande inovação técnica da internet?",
+      "options": [
+        "Um sistema que comprime ficheiros para os enviar mais rapidamente",
+        "A tecnologia que converte sinais analógicos em digitais",
+        "Dividir a informação em pequenos pacotes que viajam por caminhos diferentes e se montam no destino",
+        "Um protocolo que garante que os dados chegam sem erros"
+      ],
+      "correct": 2,
+      "explanation": "Em vez de enviar um ficheiro inteiro de uma vez (como uma carta), a comutação de pacotes parte a informação em fragmentos pequenos — os 'pacotes'. Cada pacote pode viajar por um caminho diferente na rede, e todos se montam novamente no destino. Isto torna a rede mais resiliente: se um caminho estiver bloqueado, os pacotes encontram outro automaticamente."
+    },
+    {
+      "question": "O que distingue a 'Internet' da 'Web' (World Wide Web)?",
+      "options": [
+        "A internet é gratuita; a Web é paga",
+        "A Internet é a infraestrutura física (cabos, servidores); a Web são as páginas e sites que correm por cima dela",
+        "A Web usa satélites; a Internet usa cabos submarinos",
+        "A Internet é a versão antiga; a Web é a versão moderna do mesmo sistema"
+      ],
+      "correct": 1,
+      "explanation": "A Internet é a 'estrada' — a infraestrutura de cabos, routers e servidores que ligam computadores em todo o mundo. A Web (WWW) são os 'carros' — as páginas, sites e aplicações que circulam por essa infraestrutura usando o protocolo HTTP. Podes usar a internet sem usar a Web (por exemplo, ao enviar um email ou jogar online)."
+    },
+    {
+      "question": "Por que razão a decisão de Tim Berners-Lee de não patentear a Web foi historicamente importante?",
+      "options": [
+        "Porque os advogados recusaram registar a patente por razões técnicas",
+        "Porque a Web era demasiado simples para ser patenteável",
+        "Porque permitiu que qualquer pessoa e empresa desenvolvesse sites e serviços livremente, acelerando o crescimento global",
+        "Porque o CERN detinha os direitos de todas as invenções dos seus cientistas"
+      ],
+      "correct": 2,
+      "explanation": "Se Tim Berners-Lee tivesse patenteado o HTML, os links e o HTTP em 1989, qualquer pessoa ou empresa que quisesse criar um site teria de pagar royalties. Ao dar a Web ao mundo gratuitamente, permitiu uma explosão de inovação sem precedentes: qualquer programador podia criar sites, qualquer empresa podia ter presença online, e a web cresceu de uma dúzia de páginas em 1991 para mais de 1.000 milhões hoje."
+    },
+    {
+      "question": "O que caracteriza a 'Web 2.0' em comparação com a Web original?",
+      "options": [
+        "A Web 2.0 é mais rápida porque usa fibra ótica em vez de cobre",
+        "Na Web 2.0, os utilizadores deixaram de ser apenas leitores e passaram a ser também criadores de conteúdo",
+        "A Web 2.0 introduziu as primeiras lojas online e o comércio eletrónico",
+        "A Web 2.0 foi a primeira versão a funcionar em telemóveis"
+      ],
+      "correct": 1,
+      "explanation": "A Web original (1.0) era essencialmente uma biblioteca digital: podias ler, mas não publicar. A Web 2.0, que emergiu por volta de 2004, trouxe plataformas como YouTube, Facebook e Wikipedia onde qualquer utilizador pode criar, editar e partilhar conteúdo. Esta mudança transformou a web de um meio de difusão unidirecional numa rede de comunicação bidirecional — e é a razão pela qual hoje existem mais de 5.000 milhões de utilizadores ativos."
+    },
+    {
+      "question": "Qual foi o impacto transformador do iPhone de 2007 no mundo da computação?",
+      "options": [
+        "Foi o primeiro telemóvel a usar ecrã táctil, tecnologia que nenhuma empresa havia tentado antes",
+        "Tornou a computação ubíqua — já não 'vamos' à internet, vivemos nela permanentemente",
+        "Introduziu as aplicações (apps) como modelo de negócio para a indústria de software",
+        "Criou o mercado de acessórios tecnológicos que hoje vale biliões"
+      ],
+      "correct": 1,
+      "explanation": "Antes do iPhone, 'usar a internet' exigia sentar a uma secretária. O iPhone (e os smartphones que se seguiram) tornaram a computação ubíqua — sempre presente, sempre ligada, sempre no bolso. Esta mudança foi tão profunda que transformou comportamentos sociais, hábitos de consumo, formas de trabalho e até a política. Já não 'vamos' à internet como se fosse um destino; habitamos nela continuamente."
+    },
+    {
+      "question": "Qual é a diferença entre a 'IA Generativa' e a 'IA Agente'?",
+      "options": [
+        "A IA Generativa é mais inteligente; a IA Agente é mais rápida",
+        "A IA Generativa cria conteúdo (texto, imagens); a IA Agente executa tarefas de ponta a ponta de forma autónoma",
+        "A IA Generativa funciona online; a IA Agente funciona offline",
+        "A IA Generativa é gratuita; a IA Agente é paga"
+      ],
+      "correct": 1,
+      "explanation": "A IA Generativa (ChatGPT, DALL-E, etc.) cria conteúdo — responde a perguntas, gera imagens, escreve textos. Mas ainda precisa que um humano execute as ações decorrentes. A IA Agente vai mais longe: recebe um objetivo e executa autonomamente todas as etapas necessárias (pesquisar, reservar, comprar, enviar). É a diferença entre 'dar uma ideia' e 'fazer o trabalho todo'."
+    },
+    {
+      "question": "O que é a 'superposição' nos computadores quânticos?",
+      "options": [
+        "A capacidade de um computador quântico executar vários programas ao mesmo tempo",
+        "Um qubit poder ser 0 e 1 simultaneamente, até ser medido",
+        "A sobreposição de múltiplos chips de processamento num único circuito",
+        "A velocidade com que os qubits comunicam entre si"
+      ],
+      "correct": 1,
+      "explanation": "Num computador clássico, cada bit é sempre 0 OU 1. Um qubit quântico, graças aos princípios da mecânica quântica, pode existir em superposição — ser 0 e 1 ao mesmo tempo, até ao momento em que é medido. É como uma moeda a girar no ar: enquanto gira, é simultaneamente cara e coroa. Esta propriedade permite que os computadores quânticos explorem um número exponencialmente maior de possibilidades em simultâneo."
+    },
+    {
+      "question": "Por que razão a computação quântica representa um risco para a segurança digital atual?",
+      "options": [
+        "Porque os computadores quânticos podem hackear qualquer sistema sem deixar rasto",
+        "Porque pode quebrar os algoritmos de criptografia em que a segurança da internet atual se baseia",
+        "Porque consome tanta energia que pode causar falhas nas redes elétricas",
+        "Porque os vírus quânticos são impossíveis de detetar pelos antivírus convencionais"
+      ],
+      "correct": 1,
+      "explanation": "A segurança de praticamente tudo na internet — bancos online, emails, comunicações militares, criptomoedas — baseia-se em algoritmos de criptografia que são impossíveis de quebrar para um computador clássico (demoraria milénios). Um computador quântico suficientemente poderoso poderia quebrar estes algoritmos em horas ou minutos, tornando toda a infraestrutura de segurança atual obsoleta. Por isso, investigadores já desenvolvem 'Criptografia Pós-Quântica'."
+    },
+    {
+      "question": "Se usas um smartwatch com monitor cardíaco, o que isso significa tecnicamente, segundo a aula?",
+      "options": [
+        "És um utilizador avançado de tecnologia wearable",
+        "Fazes parte do grupo de beta-testers da indústria médica",
+        "És tecnicamente um 'ciborgue de baixa tecnologia', com a fronteira entre biológico e digital a esbater-se",
+        "Estás a contribuir involuntariamente para bases de dados de saúde pública"
+      ],
+      "correct": 2,
+      "explanation": "A definição clássica de ciborgue é um organismo biológico com componentes tecnológicos integrados para melhorar ou monitorizar funções naturais. Um smartwatch que monitoriza continuamente o teu ritmo cardíaco, um pacemaker que regula as batidas do coração, ou um sensor de glucose implantado já são exemplos desta integração. A fronteira entre o corpo humano e a tecnologia está a tornar-se progressivamente mais ténue — e cada vez mais aceite como algo normal."
+    }
+  ]
+}

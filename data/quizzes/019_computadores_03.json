@@ -1,0 +1,115 @@
+{
+  "lesson_id": "computadores_003",
+  "questions": [
+    {
+      "question": "O que foi revolucionário no Intel 4004, lançado em 1971?",
+      "options": [
+        "Foi o primeiro processador capaz de executar jogos de vídeo",
+        "Colocou toda a CPU num único chip de silício do tamanho de uma unha",
+        "Foi o primeiro chip a atingir 1 GHz de velocidade",
+        "Permitiu que os computadores se ligassem entre si em rede"
+      ],
+      "correct": 1,
+      "explanation": "Antes do Intel 4004, a Unidade Central de Processamento (CPU) era composta por centenas de placas de circuitos separadas, cada uma do tamanho de um livro. O Intel 4004 concentrou tudo isso num único chip de silício. Esta miniaturização tornou o computador pessoal tecnicamente possível — e economicamente acessível."
+    },
+    {
+      "question": "O que era o Homebrew Computer Club e qual foi a sua importância?",
+      "options": [
+        "Um fabricante de computadores fundado por Steve Jobs na Califórnia",
+        "Um clube de entusiastas que partilhavam ideias e inspirou o nascimento da Apple e da Microsoft",
+        "Um grupo de investigadores da IBM que desenvolveu o PC",
+        "Uma associação de professores que ensinava programação nas escolas americanas"
+      ],
+      "correct": 1,
+      "explanation": "O Homebrew Computer Club era um grupo informal de entusiastas tecnológicos que se reunia na Califórnia para partilhar peças, ideias e projetos. Entre os membros estava Steve Wozniak, que mais tarde cofundou a Apple. O espírito aberto e colaborativo do clube influenciou profundamente a cultura da indústria tecnológica — e pode considerar-se o berço do movimento open-source."
+    },
+    {
+      "question": "Como nasceu a Microsoft?",
+      "options": [
+        "Bill Gates comprou uma empresa de software falida e restruturou-a",
+        "Gates e Paul Allen escreveram software BASIC para o computador Altair 8800",
+        "A Microsoft foi criada por ex-funcionários da IBM que queriam fazer computadores pessoais",
+        "Gates ganhou um concurso universitário de programação e usou o prémio para fundar a empresa"
+      ],
+      "correct": 1,
+      "explanation": "Em 1975, Bill Gates e Paul Allen viram o Altair 8800 na capa da revista Popular Electronics e perceberam que aquela máquina precisava de software. Contactaram os fabricantes e escreveram uma versão da linguagem BASIC para o Altair. Foi este contrato — e este produto — que deu origem à Microsoft. Gates abandonou Harvard para se dedicar à empresa."
+    },
+    {
+      "question": "Qual foi a estratégia da IBM que definiu o padrão do PC moderno?",
+      "options": [
+        "Construir os computadores mais baratos do mercado, mesmo com menor qualidade",
+        "Usar 'arquitetura aberta', permitindo que outras empresas criassem componentes e software compatíveis",
+        "Integrar a televisão com o computador numa única caixa",
+        "Vender diretamente ao consumidor, eliminando os revendedores"
+      ],
+      "correct": 1,
+      "explanation": "Em vez de construir um sistema fechado e proprietário (como a Apple), a IBM optou por uma 'arquitetura aberta': publicou as especificações do IBM PC, permitindo que qualquer empresa fabricasse componentes compatíveis ou escrevesse software para ele. Esta decisão criou o ecossistema 'PC' que ainda domina o mercado — mas também permitiu que empresas como a Compaq clonassem o design, algo que a IBM não antecipou."
+    },
+    {
+      "question": "Onde foi inventada a Interface Gráfica de Utilizador (GUI) com rato, janelas e ícones?",
+      "options": [
+        "Na Apple, pelos engenheiros de Steve Wozniak",
+        "Na Microsoft, como resposta ao sucesso do Apple II",
+        "No Xerox PARC, um centro de investigação, nos anos 70",
+        "Na Universidade de Stanford, num projeto financiado pelo governo americano"
+      ],
+      "correct": 2,
+      "explanation": "A GUI — com rato, janelas sobrepostas, ícones e menus — foi inventada no Xerox PARC (Palo Alto Research Center) nos anos 70. Paradoxalmente, a Xerox não comercializou esta tecnologia. Steve Jobs visitou o PARC em 1979 e reconheceu imediatamente o seu potencial, inspirando-se nela para o Apple Lisa e, mais tarde, para o Macintosh."
+    },
+    {
+      "question": "O que diferenciou o Apple II de outros computadores da sua época?",
+      "options": [
+        "Era o computador mais potente do mercado, ultrapassando os Mainframes em velocidade",
+        "Era o primeiro computador portátil, com bateria incluída",
+        "Vinha montado, com teclado, e podia ser ligado a uma televisão a cores",
+        "Era o único computador com acesso à internet naquela época"
+      ],
+      "correct": 2,
+      "explanation": "O Apple II (1977) foi revolucionário porque parecia um eletrodoméstico, não um equipamento técnico. Vinha completamente montado (ao contrário dos kits como o Altair), tinha um teclado integrado e saída de vídeo colorida para televisões comuns. Qualquer pessoa podia ligá-lo e começar a usar — sem soldar peças ou decorar comandos."
+    },
+    {
+      "question": "Por que razão a GUI (Interface Gráfica de Utilizador) foi tão importante para a popularização dos computadores?",
+      "options": [
+        "Porque tornou os computadores muito mais rápidos e eficientes do que a linha de comandos",
+        "Porque permitiu que qualquer pessoa usasse computadores sem memorizar comandos complexos",
+        "Porque reduziu drasticamente o preço dos computadores ao simplificar o hardware",
+        "Porque foi a base técnica que permitiu criar a internet e o email"
+      ],
+      "correct": 1,
+      "explanation": "A linha de comandos exigia memorizar sintaxes exatas — um erro de digitação e o comando falhava. A GUI substituiu isso por ações intuitivas: apontar, clicar, arrastar. Esta mudança democratizou completamente a computação. Passou de uma ferramenta para especialistas para um objeto do quotidiano de qualquer pessoa — e é a razão pela qual hoje existem 5 mil milhões de utilizadores de computadores no mundo."
+    },
+    {
+      "question": "Qual era a principal diferença filosófica entre a Apple e a IBM/Microsoft?",
+      "options": [
+        "A Apple focava-se em computadores para empresas; a IBM em computadores domésticos",
+        "A Apple apostava em sistemas fechados e controlados; a IBM/Microsoft em sistemas abertos e compatíveis",
+        "A Apple desenvolvia o hardware; a IBM/Microsoft desenvolviam apenas software",
+        "A Apple era americana; a IBM era europeia"
+      ],
+      "correct": 1,
+      "explanation": "A Apple construía ecossistemas fechados — hardware e software próprios, controlados para garantir qualidade e experiência. A IBM optou por abrir as especificações, criando um padrão que qualquer fabricante podia adotar. Esta divergência filosófica mantém-se até hoje: o iPhone (fechado, premium, controlado) vs Android (aberto, diverso, acessível)."
+    },
+    {
+      "question": "O que custava o primeiro rato comercial e o que isso nos diz sobre a evolução tecnológica?",
+      "options": [
+        "10 dólares — era um produto de massas desde o início",
+        "100 dólares — acessível apenas para empresas",
+        "400 dólares (mais de 1000€ a preços atuais) — mostra como a tecnologia fica progressivamente mais barata",
+        "1000 dólares — só disponível em laboratórios de investigação"
+      ],
+      "correct": 2,
+      "explanation": "O primeiro rato comercial, lançado com o Apple Lisa em 1983, custava 400 dólares — mais de 1.000 euros a preços atuais. Hoje, um rato funcional custa menos de 10€. Este padrão repete-se com quase toda a tecnologia: é cara e restrita quando aparece, e progressivamente mais barata e acessível com o tempo — exatamente o que a Lei de Moore previu para os processadores."
+    },
+    {
+      "question": "O lançamento do Macintosh em 1984 ficou famoso por um anúncio de televisão. O que o tornava único?",
+      "options": [
+        "Foi o primeiro anúncio de computadores a ser transmitido na televisão",
+        "Passava 24 horas por dia durante um mês, garantindo máxima exposição",
+        "Foi realizado por Ridley Scott e passou apenas uma vez, no Super Bowl — sendo ainda hoje considerado o melhor anúncio de sempre",
+        "Mostrava Steve Jobs a destruir um IBM PC com um martelo em tempo real"
+      ],
+      "correct": 2,
+      "explanation": "O anúncio '1984', realizado por Ridley Scott (diretor de Alien e Gladiador), foi uma peça cinematográfica inspirada no romance distópico de George Orwell. Mostrava uma corredora a destruir um ecrã gigante representando o conformismo (leia-se: IBM). Passou apenas uma vez — no intervalo do Super Bowl XVIII — e gerou tal impacto mediático que ainda hoje é estudado nas escolas de marketing como o ponto de viragem da publicidade moderna."
+    }
+  ]
+}

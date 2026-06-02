@@ -272,7 +272,9 @@
     "description": "A revolução da computação eletrónica impulsionada pela II Guerra Mundial e a invenção do transístor.",
     "image_url": "https://images.unsplash.com/photo-1580192984971-1f0a3dcc535e?w=800&q=80",
     "content_file": "lessons/018_computadores_02.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/018_computadores_02.json",
+    "md_file": "data/md/018_computadores_02.md",
+    "has_quiz": true,
     "published_at": "2025-05-22",
     "featured": false,
     "global_class": 18
@@ -287,7 +289,9 @@
     "description": "A passagem dos mainframes para o PC. O papel dos hobbyists e a visão de Steve Jobs e Bill Gates.",
     "image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
     "content_file": "lessons/019_computadores_03.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/019_computadores_03.json",
+    "md_file": "data/md/019_computadores_03.md",
+    "has_quiz": true,
     "published_at": "2025-05-29",
     "featured": false,
     "global_class": 19
@@ -302,7 +306,9 @@
     "description": "Análise da era da conectividade, desde a ARPANET até à World Wide Web e os desafios da IA.",
     "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
     "content_file": "lessons/020_computadores_04.php",
-    "has_quiz": false,
+    "quiz_file": "data/quizzes/020_computadores_04.json",
+    "md_file": "data/md/020_computadores_04.md",
+    "has_quiz": true,
     "published_at": "2025-06-05",
     "featured": false,
     "global_class": 20
