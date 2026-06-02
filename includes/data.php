@@ -26,10 +26,15 @@ function get_featured_lessons(): array {
     return array_values(array_filter(get_lessons(), fn($l) => !empty($l['featured'])));
 }
 
-function get_quiz(string $lesson_id): ?array {
-    // Sanitize: only allow word characters and hyphens to prevent path traversal
-    if (!preg_match('/^[\w\-]+$/', $lesson_id)) return null;
-    $path = __DIR__ . '/../data/quizzes/' . $lesson_id . '.json';
+function get_quiz(array|string $lesson): ?array {
+    if (is_array($lesson)) {
+        $path_rel = $lesson['quiz_file'] ?? 'data/quizzes/' . $lesson['id'] . '.json';
+        if (str_contains($path_rel, '..')) return null;
+    } else {
+        if (!preg_match('/^[\w\-]+$/', $lesson)) return null;
+        $path_rel = 'data/quizzes/' . $lesson . '.json';
+    }
+    $path = __DIR__ . '/../' . $path_rel;
     if (!file_exists($path)) return null;
     return json_decode(file_get_contents($path), true);
 }

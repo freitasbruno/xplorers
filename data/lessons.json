@@ -5,10 +5,13 @@
     "topic_name": "Cosmos",
     "class_number": 1,
     "class_total": 3,
+    "global_class": 1,
     "title": "O que é o Espaço? Uma Viagem aos Ingredientes do Universo",
     "description": "Análise dos fundamentos: o que é o espaço, os materiais que o compõem, e os \"objetos\" celestes que nele habitam.",
     "image_url": "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&q=80",
-    "content_file": "lessons/cosmos/001.php",
+    "content_file": "lessons/001_cosmos_01.php",
+    "quiz_file": "data/quizzes/001_cosmos_01.json",
+    "md_file": "data/md/001_cosmos_01.md",
     "has_quiz": true,
     "published_at": "2025-01-01",
     "featured": true
@@ -19,11 +22,14 @@
     "topic_name": "Cosmos",
     "class_number": 2,
     "class_total": 3,
+    "global_class": 2,
     "title": "A Nossa Morada Cósmica: A Terra no Sistema Solar",
     "description": "Explore a nossa vizinhança cósmica, o papel da gravidade e as condições únicas da Terra que permitem a vida.",
     "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
-    "content_file": "lessons/cosmos/002.php",
-    "has_quiz": false,
+    "content_file": "lessons/002_cosmos_02.php",
+    "quiz_file": "data/quizzes/002_cosmos_02.json",
+    "md_file": "data/md/002_cosmos_02.md",
+    "has_quiz": true,
     "published_at": "2025-01-08",
     "featured": false
   },
@@ -33,11 +39,14 @@
     "topic_name": "Cosmos",
     "class_number": 3,
     "class_total": 3,
+    "global_class": 3,
     "title": "A Dimensão do Universo: Expansão e Viagens no Tempo",
     "description": "Descubra a vastidão do universo, a sua expansão constante e como olhar para as estrelas é ver a luz do passado.",
     "image_url": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80",
-    "content_file": "lessons/cosmos/003.php",
-    "has_quiz": false,
+    "content_file": "lessons/003_cosmos_03.php",
+    "quiz_file": "data/quizzes/003_cosmos_03.json",
+    "md_file": "data/md/003_cosmos_03.md",
+    "has_quiz": true,
     "published_at": "2025-01-15",
     "featured": false
   },
@@ -50,10 +59,11 @@
     "title": "Ser Atleta em Olímpia: Honra, Nudez e Glória",
     "description": "Conheça a experiência do atleta: quem competia, como competiam (nus), e o que significava vencer.",
     "image_url": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=800&q=80",
-    "content_file": "lessons/olimpicos/001.php",
+    "content_file": "lessons/004_olimpicos_01.php",
     "has_quiz": false,
     "published_at": "2025-02-01",
-    "featured": false
+    "featured": false,
+    "global_class": 4
   },
   {
     "id": "olimpicos_002",
@@ -64,10 +74,11 @@
     "title": "Mais do que Desporto: O Festival Sagrado em Honra de Zeus",
     "description": "Explore a dimensão religiosa, a trégua sagrada que parava as guerras e a organização do evento.",
     "image_url": "https://images.unsplash.com/photo-1728246950291-2a51a1fc8add?w=800&q=80",
-    "content_file": "lessons/olimpicos/002.php",
+    "content_file": "lessons/005_olimpicos_02.php",
     "has_quiz": false,
     "published_at": "2025-02-08",
-    "featured": false
+    "featured": false,
+    "global_class": 5
   },
   {
     "id": "olimpicos_003",
@@ -78,10 +89,11 @@
     "title": "Arena dos Deuses: As Provas de Força e Brutalidade",
     "description": "Uma imersão nas competições: o prestigiado pentatlo, a violência do pancrácio e as perigosas corridas de bigas.",
     "image_url": "https://images.unsplash.com/photo-1728245029367-95c454e0fb4d?w=800&q=80",
-    "content_file": "lessons/olimpicos/003.php",
+    "content_file": "lessons/006_olimpicos_03.php",
     "has_quiz": false,
     "published_at": "2025-02-15",
-    "featured": false
+    "featured": false,
+    "global_class": 6
   },
   {
     "id": "olimpicos_004",
@@ -92,10 +104,11 @@
     "title": "O Legado de Olímpia: Mil Anos de Glória e Batota",
     "description": "Aborda a longevidade dos Jogos (mais de 1000 anos), o seu impacto, os heróis e o lado negro da batota.",
     "image_url": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
-    "content_file": "lessons/olimpicos/004.php",
+    "content_file": "lessons/007_olimpicos_04.php",
     "has_quiz": false,
     "published_at": "2025-02-22",
-    "featured": false
+    "featured": false,
+    "global_class": 7
   },
   {
     "id": "sustentabilidade_001",
@@ -106,10 +119,11 @@
     "title": "O Planeta em Jogo: Fundamentos e Desafios Globais",
     "description": "Compreenda a base da sustentabilidade e identifique os maiores desafios ambientais que enfrentamos.",
     "image_url": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80",
-    "content_file": "lessons/sustentabilidade/001.php",
+    "content_file": "lessons/008_sustentabilidade_01.php",
     "has_quiz": false,
     "published_at": "2025-03-01",
-    "featured": true
+    "featured": true,
+    "global_class": 8
   },
   {
     "id": "sustentabilidade_002",
@@ -120,10 +134,11 @@
     "title": "As Grandes Soluções: Reinventar a Nossa Forma de Viver",
     "description": "Foco nas soluções inovadoras (energias renováveis, economia circular, cidades sustentáveis) para um futuro positivo.",
     "image_url": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=800&q=80",
-    "content_file": "lessons/sustentabilidade/002.php",
+    "content_file": "lessons/009_sustentabilidade_02.php",
     "has_quiz": false,
     "published_at": "2025-03-08",
-    "featured": false
+    "featured": false,
+    "global_class": 9
   },
   {
     "id": "sustentabilidade_003",
@@ -134,10 +149,11 @@
     "title": "O Poder das Nossas Escolhas: A Sustentabilidade no Dia a Dia",
     "description": "Conecte os temas globais com a vida quotidiana, capacitando os alunos a serem agentes de mudança.",
     "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
-    "content_file": "lessons/sustentabilidade/003.php",
+    "content_file": "lessons/010_sustentabilidade_03.php",
     "has_quiz": false,
     "published_at": "2025-03-15",
-    "featured": false
+    "featured": false,
+    "global_class": 10
   },
   {
     "id": "empreendedorismo_001",
@@ -148,10 +164,11 @@
     "title": "O 'Bichinho' Empreendedor: O que é ser Empreendedor?",
     "description": "Introdução ao conceito de empreendedorismo, desmistificando o \"empreendedor\" como um herói e focando na mentalidade de resolução de problemas.",
     "image_url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
-    "content_file": "lessons/empreendedorismo/001.php",
+    "content_file": "lessons/011_empreendedorismo_01.php",
     "has_quiz": false,
     "published_at": "2025-04-01",
-    "featured": false
+    "featured": false,
+    "global_class": 11
   },
   {
     "id": "empreendedorismo_002",
@@ -162,10 +179,11 @@
     "title": "Da Ideia ao Conceito: Como Encontrar um Problema Real",
     "description": "Foco na geração e validação de ideias. Aprender a identificar necessidades no mercado e a testar se uma ideia tem potencial.",
     "image_url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800&q=80",
-    "content_file": "lessons/empreendedorismo/002.php",
+    "content_file": "lessons/012_empreendedorismo_02.php",
     "has_quiz": false,
     "published_at": "2025-04-08",
-    "featured": false
+    "featured": false,
+    "global_class": 12
   },
   {
     "id": "empreendedorismo_003",
@@ -176,10 +194,11 @@
     "title": "O Mapa da Viagem: O Plano de Negócios (Versão Simplificada)",
     "description": "Introdução às ferramentas de planeamento essenciais. Foco no Business Model Canvas como forma ágil de estruturar um negócio.",
     "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
-    "content_file": "lessons/empreendedorismo/003.php",
+    "content_file": "lessons/013_empreendedorismo_03.php",
     "has_quiz": false,
     "published_at": "2025-04-15",
-    "featured": false
+    "featured": false,
+    "global_class": 13
   },
   {
     "id": "empreendedorismo_004",
@@ -190,10 +209,11 @@
     "title": "Fazer Acontecer: Financiamento e Marketing Digital",
     "description": "Análise dos aspetos práticos de lançar um projeto: onde encontrar financiamento e como comunicar no mundo digital.",
     "image_url": "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80",
-    "content_file": "lessons/empreendedorismo/004.php",
+    "content_file": "lessons/014_empreendedorismo_04.php",
     "has_quiz": false,
     "published_at": "2025-04-22",
-    "featured": false
+    "featured": false,
+    "global_class": 14
   },
   {
     "id": "volley_001",
@@ -204,10 +224,11 @@
     "title": "De 'Mintonette' a Desporto Global: A Invenção do Voleibol",
     "description": "A história da criação do voleibol por William G. Morgan na YMCA e a sua rápida expansão.",
     "image_url": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=800&q=80",
-    "content_file": "lessons/volley/001.php",
+    "content_file": "lessons/015_volley_01.php",
     "has_quiz": false,
     "published_at": "2025-05-01",
-    "featured": false
+    "featured": false,
+    "global_class": 15
   },
   {
     "id": "volley_002",
@@ -218,10 +239,11 @@
     "title": "Da Praia à Glória: O Voleibol Moderno e o Vólei de Praia",
     "description": "A consolidação do voleibol como desporto olímpico e a explosão de popularidade do Vólei de Praia.",
     "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
-    "content_file": "lessons/volley/002.php",
+    "content_file": "lessons/016_volley_02.php",
     "has_quiz": false,
     "published_at": "2025-05-08",
-    "featured": false
+    "featured": false,
+    "global_class": 16
   },
   {
     "id": "computadores_001",
@@ -232,10 +254,11 @@
     "title": "Antes do Silício: As Máquinas de Calcular",
     "description": "Exploração das primeiras tentativas humanas de automatizar o cálculo, desde o ábaco até às máquinas de Babbage e Ada Lovelace.",
     "image_url": "https://images.unsplash.com/photo-1605658782229-892fd044b24a?w=800&q=80",
-    "content_file": "lessons/computadores/001.php",
+    "content_file": "lessons/017_computadores_01.php",
     "has_quiz": false,
     "published_at": "2025-05-15",
-    "featured": false
+    "featured": false,
+    "global_class": 17
   },
   {
     "id": "computadores_002",
@@ -246,10 +269,11 @@
     "title": "A Era dos 'Mainframes': Gigantes de Sala",
     "description": "A revolução da computação eletrónica impulsionada pela II Guerra Mundial e a invenção do transístor.",
     "image_url": "https://images.unsplash.com/photo-1580192984971-1f0a3dcc535e?w=800&q=80",
-    "content_file": "lessons/computadores/002.php",
+    "content_file": "lessons/018_computadores_02.php",
     "has_quiz": false,
     "published_at": "2025-05-22",
-    "featured": false
+    "featured": false,
+    "global_class": 18
   },
   {
     "id": "computadores_003",
@@ -260,10 +284,11 @@
     "title": "A Revolução Pessoal: O Computador em Cada Casa",
     "description": "A passagem dos mainframes para o PC. O papel dos hobbyists e a visão de Steve Jobs e Bill Gates.",
     "image_url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=800&q=80",
-    "content_file": "lessons/computadores/003.php",
+    "content_file": "lessons/019_computadores_03.php",
     "has_quiz": false,
     "published_at": "2025-05-29",
-    "featured": false
+    "featured": false,
+    "global_class": 19
   },
   {
     "id": "computadores_004",
@@ -274,10 +299,11 @@
     "title": "O Mundo em Rede: Da Internet à Inteligência Artificial",
     "description": "Análise da era da conectividade, desde a ARPANET até à World Wide Web e os desafios da IA.",
     "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
-    "content_file": "lessons/computadores/004.php",
+    "content_file": "lessons/020_computadores_04.php",
     "has_quiz": false,
     "published_at": "2025-06-05",
-    "featured": false
+    "featured": false,
+    "global_class": 20
   },
   {
     "id": "videojogos_001",
@@ -288,10 +314,11 @@
     "title": "Dos Laboratórios ao Salão de Estar",
     "description": "A origem dos videojogos: de experiências científicas ao fenómeno da Atari.",
     "image_url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
-    "content_file": "lessons/videojogos/001.php",
+    "content_file": "lessons/021_videojogos_01.php",
     "has_quiz": false,
     "published_at": "2025-06-12",
-    "featured": false
+    "featured": false,
+    "global_class": 21
   },
   {
     "id": "videojogos_002",
@@ -302,10 +329,11 @@
     "title": "Guerra de Bits e Revolução 3D",
     "description": "A rivalidade Nintendo vs Sega e o salto tecnológico para os polígonos.",
     "image_url": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&q=80",
-    "content_file": "lessons/videojogos/002.php",
+    "content_file": "lessons/022_videojogos_02.php",
     "has_quiz": false,
     "published_at": "2025-06-19",
-    "featured": false
+    "featured": false,
+    "global_class": 22
   },
   {
     "id": "videojogos_003",
@@ -316,10 +344,11 @@
     "title": "O Futuro da Interatividade",
     "description": "Realidade Virtual, Aumentada e o papel da Inteligência Artificial.",
     "image_url": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&q=80",
-    "content_file": "lessons/videojogos/003.php",
+    "content_file": "lessons/023_videojogos_03.php",
     "has_quiz": false,
     "published_at": "2025-06-26",
-    "featured": false
+    "featured": false,
+    "global_class": 23
   },
   {
     "id": "vida_001",
@@ -330,10 +359,11 @@
     "title": "A Sopa Primordial: Onde e Como Começou a Vida?",
     "description": "Exploração das origens da Terra e das primeiras formas de vida. As teorias sobre a abiogénese e o LUCA.",
     "image_url": "https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?w=800&q=80",
-    "content_file": "lessons/vida/001.php",
+    "content_file": "lessons/024_vida_01.php",
     "has_quiz": false,
     "published_at": "2025-07-01",
-    "featured": false
+    "featured": false,
+    "global_class": 24
   },
   {
     "id": "vida_002",
@@ -344,10 +374,11 @@
     "title": "A Revolução do Oxigénio e a Célula Complexa",
     "description": "A Grande Oxidação que mudou o planeta e o salto evolutivo da célula eucariótica.",
     "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
-    "content_file": "lessons/vida/002.php",
+    "content_file": "lessons/025_vida_02.php",
     "has_quiz": false,
     "published_at": "2025-07-08",
-    "featured": false
+    "featured": false,
+    "global_class": 25
   },
   {
     "id": "vida_003",
@@ -358,10 +389,11 @@
     "title": "A Explosão Câmbrica e a Conquista da Terra Firme",
     "description": "O Big Bang da biologia e a subsequente colonização da terra por plantas e animais.",
     "image_url": "https://images.unsplash.com/photo-1688586168450-2b1ed5f7f6bf?w=800&q=80",
-    "content_file": "lessons/vida/003.php",
+    "content_file": "lessons/026_vida_03.php",
     "has_quiz": false,
     "published_at": "2025-07-15",
-    "featured": false
+    "featured": false,
+    "global_class": 26
   },
   {
     "id": "vida_004",
@@ -372,10 +404,11 @@
     "title": "Gigantes, Catástrofes e Sobreviventes: As Extinções em Massa",
     "description": "As grandes mortandades da história da Terra e as extinções que moldaram a vida como a conhecemos.",
     "image_url": "https://images.unsplash.com/photo-1525877442103-5ddb2089b2bb?w=800&q=80",
-    "content_file": "lessons/vida/004.php",
+    "content_file": "lessons/027_vida_04.php",
     "has_quiz": false,
     "published_at": "2025-07-22",
-    "featured": false
+    "featured": false,
+    "global_class": 27
   },
   {
     "id": "vida_005",
@@ -386,10 +419,11 @@
     "title": "O Caminho até Nós: A Evolução dos Hominídeos",
     "description": "A evolução dos primatas, o bipedalismo e a jornada do Homo sapiens desde África até ao mundo.",
     "image_url": "https://images.unsplash.com/photo-1742328114689-f9db0118d3bb?w=800&q=80",
-    "content_file": "lessons/vida/005.php",
+    "content_file": "lessons/028_vida_05.php",
     "has_quiz": false,
     "published_at": "2025-07-29",
-    "featured": false
+    "featured": false,
+    "global_class": 28
   },
   {
     "id": "wwii_001",
@@ -401,8 +435,8 @@
     "title": "Um Mundo em Guerra Total",
     "description": "A Blitzkrieg, a Batalha de Inglaterra, o Dia D e o Holocausto — como a Segunda Guerra Mundial transformou o conflito num esforço que envolveu toda a sociedade.",
     "image_url": "https://images.unsplash.com/photo-1580196969807-cc6de06c05be?w=800&q=80",
-    "content_file": "lessons/wwii/001.php",
-    "md_file": "data/md/wwii/001.md",
+    "content_file": "lessons/036_wwii_01.php",
+    "md_file": "data/md/036_wwii_01.md",
     "has_quiz": false,
     "published_at": "2026-06-02",
     "featured": false

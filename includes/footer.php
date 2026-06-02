@@ -36,7 +36,7 @@ $next_lesson         = $next_lesson         ?? null;
 
 <!-- BRAND FOOTER -->
 <footer class="mt-8 py-8 border-t text-center text-sm" style="border-color: var(--border); color: var(--muted); position: relative; z-index: 1;">
-  <span class="font-semibold" style="color: #475569;">X.Plorers</span> · Aulas que ficam
+  <span class="font-semibold" style="color: #475569;">X.Plorers</span> · Descobre. Aprende. Explora.
 </footer>
 
 <?php if ($footer_mode === 'lesson'): ?>

@@ -1,0 +1,65 @@
+{
+  "lesson_id": "cosmos_003",
+  "questions": [
+    {
+      "question": "O que é um ano-luz?",
+      "options": ["O tempo que a luz demora a chegar ao Sol", "A distância que a luz percorre em um ano", "A velocidade máxima de uma nave espacial", "A idade do universo dividida por mil milhões"],
+      "correct": 1,
+      "explanation": "Um ano-luz é uma unidade de distância — não de tempo. Corresponde à distância que a luz percorre num ano, cerca de 9,46 biliões de quilómetros. É usada para medir as imensas distâncias no cosmos."
+    },
+    {
+      "question": "Quanto tempo demora a luz a viajar do Sol até à Terra?",
+      "options": ["1,3 segundos", "8 minutos", "4,2 anos", "100 000 anos"],
+      "correct": 1,
+      "explanation": "A luz demora aproximadamente 8 minutos a percorrer os 150 milhões de quilómetros que separam o Sol da Terra. Se o Sol desaparecesse subitamente, só nos aperceberíamos disso 8 minutos depois."
+    },
+    {
+      "question": "Qual foi a descoberta de Edwin Hubble que revolucionou a astronomia?",
+      "options": ["Descobriu Plutão como nono planeta", "Descobriu que o universo está em expansão", "Descobriu a composição do Sol", "Descobriu a existência de buracos negros"],
+      "correct": 1,
+      "explanation": "Edwin Hubble observou que as galáxias distantes se afastam de nós — e que quanto mais longe estão, mais depressa se afastam (desvio para o vermelho ou redshift). Isto provou que o universo está em expansão constante."
+    },
+    {
+      "question": "Na analogia do 'pão com passas', o que representam as passas?",
+      "options": ["Estrelas individuais", "Galáxias", "Planetas do Sistema Solar", "Buracos negros"],
+      "correct": 1,
+      "explanation": "Na analogia do pão com passas, as passas representam as galáxias e a massa do pão representa o tecido do espaço. À medida que o pão (universo) cresce, todas as passas (galáxias) se afastam umas das outras."
+    },
+    {
+      "question": "Quantas galáxias existem no universo observável?",
+      "options": ["Cerca de 200 mil", "Cerca de 2 biliões", "Cerca de 100 milhões", "Cerca de 10 mil"],
+      "correct": 1,
+      "explanation": "Os astrónomos estimam que existam cerca de 2 biliões (2 000 000 000 000) de galáxias no universo observável. Cada galáxia contém entre milhões e biliões de estrelas."
+    },
+    {
+      "question": "Qual é a estrela mais próxima da Terra (além do Sol)?",
+      "options": ["Sírio", "Proxima Centauri", "Vega", "Betelgeuse"],
+      "correct": 1,
+      "explanation": "Proxima Centauri, parte do sistema Alpha Centauri, está a 4,2 anos-luz da Terra. A luz que vemos desta estrela partiu há 4,2 anos. Com as tecnologias atuais, uma viagem até lá demoraria dezenas de milhar de anos."
+    },
+    {
+      "question": "Quando olhamos para a Galáxia de Andrómeda (a 2,5 milhões de anos-luz), o que estamos realmente a ver?",
+      "options": ["Andrómeda como ela é agora", "Andrómeda como ela era há 2,5 milhões de anos", "Uma imagem criada por telescópios computorizados", "O reflexo da Via Láctea"],
+      "correct": 1,
+      "explanation": "Como a luz demora 2,5 milhões de anos a viajar de Andrómeda até nós, estamos a ver a galáxia como ela era há 2,5 milhões de anos — quando os nossos antepassados hominídeos vagueavam pela África. Olhar para o espaço é literalmente ver o passado."
+    },
+    {
+      "question": "O que implica a expansão do universo sobre a sua origem?",
+      "options": ["O universo sempre existiu no mesmo estado", "No passado, o universo era mais pequeno e denso — o que aponta para o Big Bang", "O universo está a expandir a partir do centro da Via Láctea", "A expansão prova que existem múltiplos universos"],
+      "correct": 1,
+      "explanation": "Se o universo está a expandir-se, isso significa que no passado era mais pequeno e mais denso. Voltando atrás no tempo, chegamos a um ponto inicial de densidade e temperatura extremas — o Big Bang, há cerca de 13,8 mil milhões de anos."
+    },
+    {
+      "question": "Quantas estrelas existem na Via Láctea?",
+      "options": ["Cerca de 1 milhão", "Entre 100 a 400 mil milhões", "Exatamente 200 mil milhões", "Cerca de 1 bilião"],
+      "correct": 1,
+      "explanation": "A Via Láctea contém entre 100 a 400 mil milhões de estrelas. O nosso Sol é apenas uma delas. Se contasses uma estrela por segundo, demorarias mais de 3 000 anos só para contar as estrelas da nossa galáxia."
+    },
+    {
+      "question": "O telescópio James Webb consegue observar galáxias cuja luz viajou durante quanto tempo?",
+      "options": ["Até 1 mil milhão de anos", "Mais de 13 mil milhões de anos", "Até 4,5 mil milhões de anos", "Mais de 100 mil milhões de anos"],
+      "correct": 1,
+      "explanation": "O telescópio espacial James Webb consegue detetar a luz de galáxias que viajou durante mais de 13 mil milhões de anos. Estamos a ver o universo quando era um 'bebé', pouco depois do Big Bang há 13,8 mil milhões de anos."
+    }
+  ]
+}

@@ -32,7 +32,7 @@ if (!$lesson) {
     exit;
 }
 
-$quiz = get_quiz($id);
+$quiz = get_quiz($lesson);
 
 $header_mode  = 'quiz';
 $page_title   = $lesson['topic_name'] . ' · Aula ' . $lesson['class_number'] . ' — Quiz';
