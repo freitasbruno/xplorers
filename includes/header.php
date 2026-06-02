@@ -27,8 +27,8 @@ $badge_class = $lesson ? topic_badge_class($lesson['topic_slug']) : '';
 /* X.Plorers — Design System */
 
 :root {
-  --accent:       #14b8a6;
-  --accent-light: #f0fdfa;
+  --accent:       #f43f5e;
+  --accent-light: #fff1f2;
   --bg:           #f8f5f0;
   --card-bg:      #fdfaf4;
   --border:       #e3d9c8;
@@ -89,16 +89,16 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.logo-star {
-  width: 30px;
-  height: 30px;
+.logo-mark {
+  width: 32px;
+  height: 32px;
   background: var(--accent);
-  border-radius: 8px;
+  border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(244, 63, 94, 0.35);
 }
 
 .badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
@@ -177,6 +177,17 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
   padding: 4px 10px 4px 12px;
   border-radius: 999px;
 }
+.filter-chip button { opacity: 0.75; line-height: 1; }
+.filter-chip button:hover { opacity: 1; }
+
+.lesson-card, .featured-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: pointer;
+}
+.lesson-card:hover, .featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px -6px rgba(80, 55, 20, 0.16);
+}
   </style>
 </head>
 <body>
@@ -188,10 +199,14 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
     <!-- CATALOG HEADER -->
     <div class="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
       <div class="flex items-center gap-2.5">
-        <div class="logo-star">✦</div>
+        <div class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
+          </svg>
+        </div>
         <div>
-          <div class="font-black text-slate-900 text-base leading-tight tracking-tight">X.Plorers</div>
-          <div class="text-xs font-medium leading-none" style="color: var(--accent);">Aulas que ficam</div>
+          <div class="font-black text-slate-900 text-base leading-tight tracking-tight"><span style="color:var(--accent);">X</span>.Plorers</div>
+          <div class="text-xs font-medium leading-none" style="color: var(--muted);">Descobre. Aprende. Explora.</div>
         </div>
       </div>
       <button aria-label="Pesquisar" class="w-9 h-9 rounded-full flex items-center justify-center transition-colors" style="background: rgba(0,0,0,0.05); color: #64748b;">
@@ -221,7 +236,7 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
         <?php endif; ?>
       </div>
       <?php if ($lesson): ?>
-        <span class="text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0" style="background: var(--accent-light); color: var(--accent); border: 1px solid #99f6e4;">
+        <span class="text-xs font-bold px-3 py-1.5 rounded-full flex-shrink-0" style="background: var(--accent-light); color: var(--accent); border: 1px solid #fda4af;">
           <?= $lesson['class_number'] ?> / <?= $lesson['class_total'] ?>
         </span>
       <?php endif; ?>

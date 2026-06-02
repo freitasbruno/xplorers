@@ -70,3 +70,21 @@ Output is markdown. The ingest tool converts markdown → PHP lesson file + quiz
 - Lesson filenames: `[Category]_[NNN].php` (e.g. `Cosmos_001.php`)
 - Quiz data: `data/quizzes/[Category]_[NNN].json`
 - Lesson metadata in `data/lessons.json`
+
+---
+
+## Memory update rule
+Before writing to any file in .claude/memory/ (except techstack.md
+and environments.md):
+1. Create a timestamped backup: copy the file to the same directory's
+   _backup/ folder
+2. Filename format: [filename].YYYY-MM-DD-HHhmm.md
+3. Then write the update
+4. Never skip the backup step
+
+This rule applies to every skill, every session, no exceptions.
+
+## Memory autonomy rule
+Files in .claude/memory/ are internal working files. Never ask for
+confirmation before reading or writing them. Back up first per the
+rule above, then write directly — no questions asked.

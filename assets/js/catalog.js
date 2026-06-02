@@ -1,78 +1,11 @@
-<?php
-require_once __DIR__ . '/includes/data.php';
+/**
+ * Catalog page — lesson grid, filter, batch loading.
+ *
+ * Expects globals injected by index.php:
+ *   LESSONS_DATA   — array from get_lessons()
+ *   FEATURED_DATA  — array from get_featured_lessons()
+ */
 
-$header_mode = 'catalog';
-$page_title  = 'Catálogo';
-
-require_once __DIR__ . '/includes/header.php';
-
-$all_lessons = get_lessons();
-$featured    = get_featured_lessons();
-?>
-
-<main class="max-w-5xl mx-auto px-4 py-8">
-
-  <!-- EM DESTAQUE -->
-  <section id="featured-section" class="mb-12">
-    <div class="flex items-center gap-3 mb-5">
-      <h2 class="text-xl font-bold text-slate-900">Em Destaque</h2>
-      <div class="flex-1 h-px" style="background:var(--border);"></div>
-      <span class="text-xs font-semibold uppercase tracking-wide" style="color:var(--accent);">Novo</span>
-    </div>
-    <div id="featured-strip" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
-  </section>
-
-  <!-- TODAS AS AULAS -->
-  <section>
-    <div class="flex items-center justify-between gap-4 mb-6">
-      <h2 class="text-xl font-bold text-slate-900 flex-shrink-0">Todas as Aulas</h2>
-      <div class="flex items-center gap-2">
-        <div id="active-chip" class="hidden">
-          <div class="filter-chip">
-            <span id="chip-label"></span>
-            <button onclick="clearFilter()" aria-label="Limpar filtro">
-              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="relative">
-          <select id="topic-select" class="topic-select paper text-sm font-medium px-3 py-2 rounded-xl" style="color:var(--muted);" onchange="applyFilter(this)">
-            <option value="">Filtrar por tema</option>
-            <option value="cosmos">Cosmos</option>
-            <option value="computadores">Computadores</option>
-            <option value="videojogos">Videojogos</option>
-            <option value="vida">Vida</option>
-            <option value="sustentabilidade">Sustentabilidade</option>
-            <option value="empreendedorismo">Empreendedorismo</option>
-            <option value="olimpicos">Olímpicos da Grécia</option>
-            <option value="volley">Volleyball</option>
-            <option value="wwii">WWII</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <p id="count-label" class="text-xs mb-5" style="color:var(--muted);"></p>
-
-    <div id="cards-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
-
-    <div id="empty-state" class="hidden text-center py-16">
-      <p class="text-base font-medium text-slate-500">Nenhuma aula encontrada para este tema.</p>
-      <button onclick="clearFilter()" class="mt-4 text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
-    </div>
-
-    <div id="load-sentinel" class="flex justify-center py-10">
-      <div class="load-spinner"></div>
-    </div>
-  </section>
-
-</main>
-
-<script>
-  const LESSONS_DATA  = <?= json_encode(array_values($all_lessons), JSON_UNESCAPED_UNICODE) ?>;
-  const FEATURED_DATA = <?= json_encode(array_values($featured),    JSON_UNESCAPED_UNICODE) ?>;
-</script>
-<script>
 const TOPIC_META = {
   cosmos:          { label: 'Cosmos',               badge: 'bg-indigo-500' },
   computadores:    { label: 'Computadores',         badge: 'bg-blue-500'   },
@@ -224,7 +157,7 @@ function clearFilter() {
   loadBatch();
 }
 
-(function initCatalog() {
+function initCatalog() {
   renderFeatured();
 
   const sentinel = document.getElementById('load-sentinel');
@@ -234,10 +167,6 @@ function clearFilter() {
   observer.observe(sentinel);
 
   loadBatch();
-})();
-</script>
+}
 
-<?php
-$footer_mode = 'catalog';
-require_once __DIR__ . '/includes/footer.php';
-?>
+document.addEventListener('DOMContentLoaded', initCatalog);
