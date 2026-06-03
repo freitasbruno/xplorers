@@ -10,6 +10,126 @@ $all_lessons = get_lessons();
 $featured    = get_featured_lessons();
 ?>
 
+<style>
+/* ── Search widget ── */
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-radius: 1rem;
+  cursor: text;
+  min-height: 3rem;
+  position: relative;
+  transition: border-color 0.15s;
+}
+.search-box.focused { border-color: var(--accent); }
+
+.search-icon { color: var(--muted); flex-shrink: 0; display: flex; align-items: center; }
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  flex: 1;
+  min-width: 8rem;
+  padding: 0.15rem 0;
+}
+.search-input::placeholder { color: var(--muted); }
+
+.search-token {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  animation: token-in 0.15s ease;
+}
+@keyframes token-in { from { transform: scale(0.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.search-token-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.3);
+  border: none;
+  cursor: pointer;
+  border-radius: 999px;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  color: inherit;
+  transition: background 0.1s;
+  flex-shrink: 0;
+}
+.search-token-remove:hover { background: rgba(255,255,255,0.5); }
+
+.search-clear-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0.2rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+.search-clear-btn:hover { color: var(--text); }
+.search-box.has-tokens .search-clear-btn,
+.search-box.has-text   .search-clear-btn { display: flex; }
+
+/* ── Dropdown ── */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  border: 1.5px solid var(--border);
+  border-radius: 0.875rem;
+  box-shadow: 0 8px 24px -4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+.search-dropdown.open { display: block; }
+
+.dd-section { padding: 0.4rem 0; }
+.dd-label {
+  padding: 0.3rem 0.875rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.dd-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.875rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--text);
+  transition: background 0.1s;
+}
+.dd-item:hover { background: var(--bg); }
+.dd-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; flex-shrink: 0; }
+.dd-divider { height: 1px; background: var(--border); margin: 0.25rem 0; }
+</style>
+
 <main class="max-w-5xl mx-auto px-4 py-8">
 
   <!-- EM DESTAQUE -->
@@ -24,53 +144,56 @@ $featured    = get_featured_lessons();
 
   <!-- TODAS AS AULAS -->
   <section>
-    <div class="flex items-center justify-between gap-4 mb-6">
+
+    <!-- Section heading — hidden when filtering -->
+    <div id="section-header" class="flex items-center gap-4 mb-5">
       <h2 class="text-xl font-bold text-slate-900 flex-shrink-0">Todas as Aulas</h2>
-      <div class="flex items-center gap-2">
-        <div id="active-chip" class="hidden">
-          <div class="filter-chip">
-            <span id="chip-label"></span>
-            <button onclick="clearFilter()" aria-label="Limpar filtro">
-              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
-            </button>
-          </div>
+      <div class="flex-1 h-px" style="background:var(--border);"></div>
+    </div>
+
+    <!-- Search widget -->
+    <div id="search-container" class="mb-4" style="position:relative;">
+      <div id="search-box" class="search-box">
+        <span class="search-icon">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </span>
+        <div id="tokens-container" style="display:contents;"></div>
+        <input type="text" id="search-input" class="search-input"
+               placeholder="Pesquisar aulas ou tema…" autocomplete="off" spellcheck="false">
+        <button class="search-clear-btn" onclick="clearAll()" aria-label="Limpar tudo">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M18 6 6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Autocomplete dropdown -->
+      <div id="search-dropdown" class="search-dropdown">
+        <div class="dd-section" id="dd-topics-section">
+          <div class="dd-label">Temas</div>
+          <div id="dd-topics"></div>
         </div>
-        <div class="relative">
-          <select id="topic-select" class="topic-select paper text-sm font-medium px-3 py-2 rounded-xl" style="color:var(--muted);" onchange="applyFilter(this)">
-            <option value="">Filtrar por tema</option>
-            <option value="cosmos">Cosmos</option>
-            <option value="computadores">Computadores</option>
-            <option value="videojogos">Videojogos</option>
-            <option value="vida">Vida</option>
-            <option value="sustentabilidade">Sustentabilidade</option>
-            <option value="empreendedorismo">Empreendedorismo</option>
-            <option value="olimpicos">Olímpicos da Grécia</option>
-            <option value="volley">Volleyball</option>
-            <option value="wwi">Primeira Guerra Mundial</option>
-            <option value="wwii">Segunda Guerra Mundial</option>
-            <option value="musica">Música</option>
-          </select>
+        <div id="dd-divider" class="dd-divider" style="display:none;"></div>
+        <div class="dd-section" id="dd-lessons-section" style="display:none;">
+          <div class="dd-label">Aulas</div>
+          <div id="dd-lessons"></div>
         </div>
       </div>
     </div>
 
-    <p id="count-label" class="text-xs mb-5" style="color:var(--muted);"></p>
+    <!-- Count + limpar -->
+    <div class="flex items-center justify-between mb-5">
+      <p id="count-label" class="text-xs" style="color:var(--muted);"></p>
+      <button id="limpar-btn" class="hidden text-xs font-semibold" style="color:var(--accent);background:none;border:none;cursor:pointer;" onclick="clearAll()">Limpar tudo</button>
+    </div>
 
     <div id="cards-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
 
     <div id="empty-state" class="hidden text-center py-16">
-      <p class="text-base font-medium text-slate-500">Nenhuma aula encontrada para este tema.</p>
-      <button onclick="clearFilter()" class="mt-4 text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
-    </div>
-
-    <div id="coming-soon-state" class="hidden text-center py-16">
-      <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4 bg-pink-100">
-        <span style="font-size:2rem;">🎵</span>
-      </div>
-      <h3 class="text-lg font-bold text-slate-800 mb-2">Música — Em Breve</h3>
-      <p class="text-sm max-w-sm mx-auto mb-2" style="color:var(--muted);">Estamos a preparar aulas sobre a história da música, da física do som à revolução digital.</p>
-      <p class="text-xs font-medium mb-5" style="color:var(--muted);">3 aulas previstas</p>
-      <button onclick="clearFilter()" class="text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
+      <p class="text-base font-medium text-slate-500">Nenhuma aula encontrada.</p>
+      <button onclick="clearAll()" class="mt-4 text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
     </div>
 
     <div id="load-sentinel" class="flex justify-center py-10">
@@ -84,183 +207,7 @@ $featured    = get_featured_lessons();
   const LESSONS_DATA  = <?= json_encode(array_values($all_lessons), JSON_UNESCAPED_UNICODE) ?>;
   const FEATURED_DATA = <?= json_encode(array_values($featured),    JSON_UNESCAPED_UNICODE) ?>;
 </script>
-<script>
-const TOPIC_META = {
-  cosmos:          { label: 'Cosmos',               badge: 'bg-indigo-500' },
-  computadores:    { label: 'Computadores',         badge: 'bg-blue-500'   },
-  videojogos:      { label: 'Videojogos',           badge: 'bg-purple-500' },
-  vida:            { label: 'História da Vida',     badge: 'bg-green-500'  },
-  sustentabilidade:{ label: 'Sustentabilidade',     badge: 'bg-emerald-500'},
-  empreendedorismo:{ label: 'Empreendedorismo',     badge: 'bg-amber-500'  },
-  olimpicos:       { label: 'Jogos Olímpicos',      badge: 'bg-yellow-500' },
-  volley:          { label: 'Volleyball',           badge: 'bg-orange-500' },
-  wwi:             { label: 'Primeira Guerra Mundial', badge: 'bg-red-700'    },
-  wwii:            { label: 'Segunda Guerra Mundial',  badge: 'bg-red-500'    },
-  musica:          { label: 'Música',                  badge: 'bg-pink-500'   },
-};
-
-const COMING_SOON = new Set([]);
-
-const BATCH = 8;
-let currentFilter = '';
-let shownCount = 0;
-
-function getFiltered() {
-  return currentFilter
-    ? LESSONS_DATA.filter(l => l.topic_slug === currentFilter)
-    : LESSONS_DATA;
-}
-
-function featuredCardHTML(lesson) {
-  const m = TOPIC_META[lesson.topic_slug] || { label: lesson.topic_name, badge: 'bg-slate-500' };
-  const quizBtn = lesson.has_quiz
-    ? `<a href="quiz.php?id=${lesson.id}" class="flex-1 text-sm font-medium py-2 rounded-xl text-center" style="border:1.5px solid var(--border);color:var(--muted);">Quiz 🎯</a>`
-    : '';
-  return `
-    <div class="featured-card paper rounded-2xl overflow-hidden shadow-sm">
-      <div class="relative h-48">
-        <img src="${escHtml(lesson.image_url)}" alt="" class="wc-img w-full h-full object-cover" loading="lazy">
-        <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(10,5,25,0.65) 0%,transparent 55%);"></div>
-        <span class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full ${m.badge}">${escHtml(m.label)}</span>
-        <span class="absolute bottom-3 left-3 text-white/90 text-xs font-medium px-2 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);">Aula ${lesson.class_number}</span>
-      </div>
-      <div class="p-4">
-        <h3 class="font-bold text-slate-900 text-base mb-1 leading-snug">${escHtml(lesson.title)}</h3>
-        <p class="text-sm mb-4 leading-relaxed" style="color:var(--muted);">${escHtml(lesson.description)}</p>
-        <div class="flex gap-2">
-          <a href="lesson.php?id=${lesson.id}" class="flex-1 text-sm font-semibold py-2 rounded-xl text-center" style="border:1.5px solid var(--accent);color:var(--accent);">Ver aula →</a>
-          ${quizBtn}
-        </div>
-      </div>
-    </div>`;
-}
-
-function galleryCardHTML(lesson, delay) {
-  const m = TOPIC_META[lesson.topic_slug] || { label: lesson.topic_name, badge: 'bg-slate-500' };
-  const quizBtn = lesson.has_quiz
-    ? `<button onclick="event.preventDefault();event.stopPropagation();window.location.href='quiz.php?id=${lesson.id}'" class="text-xs font-medium py-1.5 px-2.5 rounded-lg" style="background:#f0ede7;color:var(--muted);">Quiz</button>`
-    : '';
-  return `
-    <a href="lesson.php?id=${lesson.id}" class="lesson-card paper rounded-2xl overflow-hidden shadow-sm card-appear flex flex-col" style="animation-delay:${delay}ms;">
-      <div class="relative h-36 flex-shrink-0">
-        <img src="${escHtml(lesson.image_url)}" alt="" class="wc-img w-full h-full object-cover" loading="lazy">
-        <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(10,5,20,0.55) 0%,transparent 55%);"></div>
-        <span class="absolute top-2.5 left-2.5 text-white text-xs font-semibold px-2 py-0.5 rounded-full ${m.badge}">${escHtml(m.label)}</span>
-        <span class="absolute bottom-2.5 left-2.5 text-white/80 text-xs px-1.5 py-0.5 rounded-full" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);">Aula ${lesson.class_number} / ${lesson.class_total}</span>
-      </div>
-      <div class="p-3.5 flex flex-col flex-1">
-        <h3 class="font-bold text-slate-900 text-sm leading-snug mb-3">${escHtml(lesson.title)}</h3>
-        <div class="flex gap-1.5 mt-auto">
-          <span class="text-xs font-semibold py-1.5 px-3 rounded-lg flex-1 text-center" style="background:var(--accent-light);color:var(--accent);">Ver aula →</span>
-          ${quizBtn}
-        </div>
-      </div>
-    </a>`;
-}
-
-function escHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-function renderFeatured() {
-  const strip = document.getElementById('featured-strip');
-  const section = document.getElementById('featured-section');
-  if (!FEATURED_DATA || FEATURED_DATA.length === 0) {
-    section.classList.add('hidden');
-    return;
-  }
-  FEATURED_DATA.forEach(lesson => {
-    strip.insertAdjacentHTML('beforeend', featuredCardHTML(lesson));
-  });
-}
-
-function loadBatch() {
-  const filtered = getFiltered();
-  const grid = document.getElementById('cards-grid');
-  const sentinel = document.getElementById('load-sentinel');
-  const empty = document.getElementById('empty-state');
-  const comingSoon = document.getElementById('coming-soon-state');
-  const slice = filtered.slice(shownCount, shownCount + BATCH);
-
-  if (shownCount === 0 && filtered.length === 0) {
-    if (COMING_SOON.has(currentFilter)) {
-      comingSoon.classList.remove('hidden');
-      empty.classList.add('hidden');
-    } else {
-      empty.classList.remove('hidden');
-      comingSoon.classList.add('hidden');
-    }
-    sentinel.style.display = 'none';
-    return;
-  }
-
-  empty.classList.add('hidden');
-  comingSoon.classList.add('hidden');
-
-  if (slice.length === 0) {
-    sentinel.style.display = 'none';
-    return;
-  }
-
-  slice.forEach((lesson, i) => {
-    grid.insertAdjacentHTML('beforeend', galleryCardHTML(lesson, i * 50));
-  });
-  shownCount += slice.length;
-
-  document.getElementById('count-label').textContent =
-    `${Math.min(shownCount, filtered.length)} de ${filtered.length} aula${filtered.length !== 1 ? 's' : ''}`;
-
-  sentinel.style.display = shownCount >= filtered.length ? 'none' : 'flex';
-}
-
-function applyFilter(select) {
-  currentFilter = select.value;
-  shownCount = 0;
-  document.getElementById('cards-grid').innerHTML = '';
-
-  const chip = document.getElementById('active-chip');
-  if (currentFilter) {
-    const label = TOPIC_META[currentFilter]?.label || currentFilter;
-    document.getElementById('chip-label').textContent = label;
-    chip.classList.remove('hidden');
-    select.value = '';
-  } else {
-    chip.classList.add('hidden');
-  }
-
-  document.getElementById('load-sentinel').style.display = 'flex';
-  document.getElementById('count-label').textContent = '';
-  loadBatch();
-}
-
-function clearFilter() {
-  currentFilter = '';
-  document.getElementById('active-chip').classList.add('hidden');
-  document.getElementById('topic-select').value = '';
-  document.getElementById('coming-soon-state').classList.add('hidden');
-  shownCount = 0;
-  document.getElementById('cards-grid').innerHTML = '';
-  document.getElementById('load-sentinel').style.display = 'flex';
-  document.getElementById('count-label').textContent = '';
-  loadBatch();
-}
-
-(function initCatalog() {
-  renderFeatured();
-
-  const sentinel = document.getElementById('load-sentinel');
-  const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) loadBatch();
-  }, { rootMargin: '200px' });
-  observer.observe(sentinel);
-
-  loadBatch();
-})();
-</script>
+<script src="assets/js/catalog.js"></script>
 
 <?php
 $footer_mode = 'catalog';

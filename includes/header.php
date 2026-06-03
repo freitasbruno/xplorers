@@ -159,29 +159,6 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
 
-.topic-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%237c7264' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
-  cursor: pointer;
-}
-.topic-select:focus { outline: none; border-color: var(--accent); }
-
-.filter-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--accent);
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 10px 4px 12px;
-  border-radius: 999px;
-}
-.filter-chip button { opacity: 0.75; line-height: 1; }
-.filter-chip button:hover { opacity: 1; }
 
 .lesson-card, .featured-card {
   transition: transform 0.22s ease, box-shadow 0.22s ease;
