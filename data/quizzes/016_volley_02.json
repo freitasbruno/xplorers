@@ -1,0 +1,65 @@
+{
+  "lesson_id": "volley_002",
+  "questions": [
+    {
+      "question": "Que mudança fundamental trouxe a introdução da rotação obrigatória em 1912?",
+      "options": ["Reduziu o número de jogadores para 6", "Obrigou todos os atletas a servir, defender e atacar, criando o conceito de 'jogador completo'", "Introduziu a posição de libero", "Determinou a altura oficial da rede"],
+      "correct": 1,
+      "explanation": "Antes da rotação, os jogadores escolhiam o seu posto — os melhores ficavam sempre junto à rede. Com a rotação obrigatória, todos passam a ter de executar todas as funções, exigindo um atleta tecnicamente mais completo e versátil."
+    },
+    {
+      "question": "Por que razão o limite de 3 toques por equipa foi considerado revolucionário?",
+      "options": ["Permitiu que as equipas tivessem mais jogadores", "Obrigou as equipas a ser explosivas e estratégicas, em vez de apenas trocar passes longamente", "Reduziu a duração dos jogos para menos de uma hora", "Eliminou a necessidade de um árbitro"],
+      "correct": 1,
+      "explanation": "Com toques ilimitados, as equipas podiam jogar de forma passiva e conservadora. O limite de 3 toques criou urgência: é preciso decidir rapidamente o que fazer com a bola, tornando o jogo mais intenso, estratégico e espetacular."
+    },
+    {
+      "question": "O que é o Libero no voleibol moderno?",
+      "options": ["O capitão de equipa, que usa uma braçadeira especial", "Um especialista defensivo que veste cor diferente e não pode atacar acima da rede", "O jogador que serve primeiro em cada set", "Um árbitro auxiliar que decide disputas de linha"],
+      "correct": 1,
+      "explanation": "Criado em 1998, o Libero é um especialista exclusivamente defensivo que veste um colete de cor diferente. Não pode atacar acima da rede nem bloquear, mas pode substituir qualquer jogador da linha de defesa ilimitadamente, sem contar para o limite de substituições."
+    },
+    {
+      "question": "Por que razão as bolas de voleibol evoluíram de 18 para 8 painéis em 2008?",
+      "options": ["Para reduzir o custo de fabrico", "Para tornar a trajetória mais estável e previsível para os atletas", "Para que a bola fosse mais leve", "Para melhorar a visibilidade televisiva"],
+      "correct": 1,
+      "explanation": "A redução de 18 para 8 painéis mudou significativamente a aerodinâmica da bola. Com menos costuras, a trajetória tornou-se mais estável e menos influenciada pelas irregularidades de superfície, beneficiando tanto atacantes como recetores."
+    },
+    {
+      "question": "A tecnologia 'dimple' nas bolas modernas de voleibol funciona de forma semelhante a que outro objeto desportivo?",
+      "options": ["Uma bola de ténis (com felpa)", "Uma bola de golfe (com concavidades na superfície)", "Uma bola de râguebi (forma oval)", "Uma bola de basquetebol (superfície em relevo)"],
+      "correct": 1,
+      "explanation": "As concavidades ('dimples') nas bolas modernas de voleibol funcionam como nas bolas de golfe: reduzem a resistência do ar criando uma fina camada turbulenta próxima da superfície. Isto permite que ataques a mais de 100 km/h mantenham precisão e consistência."
+    },
+    {
+      "question": "Em que Jogos Olímpicos o voleibol fez a sua estreia oficial?",
+      "options": ["Berlim 1936", "Melbourne 1956", "Tóquio 1964", "México 1968"],
+      "correct": 2,
+      "explanation": "O voleibol estreou-se nos Jogos Olímpicos de Tóquio em 1964, tornando-se um dos primeiros desportos coletivos femininos a ser incluído. Foi um marco histórico tanto para o desporto como para a visibilidade do desporto feminino em geral."
+    },
+    {
+      "question": "Qual era o apelido da equipa feminina japonesa que conquistou o ouro em Tóquio 1964?",
+      "options": ["As Guerreiras do Sol Nascente", "As Bruxas Orientais", "As Campeãs de Komazawa", "As Defensoras Invisíveis"],
+      "correct": 1,
+      "explanation": "A equipa japonesa ficou conhecida como 'Bruxas Orientais' pela sua técnica defensiva e disciplina tática que o mundo nunca tinha visto. A sua vitória no Komazawa, com o pavilhão completamente lotado, provou que o voleibol era um fenómeno de massas."
+    },
+    {
+      "question": "O que era o sistema de pontuação 'Side-out', usado antes de 1999?",
+      "options": ["Um sistema em que o jogo terminava ao fim de 30 minutos", "Um sistema em que apenas a equipa que estava a servir podia marcar ponto", "Um sistema em que os pontos só contavam se a bola saísse do campo adversário", "Um sistema de pontuação dupla para rematas em zona específica"],
+      "correct": 1,
+      "explanation": "No sistema Side-out, só a equipa que servia podia marcar ponto. Se a equipa que recebia ganhasse a jogada, apenas ficava com o direito de servir — sem marcar ponto. Isto tornava os jogos mais longos e imprevisíveis em termos de duração."
+    },
+    {
+      "question": "Quando foi substituído o sistema Side-out pelo sistema de Rally no voleibol profissional?",
+      "options": ["1964", "1984", "1999", "2008"],
+      "correct": 2,
+      "explanation": "O sistema de Rally (cada jogada vale um ponto, independentemente de quem serve) foi adotado em 1999. Tornou os jogos mais previsíveis em duração, mais televisivos e mais acessíveis para novos espetadores — um fator crucial para a popularização do desporto."
+    },
+    {
+      "question": "Qual a velocidade máxima aproximada de um serviço no voleibol masculino de elite?",
+      "options": ["Até 60 km/h", "Até 90 km/h", "Acima de 130 km/h", "Acima de 200 km/h"],
+      "correct": 2,
+      "explanation": "No voleibol masculino de elite, os serviços mais potentes podem ultrapassar os 130 km/h. O recetor tem menos de meio segundo para reagir, posicionar o corpo e executar uma receção controlada — exigindo reflexos e antecipação extraordinários."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "lesson_id": "vida_005",
+  "questions": [
+    {
+      "question": "O que é a Tribo Hominini?",
+      "options": ["Todos os primatas com polegares oponíveis", "O grupo que inclui os humanos modernos e todos os seus antepassados extintos desde a separação do ancestral comum com o chimpanzé", "Apenas os fósseis de hominídeos encontrados em África", "Os grandes símios que ainda vivem atualmente"],
+      "correct": 1,
+      "explanation": "A Tribo Hominini é o grupo taxonómico que engloba o Homo sapiens e todos os hominídeos extintos desde que a nossa linhagem se separou do ancestral comum com os chimpanzés, há cerca de 6 a 7 milhões de anos."
+    },
+    {
+      "question": "O que é o conceito de 'arbusto filogenético' na evolução humana?",
+      "options": ["A ideia de que os humanos descendem diretamente dos gorilas", "O reconhecimento de que a evolução humana não foi linear — várias espécies de hominídeos coexistiram e cruzaram-se", "Um método para datar fósseis através das plantas encontradas junto deles", "A teoria de que o ambiente moldou a evolução mais do que os genes"],
+      "correct": 1,
+      "explanation": "A famosa 'Marcha do Progresso' — imagem de uma série linear de ancestrais que evolui até ao Homo sapiens — está errada. A realidade é um 'arbusto' com muitos ramos: várias espécies de hominídeos coexistiram, competiram e cruzaram-se durante milhões de anos."
+    },
+    {
+      "question": "Qual mudança anatómica é evidência direta do bipedismo nos hominídeos?",
+      "options": ["O alargamento da caixa craniana", "O deslocamento do foramen magnum para o centro da base do crânio", "O desenvolvimento dos polegares oponíveis", "A redução do tamanho dos dentes caninos"],
+      "correct": 1,
+      "explanation": "O foramen magnum (o buraco pelo qual a medula espinal passa para o crânio) está posicionado na base central em bípedes, e na parte traseira em quadrúpedes. Esta diferença anatómica é uma das principais evidências fósseis do bipedalismo em australopitecos e outros hominídeos antigos."
+    },
+    {
+      "question": "O que propõe a 'Hipótese do Tecido Dispendioso'?",
+      "options": ["Que o cérebro humano é o órgão mais caro de manter energeticamente", "Que o crescimento cerebral foi possível porque o sistema digestivo encolheu, libertando energia ao cozinhar os alimentos", "Que o tecido muscular humano é proporcionalmente mais fraco do que o dos outros primatas", "Que o nosso sistema imunitário evoluiu em detrimento do cérebro"],
+      "correct": 1,
+      "explanation": "A hipótese propõe que o crescimento cerebral (um órgão que consome 20% da energia humana) só foi possível porque outro sistema encolheu. Com a descoberta do fogo e o cozimento, a digestão simplificou-se, o trato digestivo reduziu e a energia foi redirigida para o cérebro."
+    },
+    {
+      "question": "Qual foi a evolução do volume craniano desde o Australopithecus até ao Homo sapiens?",
+      "options": ["De ~200 cm³ para ~700 cm³", "De ~450 cm³ para ~1400 cm³", "De ~900 cm³ para ~1800 cm³", "De ~100 cm³ para ~500 cm³"],
+      "correct": 1,
+      "explanation": "O Australopithecus tinha um volume craniano de cerca de 450 cm³ — similar ao de um chimpanzé. O Homo sapiens tem cerca de 1400 cm³. Esta triplicação do tamanho cerebral ocorreu ao longo de 3 milhões de anos e está associada ao desenvolvimento de ferramentas, linguagem e cultura."
+    },
+    {
+      "question": "Quem era 'Lucy' e por que é historicamente importante?",
+      "options": ["A primeira Homo sapiens cujo ADN completo foi sequenciado", "Um Australopithecus afarensis de 3,2 Ma que era totalmente bípede mas com cérebro de símio, provando que o bipedalismo precedeu o aumento cerebral", "A primeira hominídea a usar ferramentas de pedra", "Um Homo erectus feminino encontrado na Etiópia com sinais de uso do fogo"],
+      "correct": 1,
+      "explanation": "Lucy (Australopithecus afarensis, ~3,2 Ma) foi encontrada na Etiópia em 1974. O seu esqueleto era totalmente bípede, mas o seu crânio era do tamanho de um símio. Isto refutou a teoria de que o aumento cerebral e o bipedalismo evoluíram em simultâneo — o bipedalismo veio primeiro."
+    },
+    {
+      "question": "Qual foi a conquista mais significativa do Homo erectus na história evolutiva humana?",
+      "options": ["Foi o primeiro hominídeo a usar ferramentas de pedra", "Saiu de África e colonizou a Ásia e Europa, e foi o primeiro a dominar o fogo", "Foi o primeiro a desenvolver linguagem complexa", "Criou as primeiras pinturas rupestres"],
+      "correct": 1,
+      "explanation": "O Homo erectus (1,9 Ma) foi o primeiro grande 'viajante' — saiu de África e colonizou a Ásia e a Europa. Foi também o primeiro hominídeo a dominar o fogo, uma revolução que transformou a dieta, a sociabilidade e acelerou o desenvolvimento cerebral através do cozimento."
+    },
+    {
+      "question": "Que percentagem de ADN Neandertal carregam os humanos modernos fora de África?",
+      "options": ["0% (os Neandertais não se cruzaram com o Homo sapiens)", "0,1% a 0,5%", "1% a 4%", "Mais de 10%"],
+      "correct": 2,
+      "explanation": "Os humanos modernos que saíram de África encontraram e cruzaram-se com os Neandertais na Europa e Ásia. Resultado: todos os não-africanos actuais carregam entre 1% a 4% de ADN Neandertal. Estes genes contribuem para o nosso sistema imunitário e resistência ao frio."
+    },
+    {
+      "question": "O que era o Homo floresiensis e por que é notável?",
+      "options": ["Um parente dos humanos que viveu nas ilhas Mediterrânicas até há 100 000 anos e tinha 2 metros de altura", "Um hominídeo da Indonésia com apenas 1 metro de altura, apelidado de 'Hobbit', que sobreviveu até há 50 000 anos", "Um Homo sapiens primitivo que viveu na Flores (Portugal) durante a última glaciação", "O nome científico de Lucy, descoberta perto do rio Awash na Etiópia"],
+      "correct": 1,
+      "explanation": "O Homo floresiensis, descoberto na ilha de Flores (Indonésia), era um hominídeo com apenas 1 metro de altura e um cérebro muito reduzido. Sobreviveu até há apenas 50 000 anos, coexistindo com o Homo sapiens, e demonstra a diversidade de espécies humanas que habitaram o planeta simultaneamente."
+    },
+    {
+      "question": "O que tornou a mutação no gene FOXP2 crucial para a evolução humana?",
+      "options": ["Permitiu o desenvolvimento de ferramentas de pedra mais precisas", "É considerada crucial para o desenvolvimento da linguagem complexa", "Causou o bipedismo ao alterar a estrutura da pélvis", "Permitiu a digestão de alimentos cozinhados"],
+      "correct": 1,
+      "explanation": "O gene FOXP2, quando funcionando normalmente, é essencial para o controlo motor preciso da fala e para o processamento da linguagem. A versão humana deste gene tem mutações ausentes em outros primatas. Quando alterado, causa graves dificuldades de fala — confirmando o seu papel central na linguagem humana."
+    }
+  ]
+}

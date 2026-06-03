@@ -1,0 +1,65 @@
+{
+  "lesson_id": "wwi_001",
+  "questions": [
+    {
+      "question": "O que foi a Belle Époque e por que é relevante para compreender o início da Primeira Guerra?",
+      "options": ["Um período de pobreza que gerou revoluções sociais", "Um período de prosperidade e progresso tecnológico na Europa de 1900, em paradoxo com a corrida aos armamentos que decorria em paralelo", "O nome do tratado de paz assinado antes da guerra", "A aliança entre França e Bélgica formada em 1900"],
+      "correct": 1,
+      "explanation": "A Belle Époque foi um período de prosperidade cultural e tecnológica na Europa de 1900. O paradoxo central é que esta civilização racional e progressista preparava-se freneticamente para a guerra, investindo em armamento e alianças secretas que tornariam qualquer crise num conflito global."
+    },
+    {
+      "question": "Por que razão a Alemanha tinha uma tensão imperial particular com o Reino Unido e a França?",
+      "options": ["Porque a Alemanha tinha mais colónias e as outras potências queriam retomá-las", "Porque a Alemanha, após a unificação em 1871, tornou-se uma potência industrial massiva mas com poucas colónias comparada com as outras", "Porque a Alemanha tinha perdido a guerra Franco-Prussiana", "Porque o Kaiser recusava negociar acordos comerciais"],
+      "correct": 1,
+      "explanation": "Unificada em 1871, a Alemanha tornou-se rapidamente uma gigante industrial — mas chegara tarde ao 'banquete' colonial. O Reino Unido e a França tinham vastos impérios com matérias-primas e mercados. Esta assimetria gerava uma 'fome' colonial alemã que alimentava tensões geopolíticas crescentes."
+    },
+    {
+      "question": "O que era o Revanchismo francês e como contribuiu para a tensão pré-guerra?",
+      "options": ["O desejo francês de expandir para a África do Norte", "O desejo de vingança pela perda da Alsácia-Lorena para a Alemanha na guerra de 1870", "A política francesa de apoio à Rússia nos Balcãs", "O movimento para rearmamento naval francês"],
+      "correct": 1,
+      "explanation": "Em 1870-71, a Prússia derrotou a França e anexou a Alsácia-Lorena — uma ferida aberta no orgulho nacional francês. Décadas depois, o revanchismo (desejo de recuperar os territórios perdidos) mantinha viva uma hostilidade profunda contra a Alemanha, tornando qualquer reconciliação impossível."
+    },
+    {
+      "question": "O que foi o Dreadnought e qual era a sua importância estratégica?",
+      "options": ["Um plano militar alemão para invadir a França", "Um tipo de navio de guerra britânico que desencadeou uma corrida naval com a Alemanha", "O nome do acordo de aliança entre a Grã-Bretanha e a França", "Um comboio blindado usado na guerra de trincheiras"],
+      "correct": 1,
+      "explanation": "O HMS Dreadnought (1906) foi um navio de guerra britânico tão avançado que tornou obsoletos todos os navios existentes. Desencadeou uma corrida naval com a Alemanha: quem tivesse mais e melhores 'Dreadnoughts' controlaria os mares. Esta rivalidade intensificou profundamente as tensões anglo-alemãs."
+    },
+    {
+      "question": "Quais eram os membros originais da Tríplice Aliança?",
+      "options": ["França, Reino Unido e Rússia", "Alemanha, Áustria-Hungria e Itália", "Alemanha, Rússia e Turquia", "Áustria-Hungria, Sérvia e Bulgária"],
+      "correct": 1,
+      "explanation": "A Tríplice Aliança (1882) unía a Alemanha, a Áustria-Hungria e a Itália. Note-se que a Itália não entrou na guerra do lado dos aliados em 1914, argumentando que o tratado era defensivo. Em 1915, acabou por entrar do lado da Entente após negociar territorialmente com os Aliados."
+    },
+    {
+      "question": "O que foi o Atentado de Sarajevo e quando ocorreu?",
+      "options": ["O bombardeamento austríaco de Belgrado em agosto de 1914", "O assassínio do Arquiduque Francisco Fernando por Gavrilo Princip a 28 de junho de 1914", "A invasão austríaca da Bósnia em 1908", "O ataque sérvio a um diplomata austro-húngaro em 1913"],
+      "correct": 1,
+      "explanation": "A 28 de junho de 1914, o Arquiduque Francisco Fernando (herdeiro do trono austro-húngaro) e a sua esposa foram assassinados em Sarajevo por Gavrilo Princip, membro da organização nacionalista sérvio-bósnia 'Mão Negra'. Este atentado foi o rastilho que ativou o sistema de alianças e levou à guerra mundial."
+    },
+    {
+      "question": "Qual era a ironia histórica por detrás do acidente que tornou o atentado possível?",
+      "options": ["Gavrilo Princip tinha falhado um primeiro ataque e estava a abandonar o plano quando o carro do Arquiduque parou acidentalmente em frente ao café onde ele estava", "O Arquiduque tinha sido avisado mas recusou proteção extra", "A bomba usada no primeiro ataque explorou tarde e alertou Princip", "O motorista do Arquiduque era secretamente simpático à causa sérvia"],
+      "correct": 0,
+      "explanation": "Nesse dia, um primeiro atentado (bomba) falhara. Princip estava num café a comer, considerando o plano fracassado. Por um acaso extraordinário, o carro do Arquiduque parou exatamente em frente ao café após uma confusão de rota. Princip aproveitou a oportunidade — a história mundial mudou por causa de uma paragem imprevista."
+    },
+    {
+      "question": "Qual era o perigo central do Sistema de Alianças europeu de 1914?",
+      "options": ["Tornava impossível qualquer armistício bilateral entre dois países", "Transformava qualquer conflito local num incêndio continental, pois um ataque a um era um ataque a todos", "Impedia negociações diplomáticas diretas entre os países", "Obrigava todos os países a ter o mesmo tamanho de exército"],
+      "correct": 1,
+      "explanation": "O sistema de alianças interligadas significava que qualquer crise local podia arrastar toda a Europa para a guerra. Um conflito austro-sérvio ativava a Rússia; isso ativava a Alemanha; isso ativava a França; a invasão da Bélgica ativava a Grã-Bretanha. Em dias, um assassínio transformara-se numa guerra mundial."
+    },
+    {
+      "question": "Qual era o parentesco entre o Kaiser Guilherme II, o Rei Jorge V e o Czar Nicolau II?",
+      "options": ["Eram aliados políticos mas sem qualquer laço familiar", "Eram todos netos da Rainha Vitória — primos diretos", "Eram cunhados através de casamentos entre casas reais", "O Kaiser e o Czar eram primos, mas o Rei Jorge V era apenas um aliado"],
+      "correct": 1,
+      "explanation": "Os três líderes que conduziram os seus países à guerra eram todos netos da Rainha Vitória e primos diretos. Correspondiam-se com os nomes de família ('Willy', 'Nicky', 'Georgie'). Esta ironia histórica mostra como as alianças políticas e militares superaram completamente os laços pessoais e familiares."
+    },
+    {
+      "question": "O que era o Pan-eslavismo e que papel teve nas tensões pré-guerra?",
+      "options": ["Um movimento alemão para unir todos os povos de língua germânica", "O sentimento de solidariedade entre os povos eslavos, liderado pela Rússia, que incentivou a Sérvia a desafiar o Império Austro-Húngaro", "Um tratado de paz proposto pela Rússia antes da guerra", "Um partido político sérvio que apoiava a Áustria-Hungria"],
+      "correct": 1,
+      "explanation": "O Pan-eslavismo era a ideia de que todos os povos eslavos (sérvios, russos, polacos, checos, etc.) partilhavam uma identidade comum e deviam apoiar-se. A Rússia via-se como a 'irmã mais velha' dos eslavos, o que a levou a mobilizar as suas forças em defesa da Sérvia após o Atentado de Sarajevo — arrastando toda a Europa para a guerra."
+    }
+  ]
+}

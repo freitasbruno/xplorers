@@ -1,0 +1,65 @@
+{
+  "lesson_id": "wwi_003",
+  "questions": [
+    {
+      "question": "Quando e como terminou a Primeira Guerra Mundial?",
+      "options": ["Com a rendição da Alemanha a 11 de novembro de 1918, quando os canhões se calaram às 11h da manhã", "Com o Tratado de Versalhes assinado a 28 de junho de 1919 em Paris", "Com a invasão aliada de Berlim em outubro de 1918", "Com a abdicação do Kaiser e a declaração de república em setembro de 1918"],
+      "correct": 0,
+      "explanation": "O fim das hostilidades foi assinalado pelo Armistício de Compiègne a 11 de novembro de 1918, às 11h da manhã. O número 11/11/11 foi escolhido deliberadamente. O Tratado de Versalhes, assinado em junho de 1919, formalizou as condições de paz — mas o fim dos combates ocorreu com o armistício."
+    },
+    {
+      "question": "O que aconteceu ao Império Russo durante a Primeira Guerra Mundial?",
+      "options": ["Saiu vitorioso e expandiu o seu território para leste", "Colapsou com a Revolução de 1917 — os Bolcheviques tomaram o poder e assinaram a paz com a Alemanha cedendo vastos territórios", "Assinou uma aliança separada com a Alemanha em 1916", "Manteve-se neutro após 1915, preservando o Czar no poder"],
+      "correct": 1,
+      "explanation": "A guerra exauriu a frágil economia russa. Em 1917, o Czar Nicolau II abdica após a Revolução de Fevereiro. Em outubro, os Bolcheviques de Lenine tomam o poder e, para cumprir a promessa de 'Paz, Pão e Terra', assinam o Tratado de Brest-Litovsk (1918), cedendo a Ucrânia e os Estados Bálticos à Alemanha."
+    },
+    {
+      "question": "O que foi a 'Cláusula de Culpa' do Tratado de Versalhes (Artigo 231)?",
+      "options": ["Uma disposição que obrigava a Alemanha a julgamento por crimes de guerra", "A imposição à Alemanha de assumir total e exclusiva responsabilidade moral por ter causado a guerra — base legal de todas as punições seguintes", "Um artigo que proibia a Alemanha de ter exército permanente", "A cláusula que definia o montante das reparações de guerra a pagar"],
+      "correct": 1,
+      "explanation": "O Artigo 231 forçou a Alemanha a aceitar a responsabilidade exclusiva pela guerra — algo historicamente discutível, dado que todo o continente contribuiu para a tensão. Esta cláusula foi a base jurídica que legitimou as reparações financeiras, as perdas territoriais e a desmilitarização impostas à Alemanha."
+    },
+    {
+      "question": "Qual o valor exigido à Alemanha em reparações de guerra pelo Tratado de Versalhes?",
+      "options": ["10 mil milhões de marcos-ouro", "132 mil milhões de marcos-ouro", "500 mil milhões de marcos-ouro", "Um valor simbólico, sem montante fixado"],
+      "correct": 1,
+      "explanation": "As reparações de guerra impostas à Alemanha totalizaram 132 mil milhões de marcos-ouro — uma soma astronómica com o objetivo declarado de impedir a Alemanha de reconstruir a sua economia. Esta dívida, combinada com a hiperinflação, criou condições de desespero que o extremismo político exploraria nos anos 30."
+    },
+    {
+      "question": "O que foi o 'Corredor Polaco' e como afetou a Alemanha?",
+      "options": ["A fronteira entre a Polónia e a URSS estabelecida em Versalhes", "Uma faixa de território alemão cedido à Polónia que separava a Prússia Oriental do resto da Alemanha", "O acordo que permitia tropas polacas atravessar a Alemanha", "A nova fronteira entre a Polónia e a Checoslováquia"],
+      "correct": 1,
+      "explanation": "Para dar à recém-criada Polónia acesso ao mar, uma faixa de território alemão foi cedida — criando o 'Corredor Polaco'. Isto isolou geograficamente a Prússia Oriental do resto da Alemanha. Esta divisão humilhante foi um dos argumentos centrais da propaganda nazi nos anos 30."
+    },
+    {
+      "question": "Por que razão os EUA nunca aderiram à Sociedade das Nações, apesar de ser uma proposta do seu próprio Presidente?",
+      "options": ["Porque o Presidente Wilson mudou de posição após as negociações de Versalhes", "Porque o Congresso americano rejeitou a ratificação, adotando uma política de isolacionismo", "Porque a Grã-Bretanha vetou a entrada americana", "Porque os EUA exigiam ser os únicos a liderar a organização, o que foi recusado"],
+      "correct": 1,
+      "explanation": "Ironicamente, a SDN foi proposta pelo Presidente Woodrow Wilson como pilar da paz duradoura. Mas o Congresso americano, dominado por isolacionistas que não queriam comprometer os EUA em conflitos europeus futuros, recusou ratificar o Tratado de Versalhes — e com ele, a adesão à SDN. A organização nasceu coxa sem a principal potência mundial."
+    },
+    {
+      "question": "Por que razão a Sociedade das Nações falhou em impedir as agressões dos anos 30?",
+      "options": ["Porque os seus membros decidiram por maioria simples nunca usar a força", "Porque não tinha exército próprio e as decisões exigiam unanimidade — tornando qualquer resposta a agressões ineficaz na prática", "Porque a Alemanha e a Itália eram membros com poder de veto", "Porque o seu estatuto proibia qualquer intervenção em conflitos fora da Europa"],
+      "correct": 1,
+      "explanation": "A SDN tinha dois defeitos fatais: não tinha exército próprio (dependia dos membros para impor sanções) e as decisões exigiam unanimidade (tornando-as lentas e facilmente bloqueáveis). Quando a Itália invadiu a Etiópia (1935) e o Japão a China, as respostas foram apenas protestos verbais — completamente ineficazes."
+    },
+    {
+      "question": "O que previu o economista John Maynard Keynes sobre o Tratado de Versalhes?",
+      "options": ["Que as reparações de guerra iriam financiar uma rápida recuperação europeia", "Que as sanções destruiriam a economia alemã e levariam a uma nova e ainda mais devastadora guerra", "Que a Alemanha conseguiria pagar as reparações em menos de 10 anos", "Que o Tratado seria renegociado dentro de 5 anos"],
+      "correct": 1,
+      "explanation": "Keynes abandonou a delegação britânica em protesto e publicou 'As Consequências Económicas da Paz' (1919), prevendo com precisão arrepiante que as condições punitivas de Versalhes destruiriam a economia alemã, gerariam ressentimento radical e levariam a uma nova guerra. Tinha razão."
+    },
+    {
+      "question": "Até quando demorou a Alemanha a pagar integralmente a sua dívida de guerra do Tratado de Versalhes?",
+      "options": ["Até 1938, interrompida pelo regime nazi", "Até 1953, no acordo de dívidas de Londres", "Até 3 de outubro de 2010", "A dívida foi cancelada no final da Segunda Guerra Mundial"],
+      "correct": 2,
+      "explanation": "A dívida de guerra estabelecida em Versalhes (1919) só foi formalmente e totalmente paga a 3 de outubro de 2010 — 92 anos depois do fim da guerra e 20 anos após a reunificação alemã. A data simbólica foi o 20.º aniversário da reunificação. Esta dívida tinha sido interrompida, renegociada e suspensa várias vezes ao longo do século."
+    },
+    {
+      "question": "Como o Tratado de Versalhes alimentou o extremismo político alemão que levaria a Hitler?",
+      "options": ["Porque permitiu que os militares alemães mantivessem o controlo da política interna", "Porque as humilhações da Cláusula de Culpa, as reparações astronómicas e as perdas territoriais geraram um profundo ressentimento nacional que os extremistas políticos souberam explorar", "Porque a república de Weimar que herdou o tratado era dominada por comunistas", "Porque os Aliados impuseram um governo de ocupação que os alemães rejeitavam"],
+      "correct": 1,
+      "explanation": "O Tratado humilhou a Alemanha em várias dimensões: forçou-a a assumir culpa exclusiva, impôs dívidas que destruíram a economia (especialmente com a Grande Depressão de 1929) e amputou territórios sentidos como alemães. Este ressentimento foi o 'oxigénio' que Hitler soube usar — prometendo restaurar a honra e o poder alemão."
+    }
+  ]
+}

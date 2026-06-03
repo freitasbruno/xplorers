@@ -1,0 +1,65 @@
+{
+  "lesson_id": "wwi_002",
+  "questions": [
+    {
+      "question": "Por que razão emergiu a guerra de trincheiras na Primeira Guerra Mundial?",
+      "options": ["Os generais preferiram esta estratégia defensiva desde o início", "As metralhadoras e a artilharia moderna tornaram impossível avançar em campo aberto — cavar era a única forma de sobreviver", "A Alemanha construiu as primeiras trincheiras para defender a fronteira francesa", "O terreno pantanoso da Flandres obrigou ao uso de trincheiras"],
+      "correct": 1,
+      "explanation": "O poder de fogo da metralhadora e da artilharia moderna tornava um avanço em campo aberto numa sentença de morte. Em poucos meses, uma linha contínua de trincheiras estendia-se da Suíça ao Mar do Norte — uma guerra de posições que ninguém esperava e que duraria quatro anos."
+    },
+    {
+      "question": "O que era a 'Terra de Ninguém' nas trincheiras da Primeira Guerra?",
+      "options": ["A zona neutral entre países beligerantes onde se realizavam negociações", "O espaço mortal entre as linhas inimigas, repleto de arame farpado e crateras de bombas", "As áreas de retaguarda sem controlo militar claro", "O nome dado aos territórios coloniais sem soberania definida"],
+      "correct": 1,
+      "explanation": "A Terra de Ninguém era a faixa de terreno entre as trincheiras inimigas — um espaço devastado por bombas, cheio de arame farpado, cadáveres e lama. Atravessá-la num ataque era quase uma sentença de morte face às metralhadoras inimigas."
+    },
+    {
+      "question": "O que era o 'Shell Shock' e por que foi historicamente significativo?",
+      "options": ["O ruído ensurdecedor produzido pelos obuses, que causava surdez permanente", "Uma condição psicológica causada pelo bombardeamento incessante — o precursor do stress pós-traumático (PTSD)", "Uma doença física causada pela exposição a gás tóxico", "O estado de exaustão extrema após um ataque de infantaria"],
+      "correct": 1,
+      "explanation": "O Shell Shock foi o primeiro reconhecimento em larga escala do trauma psicológico de guerra. Soldados sofriam de tremores, pesadelos e paralisia sem ferimentos físicos visíveis. Embora pouco respeitado na época, foi o precursor do que hoje chamamos stress pós-traumático (PTSD)."
+    },
+    {
+      "question": "Quem inventou os tanques de guerra e qual era o seu objetivo original?",
+      "options": ["A Alemanha, para superar as defesas francesas no Rio Somme", "Os britânicos, como 'navios terrestres' desenhados para esmagar arame farpado e atravessar trincheiras", "A França, inspirada nos comboios blindados usados na guerra civil americana", "Os EUA, enviados à Europa em 1917 para quebrar o impasse"],
+      "correct": 1,
+      "explanation": "Os tanques foram criados pelos britânicos como 'navios terrestres' — veículos blindados capazes de esmagar o arame farpado e atravessar as trincheiras, devolvendo o movimento a uma guerra estática. O nome 'tank' era um nome de código em documentos secretos britânicos, que persistiu."
+    },
+    {
+      "question": "Como evoluiu o uso da aviação ao longo da Primeira Guerra Mundial?",
+      "options": ["Começou como bombardeamento estratégico e evoluiu para reconhecimento", "Começou como reconhecimento e evoluiu para duelos aéreos com metralhadoras sincronizadas com as hélices", "Foi usada exclusivamente para transporte de tropas e abastecimento", "Serviu principalmente para largar gás tóxico sobre as trincheiras inimigas"],
+      "correct": 1,
+      "explanation": "No início, os aviões eram usados apenas para reconhecimento fotográfico das posições inimigas. Rapidamente evoluíram para os 'dogfights' — duelos aéreos. A invenção da metralhadora sincronizada com a hélice (que disparava entre as pás sem as atingir) transformou os aviões em armas letais."
+    },
+    {
+      "question": "O que foi a 'Guerra Submarina Irrestrita' alemã e qual foi a sua consequência mais importante?",
+      "options": ["Uma operação para minar os portos britânicos, que foi rapidamente neutralizada", "Os U-Boats afundavam todos os navios nas águas britânicas, incluindo civis — contribuindo decisivamente para a entrada dos EUA na guerra", "Uma estratégia alemã de bloquear o Mediterrâneo ao tráfego aliado", "O uso de torpedos contra navios de guerra britânicos no Mar do Norte"],
+      "correct": 1,
+      "explanation": "Os U-Boats alemães afundavam qualquer navio nas águas britânicas, incluindo navios mercantes e de passageiros neutros. O afundamento do Lusitânia (1915), com 1198 mortos incluindo americanos, foi um dos eventos que acabou por contribuir para a entrada dos EUA na guerra em 1917."
+    },
+    {
+      "question": "O que aconteceu na Trégua de Natal de 1914?",
+      "options": ["Os países assinaram um armistício temporário de 10 dias por ordem dos governos", "Soldados alemães e britânicos pararam espontaneamente de lutar, cantaram cânticos e jogaram futebol na Terra de Ninguém", "Os papas mediaram uma reunião de paz que durou 3 dias", "As condições climatéricas impossibilitaram os combates durante uma semana"],
+      "correct": 1,
+      "explanation": "Na primeira noite de Natal de 1914, sem ordens dos superiores, soldados alemães e britânicos pararam de lutar, cantaram cânticos de Natal juntos e jogaram futebol na Terra de Ninguém. Foi um momento extraordinário de humanidade que nunca mais se repetiu com a mesma escala durante a guerra."
+    },
+    {
+      "question": "Por que razão o relógio de pulso se tornou popular durante a Primeira Guerra Mundial?",
+      "options": ["Era mais barato de produzir do que os relógios de bolso", "Os oficiais precisavam de consultar as horas rapidamente para coordenar ataques de artilharia sem largar as armas", "Foi inventado por um engenheiro alemão como equipamento de campo", "As mulheres que trabalhavam nas fábricas de munições popularizaram o seu uso"],
+      "correct": 1,
+      "explanation": "Antes da guerra, os homens usavam relógios de bolso — elegantes mas impraticáveis em combate. Os oficiais precisavam de sincronizar ataques de artilharia com precisão de segundos, sem largar o comando. O relógio de pulso resolveu o problema e, após a guerra, rapidamente substituiu o relógio de bolso na população geral."
+    },
+    {
+      "question": "O que fez o pombo mensageiro Cher Ami?",
+      "options": ["Transportou a mensagem de rendição alemã até ao QG francês em 1918", "Entregou uma mensagem que salvou 194 soldados americanos, apesar de ter sido baleado várias vezes durante o voo", "Foi o primeiro animal a receber uma medalha militar por serviços de reconhecimento", "Transmitiu a notícia do Atentado de Sarajevo ao estado-maior britânico"],
+      "correct": 1,
+      "explanation": "Em outubro de 1918, o Batalhão Perdido (194 soldados americanos) estava cercado e a ser atacado erroneamente pela sua própria artilharia. Cher Ami, apesar de baleado no peito, cego de um olho e com uma pata dependurada, completou o voo de 40 km e entregou a mensagem que suspendeu o bombardeamento. Recebeu a Croix de Guerre francesa."
+    },
+    {
+      "question": "Como a Primeira Guerra Mundial contribuiu para o avanço dos direitos das mulheres?",
+      "options": ["As mulheres foram integradas nos exércitos aliados em funções combatentes", "Com os homens na frente, as mulheres assumiram fábricas, transportes e quintas, demonstrando capacidade laboral e fundando o argumento do sufrágio feminino", "Os governos decidiram conceder o voto às mulheres como recompensa pelo esforço de guerra", "As mulheres organizaram manifestações pacifistas que forçaram negociações de paz"],
+      "correct": 1,
+      "explanation": "A mobilização massiva de homens para as frentes de batalha deixou as economias nacionais sem mão-de-obra. As mulheres preencheram esse vazio — gerindo fábricas de munições, conduzindo elétricos, trabalhando em hospitais. Esta demonstração de competência e dedicação tornou-se um argumento irrefutável para o sufrágio feminino que se seguiu."
+    }
+  ]
+}
