@@ -113,6 +113,7 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
 .badge-videojogos      { background: #ede9fe; color: #5b21b6; }
 .badge-vida            { background: #dcfce7; color: #14532d; }
 .badge-wwii            { background: #fee2e2; color: #991b1b; }
+.badge-wwi             { background: #fecaca; color: #7f1d1d; }
 .badge-default         { background: #f1f5f9; color: #475569; }
 
 .tab-indicator {

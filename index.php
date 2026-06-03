@@ -47,6 +47,7 @@ $featured    = get_featured_lessons();
             <option value="olimpicos">Olímpicos da Grécia</option>
             <option value="volley">Volleyball</option>
             <option value="wwii">WWII</option>
+            <option value="wwi">Primeira Guerra Mundial</option>
           </select>
         </div>
       </div>
@@ -83,6 +84,7 @@ const TOPIC_META = {
   olimpicos:       { label: 'Jogos Olímpicos',      badge: 'bg-yellow-500' },
   volley:          { label: 'Volleyball',           badge: 'bg-orange-500' },
   wwii:            { label: 'WWII',                 badge: 'bg-red-500'    },
+  wwi:             { label: 'Primeira Guerra',      badge: 'bg-red-700'    },
 };
 
 const BATCH = 8;
