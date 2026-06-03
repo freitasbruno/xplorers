@@ -15,8 +15,9 @@ const TOPIC_META = {
   empreendedorismo:{ label: 'Empreendedorismo',     badge: 'bg-amber-500'  },
   olimpicos:       { label: 'Jogos Olímpicos',      badge: 'bg-yellow-500' },
   volley:          { label: 'Volleyball',           badge: 'bg-orange-500' },
-  wwi:             { label: 'WWI',        badge: 'bg-red-700'    },
-  wwii:            { label: 'WWII',                 badge: 'bg-red-500'    },
+  wwi:             { label: 'Primeira Guerra Mundial', badge: 'bg-red-700'    },
+  wwii:            { label: 'Segunda Guerra Mundial',  badge: 'bg-red-500'    },
+  musica:          { label: 'Música',                  badge: 'bg-pink-500'   },
 };
 
 const BATCH = 8;

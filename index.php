@@ -46,8 +46,9 @@ $featured    = get_featured_lessons();
             <option value="empreendedorismo">Empreendedorismo</option>
             <option value="olimpicos">Olímpicos da Grécia</option>
             <option value="volley">Volleyball</option>
-            <option value="wwii">WWII</option>
             <option value="wwi">Primeira Guerra Mundial</option>
+            <option value="wwii">Segunda Guerra Mundial</option>
+            <option value="musica">Música (Em breve)</option>
           </select>
         </div>
       </div>
@@ -60,6 +61,16 @@ $featured    = get_featured_lessons();
     <div id="empty-state" class="hidden text-center py-16">
       <p class="text-base font-medium text-slate-500">Nenhuma aula encontrada para este tema.</p>
       <button onclick="clearFilter()" class="mt-4 text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
+    </div>
+
+    <div id="coming-soon-state" class="hidden text-center py-16">
+      <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4 bg-pink-100">
+        <span style="font-size:2rem;">🎵</span>
+      </div>
+      <h3 class="text-lg font-bold text-slate-800 mb-2">Música — Em Breve</h3>
+      <p class="text-sm max-w-sm mx-auto mb-2" style="color:var(--muted);">Estamos a preparar aulas sobre a história da música, da física do som à revolução digital.</p>
+      <p class="text-xs font-medium mb-5" style="color:var(--muted);">3 aulas previstas</p>
+      <button onclick="clearFilter()" class="text-sm font-semibold" style="color:var(--accent);">Ver todas as aulas</button>
     </div>
 
     <div id="load-sentinel" class="flex justify-center py-10">
@@ -83,9 +94,12 @@ const TOPIC_META = {
   empreendedorismo:{ label: 'Empreendedorismo',     badge: 'bg-amber-500'  },
   olimpicos:       { label: 'Jogos Olímpicos',      badge: 'bg-yellow-500' },
   volley:          { label: 'Volleyball',           badge: 'bg-orange-500' },
-  wwi:             { label: 'WWI',                  badge: 'bg-red-700'    },
-  wwii:            { label: 'WWII',                 badge: 'bg-red-500'    },
+  wwi:             { label: 'Primeira Guerra Mundial', badge: 'bg-red-700'    },
+  wwii:            { label: 'Segunda Guerra Mundial',  badge: 'bg-red-500'    },
+  musica:          { label: 'Música',                  badge: 'bg-pink-500'   },
 };
+
+const COMING_SOON = new Set(['musica']);
 
 const BATCH = 8;
 let currentFilter = '';
@@ -169,15 +183,23 @@ function loadBatch() {
   const grid = document.getElementById('cards-grid');
   const sentinel = document.getElementById('load-sentinel');
   const empty = document.getElementById('empty-state');
+  const comingSoon = document.getElementById('coming-soon-state');
   const slice = filtered.slice(shownCount, shownCount + BATCH);
 
   if (shownCount === 0 && filtered.length === 0) {
-    empty.classList.remove('hidden');
+    if (COMING_SOON.has(currentFilter)) {
+      comingSoon.classList.remove('hidden');
+      empty.classList.add('hidden');
+    } else {
+      empty.classList.remove('hidden');
+      comingSoon.classList.add('hidden');
+    }
     sentinel.style.display = 'none';
     return;
   }
 
   empty.classList.add('hidden');
+  comingSoon.classList.add('hidden');
 
   if (slice.length === 0) {
     sentinel.style.display = 'none';
@@ -219,6 +241,7 @@ function clearFilter() {
   currentFilter = '';
   document.getElementById('active-chip').classList.add('hidden');
   document.getElementById('topic-select').value = '';
+  document.getElementById('coming-soon-state').classList.add('hidden');
   shownCount = 0;
   document.getElementById('cards-grid').innerHTML = '';
   document.getElementById('load-sentinel').style.display = 'flex';
