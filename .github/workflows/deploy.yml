@@ -19,8 +19,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          server-dir: /Xplorers/
+          protocol: ftp
+          server-dir: Xplorers/
           exclude: |
             **/.git*
             **/.git*/**
