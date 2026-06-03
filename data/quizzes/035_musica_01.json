@@ -1,0 +1,65 @@
+{
+  "lesson_id": "musica_001",
+  "questions": [
+    {
+      "question": "Qual foi a principal razão evolutiva para o surgimento da música nos grupos humanos primitivos?",
+      "options": ["Entretenimento nos momentos de lazer", "Comunicação com divindades", "Fortalecer a coesão e os laços sociais do grupo", "Afugentar insetos e outros animais pequenos"],
+      "correct": 2,
+      "explanation": "A música funcionava como uma 'cola social' ao libertar oxitocina e endorfinas durante atividades coletivas como cantar e dançar. Grupos mais unidos sobreviviam melhor — a música era, antes de tudo, uma vantagem evolutiva real, não entretenimento."
+    },
+    {
+      "question": "De que material é feita a Flauta de Divje Babe, o instrumento musical mais antigo conhecido?",
+      "options": ["Pedra polida", "Madeira de carvalho", "Marfim de mamute", "Osso fémur de urso das cavernas"],
+      "correct": 3,
+      "explanation": "A Flauta de Divje Babe foi esculpida num fémur de urso das cavernas jovem, há cerca de 43 mil anos. A sua provável origem Neandertal torna-a uma das evidências mais antigas de musicalidade em qualquer espécie humana."
+    },
+    {
+      "question": "O que determina se um som é grave ou agudo?",
+      "options": ["A amplitude da onda", "O timbre do instrumento", "A frequência, medida em Hertz", "A velocidade de propagação no ar"],
+      "correct": 2,
+      "explanation": "A frequência, medida em Hertz (Hz), determina o tom de um som. Sons com baixa frequência (poucas vibrações por segundo) são graves; sons com alta frequência são agudos. A nota Lá central de um piano vibra a exatamente 440 Hz."
+    },
+    {
+      "question": "O que é o timbre de um som?",
+      "options": ["A velocidade a que o som se propaga no ar", "A 'assinatura' do som que permite distinguir instrumentos diferentes", "A intensidade ou volume do som", "O número de notas tocadas em simultâneo"],
+      "correct": 1,
+      "explanation": "O timbre é a característica única que diferencia o som de instrumentos distintos mesmo quando tocam a mesma nota ao mesmo volume. É criado pelas harmónicas — frequências adicionais que vibram simultaneamente com a nota principal em proporções únicas para cada instrumento."
+    },
+    {
+      "question": "Como é que o ouvido converte as ondas sonoras em sinais compreensíveis pelo cérebro?",
+      "options": ["O tímpano transforma a vibração mecânica em impulsos elétricos", "Os ossos do ouvido absorvem as frequências mais perigosas", "O fluido do ouvido interno filtra as frequências indesejadas", "O nervo auditivo capta diretamente as ondas do ar"],
+      "correct": 0,
+      "explanation": "O tímpano vibra em resposta às ondas sonoras e transforma essa vibração mecânica em impulsos elétricos que viajam pelo nervo auditivo até ao cérebro, onde são interpretados e transformados em som consciente."
+    },
+    {
+      "question": "O que acontece no cérebro quando ouvimos notas em harmonia (consonância)?",
+      "options": ["Ativa-se exclusivamente a zona auditiva do córtex", "O cérebro liberta dopamina, gerando prazer", "O ritmo cardíaco desacelera imediatamente", "A pressão arterial sobe de forma temporária"],
+      "correct": 1,
+      "explanation": "Quando as frequências de notas combinam de forma matematicamente simples, o cérebro reconhece o padrão e liberta dopamina — o neurotransmissor associado ao prazer e à recompensa. É por isso que certas músicas nos fazem sentir bem de forma quase imediata."
+    },
+    {
+      "question": "O que é a dissonância musical?",
+      "options": ["Uma harmonia muito lenta e calma", "A combinação de notas com frequências matematicamente simples", "O choque de frequências que cria tensão e desconforto", "O silêncio intencional entre duas notas musicais"],
+      "correct": 2,
+      "explanation": "A dissonância ocorre quando frequências chocam de forma caótica. O cérebro não consegue encontrar um padrão matemático simples e interpreta isso como tensão ou desconforto. Os compositores usam a dissonância intencionalmente para criar suspense — e a resolução para a harmonia é catártica."
+    },
+    {
+      "question": "Qual atividade humana ativa mais partes do cérebro do que a música?",
+      "options": ["O xadrez e a matemática avançada", "A prática intensa de desporto", "Nenhuma — a música ativa mais áreas cerebrais do que qualquer outra atividade", "A pilotagem de aviões em situação de emergência"],
+      "correct": 2,
+      "explanation": "A música é única porque ativa simultaneamente as zonas auditiva, visual, motora, emocional e de memória. Nenhuma outra atividade humana conhecida dispara tantas regiões cerebrais ao mesmo tempo — é o equivalente a um fogo de artifício no cérebro."
+    },
+    {
+      "question": "Qual é o efeito fisiológico de músicas com batidas lentas no nosso corpo?",
+      "options": ["Aumentam a adrenalina e aceleram o ritmo cardíaco", "Podem diminuir a pressão arterial e induzir relaxamento", "Causam dissonância no ouvido interno", "Bloqueiam temporariamente a produção de dopamina"],
+      "correct": 1,
+      "explanation": "Estudos de neurociência mostram que o ritmo cardíaco e as ondas cerebrais se sincronizam com a batida da música que ouvimos. Batidas lentas e calmas podem efetivamente diminuir a pressão arterial e promover um estado de relaxamento fisiológico."
+    },
+    {
+      "question": "Há quantos anos existem evidências concretas da musicalidade humana, com base na Flauta de Divje Babe?",
+      "options": ["Cerca de 5 mil anos", "Cerca de 10 mil anos", "Cerca de 20 mil anos", "Cerca de 43 mil anos"],
+      "correct": 3,
+      "explanation": "A Flauta de Divje Babe tem cerca de 43 mil anos, tornando-a um dos instrumentos musicais mais antigos conhecidos. O mais extraordinário: os furos no osso replicam notas da escala musical que ainda usamos hoje, provando que a nossa perceção musical é universal e incrivelmente antiga."
+    }
+  ]
+}

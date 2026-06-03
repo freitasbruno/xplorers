@@ -1,0 +1,65 @@
+{
+  "lesson_id": "musica_003",
+  "questions": [
+    {
+      "question": "Qual é a principal diferença entre a gravação analógica (vinil) e a digital?",
+      "options": ["O vinil grava sons mais agudos; o digital grava sons mais graves", "O vinil é uma cópia contínua da onda sonora; o digital converte-a em código binário por 'fatias'", "O digital é menos preciso mas muito mais barato de produzir em massa", "O vinil usa eletricidade para amplificar enquanto o digital usa acústica pura"],
+      "correct": 1,
+      "explanation": "No vinil, a onda sonora toca fisicamente numa agulha que talha sulcos contínuos no plástico — é uma cópia analógica e ininterrupta. No digital, o computador 'fotografa' a onda 44.100 vezes por segundo e converte cada momento em zeros e uns, reconstruindo a onda na reprodução."
+    },
+    {
+      "question": "Quantas vezes por segundo um computador analisa a onda sonora no formato CD digital?",
+      "options": ["1.000 vezes por segundo", "10.000 vezes por segundo", "44.100 vezes por segundo", "1.000.000 vezes por segundo"],
+      "correct": 2,
+      "explanation": "O formato CD utiliza uma taxa de amostragem de 44.100 Hz — o que significa que o computador captura 44.100 'fotografias' da onda sonora por segundo. Este valor foi escolhido por ser suficientemente alto para reproduzir fielmente o limite superior da audição humana (cerca de 20.000 Hz)."
+    },
+    {
+      "question": "Como é que o formato MP3 reduz o tamanho dos ficheiros de áudio em cerca de 90%?",
+      "options": ["Grava apenas os instrumentos principais, eliminando sons de fundo e ambientes", "Remove as frequências que o ouvido humano não consegue detetar, usando psicoacústica", "Comprime todos os sons para metade da velocidade e depois reproduz mais depressa", "Converte o áudio estéreo para mono para reduzir o espaço de armazenamento"],
+      "correct": 1,
+      "explanation": "O MP3 usa psicoacústica — a ciência do que o ouvido humano realmente percebe. Remove frequências inaudíveis para o ouvido humano saudável e sons mascarados por outros mais fortes. O resultado é uma redução de 90% no tamanho do ficheiro sem que a maioria das pessoas note diferença de qualidade."
+    },
+    {
+      "question": "O que é a 'filtragem colaborativa' usada pelos algoritmos de recomendação musical?",
+      "options": ["Um sistema que filtra músicas com conteúdo considerado inadequado para menores", "A análise dos géneros musicais mais populares em cada país para criar tendências", "O processo de sugerir músicas ouvidas por utilizadores com gostos semelhantes ao teu", "Um filtro que remove anúncios das playlists com base nas preferências do utilizador"],
+      "correct": 2,
+      "explanation": "A filtragem colaborativa baseia-se na premissa de que pessoas com gostos parecidos tendem a gostar das mesmas músicas. O algoritmo analisa o comportamento de milhões de utilizadores e recomenda músicas apreciadas por pessoas cujo perfil musical é semelhante ao teu."
+    },
+    {
+      "question": "O que tornou o Napster revolucionário (e polémico) em 1999?",
+      "options": ["Foi o primeiro serviço de streaming pago, semelhante ao Spotify atual", "Permitia partilhar ficheiros MP3 gratuitamente com qualquer pessoa no mundo", "Foi o primeiro software capaz de converter discos físicos para formato digital", "Criou o conceito de playlist personalizada com inteligência artificial"],
+      "correct": 1,
+      "explanation": "O Napster criou uma rede de partilha peer-to-peer onde qualquer pessoa podia partilhar e descarregar ficheiros MP3 gratuitamente. Em poucos meses, as vendas de CDs colapsaram. A indústria musical processou-o e fechou-o — mas a mentalidade do consumidor mudara para sempre."
+    },
+    {
+      "question": "Qual foi a consequência mais duradoura do caso Napster para a indústria musical?",
+      "options": ["Ficou provado que as pessoas queriam acesso fácil à música, não o objeto físico", "Os artistas passaram definitivamente a ganhar mais dinheiro com concertos ao vivo do que com álbuns", "A indústria proibiu para sempre a distribuição de música digital na internet", "O CD tornou-se ainda mais popular por ser percecionado como de melhor qualidade"],
+      "correct": 0,
+      "explanation": "O Napster provou que o problema não era a pirataria em si — era o modelo de negócio. As pessoas não queriam o objeto-CD; queriam acesso fácil e imediato à música. Este insight direto levou ao desenvolvimento do iTunes (2003) e mais tarde ao Spotify (2008), que resolveu o problema com conveniência legal."
+    },
+    {
+      "question": "Porque foi a canção 'Heart on My Sleeve' (2023) retirada das plataformas de streaming?",
+      "options": ["O conteúdo das letras foi considerado ofensivo e inapropriado pelas plataformas", "Os artistas Drake e The Weeknd não tinham autorizado a publicação da música", "Foi criada com IA que clonou ilegalmente as vozes de artistas reais sem consentimento", "A qualidade de produção era demasiado baixa para os padrões técnicos das plataformas"],
+      "correct": 2,
+      "explanation": "Um produtor anónimo usou IA generativa para clonar as vozes de Drake e The Weeknd sem qualquer autorização. A música violou os direitos de autor dos artistas e foi retirada. O caso levantou questões jurídicas ainda sem resposta: pode a voz de uma pessoa ser replicada por IA sem consentimento?"
+    },
+    {
+      "question": "Porque é que o CD tem exatamente 74 minutos de capacidade de armazenamento de áudio?",
+      "options": ["Foi o limite técnico dos lasers de leitura disponíveis durante o desenvolvimento do formato", "O presidente da Sony insistiu que o formato tinha de caber a Nona Sinfonia de Beethoven inteira", "74 minutos era a duração média de um álbum de vinil de 33 rpm nos anos 1970", "Foi o resultado de um acordo técnico e comercial entre a Sony e a Philips sobre o tamanho do disco"],
+      "correct": 1,
+      "explanation": "Norio Ohga, presidente da Sony e maestro amador, insistiu que o novo formato digital tinha de ser capaz de conter a Nona Sinfonia de Beethoven inteira — na sua gravação mais longa conhecida, dirigida por Furtwängler em 1951, com 74 minutos. Um detalhe pessoal que moldou o formato para toda uma geração."
+    },
+    {
+      "question": "Para que área da ciência foi originalmente criado o algoritmo do Auto-Tune?",
+      "options": ["Correção de som em estúdios de cinema e produção televisiva", "Melhoria da qualidade de transmissões de rádio em ondas curtas", "Análise de dados sísmicos para detetar reservas de petróleo debaixo da terra", "Estudo das frequências emitidas por satélites de comunicação na órbita terrestre"],
+      "correct": 2,
+      "explanation": "O Auto-Tune foi criado por Andy Hildebrand, um engenheiro geofísico que usava algoritmos matemáticos para analisar dados sísmicos e localizar petróleo. Ao aplicar o mesmo princípio a frequências vocais humanas, descobriu que conseguia corrigir notas desafinadas em tempo real — e uma nova indústria nasceu."
+    },
+    {
+      "question": "O que é a 'bolha musical' criada pelos algoritmos de recomendação das plataformas de streaming?",
+      "options": ["Um serviço pago premium que oferece música exclusiva personalizada para cada utilizador", "Um perfil de escuta que pode limitar a exposição a músicas e artistas fora dos gostos habituais", "A capacidade de ouvir música em modo offline sem necessidade de ligação à internet", "Um sistema de proteção de direitos de autor que bloqueia músicas não licenciadas nas playlists"],
+      "correct": 1,
+      "explanation": "Os algoritmos de recomendação aprendem os teus gostos e tendem a sugerir mais do mesmo. Com o tempo, isto cria uma 'bolha' onde te expões maioritariamente a músicas já dentro das tuas preferências, potencialmente limitando a descoberta de novos géneros, artistas ou culturas musicais."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "lesson_id": "musica_002",
+  "questions": [
+    {
+      "question": "Quem criou o sistema de notas musicais (Dó, Ré, Mi...) e as linhas da partitura?",
+      "options": ["Beethoven, no século XVIII", "Guido d'Arezzo, no século XI", "Johann Sebastian Bach, no século XVII", "Gutenberg, no século XV"],
+      "correct": 1,
+      "explanation": "Guido d'Arezzo, um monge italiano do século XI, criou o sistema de solmização (Dó-Ré-Mi) e as linhas da pauta musical. Antes disso, a música era transmitida oralmente, arriscando perder-se para sempre com a morte dos músicos."
+    },
+    {
+      "question": "Qual foi o impacto imediato da partitura combinada com a prensa de Gutenberg?",
+      "options": ["Os músicos passaram a ganhar mais dinheiro com os seus concertos", "As igrejas perderam o controlo sobre a produção musical", "Uma música composta num país podia ser tocada exatamente da mesma forma noutro país", "A música deixou de ser transmitida oralmente de forma permanente"],
+      "correct": 2,
+      "explanation": "A combinação da partitura de Guido d'Arezzo com a prensa de Gutenberg permitiu, pela primeira vez, que uma música composta em Itália fosse tocada em Portugal exatamente da mesma forma, sem que os músicos alguma vez se tivessem encontrado — a música tornou-se verdadeiramente universal."
+    },
+    {
+      "question": "Porque é que os músicos de jazz e blues precisavam de um instrumento mais potente nos anos 1930?",
+      "options": ["O público dos concertos tornou-se progressivamente mais barulhento", "As guitarras acústicas eram demasiado silenciosas ao lado dos instrumentos de sopro e da bateria", "Os clubes de jazz eram muito grandes e tinham má acústica natural", "O estilo musical exigia sons mais distorcidos e agudos"],
+      "correct": 1,
+      "explanation": "As guitarras acústicas dependiam exclusivamente das caixas de ressonância de madeira para projetar o som. Ao lado de trompetes, trombones e baterias, simplesmente não se ouviam. Esta necessidade prática levou à invenção da guitarra elétrica com pickups magnéticos."
+    },
+    {
+      "question": "Como funciona um pickup magnético numa guitarra elétrica?",
+      "options": ["Amplifica o som através de uma caixa de ressonância maior de madeira", "Converte a vibração das cordas de metal em sinais elétricos", "Filtra as frequências indesejadas através de um campo magnético", "Aumenta a tensão das cordas para produzir mais volume acústico"],
+      "correct": 1,
+      "explanation": "Um pickup magnético é uma bobina de fio enrolada em torno de ímanes. Quando uma corda metálica vibra, perturba o campo magnético e gera uma corrente elétrica oscilante. Essa corrente é enviada para um amplificador que a converte de volta em som — muito mais alto."
+    },
+    {
+      "question": "O que distingue fundamentalmente um sintetizador de uma guitarra elétrica?",
+      "options": ["O sintetizador é mais antigo e foi inventado no século XIX", "A guitarra elétrica consegue produzir mais tipos de sons diferentes", "O sintetizador cria sons do zero, sem partir de nenhum som acústico real", "O sintetizador usa cordas metálicas como a guitarra, mas amplificadas electronicamente"],
+      "correct": 2,
+      "explanation": "A guitarra elétrica amplifica a vibração de cordas reais — parte de um som acústico existente. O sintetizador usa osciladores elétricos para gerar ondas puras (sinusoidal, quadrada, dente de serra) e moldá-las com filtros, criando timbres que nunca existiram na natureza."
+    },
+    {
+      "question": "O que aconteceu no concerto dos Beatles no Shea Stadium em 1964?",
+      "options": ["O concerto foi cancelado a meio por causa de uma tempestade elétrica", "Os sistemas de som eram tão fracos que os gritos das fãs abafaram completamente a música", "Os Beatles recusaram-se a tocar por falta de equipamento adequado", "Foi o primeiro concerto de rock transmitido em direto na televisão americana"],
+      "correct": 1,
+      "explanation": "Com 55 mil pessoas e os sistemas de som do campo de basebol (desenhados para anúncios), os gritos das fãs foram simplesmente mais altos do que a música. Os próprios Beatles não se conseguiam ouvir em palco. Este evento dramático forçou a indústria a desenvolver sistemas PA específicos para concertos massivos."
+    },
+    {
+      "question": "Como nasceu o Hip-Hop nos bairros do Bronx nos anos 1970?",
+      "options": ["Cantores de soul começaram a usar letras com rima rápida sobre instrumentação de jazz", "Produtores criaram bases eletrónicas com sintetizadores baratos comprados em lojas", "DJs usaram dois gira-discos para isolar e repetir secções rítmicas de discos antigos", "Músicos de jazz começaram a improvisar exclusivamente com percussão eletrificada"],
+      "correct": 2,
+      "explanation": "Sem dinheiro para instrumentos ou estúdios, os DJs do Bronx transformaram o gira-discos num instrumento. Ao isolar os breaks (secções rítmicas) de discos de vinil antigos e repeti-los com dois gira-discos sincronizados, criaram a base rítmica sobre a qual os MCs rimavam — nasceu o Hip-Hop."
+    },
+    {
+      "question": "De onde vem a palavra 'Dó' (originalmente 'Ut') no sistema de notas musicais?",
+      "options": ["Da palavra latina para 'som puro'", "Do nome do inventor do sistema, Guido", "Da primeira sílaba de cada verso do Hino a São João Batista", "De um antigo instrumento grego chamado 'doum'"],
+      "correct": 2,
+      "explanation": "Guido d'Arezzo usou as primeiras sílabas de cada verso do Hino a São João Batista, em latim, para nomear as notas: Ut, Resonare, Mira, Famuli, Solve, Labii. 'Ut' foi mais tarde substituído por 'Dó' por ser mais fácil de cantar nas aulas."
+    },
+    {
+      "question": "Quem inventou a Fender Telecaster, a primeira guitarra elétrica produzida em massa?",
+      "options": ["Jimi Hendrix, que precisava de um instrumento mais potente para os seus concertos", "Leo Fender, que curiosamente nunca aprendeu a tocar guitarra", "Os engenheiros da Gibson em resposta ao surgimento do Rock 'n' Roll", "Um músico de blues chamado Charlie Christian que a projetou para os seus shows"],
+      "correct": 1,
+      "explanation": "Leo Fender lançou a Telecaster em 1951 — e nunca aprendeu a tocar guitarra. O design simples e robusto revolucionou a música e a guitarra continua a ser produzida praticamente da mesma forma até hoje, sendo usada em géneros que vão do country ao punk."
+    },
+    {
+      "question": "Qual foi o principal efeito cultural do aparecimento da guitarra elétrica e do Rock 'n' Roll?",
+      "options": ["Marcou o fim da música clássica e da ópera como formas de entretenimento", "Criou pela primeira vez uma cultura juvenil global e distinta", "Substituiu completamente os instrumentos acústicos em todos os géneros musicais", "Promoveu o regresso às raízes da música tribal e primitiva"],
+      "correct": 1,
+      "explanation": "A guitarra elétrica e o Rock 'n' Roll criaram, pela primeira vez na história, uma 'cultura juvenil' global — um movimento musical e estético que transcendeu fronteiras e permitiu aos jovens de todo o mundo partilharem a mesma linguagem cultural, independentemente do país ou língua."
+    }
+  ]
+}
