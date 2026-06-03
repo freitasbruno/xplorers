@@ -9,3 +9,4 @@
 
 # App secrets
 admin/config.php
+.env*
