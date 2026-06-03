@@ -7,32 +7,17 @@
  */
 
 const TOPIC_META = {
-  cosmos:          { label: 'Cosmos',                  color: '#6366f1' },
-  computadores:    { label: 'Computadores',            color: '#3b82f6' },
-  videojogos:      { label: 'Videojogos',              color: '#a855f7' },
-  vida:            { label: 'História da Vida',        color: '#22c55e' },
-  sustentabilidade:{ label: 'Sustentabilidade',        color: '#10b981' },
-  empreendedorismo:{ label: 'Empreendedorismo',        color: '#f59e0b' },
-  olimpicos:       { label: 'Jogos Olímpicos',         color: '#eab308' },
-  volley:          { label: 'Volleyball',              color: '#f97316' },
-  wwi:             { label: 'Primeira Guerra Mundial', color: '#b91c1c' },
-  wwii:            { label: 'Segunda Guerra Mundial',  color: '#ef4444' },
-  musica:          { label: 'Música',                  color: '#ec4899' },
-};
-
-// Badge Tailwind class — still used on cards
-const TOPIC_BADGE = {
-  cosmos:          'bg-indigo-500',
-  computadores:    'bg-blue-500',
-  videojogos:      'bg-purple-500',
-  vida:            'bg-green-500',
-  sustentabilidade:'bg-emerald-500',
-  empreendedorismo:'bg-amber-500',
-  olimpicos:       'bg-yellow-500',
-  volley:          'bg-orange-500',
-  wwi:             'bg-red-700',
-  wwii:            'bg-red-500',
-  musica:          'bg-pink-500',
+  cosmos:          { label: 'Cosmos',                  color: '#6366f1', badge: 'bg-indigo-500'  },
+  computadores:    { label: 'Computadores',            color: '#3b82f6', badge: 'bg-blue-500'    },
+  videojogos:      { label: 'Videojogos',              color: '#a855f7', badge: 'bg-purple-500'  },
+  vida:            { label: 'História da Vida',        color: '#22c55e', badge: 'bg-green-500'   },
+  sustentabilidade:{ label: 'Sustentabilidade',        color: '#10b981', badge: 'bg-emerald-500' },
+  empreendedorismo:{ label: 'Empreendedorismo',        color: '#f59e0b', badge: 'bg-amber-500'   },
+  olimpicos:       { label: 'Jogos Olímpicos',         color: '#eab308', badge: 'bg-yellow-500'  },
+  volley:          { label: 'Volleyball',              color: '#f97316', badge: 'bg-orange-500'  },
+  wwi:             { label: 'Primeira Guerra Mundial', color: '#b91c1c', badge: 'bg-red-700'     },
+  wwii:            { label: 'Segunda Guerra Mundial',  color: '#ef4444', badge: 'bg-red-500'     },
+  musica:          { label: 'Música',                  color: '#ec4899', badge: 'bg-pink-500'    },
 };
 
 const BATCH = 8;
@@ -67,8 +52,9 @@ function getFiltered() {
 
 // ── Card HTML ──
 function featuredCardHTML(lesson) {
-  const badge = TOPIC_BADGE[lesson.topic_slug] || 'bg-slate-500';
-  const label = TOPIC_META[lesson.topic_slug]?.label || lesson.topic_name;
+  const meta  = TOPIC_META[lesson.topic_slug];
+  const badge = meta?.badge || 'bg-slate-500';
+  const label = meta?.label || lesson.topic_name;
   const quizBtn = lesson.has_quiz
     ? `<a href="quiz.php?id=${lesson.id}" class="flex-1 text-sm font-medium py-2 rounded-xl text-center" style="border:1.5px solid var(--border);color:var(--muted);">Quiz 🎯</a>`
     : '';
@@ -92,8 +78,9 @@ function featuredCardHTML(lesson) {
 }
 
 function galleryCardHTML(lesson, delay) {
-  const badge = TOPIC_BADGE[lesson.topic_slug] || 'bg-slate-500';
-  const label = TOPIC_META[lesson.topic_slug]?.label || lesson.topic_name;
+  const meta  = TOPIC_META[lesson.topic_slug];
+  const badge = meta?.badge || 'bg-slate-500';
+  const label = meta?.label || lesson.topic_name;
   const quizBtn = lesson.has_quiz
     ? `<button onclick="event.preventDefault();event.stopPropagation();window.location.href='quiz.php?id=${lesson.id}'" class="text-xs font-medium py-1.5 px-2.5 rounded-lg" style="background:#f0ede7;color:var(--muted);">Quiz</button>`
     : '';
