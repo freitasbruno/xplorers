@@ -48,7 +48,7 @@ $featured    = get_featured_lessons();
             <option value="volley">Volleyball</option>
             <option value="wwi">Primeira Guerra Mundial</option>
             <option value="wwii">Segunda Guerra Mundial</option>
-            <option value="musica">Música (Em breve)</option>
+            <option value="musica">Música</option>
           </select>
         </div>
       </div>
@@ -99,7 +99,7 @@ const TOPIC_META = {
   musica:          { label: 'Música',                  badge: 'bg-pink-500'   },
 };
 
-const COMING_SOON = new Set(['musica']);
+const COMING_SOON = new Set([]);
 
 const BATCH = 8;
 let currentFilter = '';
