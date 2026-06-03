@@ -1,0 +1,65 @@
+{
+  "lesson_id": "wwii_002",
+  "questions": [
+    {
+      "question": "O que é 'Guerra Total'?",
+      "options": ["Um combate exclusivamente entre forças militares profissionais", "Um conflito em que toda a sociedade — fábricas, civis, cientistas e recursos — é mobilizada para o esforço de guerra", "Uma guerra que usa apenas armas nucleares", "Um confronto limitado a um único teatro de operações"],
+      "correct": 1,
+      "explanation": "A Guerra Total rompe com a ideia de guerra como confronto entre exércitos profissionais. Toda a sociedade é redirecionada para o esforço de guerra: as fábricas, as mulheres, os cientistas e até os recursos quotidianos passam a servir o objetivo de vencer."
+    },
+    {
+      "question": "Quais eram os três elementos da Blitzkrieg (Guerra-Relâmpago)?",
+      "options": ["Espionagem, sabotagem e negociação", "Bombardeamento aéreo, avanço de tanques e ocupação pela infantaria", "Bloqueio naval, bombardeamento e invasão terrestre", "Propaganda, subversão política e golpe militar"],
+      "correct": 1,
+      "explanation": "A Blitzkrieg baseava-se numa sequência rápida: primeiro a Luftwaffe bombardeava os alvos estratégicos, depois os Panzers destruíam as defesas e, por fim, a infantaria ocupava o território antes que o inimigo conseguisse reagir."
+    },
+    {
+      "question": "Em quanto tempo a França se rendeu perante a Blitzkrieg alemã?",
+      "options": ["Em quatro anos (como na Primeira Guerra)", "Em seis meses", "Em seis semanas", "Em seis dias"],
+      "correct": 2,
+      "explanation": "A França — uma das maiores potências militares da época — colapsou e rendeu-se em apenas seis semanas face à velocidade da Blitzkrieg alemã, em junho de 1940. Em comparação, resistira quatro anos na Primeira Guerra Mundial."
+    },
+    {
+      "question": "O que foi a Batalha de Inglaterra?",
+      "options": ["Uma batalha naval no Canal da Mancha", "Uma invasão terrestre britânica do continente europeu", "Um confronto puramente aéreo entre a Luftwaffe alemã e a Royal Air Force britânica", "Uma série de batalhas de tanques no norte de Inglaterra"],
+      "correct": 2,
+      "explanation": "A Batalha de Inglaterra (verão-outono de 1940) foi um confronto aéreo em que os pilotos britânicos defenderam o país de bombardeamentos brutais. Incapaz de derrotar a RAF, Hitler abandonou os planos de invasão da Grã-Bretanha."
+    },
+    {
+      "question": "O que foi a Operação Barbarossa?",
+      "options": ["O desembarque dos Aliados na Normandia", "A invasão alemã da União Soviética em 1941", "O ataque japonês a Pearl Harbor", "A ofensiva italiana no norte de África"],
+      "correct": 1,
+      "explanation": "Em junho de 1941, Hitler quebrou o pacto com Stalin e lançou a Operação Barbarossa — a maior operação militar da história. O inverno russo e a resistência soviética acabariam por desgastar decisivamente o exército alemão na Frente Leste."
+    },
+    {
+      "question": "O que aconteceu no Dia D, 6 de junho de 1944?",
+      "options": ["A Alemanha invadiu a Polónia", "Os EUA declararam guerra ao Japão", "Os Aliados realizaram o maior desembarque anfíbio da história nas praias da Normandia, em França", "A rendição da Alemanha Nazi"],
+      "correct": 2,
+      "explanation": "O Dia D foi uma operação gigantesca em que EUA, Grã-Bretanha e Canadá desembarcaram nas praias da Normandia, abrindo uma nova frente na Europa Ocidental. Esta operação iniciou a libertação dos territórios ocupados."
+    },
+    {
+      "question": "O que foi o Holocausto?",
+      "options": ["Uma batalha decisiva na Frente Leste", "O extermínio sistemático e industrializado de cerca de 6 milhões de judeus e milhões de outras minorias pelo regime nazi", "Um bombardeamento maciço de cidades alemãs pelos Aliados", "Um programa de evacuação de civis durante a guerra"],
+      "correct": 1,
+      "explanation": "O Holocausto foi o genocídio planeado pelo Estado nazi. Sob a ideologia racial do regime, judeus, ciganos, pessoas com deficiência e outros foram sistematicamente exterminados em campos como Auschwitz-Birkenau."
+    },
+    {
+      "question": "Quem foi Alan Turing e qual foi o seu contributo decisivo para a guerra?",
+      "options": ["Um general americano que planeou o Dia D", "Um matemático britânico que liderou a equipa que decifrou os códigos secretos da máquina Enigma", "Um físico que desenvolveu a bomba atómica", "Um espião português que transmitia informações aos Aliados"],
+      "correct": 1,
+      "explanation": "Alan Turing liderou a equipa de Bletchley Park que decifrou a máquina Enigma, usada pelos alemães para comunicações militares. Segundo historiadores, este trabalho encurtou a guerra em vários anos e salvou milhões de vidas."
+    },
+    {
+      "question": "Porque se tornou Lisboa uma 'capital dos espiões' durante a guerra?",
+      "options": ["Porque Portugal apoiava os Aliados abertamente", "Porque Portugal, mantendo-se neutro, era um dos poucos países europeus onde agentes de todos os lados podiam operar livremente", "Porque Portugal possuía a maior indústria de armamento da Europa", "Porque o governo português colaborava ativamente com os serviços secretos britânicos"],
+      "correct": 1,
+      "explanation": "A neutralidade de Salazar tornou Lisboa num local único — um dos poucos pontos na Europa onde britânicos e alemães podiam coexistir. Os hotéis do Estoril tornaram-se pontos de encontro de espiões e corredores vitais de informação."
+    },
+    {
+      "question": "Como é que os cidadãos britânicos contribuíram diretamente para o esforço de guerra em casa?",
+      "options": ["Financiando diretamente o exército com impostos voluntários", "Entregando as suas panelas de alumínio, grades de jardim e brinquedos de metal para serem transformados em aviões de combate", "Fabricando armas em casa", "Cultivando alimentos em terrenos baldios das cidades"],
+      "correct": 1,
+      "explanation": "O conceito de Guerra Total estendia-se até aos recursos domésticos. Em Inglaterra, cidadãos entregavam objetos metálicos do quotidiano que eram derretidos e transformados em peças para aviões Spitfire — toda a sociedade contribuía para a vitória."
+    }
+  ]
+}

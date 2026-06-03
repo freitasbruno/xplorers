@@ -1,0 +1,65 @@
+{
+  "lesson_id": "wwii_001",
+  "questions": [
+    {
+      "question": "Qual foi o evento económico que criou o terreno fértil para o surgimento de ditaduras na Europa?",
+      "options": ["A crise petrolífera de 1973", "A Grande Depressão de 1929", "A Primeira Guerra Mundial", "A Revolução Industrial"],
+      "correct": 1,
+      "explanation": "O colapso da Bolsa de Nova Iorque em outubro de 1929 desencadeou uma crise económica global. Os EUA cortaram o crédito à Europa, causando desemprego massivo e a perda de fé nas democracias, abrindo as portas aos regimes totalitários."
+    },
+    {
+      "question": "Qual a percentagem aproximada de trabalhadores alemães que ficou desempregada durante a Grande Depressão?",
+      "options": ["Cerca de 5%", "Cerca de 10%", "Cerca de um terço", "Cerca de metade"],
+      "correct": 2,
+      "explanation": "Quase um terço da população ativa alemã ficou desempregada durante a Grande Depressão. Este nível de desespero tornou muitos alemães recetivos às promessas de Hitler de restaurar o orgulho nacional e a prosperidade."
+    },
+    {
+      "question": "Qual era a principal diferença entre o Nazismo alemão e o Fascismo italiano?",
+      "options": ["O Nazismo permitia outros partidos políticos", "O Nazismo acrescentava uma componente racial violenta e antissemita", "O Fascismo era mais militarista", "O Fascismo tinha um culto ao líder mais intenso"],
+      "correct": 1,
+      "explanation": "Embora ambos os regimes partilhassem bases comuns (culto ao líder, partido único, censura), o Nazismo acrescentava uma componente biológica e racial: o antissemitismo e a crença pseudocientífica na superioridade da 'raça ariana'."
+    },
+    {
+      "question": "Quando é que Benito Mussolini subiu ao poder em Itália?",
+      "options": ["1918", "1922", "1929", "1933"],
+      "correct": 1,
+      "explanation": "Mussolini chegou ao poder em 1922, antes da Grande Depressão. Foi a crise global de 1929 que consolidou definitivamente o seu modelo autoritário, tornando o fascismo num exemplo que Hitler e outros viriam a seguir."
+    },
+    {
+      "question": "O que era o 'Volksempfänger'?",
+      "options": ["Um jornal oficial do regime nazi", "Um campo de treino militar para jovens", "Uma rádio barata fabricada em massa para que todos os alemães ouvissem apenas a propaganda do Estado", "Um título honorífico dado a colaboradores do regime"],
+      "correct": 2,
+      "explanation": "O 'Volksempfänger' (Rádio do Povo) foi um aparelho de rádio barato fabricado em massa pelo regime nazi. Tinha um alcance curto de propósito, para impedir que os cidadãos sintonizassem emissoras estrangeiras — chegava apenas a voz do Estado."
+    },
+    {
+      "question": "Que política adotaram a Grã-Bretanha e a França face às exigências crescentes de Hitler nos anos 30?",
+      "options": ["Mobilização militar imediata", "Política de Apaziguamento", "Aliança com a União Soviética", "Sanções económicas severas"],
+      "correct": 1,
+      "explanation": "Traumatizadas pelos horrores da Primeira Guerra Mundial, a Grã-Bretanha e a França adotaram a Política de Apaziguamento — cediam às exigências de Hitler na esperança de manter a paz. Foi um erro fatal: Hitler interpretou cada concessão como um sinal de fraqueza."
+    },
+    {
+      "question": "O que foi o 'Anschluss' de 1938?",
+      "options": ["A invasão da Polónia pela Alemanha", "A criação da Juventude Hitleriana", "A anexação da Áustria pela Alemanha Nazi", "O pacto de não-agressão entre Hitler e Stalin"],
+      "correct": 2,
+      "explanation": "O Anschluss (palavra alemã para 'união') foi a anexação da Áustria pela Alemanha Nazi em março de 1938, unindo os dois países num único estado alemão. Esta ação violava diretamente os termos do Tratado de Versalhes."
+    },
+    {
+      "question": "Qual evento marcou o início oficial da Segunda Guerra Mundial?",
+      "options": ["A ascensão de Hitler ao poder em 1933", "A invasão da Etiópia por Mussolini", "A invasão da Polónia pela Alemanha em setembro de 1939", "O Anschluss austríaco em 1938"],
+      "correct": 2,
+      "explanation": "A 1 de setembro de 1939, a Alemanha invadiu a Polónia. Após perceber que o apaziguamento falhara, a Grã-Bretanha e a França declararam guerra à Alemanha dois dias depois, dando início à Segunda Guerra Mundial."
+    },
+    {
+      "question": "Qual era o objetivo das organizações juvenis como a 'Juventude Hitleriana'?",
+      "options": ["Fornecer educação académica de excelência", "Integrar os jovens desde cedo na ideologia do regime, ensinando-os a obedecer e a valorizar o Estado acima de tudo", "Preparar os jovens para emigrar para outros países", "Oferecer atividades desportivas recreativas"],
+      "correct": 1,
+      "explanation": "A Juventude Hitleriana e organizações similares serviam para enquadrar os jovens na ideologia nazi desde a infância, ensinando-os a obedecer, a marchar e a valorizar o Estado acima de tudo — incluindo a família."
+    },
+    {
+      "question": "Que pacto assinou Hitler antes de invadir a Polónia?",
+      "options": ["O Tratado de Versalhes", "O Pacto do Eixo com Itália e Japão", "O Pacto Molotov-Ribbentrop com a União Soviética", "O Acordo de Munique com a França"],
+      "correct": 2,
+      "explanation": "O Pacto Molotov-Ribbentrop foi um acordo de não-agressão assinado entre a Alemanha Nazi e a União Soviética em agosto de 1939. Garantiu a Hitler que não teria de lutar em duas frentes ao mesmo tempo quando invadiu a Polónia uma semana depois."
+    }
+  ]
+}
