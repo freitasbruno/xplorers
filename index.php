@@ -83,8 +83,8 @@ const TOPIC_META = {
   empreendedorismo:{ label: 'Empreendedorismo',     badge: 'bg-amber-500'  },
   olimpicos:       { label: 'Jogos Olímpicos',      badge: 'bg-yellow-500' },
   volley:          { label: 'Volleyball',           badge: 'bg-orange-500' },
+  wwi:             { label: 'WWI',                  badge: 'bg-red-700'    },
   wwii:            { label: 'WWII',                 badge: 'bg-red-500'    },
-  wwi:             { label: 'Primeira Guerra',      badge: 'bg-red-700'    },
 };
 
 const BATCH = 8;
