@@ -3,7 +3,7 @@ topic: O Cosmos e o Desconhecido
 category: cosmos-desconhecido
 title: O Sistema Solar e os Planetas Extremos: Geologia Planetária e Luas Oceânicas
 class: 038
-series: 1 de 1
+series: 1 de 3
 date: 2026-09-21
 description: Do nascimento do Sistema Solar aos mundos mais extremos — planetas rochosos, gigantes gasosos e luas com oceanos escondidos onde a vida poderá existir.
 ---
