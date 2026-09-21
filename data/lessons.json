@@ -627,5 +627,22 @@
     "has_quiz": true,
     "published_at": "2026-06-03",
     "featured": false
+  },
+  {
+    "id": "cosmos-desconhecido_001",
+    "topic_slug": "cosmos-desconhecido",
+    "topic_name": "O Cosmos e o Desconhecido",
+    "class_number": 1,
+    "class_total": 1,
+    "global_class": 38,
+    "title": "O Sistema Solar e os Planetas Extremos: Geologia Planetária e Luas Oceânicas",
+    "description": "Do nascimento do Sistema Solar aos mundos mais extremos — planetas rochosos, gigantes gasosos e luas com oceanos escondidos onde a vida poderá existir.",
+    "image_url": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&q=80",
+    "content_file": "lessons/038_cosmos-desconhecido_01.php",
+    "quiz_file": "data/quizzes/038_cosmos-desconhecido_01.json",
+    "md_file": "data/md/038_cosmos-desconhecido_01.md",
+    "has_quiz": true,
+    "published_at": "2026-09-21",
+    "featured": false
   }
 ]

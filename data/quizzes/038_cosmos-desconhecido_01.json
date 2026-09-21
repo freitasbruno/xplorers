@@ -1,0 +1,115 @@
+{
+  "lesson_id": "cosmos-desconhecido_001",
+  "questions": [
+    {
+      "question": "Segundo a aula, qual foi o papel da gravidade na formação do Sistema Solar?",
+      "options": [
+        "Colapsou o material da nuvem para o centro, acendendo o Sol, e agrupou os restos em planetas",
+        "Afastou os planetas uns dos outros até ficarem a distâncias iguais",
+        "Criou a nuvem de gás e poeira a partir do vazio",
+        "Só atuou depois de os planetas estarem formados, mantendo-os em órbita"
+      ],
+      "correct": 0,
+      "explanation": "A gravidade foi o grande \"engenheiro\" do Sistema Solar: puxou o material da nuvem colossal para o centro, o que acendeu o Sol, e depois agrupou os restos nos planetas. A ideia de esferas alinhadas a distâncias iguais é apenas a representação simplificada dos livros."
+    },
+    {
+      "question": "Qual é a estrutura interna que Mercúrio, Vénus, Terra e Marte partilham?",
+      "options": [
+        "Um núcleo de gás rodeado por uma crosta de gelo",
+        "Um núcleo denso de metal, um espesso manto rochoso e uma fina crosta",
+        "Uma crosta espessa e um núcleo oco",
+        "Apenas uma camada de rocha sem núcleo definido"
+      ],
+      "correct": 1,
+      "explanation": "Os quatro planetas rochosos têm o mesmo design básico: núcleo metálico (ferro e níquel), manto rochoso e fina crosta. É a partir daí que as diferenças — atmosfera, tamanho e história — os tornam mundos tão distintos."
+    },
+    {
+      "question": "Porque é que Mercúrio sofre o choque térmico mais violento do Sistema Solar (430 °C de dia e −180 °C à noite)?",
+      "options": [
+        "Porque está mais perto do Sol do que qualquer outro planeta e não roda",
+        "Porque tem um núcleo que liberta calor durante o dia",
+        "Porque não tem atmosfera para distribuir o calor",
+        "Porque a sua crosta é feita de gelo"
+      ],
+      "correct": 2,
+      "explanation": "Sem atmosfera, o calor não é retido nem distribuído: a superfície aquece imenso enquanto está exposta ao Sol e arrefece drasticamente quando deixa de estar. Compara com Vénus, cuja atmosfera espessa mantém a temperatura sempre elevada."
+    },
+    {
+      "question": "A superfície de Vénus está constantemente a 475 °C. Qual é a explicação apresentada na aula?",
+      "options": [
+        "É o planeta mais próximo do Sol",
+        "A sua atmosfera, rica em dióxido de carbono, criou um efeito de estufa descontrolado",
+        "Tem um núcleo de metal líquido que aquece a superfície",
+        "Roda tão depressa que o atrito aquece a superfície"
+      ],
+      "correct": 1,
+      "explanation": "A atmosfera espessa de Vénus deixa entrar o calor do Sol mas não o deixa escapar. Por isso a superfície está constantemente a 475 °C, mesmo sendo Mercúrio o planeta mais próximo do Sol."
+    },
+    {
+      "question": "Porque é que Marte consegue ter o maior vulcão do Sistema Solar, o Monte Olimpo?",
+      "options": [
+        "Porque a sua tectónica de placas parou e os vulcões puderam crescer no mesmo local durante milhões de anos",
+        "Porque tem uma gravidade muito superior à da Terra",
+        "Porque a sua atmosfera espessa empurra a lava para cima",
+        "Porque a sua crosta é mais fina do que a de qualquer outro planeta"
+      ],
+      "correct": 0,
+      "explanation": "Na Terra, o movimento das placas vai reciclando a superfície e \"afastando\" os vulcões do ponto quente. Em Marte, como a tectónica parou, o vulcão foi crescendo sempre no mesmo sítio até atingir 21 km de altura."
+    },
+    {
+      "question": "O que distingue estruturalmente os gigantes gasosos e de gelo dos planetas rochosos?",
+      "options": [
+        "São mais pequenos e têm um núcleo exposto",
+        "Não têm núcleo nem manto",
+        "Não têm uma crosta sólida: são imensas esferas de fluidos e gases onde a pressão aumenta com a profundidade",
+        "Têm uma crosta de gelo com vários quilómetros de espessura"
+      ],
+      "correct": 2,
+      "explanation": "Depois da Cintura de Asteroides não há superfície onde aterrar. Quem mergulhasse num gigante encontraria apenas fluidos e gases cada vez mais comprimidos. A crosta de gelo é característica de luas como Europa, não dos planetas gigantes."
+    },
+    {
+      "question": "O que aconteceria ao hidrogénio se mergulhasses fundo em Júpiter?",
+      "options": [
+        "Transformar-se-ia em gelo por causa do frio",
+        "Seria comprimido num estado líquido metálico, condutor de eletricidade, e geraria um campo magnético letal",
+        "Escaparia para o espaço em forma de géiseres",
+        "Ficaria igual, pois só a temperatura muda com a profundidade"
+      ],
+      "correct": 1,
+      "explanation": "A pressão em Júpiter torna-se tão extrema que o gás hidrogénio é comprimido em hidrogénio líquido metálico. Como conduz eletricidade, contribui para gerar o campo magnético mais letal do Sistema Solar."
+    },
+    {
+      "question": "Qual destas afirmações sobre os gigantes do Sistema Solar está correta?",
+      "options": [
+        "Saturno é tão pouco denso que flutuaria num oceano suficientemente grande",
+        "A Grande Mancha Vermelha é um vulcão de Júpiter",
+        "Úrano tem os ventos mais velozes do Sistema Solar",
+        "Os anéis de Saturno são feitos exclusivamente de grãos de areia"
+      ],
+      "correct": 0,
+      "explanation": "Saturno é pouco denso, apesar do seu enorme tamanho. A Grande Mancha Vermelha é um anticiclone (uma tempestade), os ventos mais velozes (mais de 2.000 km/h) registam-se em Neptuno, e os anéis de Saturno vão de grãos de areia a fragmentos do tamanho de arranha-céus."
+    },
+    {
+      "question": "Como é que o oceano de Europa consegue manter-se líquido, apesar de estar tão longe do Sol?",
+      "options": [
+        "Porque a superfície de gelo funciona como uma estufa",
+        "Porque o Sol aquece o oceano através de fendas no gelo",
+        "Porque a fricção de maré, causada pela gravidade de Júpiter, gera calor interno",
+        "Porque a água salgada nunca congela em nenhuma circunstância"
+      ],
+      "correct": 2,
+      "explanation": "A gravidade de Júpiter estica e comprime Europa enquanto ela orbita, gerando calor interno — como o metal de um clipe que aquece ao ser dobrado repetidamente. Este processo chama-se fricção de maré e permite ter água líquida fora da Zona Habitável."
+    },
+    {
+      "question": "Porque é que Encélado é considerado, talvez, o local mais promissor para procurar vida?",
+      "options": [
+        "Porque está dentro da Zona Habitável do Sol",
+        "Porque tem um oceano subterrâneo e a sonda Cassini detetou nos seus géiseres vapor de água, moléculas orgânicas complexas e sinais de fontes hidrotermais",
+        "Porque a sua superfície é quente e rochosa como a da Terra",
+        "Porque tem mais água líquida à superfície do que a Terra"
+      ],
+      "correct": 1,
+      "explanation": "Encélado não está na Zona Habitável, mas tem um oceano escondido e géiseres que lançam água para o espaço. A Cassini voou através deles e encontrou vapor de água, moléculas orgânicas e sinais de fontes hidrotermais — ingredientes importantes para a astrobiologia."
+    }
+  ]
+}
