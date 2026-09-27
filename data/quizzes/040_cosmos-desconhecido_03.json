@@ -1,0 +1,115 @@
+{
+  "lesson_id": "cosmos-desconhecido_003",
+  "questions": [
+    {
+      "question": "O que é a Astrobiologia, segundo a aula?",
+      "options": [
+        "Uma ciência de ficção científica sem base real",
+        "Uma ciência interdisciplinar que cruza astrofísica, biologia molecular, química e geologia na procura de vida fora da Terra",
+        "O estudo exclusivo de civilizações alienígenas avançadas",
+        "Um ramo da biologia dedicado apenas aos animais extremófilos da Terra"
+      ],
+      "correct": 1,
+      "explanation": "A Astrobiologia é uma ciência interdisciplinar séria, que não procura à partida civilizações avançadas, mas sinais simples de vida — como uma bactéria ou um fóssil microbiano — combinando conhecimentos de várias áreas científicas."
+    },
+    {
+      "question": "Quais são os três ingredientes essenciais que a Astrobiologia procura num exoplaneta?",
+      "options": [
+        "Ouro, ferro e água salgada",
+        "Água líquida, elementos CHNOPS e uma fonte estável de energia",
+        "Oxigénio puro, luz solar direta e ausência total de radiação",
+        "Uma lua, um campo magnético forte e vulcões ativos"
+      ],
+      "correct": 1,
+      "explanation": "Como só conhecemos a vida baseada em carbono da Terra, procuramos água líquida (o solvente universal), os elementos químicos CHNOPS e uma fonte estável de energia, como a luz de uma estrela ou calor geotérmico."
+    },
+    {
+      "question": "O que é a Zona Habitável?",
+      "options": [
+        "Qualquer região do espaço onde existam planetas rochosos",
+        "A região em redor de uma estrela onde a temperatura permite que a água se mantenha líquida à superfície",
+        "A zona onde um planeta tem exatamente o mesmo tamanho da Terra",
+        "A área do Sistema Solar mais próxima do Sol"
+      ],
+      "correct": 1,
+      "explanation": "A Zona Habitável — ou zona dos \"Caracolinhos de Ouro\" — é a faixa orbital onde a temperatura não é nem demasiado quente (a água evapora, como em Vénus) nem demasiado fria (a água congela, como em Marte)."
+    },
+    {
+      "question": "O que provou a descoberta de microrganismos extremófilos na Terra?",
+      "options": [
+        "Que a vida só pode existir em condições idênticas às da Terra atual",
+        "Que a vida é muito mais tenaz do que se pensava, podendo florescer em ambientes antes considerados mortais",
+        "Que todos os planetas do Sistema Solar já têm vida confirmada",
+        "Que a água líquida não é necessária para a existência de vida"
+      ],
+      "correct": 1,
+      "explanation": "Bactérias que vivem em fontes hidrotermais a 120°C, em lagos ácidos ou no gelo da Antártida mostraram que a vida pode sobreviver e florescer em condições extremas, alargando os locais onde vale a pena procurar."
+    },
+    {
+      "question": "Como funciona o Método do Trânsito Planetário para detetar exoplanetas?",
+      "options": [
+        "Fotografando diretamente o planeta com um telescópio potente",
+        "Medindo a ligeira e temporária descida do brilho da estrela quando o planeta passa à sua frente",
+        "Detetando o som emitido pelo planeta através de radiotelescópios",
+        "Analisando a cor da estrela ao longo do ano"
+      ],
+      "correct": 1,
+      "explanation": "Quando um planeta transita entre a sua estrela e o telescópio, bloqueia uma pequena fração da luz estelar. A duração e a profundidade dessa quebra de brilho permitem calcular o tamanho do planeta e a duração do seu ano."
+    },
+    {
+      "question": "O que revela o Método da Velocidade Radial?",
+      "options": [
+        "A cor exata do planeta observado",
+        "O \"bamboleio\" da estrela causado pela gravidade do planeta, detetado através do Efeito Doppler na luz estelar",
+        "A temperatura da superfície do planeta",
+        "A composição química da atmosfera do planeta"
+      ],
+      "correct": 1,
+      "explanation": "O planeta e a estrela orbitam um centro de gravidade comum. A massa do planeta faz a estrela oscilar ligeiramente, o que estica e comprime as ondas de luz da estrela — um efeito detetável mesmo sem ver o planeta diretamente."
+    },
+    {
+      "question": "Porque é que a espectroscopia de transmissão é importante para o Telescópio James Webb?",
+      "options": [
+        "Porque permite ver a superfície sólida de qualquer planeta em detalhe",
+        "Porque, ao analisar a luz estelar que atravessa a atmosfera de um exoplaneta em trânsito, revela quais as moléculas presentes",
+        "Porque mede apenas a distância entre o planeta e a sua estrela",
+        "Porque fotografa diretamente moléculas individuais no espaço"
+      ],
+      "correct": 1,
+      "explanation": "Cada molécula química absorve comprimentos de onda específicos de luz, deixando um \"código de barras\" identificável na luz estelar que atravessa a atmosfera do planeta — é assim que o JWST identifica a composição atmosférica."
+    },
+    {
+      "question": "Porque é que o oxigénio sozinho não é considerado uma bioassinatura conclusiva?",
+      "options": [
+        "Porque o oxigénio nunca existe em atmosferas planetárias",
+        "Porque pode resultar de reações puramente geológicas, sem envolver vida",
+        "Porque é invisível aos instrumentos do James Webb",
+        "Porque só existe em planetas fora da zona habitável"
+      ],
+      "correct": 1,
+      "explanation": "A chave de uma verdadeira bioassinatura é o desequilíbrio químico: encontrar em simultâneo gases que normalmente se destroem mutuamente (como metano e oxigénio/ozono), o que sugere que algo ativo os está continuamente a repor."
+    },
+    {
+      "question": "O que torna o sistema TRAPPIST-1 tão relevante para a astrobiologia?",
+      "options": [
+        "Tem apenas um planeta gigante gasoso",
+        "Alberga sete planetas rochosos de dimensões semelhantes à Terra, três deles na zona habitável",
+        "É o sistema estelar mais próximo do nosso Sistema Solar",
+        "É constituído inteiramente por planetas gasosos gigantes"
+      ],
+      "correct": 1,
+      "explanation": "A cerca de 40 anos-luz, a anã vermelha fria TRAPPIST-1 tem sete planetas rochosos de tamanho semelhante à Terra, com três na zona habitável — por isso é um dos sistemas mais estudados pelo James Webb."
+    },
+    {
+      "question": "O que resume o Paradoxo de Fermi?",
+      "options": [
+        "A certeza absoluta de que estamos completamente sozinhos no Universo",
+        "A questão de que, havendo tempo e espaço suficientes para uma civilização colonizar a galáxia, ainda não encontrámos qualquer sinal de vida inteligente",
+        "A prova matemática de que a vida extraterrestre não pode existir",
+        "A dificuldade em construir telescópios suficientemente potentes"
+      ],
+      "correct": 1,
+      "explanation": "Dado o tempo de vida da galáxia e o número imenso de mundos potencialmente habitáveis, uma civilização com viagens interestelares já deveria ter colonizado a galáxia — mas não encontramos sinais dela, o que Fermi resumiu como \"onde está toda a gente?\""
+    }
+  ]
+}

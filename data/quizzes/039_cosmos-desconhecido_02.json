@@ -1,0 +1,115 @@
+{
+  "lesson_id": "cosmos-desconhecido_002",
+  "questions": [
+    {
+      "question": "O que provou Albert Einstein em 1915, contrariando a visão de Newton?",
+      "options": [
+        "Que o espaço e o tempo são fixos e universais para todos os observadores",
+        "Que o espaço e o tempo formam uma estrutura única e maleável, deformável pela massa",
+        "Que a luz não é afetada pela gravidade",
+        "Que o tempo só existe dentro de buracos negros"
+      ],
+      "correct": 1,
+      "explanation": "Einstein uniu espaço e tempo numa única estrutura — o espaço-tempo — e demonstrou que esta pode ser esticada, dobrada e rasgada pela massa dos corpos celestes, ao contrário do palco rígido e imóvel imaginado por Newton."
+    },
+    {
+      "question": "Na analogia do trampolim elástico, o que representa a gravidade extrema de um buraco negro?",
+      "options": [
+        "Uma bola de ténis a afundar ligeiramente o lençol",
+        "Um berlinde a orbitar em torno da bola de ténis",
+        "Um objeto tão pesado que transforma o tecido num poço vertical sem fundo",
+        "O lençol elástico completamente esticado e sem qualquer afundamento"
+      ],
+      "correct": 2,
+      "explanation": "Enquanto a Terra ou o Sol criam apenas uma curvatura, um objeto com a densidade de um buraco negro estica o tecido do espaço-tempo até criar um poço vertical de inclinação infinita — daí tudo escorregar inevitavelmente para o centro."
+    },
+    {
+      "question": "Como nasce um buraco negro estelar?",
+      "options": [
+        "Da explosão de um planeta gasoso",
+        "Do colapso de uma estrela massiva (20-30 vezes a massa do Sol) quando esgota o combustível termonuclear",
+        "Da fusão de duas galáxias inteiras",
+        "Do arrefecimento gradual de uma nebulosa"
+      ],
+      "correct": 1,
+      "explanation": "Sem a pressão da fusão nuclear a empurrar para fora, uma estrela muito massiva colapsa catastroficamente sobre si própria numa fração de segundo, dando origem a um buraco negro estelar."
+    },
+    {
+      "question": "Porque é que o disco de acreção brilha intensamente em raios-X?",
+      "options": [
+        "Porque reflete a luz das estrelas vizinhas",
+        "Porque o atrito extremo entre o gás e a poeira que giram a velocidades próximas da luz aquece o material a milhões de graus",
+        "Porque está fora do horizonte de eventos e por isso é frio",
+        "Porque a singularidade central emite luz própria"
+      ],
+      "correct": 1,
+      "explanation": "O material do disco de acreção gira a velocidades próximas da luz e o atrito entre as partículas gera temperaturas de milhões de graus, fazendo-o brilhar intensamente — é o que permite aos astrónomos \"ver\" o buraco negro."
+    },
+    {
+      "question": "O que define o horizonte de eventos de um buraco negro?",
+      "options": [
+        "É a superfície sólida do buraco negro",
+        "É a fronteira onde a velocidade de escape necessária ultrapassa a velocidade da luz, tornando o regresso impossível",
+        "É o ponto onde a matéria se torna infinitamente densa",
+        "É a zona onde termina o disco de acreção"
+      ],
+      "correct": 1,
+      "explanation": "O horizonte de eventos não é uma superfície física, mas um limite geométrico: dentro dele, escapar exigiria uma velocidade superior à da luz, o que é impossível — por isso nada consegue regressar."
+    },
+    {
+      "question": "O que é a \"espargueteificação\"?",
+      "options": [
+        "O processo de formação da singularidade",
+        "O esticar extremo de um corpo causado pela enorme diferença de força gravitacional entre a sua parte mais próxima e mais distante do buraco negro",
+        "A rotação do disco de acreção",
+        "A perda de massa de uma estrela antes de colapsar"
+      ],
+      "correct": 1,
+      "explanation": "A diferença de força gravitacional entre os pés e a cabeça de alguém perto de um buraco negro pode ser triliões de vezes maior, esticando o corpo como um fio de massa crua antes de atingir o horizonte de eventos."
+    },
+    {
+      "question": "Segundo a Relatividade Geral, o que acontece ao tempo perto de uma massa gigantesca?",
+      "options": [
+        "Acelera em relação a quem está longe",
+        "Mantém-se sempre igual, independentemente da gravidade",
+        "Abranda em relação a quem está longe — quanto mais forte a gravidade, mais devagar o relógio avança",
+        "Para completamente para qualquer observador"
+      ],
+      "correct": 2,
+      "explanation": "A dilatação gravitacional do tempo é uma regra de ouro da Relatividade Geral: campos gravitacionais mais fortes tornam o tempo mais lento em relação a um observador afastado dessa massa."
+    },
+    {
+      "question": "Como é que os relógios dos satélites GPS provam a relatividade no dia a dia?",
+      "options": [
+        "Avançam mais devagar do que os relógios na Terra, sem qualquer efeito prático",
+        "Avançam cerca de 45 microssegundos mais depressa por dia devido à gravidade mais fraca em órbita, exigindo correção diária",
+        "Não são afetados pela gravidade, apenas pela velocidade orbital",
+        "Só funcionam corretamente perto de buracos negros"
+      ],
+      "correct": 1,
+      "explanation": "Como a gravidade é mais fraca a 20 000 km de altitude, os relógios atómicos dos satélites avançam mais depressa. Sem a correção diária com as equações de Einstein, a navegação por GPS acumularia um erro de cerca de 10 km por dia."
+    },
+    {
+      "question": "O que captou o observatório LIGO em 2015 pela primeira vez na história?",
+      "options": [
+        "A primeira fotografia direta de um buraco negro",
+        "Ondas gravitacionais provocadas pela colisão de dois buracos negros",
+        "O nascimento de uma nova estrela",
+        "Sinais de rádio de uma civilização extraterrestre"
+      ],
+      "correct": 1,
+      "explanation": "O LIGO detetou ondulações no tecido do espaço-tempo — ondas gravitacionais — geradas pela colisão de dois buracos negros a 1,3 mil milhões de anos-luz de distância, confirmando outra previsão de Einstein."
+    },
+    {
+      "question": "No Paradoxo dos Gémeos Cósmicos, porque é que a Sofia envelhece muito menos do que o Pedro?",
+      "options": [
+        "Porque ela dorme mais tempo durante a viagem",
+        "Porque a forte gravidade perto do buraco negro dilata o tempo, fazendo o seu relógio avançar muito mais devagar do que o da Terra",
+        "Porque a nave viaja mais devagar do que a Terra gira",
+        "Porque não há qualquer diferença real, é apenas uma perceção"
+      ],
+      "correct": 1,
+      "explanation": "Este é um exemplo direto da dilatação gravitacional do tempo: a gravidade extrema perto do horizonte de eventos faz o relógio da Sofia avançar muito mais devagar do que o relógio na Terra, permitindo-lhe efetivamente \"saltar\" para o futuro."
+    }
+  ]
+}

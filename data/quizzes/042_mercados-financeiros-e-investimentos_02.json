@@ -1,0 +1,115 @@
+{
+  "lesson_id": "mercados-financeiros-e-investimentos_002",
+  "questions": [
+    {
+      "question": "O que significa o provérbio \"nunca ponhas todos os ovos no mesmo cesto\" no contexto de investir?",
+      "options": [
+        "Que se deve investir apenas numa empresa de confiança",
+        "Que espalhar o investimento por várias empresas reduz o impacto do colapso de uma única delas",
+        "Que os ovos e as ações têm o mesmo comportamento no mercado",
+        "Que não se deve investir em mais do que 2 empresas"
+      ],
+      "correct": 1,
+      "explanation": "Se investires tudo numa única empresa e ela colapsar, perdes tudo. Distribuindo o investimento por muitas empresas, o colapso de uma delas passa a ser apenas um contratempo pequeno no conjunto da carteira."
+    },
+    {
+      "question": "Qual é a diferença entre risco específico e risco sistemático?",
+      "options": [
+        "Não existe diferença, são o mesmo conceito",
+        "O risco específico afeta apenas uma empresa ou setor e pode ser eliminado com diversificação; o risco sistemático afeta toda a economia e não se elimina",
+        "O risco sistemático só existe em criptomoedas",
+        "O risco específico é sempre maior do que o risco sistemático"
+      ],
+      "correct": 1,
+      "explanation": "O risco específico (uma fábrica que arde, um CEO que comete fraude) pode ser quase eliminado ao diversificar por centenas de empresas. O risco sistemático (uma pandemia, uma crise global) afeta todo o mercado e não desaparece com diversificação, mas tende a recuperar a longo prazo."
+    },
+    {
+      "question": "Porque é que uma comissão de gestão de 2,15% ao ano pode ter um impacto tão grande ao longo de 30 anos, comparada com 0,15%?",
+      "options": [
+        "Porque a comissão só se paga uma vez, no início",
+        "Porque a comissão é descontada todos os anos sobre o capital, incluindo os juros já compostos, reduzindo drasticamente o crescimento a longo prazo",
+        "Porque comissões mais altas garantem sempre melhores retornos",
+        "Porque a comissão só afeta o valor investido no último ano"
+      ],
+      "correct": 1,
+      "explanation": "Como a comissão é cobrada todos os anos sobre o capital total (incluindo os ganhos já acumulados), o efeito compõe-se ao longo de décadas. No exemplo da aula, a diferença de comissão custou ao Jovem B quase 47 000 € em 30 anos."
+    },
+    {
+      "question": "Segundo os relatórios SPIVA mencionados na aula, o que acontece à maioria dos gestores de fundos ativos num horizonte de 15 a 20 anos?",
+      "options": [
+        "Conseguem sempre bater o índice de referência",
+        "Mais de 90% não conseguem bater o índice de referência do mercado",
+        "Apenas 10% conseguem igualar o índice",
+        "Todos batem o índice, mas cobram comissões mais altas por isso"
+      ],
+      "correct": 1,
+      "explanation": "Os estudos SPIVA mostram que, num horizonte longo, mais de 90% dos gestores profissionais de fundos ativos não conseguem superar o desempenho do simples índice de mercado que tentam bater."
+    },
+    {
+      "question": "Como funciona um ETF (Exchange Traded Fund)?",
+      "options": [
+        "Uma equipa de analistas escolhe manualmente que ações comprar todos os dias",
+        "Replica de forma automática e matemática um índice de mercado existente, sendo negociado em bolsa como uma ação",
+        "É um empréstimo direto ao governo com juro fixo",
+        "Só pode ser comprado através de um banco tradicional, com comissões elevadas"
+      ],
+      "correct": 1,
+      "explanation": "Um ETF segue passivamente um índice (como o S&P 500), sem uma equipa a tentar adivinhar o mercado, e pode ser comprado e vendido em bolsa tal como uma ação individual, com comissões muito mais baixas."
+    },
+    {
+      "question": "O que representa o índice S&P 500?",
+      "options": [
+        "As 500 maiores empresas cotadas dos Estados Unidos",
+        "Todas as empresas cotadas na Europa",
+        "Apenas empresas do setor tecnológico",
+        "Um índice de criptomoedas"
+      ],
+      "correct": 0,
+      "explanation": "O S&P 500 agrupa as 500 maiores empresas cotadas dos EUA, como Apple, Microsoft e Amazon, representando cerca de 80% do valor total do mercado acionista norte-americano."
+    },
+    {
+      "question": "Em que consiste a estratégia DCA (Dollar-Cost Averaging)?",
+      "options": [
+        "Investir todo o capital de uma só vez quando o preço parece estar no mínimo",
+        "Investir um montante fixo com periodicidade constante, independentemente de o mercado subir ou descer",
+        "Vender imediatamente quando o mercado cai 10%",
+        "Investir apenas em ações individuais escolhidas por um especialista"
+      ],
+      "correct": 1,
+      "explanation": "O DCA elimina a tentativa de adivinhar o momento certo (market timing): investindo sempre o mesmo montante fixo, compram-se automaticamente mais unidades quando o preço está baixo e menos quando está alto."
+    },
+    {
+      "question": "Na simulação do DCA, como é possível terminar com um ganho de +20% mesmo com o preço final do ETF abaixo do preço inicial?",
+      "options": [
+        "Porque o preço subiu mais do que o esperado no último mês",
+        "Porque a compra maciça de unidades no mês em que o preço estava mais baixo baixou o custo médio por unidade, alavancando o retorno",
+        "Porque houve um erro de cálculo no exemplo",
+        "Porque o investidor vendeu tudo antes da queda"
+      ],
+      "correct": 1,
+      "explanation": "Ao investir sempre 50 € por mês, o investidor comprou mais unidades no mês em que o preço caiu para 10 €. Isso baixou o custo médio por unidade para 16,67 €, muito abaixo do preço final de 20 €, gerando o ganho de 20%."
+    },
+    {
+      "question": "Qual foi o resultado da aposta de Warren Buffett contra fundos ativos, feita em 2007?",
+      "options": [
+        "Os fundos ativos de elite bateram claramente o simples ETF do S&P 500",
+        "O ETF passivo do S&P 500 (7,1% ao ano) superou largamente a média dos fundos ativos geridos por especialistas (2,2% ao ano)",
+        "O resultado foi um empate técnico entre as duas abordagens",
+        "A aposta foi cancelada antes do prazo de 10 anos"
+      ],
+      "correct": 1,
+      "explanation": "Ao fim de 10 anos, o simples índice S&P 500 rendeu 7,1% ao ano, mais do triplo da média de 2,2% ao ano obtida pelos fundos ativos escolhidos pela gestora Protégé Partners — Buffett ganhou a aposta."
+    },
+    {
+      "question": "Porque é que estar investido de forma contínua é tão importante, segundo o estudo sobre os \"10 melhores dias\" do mercado (1990-2020)?",
+      "options": [
+        "Porque não faz diferença estar dentro ou fora do mercado em qualquer altura",
+        "Porque ficar fora do mercado apenas nesses 10 dias específicos reduziu a rentabilidade final para menos de metade",
+        "Porque os 10 melhores dias aconteceram sempre no início da década",
+        "Porque só interessa estar investido nos dias de maior queda"
+      ],
+      "correct": 1,
+      "explanation": "Os melhores dias de subida do mercado tendem a surgir de forma imprevisível, muitas vezes logo a seguir a grandes quedas. Tentar prever o mercado e ficar fora dele, mesmo que apenas nesses 10 dias, penaliza fortemente a rentabilidade final."
+    }
+  ]
+}

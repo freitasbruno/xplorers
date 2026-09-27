@@ -1,0 +1,115 @@
+{
+  "lesson_id": "mercados-financeiros-e-investimentos_003",
+  "questions": [
+    {
+      "question": "No sistema financeiro tradicional, quem garante que uma transação (ex.: por MB WAY) é válida?",
+      "options": [
+        "Cada utilizador verifica individualmente todas as transações da rede",
+        "Um intermediário central de confiança, como o banco, que mantém a base de dados",
+        "Não existe qualquer entidade a validar as transações",
+        "A validação é feita por um algoritmo de inteligência artificial pública"
+      ],
+      "correct": 1,
+      "explanation": "No sistema centralizado tradicional, confiamos que o banco mantém uma base de dados fidedigna: se o banco diz que o dinheiro mudou de conta, toda a gente aceita essa informação como verdadeira."
+    },
+    {
+      "question": "Na analogia do \"caderno de turma\", porque é que é impossível fazer batota numa blockchain?",
+      "options": [
+        "Porque só o professor tem acesso ao caderno",
+        "Porque todos os participantes têm uma cópia idêntica do registo, e qualquer alteração isolada é desmentida pelas restantes cópias",
+        "Porque as transações são apagadas automaticamente ao fim de um dia",
+        "Porque cada aluno só pode ver a sua própria página do caderno"
+      ],
+      "correct": 1,
+      "explanation": "Numa blockchain, o registo é distribuído: cada participante tem uma cópia idêntica. Se alguém tentar alterar apenas a sua cópia, as cópias de todos os outros continuam a mostrar a versão correta, e a rede rejeita a fraude."
+    },
+    {
+      "question": "O que torna a Bitcoin um ativo de \"escassez digital programada\"?",
+      "options": [
+        "O seu preço nunca muda ao longo do tempo",
+        "O código define um limite máximo de 21 milhões de unidades que alguma vez existirão",
+        "É controlada e emitida livremente por bancos centrais",
+        "Pode ser criada em quantidades ilimitadas por qualquer utilizador"
+      ],
+      "correct": 1,
+      "explanation": "Ao contrário das moedas tradicionais, que os bancos centrais podem emitir sem limite físico, o código da Bitcoin define desde o início que nunca existirão mais de 21 milhões de unidades — uma escassez matemática e programada."
+    },
+    {
+      "question": "O que é um Contrato Inteligente (Smart Contract), introduzido pela rede Ethereum?",
+      "options": [
+        "Um documento legal assinado por um advogado especializado em criptomoedas",
+        "Um programa de computador que se executa automaticamente quando certas condições são cumpridas, sem intermediários",
+        "Um tipo de carteira digital para guardar bitcoins",
+        "Um contrato de trabalho para mineradores de criptomoedas"
+      ],
+      "correct": 1,
+      "explanation": "Os contratos inteligentes são programas que correm sozinhos na rede Ethereum quando as condições programadas se verificam, eliminando a necessidade de advogados, cartórios ou outros intermediários tradicionais."
+    },
+    {
+      "question": "Qual é a diferença entre um ativo produtivo e um ativo não produtivo?",
+      "options": [
+        "Não existe qualquer diferença prática entre os dois tipos de ativos",
+        "Um ativo produtivo gera valor por si só (lucros, rendas); um ativo não produtivo só valoriza se outra pessoa pagar mais por ele no futuro",
+        "Ativos não produtivos são sempre mais seguros do que os produtivos",
+        "Apenas as criptomoedas são consideradas ativos produtivos"
+      ],
+      "correct": 1,
+      "explanation": "Uma ação ou um imóvel arrendado produzem valor real — lucros e rendas. Uma criptomoeda ou ouro não geram nada por si sós: o seu valor depende inteiramente de haver outro comprador disposto a pagar mais no futuro."
+    },
+    {
+      "question": "O que descreve a \"Teoria do Mais Tolo\" (Greater Fool Theory)?",
+      "options": [
+        "A ideia de que só investidores inexperientes perdem dinheiro nos mercados",
+        "Comprar um ativo sem valor real, na esperança de encontrar alguém disposto a pagar ainda mais por ele antes do colapso",
+        "Uma estratégia comprovada para garantir lucros em qualquer mercado",
+        "Um método científico para avaliar o valor real de uma empresa"
+      ],
+      "correct": 1,
+      "explanation": "Nas memecoins e outros ativos puramente especulativos, o comprador não avalia valor real — aposta em encontrar sempre alguém \"mais tolo\" disposto a pagar mais. Quando os compradores esgotam, o preço colapsa e quem fica com o ativo perde tudo."
+    },
+    {
+      "question": "Como é que o FOMO (Fear Of Missing Out) afeta as decisões de investimento?",
+      "options": [
+        "Leva as pessoas a vender cedo demais e a perder oportunidades reais",
+        "Leva as pessoas a comprar precisamente no pico da euforia, pouco antes do colapso do preço",
+        "É um fenómeno que só afeta investidores institucionais",
+        "Protege os investidores de tomarem decisões precipitadas"
+      ],
+      "correct": 1,
+      "explanation": "O medo de ficar de fora enquanto outros parecem estar a ganhar dinheiro rapidamente empurra muitos investidores a comprar exatamente quando o entusiasmo — e o preço — estão no auge, pouco antes de uma queda."
+    },
+    {
+      "question": "Como ganham dinheiro, na maioria dos casos, os \"finfluencers\" que promovem criptomoedas desconhecidas?",
+      "options": [
+        "Exclusivamente através dos lucros dos seus próprios investimentos, tal como os seguidores",
+        "Através de patrocínios obscuros, comissões por registos de seguidores, ou esquemas de \"pump and dump\"",
+        "Recebem um salário fixo pago pelas autoridades reguladoras",
+        "Não recebem qualquer compensação pelas recomendações que fazem"
+      ],
+      "correct": 1,
+      "explanation": "Muitos finfluencers ganham através de patrocínios pouco transparentes, comissões por cada seguidor que se regista através do seu link, ou manipulando o mercado: compram barato, promovem aos seguidores e vendem no topo (pump and dump)."
+    },
+    {
+      "question": "O que aconteceu no colapso da FTX em 2022?",
+      "options": [
+        "Um banco tradicional faliu devido a uma crise imobiliária",
+        "Uma grande corretora de criptomoedas faliu numa semana depois de usar dinheiro de clientes em apostas de alto risco sem autorização",
+        "A Bitcoin deixou de existir devido a um erro de software",
+        "Um governo baniu totalmente o comércio de criptomoedas"
+      ],
+      "correct": 1,
+      "explanation": "A FTX, segunda maior corretora de cripto do mundo, faliu numa semana ao descobrir-se que usava indevidamente o dinheiro dos clientes em investimentos de alto risco, lesando milhões de utilizadores em mais de 8 mil milhões de dólares — sem a proteção de um Fundo de Garantia de Depósitos."
+    },
+    {
+      "question": "Se um criptoativo cai 75% de valor, que subida percentual é necessária para recuperar o investimento original?",
+      "options": [
+        "Apenas mais 75%",
+        "Cerca de 300%",
+        "Exatamente 100%",
+        "Apenas 25%, o valor que faltava recuperar"
+      ],
+      "correct": 1,
+      "explanation": "Uma queda de 75% reduz 1 000 € para 250 €. Para voltar aos 1 000 € originais a partir de 250 €, é necessário um crescimento de +300% — as perdas percentuais e os ganhos necessários para as anular não são simétricos."
+    }
+  ]
+}

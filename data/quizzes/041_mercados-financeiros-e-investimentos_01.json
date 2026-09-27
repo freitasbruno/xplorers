@@ -1,0 +1,115 @@
+{
+  "lesson_id": "mercados-financeiros-e-investimentos_001",
+  "questions": [
+    {
+      "question": "Qual é a principal diferença entre poupar e investir, segundo a aula?",
+      "options": [
+        "Poupar e investir são exatamente a mesma coisa",
+        "Poupar é reter capital de forma defensiva; investir é colocar o dinheiro a trabalhar com expectativa de rendimento",
+        "Investir é sempre mais seguro do que poupar",
+        "Poupar só serve para objetivos de longo prazo"
+      ],
+      "correct": 1,
+      "explanation": "Poupar significa gastar menos do que se ganha e guardar a diferença — uma postura defensiva. Investir significa aplicar esse dinheiro em ativos produtivos com a expectativa de um rendimento superior à inflação — uma postura construtiva de longo prazo."
+    },
+    {
+      "question": "Porque é que a inflação é descrita como um \"ladrão invisível\"?",
+      "options": [
+        "Porque rouba fisicamente o dinheiro das contas bancárias",
+        "Porque reduz continuamente o poder de compra do dinheiro parado, mesmo que o valor nominal não mude",
+        "Porque só afeta quem investe em ações",
+        "Porque faz os preços descerem ao longo do tempo"
+      ],
+      "correct": 1,
+      "explanation": "O número impresso numa nota não muda, mas a inflação corrói silenciosamente o que esse dinheiro consegue comprar. 100 € guardados durante 20 anos a 3% de inflação anual valem, na prática, cerca de 55 €."
+    },
+    {
+      "question": "No juro composto, qual é a variável mais determinante para o crescimento do capital?",
+      "options": [
+        "O montante inicial investido",
+        "O tempo durante o qual o dinheiro fica a capitalizar",
+        "O banco escolhido para investir",
+        "A idade em que se para de trabalhar"
+      ],
+      "correct": 1,
+      "explanation": "O Paradoxo dos Dois Investidores mostra isto claramente: o Aluno A investiu 4 vezes menos capital total do que o Aluno B, mas terminou com mais dinheiro, simplesmente porque deu mais tempo ao efeito bola de neve dos juros compostos."
+    },
+    {
+      "question": "Porque é que o Aluno A termina com mais dinheiro do que o Aluno B, mesmo tendo investido 4 vezes menos capital próprio?",
+      "options": [
+        "Porque escolheu uma taxa de juro mais alta",
+        "Porque começou 10 anos mais cedo, dando mais tempo ao juro composto para atuar",
+        "Porque investiu montantes mensais maiores",
+        "Porque o Aluno B teve prejuízo nos seus investimentos"
+      ],
+      "correct": 1,
+      "explanation": "Ambos investiram à mesma taxa de 8% ao ano, mas o Aluno A começou aos 15 anos, dando ao seu capital inicial mais 10 anos extra para crescer exponencialmente antes de parar de investir."
+    },
+    {
+      "question": "O que significa a regra \"não há retorno elevado sem risco proporcional\"?",
+      "options": [
+        "Que todos os investimentos de baixo risco são fraudes",
+        "Que promessas de rentabilidade muito alta sem risco são, invariavelmente, sinal de fraude financeira",
+        "Que o risco de um investimento não tem qualquer relação com o seu retorno esperado",
+        "Que só se deve investir em ativos de altíssimo risco"
+      ],
+      "correct": 1,
+      "explanation": "Na economia, retorno elevado exige sempre risco proporcional. Quem promete 20% ou 50% num mês sem qualquer risco está, quase sempre, a preparar uma fraude — não uma oportunidade real de investimento."
+    },
+    {
+      "question": "Quando compras uma ação de uma empresa, que papel assumes?",
+      "options": [
+        "Credor — emprestaste dinheiro que será devolvido com juros",
+        "Sócio / co-proprietário de uma fração da empresa",
+        "Fornecedor de matérias-primas para a empresa",
+        "Funcionário temporário da empresa"
+      ],
+      "correct": 1,
+      "explanation": "Comprar uma ação torna-te sócio de uma fração da empresa: ganhas se ela crescer e distribuir dividendos, mas também partilhas o risco — em caso de falência, os acionistas são os últimos a receber."
+    },
+    {
+      "question": "Qual é a diferença principal entre uma ação e uma obrigação em termos de risco e prioridade de pagamento?",
+      "options": [
+        "Ambas têm exatamente o mesmo nível de risco e prioridade",
+        "As obrigações têm prioridade legal de pagamento sobre as ações, e geralmente um risco mais moderado",
+        "As ações têm sempre prioridade sobre as obrigações em caso de falência",
+        "As obrigações são sempre mais arriscadas do que as ações"
+      ],
+      "correct": 1,
+      "explanation": "Como credores, os detentores de obrigações têm prioridade legal absoluta de reembolso em caso de falência, e o seu risco é mais moderado — desde que a entidade não entre em incumprimento. Os acionistas são os últimos a receber."
+    },
+    {
+      "question": "No \"teste das sapatilhas\", qual é a lição principal sobre consumo vs. investimento?",
+      "options": [
+        "Comprar sapatilhas é sempre um mau investimento",
+        "O consumidor transfere riqueza para a empresa; o acionista participa na criação dessa riqueza",
+        "As sapatilhas valorizam sempre mais do que ações da mesma marca",
+        "Não existe qualquer diferença entre consumir e investir"
+      ],
+      "correct": 1,
+      "explanation": "150 € em sapatilhas perdem quase todo o valor em poucos anos. Os mesmos 150 € investidos em ações da marca participariam nos lucros e no crescimento da empresa — a diferença entre ser consumidor e ser dono."
+    },
+    {
+      "question": "O que são os Certificados de Aforro, mencionados como exemplo português?",
+      "options": [
+        "Ações de empresas portuguesas cotadas na Bolsa de Lisboa",
+        "Uma forma de emprestar dinheiro ao Estado português, com taxa de juro garantida, subscrita nos CTT",
+        "Um tipo de criptomoeda regulada pelo Banco de Portugal",
+        "Um fundo de investimento de gestão ativa com comissões elevadas"
+      ],
+      "correct": 1,
+      "explanation": "Ao subscrever Certificados de Aforro, o cidadão torna-se credor do Estado português, recebendo uma taxa de juro garantida — um dos investimentos mais conservadores e seguros disponíveis em Portugal."
+    },
+    {
+      "question": "Usando a Regra dos 72, em quantos anos duplica aproximadamente um investimento a render 9% ao ano?",
+      "options": [
+        "Cerca de 4 anos",
+        "Cerca de 8 anos",
+        "Cerca de 16 anos",
+        "Cerca de 24 anos"
+      ],
+      "correct": 1,
+      "explanation": "A Regra dos 72 divide 72 pela taxa de juro anual: 72 ÷ 9 = 8 anos, aproximadamente. É um atalho mental útil para estimar rapidamente o tempo de duplicação de um capital com juro composto."
+    }
+  ]
+}
