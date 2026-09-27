@@ -10,3 +10,11 @@
 # App secrets
 admin/config.php
 .env*
+
+# Group quiz rooms — runtime data, never committed
+data/rooms/*.json
+
+# E2E tooling (dev only)
+tests/e2e/node_modules/
+tests/e2e/test-results/
+tests/e2e/playwright-report/

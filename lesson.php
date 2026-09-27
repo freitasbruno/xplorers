@@ -153,11 +153,19 @@ $reflection_question = null;
         Quiz — <?= htmlspecialchars($lesson['topic_name']) ?> Aula <?= $lesson['class_number'] ?>
       </h2>
       <p class="text-sm mb-6" style="color:var(--muted);">Testa o que aprendeste.</p>
-      <a href="quiz.php?id=<?= htmlspecialchars($lesson['id']) ?>"
-         class="inline-flex items-center gap-2 font-semibold px-8 py-3 rounded-xl"
-         style="background:var(--accent);color:white;">
-        Começar Quiz →
-      </a>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="quiz.php?id=<?= htmlspecialchars($lesson['id']) ?>"
+           class="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-xl w-full sm:w-auto"
+           style="background:var(--accent);color:white;">
+          Começar Quiz →
+        </a>
+        <a href="jogar.php?criar=<?= htmlspecialchars($lesson['id']) ?>"
+           class="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-xl w-full sm:w-auto"
+           style="border:1.5px solid var(--border);color:var(--text);background:var(--card-bg);">
+          👥 Jogar em grupo
+        </a>
+      </div>
+      <p class="text-xs mt-3" style="color:var(--muted);">Em grupo, cada pessoa responde no seu telemóvel.</p>
     </div>
   <?php else: ?>
     <div class="text-center py-24">

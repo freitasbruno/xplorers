@@ -8,6 +8,13 @@
   var answers   = [];
   var letters   = ['A', 'B', 'C', 'D'];
 
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    e.textContent = text;
+    return e;
+  }
+
   function renderQuestion() {
     var q = questions[current];
 
@@ -16,13 +23,12 @@
     document.getElementById('quiz-progress-bar').style.width = (((current + 1) / total) * 100) + '%';
 
     var list = document.getElementById('options-list');
-    list.innerHTML = '';
+    list.textContent = '';
     q.options.forEach(function (opt, i) {
       var btn = document.createElement('button');
       btn.className = 'option-btn';
-      btn.innerHTML =
-        '<span class="option-letter">' + letters[i] + '</span>' +
-        '<span>' + opt + '</span>';
+      btn.appendChild(el('span', 'option-letter', letters[i]));
+      btn.appendChild(el('span', null, opt));
       btn.addEventListener('click', function () { selectAnswer(i); });
       list.appendChild(btn);
     });
@@ -39,14 +45,14 @@
 
     if (idx === q.correct) {
       btns[idx].classList.add('correct');
-      btns[idx].insertAdjacentHTML('beforeend', '<span class="feedback-icon">✓</span>');
+      btns[idx].appendChild(el('span', 'feedback-icon', '✓'));
       score++;
       answers.push(true);
     } else {
       btns[idx].classList.add('wrong');
-      btns[idx].insertAdjacentHTML('beforeend', '<span class="feedback-icon">✗</span>');
+      btns[idx].appendChild(el('span', 'feedback-icon', '✗'));
       btns[q.correct].classList.add('reveal');
-      btns[q.correct].insertAdjacentHTML('beforeend', '<span class="feedback-icon">✓</span>');
+      btns[q.correct].appendChild(el('span', 'feedback-icon', '✓'));
       answers.push(false);
     }
 
@@ -82,13 +88,12 @@
     document.getElementById('score-label').textContent  = score === 1 ? 'Correta' : 'Corretas';
 
     var breakdown = document.getElementById('result-breakdown');
-    breakdown.innerHTML = '';
+    breakdown.textContent = '';
     questions.forEach(function (q, i) {
       var row = document.createElement('div');
       row.className = 'flex items-start gap-3';
-      row.innerHTML =
-        '<span class="text-lg flex-shrink-0 mt-0.5">' + (answers[i] ? '✅' : '❌') + '</span>' +
-        '<span class="text-sm text-slate-700 leading-snug">' + q.question + '</span>';
+      row.appendChild(el('span', 'text-lg flex-shrink-0 mt-0.5', answers[i] ? '✅' : '❌'));
+      row.appendChild(el('span', 'text-sm text-slate-700 leading-snug', q.question));
       breakdown.appendChild(row);
     });
   }

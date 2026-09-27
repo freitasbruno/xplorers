@@ -55,46 +55,6 @@ require_once __DIR__ . '/includes/header.php';
   </main>
 <?php else: ?>
   <style>
-  .option-btn {
-    width: 100%;
-    text-align: left;
-    padding: 14px 16px;
-    border-radius: 14px;
-    border: 1.5px solid var(--border);
-    background: var(--card-bg);
-    font-size: 15px;
-    font-weight: 500;
-    color: #1e293b;
-    cursor: pointer;
-    transition: border-color 0.15s ease, background 0.15s ease;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .option-btn:hover:not([disabled]) { border-color: var(--accent); background: var(--accent-light); }
-  .option-btn[disabled] { cursor: default; }
-  .option-btn.correct { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
-  .option-btn.wrong   { border-color: #ef4444; background: #fef2f2; color: #b91c1c; }
-  .option-btn.reveal  { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
-
-  .option-letter {
-    width: 26px; height: 26px;
-    border-radius: 8px;
-    border: 1.5px solid currentColor;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 700;
-    flex-shrink: 0;
-    opacity: 0.6;
-  }
-  .option-btn.correct .option-letter,
-  .option-btn.wrong   .option-letter,
-  .option-btn.reveal  .option-letter { opacity: 1; }
-
-  .feedback-icon { flex-shrink: 0; font-size: 17px; font-weight: 900; margin-left: auto; }
-  .option-btn.correct .feedback-icon,
-  .option-btn.reveal  .feedback-icon { color: #16a34a; }
-  .option-btn.wrong   .feedback-icon { color: #dc2626; }
-
   .progress-bar-fill { transition: width 0.4s ease; }
 
   .quiz-screen { display: none; }
