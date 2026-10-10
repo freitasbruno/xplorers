@@ -2,64 +2,114 @@
   "lesson_id": "wwii_003",
   "questions": [
     {
-      "question": "O que foi Pearl Harbor e quando ocorreu?",
-      "options": ["Um porto britânico bombardeado pela Luftwaffe em 1940", "Uma base naval americana no Havai atacada de surpresa pelo Japão a 7 de dezembro de 1941", "Uma conferência de paz entre os Aliados em 1945", "Uma batalha naval decisiva no Oceano Atlântico em 1942"],
-      "correct": 1,
-      "explanation": "A 7 de dezembro de 1941, o Japão lançou um ataque surpresa à base naval americana de Pearl Harbor, no Havai. Este acontecimento obrigou os EUA a abandonar a neutralidade e a entrar oficialmente na Segunda Guerra Mundial ao lado dos Aliados."
+      "question": "Que acontecimento fez os EUA entrar na Segunda Guerra Mundial?",
+      "options": [
+        "O ataque japonês a Pearl Harbor",
+        "O afundamento do Titanic",
+        "A queda da França em 1940",
+        "A invasão alemã da Polónia"
+      ],
+      "correct": 0,
+      "explanation": "A 7 de dezembro de 1941, o Japão atacou de surpresa a base naval de Pearl Harbor, no Havai. Os EUA deixaram a neutralidade e entraram na guerra."
     },
     {
-      "question": "O que foi o 'Projeto Manhattan'?",
-      "options": ["Um plano de reconstrução da Europa após a guerra", "O programa científico ultra-secreto americano para desenvolver a primeira bomba atómica", "Uma operação de espionagem americana na Europa", "O plano de desembarque dos Aliados na Normandia"],
-      "correct": 1,
-      "explanation": "O Projeto Manhattan foi um programa científico ultra-secreto iniciado pelos EUA, com participação de cientistas britânicos e canadianos, para desenvolver os primeiros engenhos nucleares. Os seus resultados foram as bombas lançadas sobre Hiroxima e Nagasáqui."
-    },
-    {
-      "question": "Qual o nome da bomba atómica lançada sobre Hiroxima?",
-      "options": ["Fat Man", "Little Boy", "Big Bang", "Enola Gay"],
-      "correct": 1,
-      "explanation": "A bomba lançada sobre Hiroxima a 6 de agosto de 1945 chamava-se 'Little Boy' (Rapazinho). O seu nome foi escolhido com base no formato físico do engenho. O avião que a transportou chamava-se 'Enola Gay'. Três dias depois, 'Fat Man' destruiu Nagasáqui."
-    },
-    {
-      "question": "Quantas pessoas morreram imediatamente com as explosões atómicas em Hiroxima e Nagasáqui?",
-      "options": ["Cerca de 1 000 pessoas", "Cerca de 10 000 pessoas", "Mais de 100 000 pessoas", "Mais de 1 000 000 pessoas"],
+      "question": "Como se chamava o programa secreto americano que criou a bomba atómica?",
+      "options": [
+        "Projeto Enigma",
+        "Operação Dia D",
+        "Projeto Manhattan",
+        "Operação Barbarossa"
+      ],
       "correct": 2,
-      "explanation": "As duas explosões atómicas provocaram a morte instantânea de mais de 100 000 pessoas. Nos anos seguintes, milhares de outras vítimas sucumbiram aos efeitos devastadores da radiação, tornando o total de mortos muito superior."
+      "explanation": "O Projeto Manhattan foi um programa científico ultra-secreto que desenvolveu os primeiros engenhos nucleares."
     },
     {
-      "question": "Como foram divididas a Alemanha e Berlim após a guerra?",
-      "options": ["Foram entregues à União Soviética como reparações de guerra", "Foram divididas em quatro zonas de ocupação — americana, britânica, francesa e soviética", "Foram mantidas unidas sob um governo provisório alemão", "Foram divididas em dois países independentes imediatamente"],
+      "question": "Que bomba foi lançada sobre Hiroxima, a 6 de agosto de 1945?",
+      "options": [
+        "Enola Gay",
+        "Little Boy",
+        "Big Ben",
+        "Fat Man"
+      ],
       "correct": 1,
-      "explanation": "Nas Conferências de Ialta e Potsdam, os líderes aliados decidiram dividir a Alemanha em quatro zonas de ocupação. A cidade de Berlim, apesar de estar dentro da zona soviética, foi também dividida em quatro setores."
+      "explanation": "Little Boy foi lançada sobre Hiroxima pelo bombardeiro Enola Gay. Fat Man caiu sobre Nagasáqui três dias depois."
     },
     {
-      "question": "Qual organização internacional foi criada em 1945 para substituir a fracassada Sociedade das Nações?",
-      "options": ["A NATO", "A União Europeia", "A Organização das Nações Unidas (ONU)", "O Banco Mundial"],
+      "question": "De onde vieram os nomes \"Little Boy\" e \"Fat Man\"?",
+      "options": [
+        "Da forma física de cada bomba",
+        "Dos nomes dos pilotos dos aviões",
+        "Das alcunhas de dois cientistas",
+        "Dos nomes de código das duas cidades"
+      ],
+      "correct": 0,
+      "explanation": "Os nomes foram escolhidos com base no formato de cada engenho: uma era fina e comprida, a outra arredondada e \"gorda\"."
+    },
+    {
+      "question": "Quando assinou o Japão a rendição incondicional?",
+      "options": [
+        "A 9 de agosto de 1945",
+        "A 6 de agosto de 1945",
+        "A 7 de dezembro de 1941",
+        "A 2 de setembro de 1945"
+      ],
+      "correct": 3,
+      "explanation": "A rendição foi a 2 de setembro de 1945. 6 e 9 de agosto são as datas das bombas; 7 de dezembro de 1941, a de Pearl Harbor."
+    },
+    {
+      "question": "O que se decidiu sobre a Alemanha nas Conferências de Ialta e Potsdam?",
+      "options": [
+        "Foi dividida em dois países independentes",
+        "Foi entregue inteira à União Soviética",
+        "Ficou neutra e sem qualquer ocupação",
+        "Foi dividida em quatro zonas de ocupação"
+      ],
+      "correct": 3,
+      "explanation": "A Alemanha e Berlim foram divididas em quatro zonas: americana, britânica, francesa e soviética."
+    },
+    {
+      "question": "Para que foi criada a ONU, em 1945?",
+      "options": [
+        "Para mediar conflitos e evitar outra guerra",
+        "Para controlar todas as bombas atómicas",
+        "Para dividir a Alemanha em quatro zonas",
+        "Para julgar os líderes nazis em tribunal"
+      ],
+      "correct": 0,
+      "explanation": "A Organização das Nações Unidas foi criada pelos vencedores para mediar conflitos e evitar uma Terceira Guerra Mundial."
+    },
+    {
+      "question": "Na Guerra Fria, que modelo defendia a URSS?",
+      "options": [
+        "Fascismo e partido único",
+        "Monarquia e império colonial",
+        "Comunismo e planeamento estatal",
+        "Capitalismo e democracia liberal"
+      ],
       "correct": 2,
-      "explanation": "A ONU foi fundada em 1945 pelos países vencedores com o objetivo de mediar conflitos internacionais e evitar uma Terceira Guerra Mundial. Ao contrário da Sociedade das Nações, incluía as grandes potências e tinha mecanismos mais fortes de segurança coletiva."
+      "explanation": "O mundo dividiu-se em dois blocos: os EUA, com capitalismo e democracia liberal, e a URSS, com comunismo e planeamento estatal."
     },
     {
-      "question": "O que é o 'Doomsday Clock' (Relógio do Apocalipse)?",
-      "options": ["Um relógio no Pentágono que conta o tempo desde Hiroxima", "Um relógio simbólico criado por cientistas que mostra quão perto a humanidade está da autodestruição", "Um sistema de alarme nuclear instalado durante a Guerra Fria", "Um monumento em Hiroxima que assinala o momento da explosão"],
+      "question": "Em 2023, a quanto tempo da meia-noite estava o \"Relógio do Apocalipse\"?",
+      "options": [
+        "9 horas",
+        "90 segundos",
+        "90 minutos",
+        "9 segundos"
+      ],
       "correct": 1,
-      "explanation": "Criado em 1947 por cientistas do Projeto Manhattan, o Doomsday Clock é um relógio simbólico que mostra a distância até à meia-noite — que representa a destruição total. Serve de alerta sobre o risco nuclear e climático, gerido pelo Bulletin of the Atomic Scientists."
+      "explanation": "Em 2023, o Doomsday Clock estava a 90 segundos da meia-noite — o mais próximo alguma vez registado."
     },
     {
-      "question": "Quem era Sadako Sasaki e o que ela simboliza?",
-      "options": ["Uma enfermeira americana que tratou vítimas das bombas", "Uma menina japonesa que sobreviveu à bomba de Hiroxima e tentou dobrar 1000 garças de origami como símbolo de paz", "Uma cientista que participou no Projeto Manhattan e depois se arrependeu", "Uma poeta que documentou os horrores do pós-guerra em Hiroxima"],
+      "question": "Porque se tornou a garça de origami um símbolo de paz?",
+      "options": [
+        "Era o símbolo da bandeira da ONU",
+        "Sadako dobrou garças para pedir a cura",
+        "Foi a primeira coisa a aparecer depois da bomba",
+        "Os soldados japoneses levavam-nas para a guerra"
+      ],
       "correct": 1,
-      "explanation": "Sadako Sasaki sobreviveu à explosão de Hiroxima com 2 anos, mas desenvolveu leucemia devido à radiação. Tentou dobrar 1000 garças de origami para pedir um desejo de cura, inspirada numa lenda japonesa. Hoje, a garça de origami é símbolo global de paz e desarmamento nuclear."
-    },
-    {
-      "question": "O que foram as Conferências de Ialta e Potsdam?",
-      "options": ["Batalhas decisivas no final da guerra", "Reuniões dos líderes aliados para decidir a organização política e territorial do mundo no pós-guerra", "Negociações de paz com a Alemanha e o Japão", "Conferências sobre o uso pacífico da energia nuclear"],
-      "correct": 1,
-      "explanation": "Ainda antes do fim dos combates, Roosevelt/Truman, Churchill e Stalin reuniram-se em Ialta (fevereiro 1945) e Potsdam (julho 1945) para decidir a reorganização da Europa, a divisão da Alemanha e a estratégia para derrotar o Japão."
-    },
-    {
-      "question": "O que foi a 'Guerra Fria'?",
-      "options": ["Um conflito militar direto entre os EUA e a URSS no Ártico", "Uma tensão política, ideológica e tecnológica entre os EUA e a URSS, sem confronto militar direto entre as duas superpotências", "Uma aliança de países comunistas contra o mundo democrático", "A guerra entre a Coreia do Norte e a Coreia do Sul"],
-      "correct": 1,
-      "explanation": "Após a Segunda Guerra Mundial, a cooperação aliada desapareceu. O mundo dividiu-se: EUA (capitalismo e democracia) vs URSS (comunismo). A este conflito silencioso — sem guerra declarada mas com corrida armamentista, espionagem e tensão permanente — chamou-se Guerra Fria."
+      "explanation": "Sadako sobreviveu à bomba de Hiroxima com 2 anos, mas teve leucemia. Tentou dobrar 1000 garças para pedir a cura — e a sua história correu o mundo."
     }
   ]
 }

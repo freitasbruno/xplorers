@@ -2,64 +2,114 @@
   "lesson_id": "cosmos_001",
   "questions": [
     {
-      "question": "O que representa cerca de 68% da composição do universo?",
-      "options": ["Matéria comum", "Matéria escura", "Energia escura", "Galáxias visíveis"],
+      "question": "Segundo a aula, o que é realmente o espaço entre as estrelas?",
+      "options": [
+        "Uma camada de ar muito fino, como no topo das montanhas",
+        "Uma nuvem de gás tão densa que nos esconde as estrelas",
+        "Um vazio absoluto, sem um único átomo ou partícula",
+        "Um vácuo quase perfeito, com apenas alguns átomos por metro cúbico"
+      ],
+      "correct": 3,
+      "explanation": "O espaço não é \"nada\": há uns poucos átomos, poeira e radiação em cada metro cúbico. É como um auditório gigante com 3 ou 4 pessoas lá dentro — quase vazio, mas não completamente."
+    },
+    {
+      "question": "Uma nave explode no espaço, a 1 km de outra nave. O que ouvem os astronautas da segunda nave?",
+      "options": [
+        "Nada, porque o som não tem por onde viajar",
+        "O mesmo estrondo que ouviriam aqui na Terra",
+        "Um estrondo fraco, porque o som se espalha muito",
+        "Um estrondo forte, mas só alguns segundos depois"
+      ],
+      "correct": 0,
+      "explanation": "O som precisa de partículas que choquem umas com as outras para viajar. No espaço estão tão afastadas que o som não passa — as explosões barulhentas dos filmes são impossíveis."
+    },
+    {
+      "question": "Que fatia do \"bolo cósmico\" é feita de matéria comum — a que conseguimos ver e tocar?",
+      "options": [
+        "Cerca de 95%",
+        "Cerca de 5%",
+        "Cerca de 68%",
+        "Cerca de 27%"
+      ],
+      "correct": 1,
+      "explanation": "Tudo o que é feito de átomos — estrelas, planetas, nós — é só cerca de 5% do Universo. Os outros 95% são matéria escura (27%) e energia escura (68%)."
+    },
+    {
+      "question": "Qual é o ingrediente que ocupa a maior fatia do Universo?",
+      "options": [
+        "A matéria escura",
+        "A energia escura",
+        "A matéria comum",
+        "Os buracos negros"
+      ],
+      "correct": 1,
+      "explanation": "A energia escura é cerca de 68% do Universo — a maior fatia de todas. A matéria escura vem a seguir, com cerca de 27%."
+    },
+    {
+      "question": "Se a matéria escura é invisível aos telescópios, como sabemos que existe?",
+      "options": [
+        "Pela sua gravidade, que mantém as galáxias unidas",
+        "Porque bloqueia a luz das galáxias que estão atrás dela",
+        "Porque brilha fracamente quando aquecida pelas estrelas",
+        "Porque foi fotografada pelo Telescópio James Webb"
+      ],
+      "correct": 0,
+      "explanation": "A matéria escura não emite, não absorve nem reflete luz. Só a detetamos pelo efeito da sua gravidade — como a teia invisível que se revela quando lhe atiras purpurinas."
+    },
+    {
+      "question": "Na analogia do carro, a expansão do Universo tem um travão e um acelerador. Quem é o acelerador?",
+      "options": [
+        "A luz das estrelas",
+        "A gravidade",
+        "A matéria escura",
+        "A energia escura"
+      ],
+      "correct": 3,
+      "explanation": "A gravidade é o travão, que tenta juntar as coisas; a energia escura é o pé no acelerador, a carregar cada vez com mais força — por isso o Universo expande-se cada vez mais depressa."
+    },
+    {
+      "question": "Como é que as estrelas produzem a sua luz e o seu calor?",
+      "options": [
+        "Por fusão nuclear",
+        "Pela energia escura",
+        "Por reflexo da luz de outras estrelas",
+        "Por combustão de gás"
+      ],
+      "correct": 0,
+      "explanation": "As estrelas são bolas gigantes de plasma onde a fusão nuclear junta átomos e liberta enormes quantidades de energia. Não é fogo como o de uma fogueira — no espaço nem há oxigénio para isso."
+    },
+    {
+      "question": "Que tipo de estrela é o nosso Sol?",
+      "options": [
+        "Uma gigante vermelha, das maiores da galáxia",
+        "Uma estrela azul, das mais quentes do Universo",
+        "Uma anã amarela, de tamanho médio",
+        "Uma anã vermelha, das mais pequenas que existem"
+      ],
       "correct": 2,
-      "explanation": "A energia escura representa cerca de 68% do universo. É uma força misteriosa que acelera a expansão do cosmos, mas ainda não compreendemos completamente a sua natureza."
+      "explanation": "O Sol é uma estrela anã amarela de tamanho médio. Parece-nos enorme porque está muito perto, mas há estrelas muito maiores e muito mais pequenas."
     },
     {
-      "question": "Por que razão não existe som no espaço?",
-      "options": ["O espaço é demasiado frio", "Não há partículas suficientes para propagar ondas sonoras", "A luz absorve o som", "A gravidade bloqueia o som"],
-      "correct": 1,
-      "explanation": "O som precisa de um meio material para se propagar. No espaço, a densidade de partículas é tão baixa que as ondas sonoras não conseguem viajar — é um vácuo quase perfeito."
-    },
-    {
-      "question": "Que percentagem do universo é constituída por matéria comum (átomos)?",
-      "options": ["27%", "68%", "5%", "50%"],
+      "question": "Onde nascem as novas estrelas?",
+      "options": [
+        "No centro dos planetas gasosos, como Júpiter",
+        "Nos buracos negros, quando libertam a matéria",
+        "Nas nebulosas, nuvens imensas de gás e poeira",
+        "Na energia escura, entre as galáxias"
+      ],
       "correct": 2,
-      "explanation": "Apenas 5% do universo é matéria comum — tudo o que conseguimos ver e tocar, incluindo estrelas, planetas e nós próprios. Os restantes 95% são matéria e energia escura."
+      "explanation": "As nebulosas são os \"berçários\" estelares: nuvens gigantes de gás e poeira onde a gravidade junta material até acender novas estrelas."
     },
     {
-      "question": "O que é uma nebulosa?",
-      "options": ["Uma estrela em colapso", "Um buraco negro jovem", "Uma nuvem de gás e poeira onde nascem estrelas", "Um planeta gasoso gigante"],
-      "correct": 2,
-      "explanation": "As nebulosas são imensas nuvens de gás e poeira cósmica. São os 'berçários' do universo: a gravidade comprime gradualmente este material até formar novas estrelas."
-    },
-    {
-      "question": "Como se chama a galáxia onde vivemos?",
-      "options": ["Andrómeda", "Via Láctea", "Triângulo", "Magalhães"],
+      "question": "Qual destas NÃO é uma característica de um planeta, segundo a aula?",
+      "options": [
+        "Pode ser rochoso ou gasoso",
+        "Produz luz própria por fusão nuclear",
+        "Orbita à volta de uma estrela",
+        "Limpou a sua vizinhança orbital"
+      ],
       "correct": 1,
-      "explanation": "Vivemos na Via Láctea, uma galáxia espiral com cerca de 100 a 400 mil milhões de estrelas. O Sol encontra-se a aproximadamente 26 000 anos-luz do centro galáctico."
-    },
-    {
-      "question": "O que é um ano-luz?",
-      "options": ["A duração de um ano no espaço", "A distância que a luz percorre num ano", "A velocidade máxima de uma nave espacial", "A idade do universo em anos"],
-      "correct": 1,
-      "explanation": "Um ano-luz é a distância que a luz percorre num ano — cerca de 9,46 biliões de quilómetros. É uma unidade de distância, não de tempo, usada para medir as imensidões do cosmos."
-    },
-    {
-      "question": "O que acontece no interior de uma estrela para produzir luz e calor?",
-      "options": ["Combustão de oxigénio", "Fusão nuclear de hidrogénio em hélio", "Colisão de asteroides", "Reações químicas em cadeia"],
-      "correct": 1,
-      "explanation": "As estrelas brilham graças à fusão nuclear: no seu núcleo, átomos de hidrogénio fundem-se para formar hélio, libertando enormes quantidades de energia sob a forma de luz e calor."
-    },
-    {
-      "question": "O que é um buraco negro?",
-      "options": ["Uma zona do espaço sem estrelas", "Uma estrela que ficou fria", "Uma região com gravidade tão intensa que nada — nem a luz — consegue escapar", "Um planeta com atmosfera muito densa"],
-      "correct": 2,
-      "explanation": "Um buraco negro forma-se quando uma estrela muito massiva colapsa sobre si própria. A sua gravidade é tão intensa que nem a luz consegue escapar — daí o nome."
-    },
-    {
-      "question": "Há quanto tempo ocorreu o Big Bang, a origem do universo?",
-      "options": ["4,5 mil milhões de anos", "13,8 mil milhões de anos", "100 mil milhões de anos", "1 mil milhões de anos"],
-      "correct": 1,
-      "explanation": "O Big Bang ocorreu há cerca de 13,8 mil milhões de anos. A Terra tem apenas 4,5 mil milhões de anos — o universo existiu durante mais de 9 mil milhões de anos antes de o nosso planeta se formar."
-    },
-    {
-      "question": "Qual é a estrela mais próxima do Sistema Solar (para além do Sol)?",
-      "options": ["Sírio", "Proxima Centauri", "Betelgeuse", "Vega"],
-      "correct": 1,
-      "explanation": "Proxima Centauri, parte do sistema Alpha Centauri, é a estrela mais próxima de nós — a cerca de 4,24 anos-luz. Mesmo assim, uma viagem até lá demoraria dezenas de milhar de anos com as tecnologias atuais."
+      "explanation": "Os planetas não têm luz própria — só refletem a luz da sua estrela. Quem produz luz por fusão nuclear são as estrelas."
     }
   ]
 }

@@ -2,114 +2,114 @@
   "lesson_id": "empreendedorismo_002",
   "questions": [
     {
-      "question": "Qual é a regra principal do Brainstorming?",
+      "question": "Qual é a regra principal de um brainstorming?",
       "options": [
-        "Qualidade sobre quantidade — é melhor ter poucas ideias muito boas",
-        "Quantidade sobre qualidade — nesta fase, não há ideias más",
-        "Cada ideia deve ser imediatamente avaliada pelo grupo antes de continuar",
-        "Só participam pessoas com experiência no setor relevante"
+        "Quantidade sobre qualidade: nesta fase não há ideias más",
+        "Cada ideia deve ser criticada logo que é dita",
+        "Só fala quem tiver a ideia mais original do grupo",
+        "Qualidade sobre quantidade: só as melhores ideias contam"
       ],
-      "correct": 1,
-      "explanation": "O Brainstorming funciona com a regra de 'quantidade sobre qualidade'. O objetivo é gerar o máximo de ideias possível num curto espaço de tempo, sem julgamento imediato. A avaliação crítica vem depois — durante o brainstorming, qualquer ideia é bem-vinda, por mais estranha que pareça."
+      "correct": 0,
+      "explanation": "O objetivo é gerar o máximo de ideias em pouco tempo. Criticar logo trava a criatividade — a escolha das melhores fica para depois."
     },
     {
-      "question": "Qual é a diferença entre um 'analgésico' e uma 'vitamina' no contexto empreendedor?",
+      "question": "O Uber nasceu de que fonte de inspiração?",
       "options": [
-        "Um analgésico é um produto barato; uma vitamina é um produto premium",
-        "Um analgésico resolve uma dor real e urgente; uma vitamina é algo agradável mas não essencial",
-        "Uma vitamina melhora a saúde do negócio; um analgésico apenas trata os sintomas",
-        "São dois nomes para o mesmo conceito — produtos de saúde e bem-estar"
+        "Uma tendência: o aumento do teletrabalho nas cidades",
+        "Um brainstorming com centenas de ideias",
+        "Um pedido de uma empresa de táxis",
+        "Observação da dificuldade de chamar um táxi"
       ],
-      "correct": 1,
-      "explanation": "No vocabulário empreendedor, um 'analgésico' é uma solução para uma dor real e forte — algo que as pessoas realmente precisam. Uma 'vitamina' é algo bom de ter mas não essencial. Esta distinção é crucial porque os analgésicos são muito mais fáceis de vender: a dor já existe, só precisas de oferecer o alívio."
+      "correct": 3,
+      "explanation": "O Uber nasceu de observar (e sentir!) a dificuldade de arranjar um táxi. As fontes de inspiração podem ser problemas pessoais, observação ou tendências."
     },
     {
-      "question": "O que é um MVP (Minimum Viable Product)?",
+      "question": "Segundo a regra de ouro da aula, o que é que as pessoas compram realmente?",
       "options": [
-        "O produto mais caro e completo que uma empresa pode lançar",
-        "A versão mais simples possível de um produto para testar a ideia com o mínimo de investimento",
-        "Um plano de negócios detalhado com projeções financeiras a 5 anos",
-        "O produto vencedor de um concurso de empreendedorismo"
-      ],
-      "correct": 1,
-      "explanation": "O MVP é a versão mais simples possível de um produto ou serviço que permite testar a ideia no mundo real com o mínimo de esforço e dinheiro. Não é um produto mau — é um produto focado em resolver apenas o problema principal para validar rapidamente se o mercado o quer, antes de investir recursos significativos."
-    },
-    {
-      "question": "Na analogia da mobilidade (skate → carro), o que representa o skate?",
-      "options": [
-        "O produto final que vai ser lançado ao mercado",
-        "O protótipo mais caro e tecnicamente avançado",
-        "A versão inicial que já resolve o problema principal e permite obter feedback real",
-        "O produto que falhou e foi abandonado"
+        "As marcas mais famosas",
+        "Os produtos mais baratos da loja",
+        "Soluções para os seus problemas",
+        "As novidades tecnológicas"
       ],
       "correct": 2,
-      "explanation": "Na analogia, o skate representa o MVP — a primeira versão funcional que já resolve o problema principal (ir do ponto A ao B mais rápido), mesmo que de forma imperfeita. O importante é que o cliente já o pode usar e dar feedback real, permitindo melhorias iterativas até chegar ao produto final (o carro)."
+      "explanation": "As pessoas não compram produtos, compram soluções para os seus problemas. Por isso, o ponto de partida é sempre uma \"dor\" real."
     },
     {
-      "question": "Como é que o fundador do Dropbox validou a sua ideia sem escrever (quase) uma linha de código?",
+      "question": "Uma app que encontra a farmácia de serviço mais próxima às 3 da manhã é…",
       "options": [
-        "Criou um questionário online e enviou a mil pessoas",
-        "Lançou uma versão beta defeituosa para ver quem a usava mesmo assim",
-        "Fez um vídeo de 3 minutos que mostrava o produto como se funcionasse, e mediu as inscrições",
-        "Apresentou a ideia a investidores de capital de risco e mediu o interesse financeiro"
+        "Um MVP",
+        "Um analgésico",
+        "Uma página de fumo",
+        "Uma vitamina"
+      ],
+      "correct": 1,
+      "explanation": "Resolve uma dor imediata e forte — é um analgésico, muito mais fácil de vender do que uma \"vitamina\" (algo apenas bom de ter)."
+    },
+    {
+      "question": "Porque é que uma \"vitamina\" é mais difícil de vender do que um \"analgésico\"?",
+      "options": [
+        "As pessoas vivem bem sem ela",
+        "Só funciona em telemóveis",
+        "É proibida em alguns países",
+        "É sempre mais cara de produzir"
+      ],
+      "correct": 0,
+      "explanation": "Uma vitamina é boa de ter, mas não essencial — como uma app de filtros para fotos. Se não resolve uma dor, as pessoas não sentem urgência em comprar."
+    },
+    {
+      "question": "Na analogia da mobilidade, qual é a abordagem MVP para ir do ponto A ao B?",
+      "options": [
+        "Comprar logo um carro usado e ir melhorando",
+        "Começar com um skate e ir melhorando até ao carro",
+        "Começar pelas rodas do carro e depois o motor",
+        "Construir o carro inteiro peça por peça, com calma"
+      ],
+      "correct": 1,
+      "explanation": "Um MVP resolve já o problema principal (andar mais depressa), mesmo que de forma simples. Construir só as rodas não leva ninguém a lado nenhum!"
+    },
+    {
+      "question": "O que é um MVP (Produto Mínimo Viável)?",
+      "options": [
+        "Um desenho do produto final para mostrar a investidores",
+        "O produto final, mas vendido a um preço mínimo",
+        "A versão mais simples que testa a ideia no mundo real",
+        "Uma versão barata e mal feita do produto final"
       ],
       "correct": 2,
-      "explanation": "Drew Houston criou um simples vídeo de 3 minutos que demonstrava o Dropbox como se o produto já funcionasse. Publicou-o com uma chamada para inscrição antecipada. A lista de espera passou de 5.000 para 75.000 inscritos numa noite. Este é o exemplo clássico de validação de ideia: confirmar que existe procura real antes de investir recursos na construção."
+      "explanation": "O MVP não é um produto mau: é focado em resolver apenas o problema principal, para validar se alguém o quer usar, com o mínimo de esforço e dinheiro."
     },
     {
-      "question": "Porque é que perguntar 'Achas que a minha ideia é boa?' é uma má forma de validar?",
+      "question": "Qual destas é uma BOA pergunta para validar uma ideia?",
       "options": [
-        "Porque as perguntas de sim/não não fornecem informação suficiente",
-        "Porque as pessoas tendem a dizer 'sim' para ser simpáticas, mesmo que não usassem o produto",
-        "Porque não deves revelar a tua ideia antes de ter uma patente registada",
-        "Porque os potenciais clientes não percebem o suficiente de negócios para dar uma boa opinião"
+        "\"Achas que a minha ideia de uma app para a cantina é boa?\"",
+        "\"Usarias uma app para a cantina se fosse grátis?\"",
+        "\"Quanto pagarias pela minha app para a cantina?\"",
+        "\"Como foi hoje a tua espera na fila da cantina?\""
       ],
-      "correct": 1,
-      "explanation": "Perguntas diretas sobre a qualidade de uma ideia são facilmente influenciadas pelo desejo social de não magoar sentimentos. As pessoas dizem 'sim' para ser simpáticas, não porque genuinamente usariam o produto. A boa validação envolve fazer as pessoas descreverem o seu comportamento atual e os seus problemas reais — não opinar sobre ideias abstratas."
+      "correct": 3,
+      "explanation": "Perguntar se a ideia é boa leva as pessoas a dizer \"sim\" por simpatia. Uma boa validação é ouvir como vivem o problema, sem falar da tua ideia."
     },
     {
-      "question": "De acordo com a aula, qual foi a 'dor' que inspirou a criação do Uber?",
+      "question": "Para que serve uma \"página de fumo\"?",
       "options": [
-        "Os táxis eram demasiado caros nas cidades americanas",
-        "Travis Kalanick não conseguia arranjar táxi numa noite de neve em Paris",
-        "A aplicação de GPS dos taxis da época era muito imprecisa",
-        "Os motoristas de táxi recusavam frequentemente corridas curtas"
+        "Medir quantas pessoas se inscrevem num produto que ainda não existe",
+        "Esconder dos concorrentes a ideia de um novo produto secreto",
+        "Avisar os clientes de que um produto vai acabar",
+        "Vender um produto antes de pagar aos fornecedores"
       ],
-      "correct": 1,
-      "explanation": "Travis Kalanick estava em Paris numa noite de neve e simplesmente não conseguia arranjar táxi. A frustração foi tão intensa que o levou a pensar: 'E se pudesse chamar um carro privado carregando num botão no telemóvel?' Esta é uma ilustração perfeita do 'analgésico' — a dor era real, imediata e forte, e a solução resolve precisamente esse problema."
+      "correct": 0,
+      "explanation": "É uma landing page que descreve o produto como se existisse. O número de inscrições mostra se há interesse real antes de gastar dinheiro a construí-lo."
     },
     {
-      "question": "Qual destas técnicas é um exemplo de boa validação de uma ideia?",
+      "question": "Qual foi o MVP do Dropbox?",
       "options": [
-        "Pedir à família e aos amigos que digam se acham a ideia interessante",
-        "Criar uma landing page descrevendo o produto e medir quantas pessoas se inscrevem",
-        "Calcular o tamanho do mercado potencial usando dados de internet",
-        "Apresentar o protótipo num concurso de pitch para startups"
+        "Uma versão do programa feita em apenas 3 meses",
+        "Um vídeo de 3 minutos a fingir que o produto funcionava",
+        "Um inquérito enviado a 75 000 pessoas",
+        "Uma pen USB oferecida a 5 000 pessoas"
       ],
       "correct": 1,
-      "explanation": "Uma 'página de fumo' (landing page) que descreve o produto e convida ao pré-registo é uma forma eficaz de validação. Em vez de perguntar opiniões, medes o comportamento real: as pessoas dispõem-se a deixar o seu email? Isso indica procura genuína. Família e amigos tendem a ser demasiado simpáticos; dados de mercado são abstratos e não provam procura individual."
-    },
-    {
-      "question": "O Uber 'não inventou os carros nem os motoristas'. O que isto ilustra?",
-      "options": [
-        "Que o Uber cometeu erros estratégicos ao não controlar toda a cadeia de valor",
-        "Que a inovação não exige criar algo novo do zero — pode ser recombinar o que existe de forma a resolver um problema",
-        "Que as empresas de transporte existentes tinham vantagem competitiva sobre o Uber",
-        "Que o modelo de negócio do Uber é insustentável a longo prazo"
-      ],
-      "correct": 1,
-      "explanation": "O Uber não criou automóveis nem motoristas — ambos já existiam. O que criou foi uma nova forma de ligar estes dois recursos para resolver o problema da conveniência no transporte. Esta é a essência da criatividade empreendedora: recombinar recursos existentes de uma forma nova que resolve uma dor real, sem necessariamente inventar tecnologia de raiz."
-    },
-    {
-      "question": "Qual a diferença entre os dois tipos de perguntas de validação dados como exemplo?",
-      "options": [
-        "Uma é presencial, a outra é online",
-        "Uma é fechada e obtém uma opinião sobre a ideia; a outra é aberta e obtém descrições do comportamento real",
-        "Uma é quantitativa, a outra é qualitativa",
-        "Uma é para potenciais clientes, a outra é para investidores"
-      ],
-      "correct": 1,
-      "explanation": "A má validação ('achas boa?') é uma pergunta fechada que pede uma opinião sobre uma ideia abstrata — e as pessoas tendem a responder positivamente para ser educadas. A boa validação ('conta-me a tua experiência') é uma pergunta aberta que faz o utilizador descrever o seu comportamento real e os seus problemas. A segunda revela a dor genuína; a primeira apenas a ilusão de validação."
+      "explanation": "Em vez de meses de programação, o fundador fez um vídeo. A lista de espera passou de 5 000 para 75 000 pessoas numa noite — ideia validada quase sem código!"
     }
   ]
 }

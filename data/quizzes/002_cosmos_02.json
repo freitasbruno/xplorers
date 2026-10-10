@@ -2,64 +2,114 @@
   "lesson_id": "cosmos_002",
   "questions": [
     {
-      "question": "Qual a percentagem da massa do Sistema Solar que pertence ao Sol?",
-      "options": ["50%", "75%", "99,8%", "90%"],
+      "question": "Que parte de toda a massa do Sistema Solar está concentrada no Sol?",
+      "options": [
+        "99,8%",
+        "75%",
+        "50%",
+        "90,2%"
+      ],
+      "correct": 0,
+      "explanation": "O Sol tem 99,8% de toda a massa do Sistema Solar. Os oito planetas, as luas, os cometas e os asteroides, todos juntos, são apenas os restantes 0,2%."
+    },
+    {
+      "question": "Qual destes planetas é um planeta rochoso?",
+      "options": [
+        "Neptuno",
+        "Marte",
+        "Júpiter",
+        "Úrano"
+      ],
+      "correct": 1,
+      "explanation": "Os planetas rochosos são os quatro interiores: Mercúrio, Vénus, Terra e Marte. Júpiter, Saturno, Úrano e Neptuno são gigantes sem superfície sólida."
+    },
+    {
+      "question": "Na frase \"Minha Viagem Terá Muitas Jornadas Seguindo Um Norte\", que planeta corresponde a \"Seguindo\"?",
+      "options": [
+        "Úrano",
+        "Júpiter",
+        "Marte",
+        "Saturno"
+      ],
+      "correct": 3,
+      "explanation": "Cada palavra é um planeta, por ordem a partir do Sol: Mercúrio, Vénus, Terra, Marte, Júpiter, Saturno, Úrano, Neptuno. \"Seguindo\" é o sexto: Saturno."
+    },
+    {
+      "question": "Porque é que Plutão foi reclassificado como planeta anão em 2006?",
+      "options": [
+        "Porque não tem forma esférica",
+        "Porque afinal era um cometa",
+        "Porque deixou de orbitar o Sol",
+        "Porque não limpou a sua órbita"
+      ],
+      "correct": 3,
+      "explanation": "Plutão é esférico e orbita o Sol, mas partilha a sua órbita com muitos outros objetos — não a \"limpou\". É isso que o distingue de um planeta."
+    },
+    {
+      "question": "Onde fica a Cintura de Asteroides?",
+      "options": [
+        "Entre a Terra e Marte",
+        "Depois de Neptuno",
+        "Entre Marte e Júpiter",
+        "Entre Júpiter e Saturno"
+      ],
       "correct": 2,
-      "explanation": "O Sol é tão massivo que contém 99,8% de toda a massa do Sistema Solar. Todos os planetas, luas, asteroides e cometas correspondem apenas aos restantes 0,2%."
+      "explanation": "A Cintura de Asteroides é uma \"autoestrada\" de rochas entre Marte e Júpiter — restos de um planeta que nunca chegou a formar-se."
     },
     {
-      "question": "Quais são os quatro planetas rochosos do Sistema Solar?",
-      "options": ["Júpiter, Saturno, Úrano, Neptuno", "Mercúrio, Vénus, Terra, Marte", "Marte, Júpiter, Saturno, Plutão", "Terra, Marte, Júpiter, Saturno"],
-      "correct": 1,
-      "explanation": "Os quatro planetas rochosos (ou interiores) são Mercúrio, Vénus, Terra e Marte. São pequenos, densos e têm superfícies sólidas, ao contrário dos gigantes gasosos exteriores."
+      "question": "O cometa Halley visita-nos a cada 76 anos. Quando se aproxima do Sol, o que acontece?",
+      "options": [
+        "Arrefece e fica escuro, sem que o possamos ver",
+        "Fica preso na órbita de Júpiter durante alguns anos",
+        "O gelo aquece e forma uma cauda brilhante de milhões de km",
+        "Explode e divide-se em centenas de pequenos asteroides"
+      ],
+      "correct": 2,
+      "explanation": "Os cometas são \"bolas de neve sujas\". Perto do Sol, o gelo aquece e liberta gás e poeira, criando a cauda brilhante que conseguimos ver da Terra."
     },
     {
-      "question": "Porque é que a Terra é considerada um planeta na 'Zona Goldilocks'?",
-      "options": ["Porque tem o maior tamanho ideal", "Porque orbita o Sol a uma distância que permite a existência de água líquida", "Porque é o único planeta com atmosfera", "Porque está protegida por Júpiter"],
+      "question": "Porque é que Europa, lua de Júpiter, é um bom sítio para procurar vida?",
+      "options": [
+        "Tem florestas e rios visíveis com um telescópio",
+        "Tem um oceano de água líquida sob o gelo",
+        "Tem uma atmosfera de oxigénio igual à da Terra",
+        "Está dentro da Zona Habitável, ao lado da Terra"
+      ],
       "correct": 1,
-      "explanation": "A Zona Goldilocks, ou Zona Habitável, é a região onde a temperatura permite que a água exista no estado líquido. A Terra está exatamente nessa faixa — nem demasiado quente nem demasiado fria."
+      "explanation": "Apesar de gelada à superfície, Europa esconde um oceano de água líquida. Como a água é essencial à vida, é um dos lugares mais promissores do Sistema Solar."
     },
     {
-      "question": "O que é a Cintura de Asteroides?",
-      "options": ["Um anel de gelo em torno de Saturno", "Uma zona de rochas espaciais entre Marte e Júpiter", "Uma nuvem de cometas no limite do Sistema Solar", "Um campo de meteoritos entre a Terra e a Lua"],
-      "correct": 1,
-      "explanation": "A Cintura de Asteroides é uma região entre Marte e Júpiter repleta de rochas espaciais. Acredita-se que sejam restos de um planeta que nunca se formou devido à enorme gravidade de Júpiter."
+      "question": "O que aconteceria à água da Terra se o nosso planeta estivesse muito mais perto do Sol?",
+      "options": [
+        "Evaporaria",
+        "Transformar-se-ia em gelo e rocha",
+        "Ficaria igual",
+        "Congelaria"
+      ],
+      "correct": 0,
+      "explanation": "A Terra está na Zona Goldilocks: à distância certa para a água ser líquida. Mais perto do Sol evaporaria; mais longe, congelaria."
     },
     {
-      "question": "Qual é a função principal da atmosfera terrestre?",
-      "options": ["Produzir oxigénio para as plantas", "Proteger-nos da radiação, queimar meteoritos e estabilizar a temperatura", "Refletir a luz do Sol para o espaço", "Manter a água nos oceanos"],
+      "question": "Qual é o trabalho do campo magnético da Terra?",
+      "options": [
+        "Queimar os meteoritos antes de chegarem ao chão",
+        "Desviar o vento solar, que destruiria a atmosfera",
+        "Manter a Lua presa à volta da Terra",
+        "Manter a temperatura estável com o efeito de estufa"
+      ],
       "correct": 1,
-      "explanation": "A atmosfera terrestre tem múltiplas funções vitais: protege-nos da radiação solar perigosa, queima a maioria dos meteoritos antes que atinjam o solo e, através do efeito de estufa, mantém a temperatura estável para a vida."
+      "explanation": "O campo magnético, criado pelo núcleo de ferro líquido, desvia o vento solar. Queimar meteoritos e manter a temperatura são tarefas da atmosfera; segurar a Lua é trabalho da gravidade."
     },
     {
-      "question": "O que torna Europa, uma lua de Júpiter, tão interessante para os cientistas?",
-      "options": ["Tem a maior tempestade do Sistema Solar", "Tem um oceano de água líquida sob uma crosta de gelo", "É o maior satélite natural do Sistema Solar", "Tem uma atmosfera semelhante à da Terra"],
-      "correct": 1,
-      "explanation": "Europa é um dos locais mais promissores para procurar vida extraterrestre porque possui um oceano de água líquida sob uma grossa crosta de gelo. A água líquida é um requisito fundamental para a vida como a conhecemos."
-    },
-    {
-      "question": "O que é um planeta anão?",
-      "options": ["Um planeta muito pequeno que orbita outro planeta", "Um corpo esférico que orbita o Sol mas não limpou a sua vizinhança orbital", "Um asteroide muito grande com atmosfera", "Um planeta rochoso menor que a Lua"],
-      "correct": 1,
-      "explanation": "Um planeta anão é um corpo esférico que orbita o Sol, mas que, ao contrário dos planetas verdadeiros, não 'limpou' a sua órbita de outros objetos. Plutão é o exemplo mais famoso, reclassificado como planeta anão em 2006."
-    },
-    {
-      "question": "O que cria o campo magnético da Terra?",
-      "options": ["A rotação da atmosfera", "O núcleo de ferro líquido no interior do planeta", "A gravidade da Lua", "As correntes oceânicas"],
-      "correct": 1,
-      "explanation": "O campo magnético da Terra é gerado pelo movimento do núcleo externo de ferro líquido. Este campo magnético é essencial para a vida, pois desvia o vento solar — um fluxo de partículas energéticas que destruiria a nossa atmosfera."
-    },
-    {
-      "question": "Os cometas são frequentemente chamados de 'bolas de neve sujas'. De que são compostos?",
-      "options": ["Apenas gelo e água congelada", "Gelo, rocha e poeira", "Gases congelados e metais", "Matéria escura e poeira cósmica"],
-      "correct": 1,
-      "explanation": "Os cometas são compostos por gelo, rocha e poeira — daí o apelido 'bolas de neve sujas'. Quando se aproximam do Sol, o calor vaporiza o gelo, criando a característica cauda brilhante que pode ter milhões de quilómetros de comprimento."
-    },
-    {
-      "question": "De quantos em quantos anos o cometa Halley visita o Sistema Solar interior?",
-      "options": ["A cada 10 anos", "A cada 76 anos", "A cada 100 anos", "A cada 200 anos"],
-      "correct": 1,
-      "explanation": "O cometa Halley tem um período orbital de aproximadamente 76 anos. A última passagem visível a olho nu foi em 1986, e a próxima está prevista para 2061."
+      "question": "Rodas uma bola presa a um fio. Tu és o Sol e a bola é um planeta. O que representa o fio?",
+      "options": [
+        "A gravidade",
+        "A órbita",
+        "O vento solar",
+        "A atmosfera"
+      ],
+      "correct": 0,
+      "explanation": "O fio é a gravidade que puxa o planeta para o Sol. O equilíbrio entre essa atração e a velocidade do planeta é o que o mantém a girar em órbita."
     }
   ]
 }

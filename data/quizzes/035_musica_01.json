@@ -2,64 +2,114 @@
   "lesson_id": "musica_001",
   "questions": [
     {
-      "question": "Qual foi a principal razão evolutiva para o surgimento da música nos grupos humanos primitivos?",
-      "options": ["Entretenimento nos momentos de lazer", "Comunicação com divindades", "Fortalecer a coesão e os laços sociais do grupo", "Afugentar insetos e outros animais pequenos"],
-      "correct": 2,
-      "explanation": "A música funcionava como uma 'cola social' ao libertar oxitocina e endorfinas durante atividades coletivas como cantar e dançar. Grupos mais unidos sobreviviam melhor — a música era, antes de tudo, uma vantagem evolutiva real, não entretenimento."
+      "question": "Segundo os cientistas, quando terá nascido a música?",
+      "options": [
+        "Na Grécia Antiga, com os primeiros teatros",
+        "Depois da invenção da escrita",
+        "Com os primeiros instrumentos de metal",
+        "Antes da própria linguagem falada"
+      ],
+      "correct": 3,
+      "explanation": "Cientistas e antropólogos acreditam que a música surgiu antes da linguagem falada, como uma forma de unir os grupos humanos."
     },
     {
-      "question": "De que material é feita a Flauta de Divje Babe, o instrumento musical mais antigo conhecido?",
-      "options": ["Pedra polida", "Madeira de carvalho", "Marfim de mamute", "Osso fémur de urso das cavernas"],
-      "correct": 3,
-      "explanation": "A Flauta de Divje Babe foi esculpida num fémur de urso das cavernas jovem, há cerca de 43 mil anos. A sua provável origem Neandertal torna-a uma das evidências mais antigas de musicalidade em qualquer espécie humana."
+      "question": "Porque se diz que a música funcionava como uma \"cola social\" nas tribos?",
+      "options": [
+        "Cantar em grupo libertava oxitocina e unia as pessoas",
+        "As tribos trocavam canções em vez de trocar comida",
+        "As canções serviam para ensinar a caçar às crianças",
+        "Quem cantasse melhor tornava-se o chefe da tribo"
+      ],
+      "correct": 0,
+      "explanation": "Cantar e dançar em grupo libertava oxitocina (a hormona dos laços sociais) e endorfinas. Grupos mais unidos protegiam-se melhor."
+    },
+    {
+      "question": "De que eram feitos, principalmente, os primeiros instrumentos musicais?",
+      "options": [
+        "De pele de animais esticada",
+        "De madeira de árvores trabalhada",
+        "De ossos de animais caçados",
+        "De metal fundido em fornos"
+      ],
+      "correct": 2,
+      "explanation": "No Paleolítico, os primeiros instrumentos foram feitos de elementos naturais — sobretudo ossos de animais caçados."
+    },
+    {
+      "question": "Quem terá feito a Flauta de Divje Babe, com cerca de 43 mil anos?",
+      "options": [
+        "Os antigos egípcios",
+        "Os primeiros Homo sapiens da Europa",
+        "Provavelmente os Neandertais",
+        "Os gregos da Antiguidade"
+      ],
+      "correct": 2,
+      "explanation": "Feita com um fémur de urso das cavernas, encontrada na Eslovénia, terá sido criada por Neandertais. Os furos replicam quatro notas da escala de hoje."
     },
     {
       "question": "O que determina se um som é grave ou agudo?",
-      "options": ["A amplitude da onda", "O timbre do instrumento", "A frequência, medida em Hertz", "A velocidade de propagação no ar"],
-      "correct": 2,
-      "explanation": "A frequência, medida em Hertz (Hz), determina o tom de um som. Sons com baixa frequência (poucas vibrações por segundo) são graves; sons com alta frequência são agudos. A nota Lá central de um piano vibra a exatamente 440 Hz."
-    },
-    {
-      "question": "O que é o timbre de um som?",
-      "options": ["A velocidade a que o som se propaga no ar", "A 'assinatura' do som que permite distinguir instrumentos diferentes", "A intensidade ou volume do som", "O número de notas tocadas em simultâneo"],
+      "options": [
+        "A velocidade a que o som viaja",
+        "A frequência, medida em Hertz",
+        "O timbre de cada instrumento",
+        "A amplitude, medida em decibéis"
+      ],
       "correct": 1,
-      "explanation": "O timbre é a característica única que diferencia o som de instrumentos distintos mesmo quando tocam a mesma nota ao mesmo volume. É criado pelas harmónicas — frequências adicionais que vibram simultaneamente com a nota principal em proporções únicas para cada instrumento."
+      "explanation": "A frequência (tom) define se o som é grave ou agudo. A amplitude é o volume; o timbre é a \"assinatura\" do som."
     },
     {
-      "question": "Como é que o ouvido converte as ondas sonoras em sinais compreensíveis pelo cérebro?",
-      "options": ["O tímpano transforma a vibração mecânica em impulsos elétricos", "Os ossos do ouvido absorvem as frequências mais perigosas", "O fluido do ouvido interno filtra as frequências indesejadas", "O nervo auditivo capta diretamente as ondas do ar"],
+      "question": "Uma guitarra e um piano tocam a mesma nota, mas reconheces cada um. Porquê?",
+      "options": [
+        "Têm timbres diferentes",
+        "Têm frequências diferentes",
+        "O som viaja de forma diferente",
+        "Têm amplitudes diferentes"
+      ],
       "correct": 0,
-      "explanation": "O tímpano vibra em resposta às ondas sonoras e transforma essa vibração mecânica em impulsos elétricos que viajam pelo nervo auditivo até ao cérebro, onde são interpretados e transformados em som consciente."
+      "explanation": "O timbre é a \"assinatura\" de cada som. Mesmo com a mesma frequência (nota) e o mesmo volume, cada instrumento soa de forma única."
     },
     {
-      "question": "O que acontece no cérebro quando ouvimos notas em harmonia (consonância)?",
-      "options": ["Ativa-se exclusivamente a zona auditiva do córtex", "O cérebro liberta dopamina, gerando prazer", "O ritmo cardíaco desacelera imediatamente", "A pressão arterial sobe de forma temporária"],
-      "correct": 1,
-      "explanation": "Quando as frequências de notas combinam de forma matematicamente simples, o cérebro reconhece o padrão e liberta dopamina — o neurotransmissor associado ao prazer e à recompensa. É por isso que certas músicas nos fazem sentir bem de forma quase imediata."
-    },
-    {
-      "question": "O que é a dissonância musical?",
-      "options": ["Uma harmonia muito lenta e calma", "A combinação de notas com frequências matematicamente simples", "O choque de frequências que cria tensão e desconforto", "O silêncio intencional entre duas notas musicais"],
-      "correct": 2,
-      "explanation": "A dissonância ocorre quando frequências chocam de forma caótica. O cérebro não consegue encontrar um padrão matemático simples e interpreta isso como tensão ou desconforto. Os compositores usam a dissonância intencionalmente para criar suspense — e a resolução para a harmonia é catártica."
-    },
-    {
-      "question": "Qual atividade humana ativa mais partes do cérebro do que a música?",
-      "options": ["O xadrez e a matemática avançada", "A prática intensa de desporto", "Nenhuma — a música ativa mais áreas cerebrais do que qualquer outra atividade", "A pilotagem de aviões em situação de emergência"],
-      "correct": 2,
-      "explanation": "A música é única porque ativa simultaneamente as zonas auditiva, visual, motora, emocional e de memória. Nenhuma outra atividade humana conhecida dispara tantas regiões cerebrais ao mesmo tempo — é o equivalente a um fogo de artifício no cérebro."
-    },
-    {
-      "question": "Qual é o efeito fisiológico de músicas com batidas lentas no nosso corpo?",
-      "options": ["Aumentam a adrenalina e aceleram o ritmo cardíaco", "Podem diminuir a pressão arterial e induzir relaxamento", "Causam dissonância no ouvido interno", "Bloqueiam temporariamente a produção de dopamina"],
-      "correct": 1,
-      "explanation": "Estudos de neurociência mostram que o ritmo cardíaco e as ondas cerebrais se sincronizam com a batida da música que ouvimos. Batidas lentas e calmas podem efetivamente diminuir a pressão arterial e promover um estado de relaxamento fisiológico."
-    },
-    {
-      "question": "Há quantos anos existem evidências concretas da musicalidade humana, com base na Flauta de Divje Babe?",
-      "options": ["Cerca de 5 mil anos", "Cerca de 10 mil anos", "Cerca de 20 mil anos", "Cerca de 43 mil anos"],
+      "question": "Aumentas o volume da música. Que propriedade da onda sonora estás a mudar?",
+      "options": [
+        "A frequência",
+        "O timbre",
+        "O comprimento",
+        "A amplitude"
+      ],
       "correct": 3,
-      "explanation": "A Flauta de Divje Babe tem cerca de 43 mil anos, tornando-a um dos instrumentos musicais mais antigos conhecidos. O mais extraordinário: os furos no osso replicam notas da escala musical que ainda usamos hoje, provando que a nossa perceção musical é universal e incrivelmente antiga."
+      "explanation": "A amplitude determina a força ou intensidade do som — o volume. A frequência continua igual, por isso a nota não muda."
+    },
+    {
+      "question": "O que acontece no cérebro quando ouvimos frequências que combinam de forma matemática simples?",
+      "options": [
+        "Desliga as zonas da memória",
+        "Reconhece harmonia e liberta dopamina",
+        "Liberta adrenalina e acelera o coração",
+        "Sente dissonância e fica desconfortável"
+      ],
+      "correct": 1,
+      "explanation": "Quando as frequências combinam de forma simples (como uma oitava), o cérebro reconhece harmonia e liberta dopamina. Frequências caóticas causam dissonância."
+    },
+    {
+      "question": "O que transforma a vibração do som em impulsos elétricos no ouvido?",
+      "options": [
+        "O nervo ótico",
+        "O tímpano",
+        "A córnea",
+        "As cordas vocais"
+      ],
+      "correct": 1,
+      "explanation": "As ondas sonoras chocam contra o tímpano, que transforma a vibração mecânica em impulsos elétricos que o cérebro consegue analisar."
+    },
+    {
+      "question": "Ouves uma música lenta e calma. O que tende a acontecer ao teu corpo?",
+      "options": [
+        "A pressão arterial desce",
+        "O coração acelera",
+        "A adrenalina aumenta",
+        "A respiração fica rápida"
+      ],
+      "correct": 0,
+      "explanation": "O ritmo cardíaco e as ondas cerebrais sincronizam-se com a batida: músicas aceleradas aumentam a adrenalina; batidas calmas baixam a pressão arterial."
     }
   ]
 }

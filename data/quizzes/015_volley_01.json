@@ -2,64 +2,114 @@
   "lesson_id": "volley_001",
   "questions": [
     {
-      "question": "Por que razão William G. Morgan sentiu necessidade de criar um novo desporto?",
-      "options": ["O basquetebol era demasiado lento para os membros jovens", "O basquetebol era demasiado intenso e agressivo para os membros mais velhos da YMCA", "A YMCA não tinha campo de basquetebol", "James Naismith pediu-lhe que criasse uma alternativa"],
+      "question": "Porque é que William G. Morgan inventou um novo desporto em 1895?",
+      "options": [
+        "Os alunos estavam aborrecidos com o ténis no inverno",
+        "O basquetebol era demasiado intenso para os membros mais velhos",
+        "Queria criar um desporto novo para os Jogos Olímpicos de Atenas",
+        "O ginásio da YMCA era pequeno demais para o futebol"
+      ],
       "correct": 1,
-      "explanation": "Morgan queria um desporto que exigisse esforço físico mas sem o choque direto entre adversários. O basquetebol era demasiado intenso para os membros mais velhos da YMCA de Holyoke, onde ele era diretor de educação física."
+      "explanation": "Morgan queria um jogo para qualquer pessoa, focado no movimento e na recreação, não na força bruta — ao contrário do basquetebol, que era agressivo."
     },
     {
-      "question": "Qual era o nome original do voleibol, criado por Morgan em 1895?",
-      "options": ["Volleyball", "Netball", "Mintonette", "Blitzball"],
+      "question": "Quem tinha inventado o basquetebol, quatro anos antes do voleibol?",
+      "options": [
+        "William G. Morgan, o próprio inventor",
+        "A.G. Spalding, o fabricante de bolas",
+        "James Naismith, amigo de Morgan",
+        "Alfred T. Halstead, professor de Springfield"
+      ],
       "correct": 2,
-      "explanation": "O desporto chamava-se originalmente 'Mintonette'. O nome foi sugerido por Morgan como referência informal ao badminton, de onde retirou a ideia da rede. Só em 1896 o nome foi alterado para 'Volley Ball'."
+      "explanation": "O basquetebol foi criado por James Naismith, amigo de Morgan. Halstead deu o nome ao voleibol e a Spalding fabricou a primeira bola."
     },
     {
-      "question": "Que elemento foi retirado do ténis para criar o Mintonette?",
-      "options": ["A bola de borracha", "A rede, mas elevada acima das cabeças", "O sistema de pontuação por sets", "As linhas do campo"],
+      "question": "Que nome deu Morgan ao seu jogo, antes de se chamar voleibol?",
+      "options": [
+        "Bomberette",
+        "Basketette",
+        "Mintonette",
+        "Volley Ball"
+      ],
+      "correct": 2,
+      "explanation": "O jogo chamou-se primeiro Mintonette. Bomberette era o nome que os filipinos davam ao rematador."
+    },
+    {
+      "question": "Que ingrediente veio do ténis para o novo jogo de Morgan?",
+      "options": [
+        "A rede, elevada acima das cabeças",
+        "A ideia de bater na bola com as mãos",
+        "A primeira bola usada nos jogos",
+        "A organização do jogo em \"innings\""
+      ],
+      "correct": 0,
+      "explanation": "Do ténis veio a rede; do andebol, usar as mãos; do basebol, os \"innings\"; e do basquetebol, a bola inicial."
+    },
+    {
+      "question": "Do basebol, Morgan foi buscar…",
+      "options": [
+        "A rede elevada a quase 2 metros",
+        "Os \"innings\" para organizar o tempo",
+        "As mãos para bater na bola",
+        "A bola de couro com câmara de ar"
+      ],
       "correct": 1,
-      "explanation": "Do ténis, Morgan retirou a ideia da rede — mas elevou-a para acima da altura das cabeças (cerca de 1,98m), tornando impossível o choque físico entre adversários dos dois lados."
+      "explanation": "Os innings do basebol organizavam o tempo de jogo: o Mintonette tinha 9 innings. Hoje joga-se à melhor de 5 sets."
     },
     {
-      "question": "Por que razão as primeiras tentativas com a câmara de ar de uma bola de basquetebol falharam?",
-      "options": ["Era demasiado pesada e partia os braços", "Era demasiado leve e flutuava erraticamente no ginásio", "Era demasiado cara para fabricar", "Não respeitava as medidas do campo"],
+      "question": "Qual foi o problema de usar uma bola de basquetebol completa?",
+      "options": [
+        "Era demasiado grande para passar a rede",
+        "Era demasiado escorregadia para as mãos",
+        "Era demasiado leve e flutuava no ar",
+        "Era demasiado pesada e causava hematomas"
+      ],
+      "correct": 3,
+      "explanation": "A bola de basquetebol era pesada e magoava. A câmara de ar sozinha, pelo contrário, era tão leve que flutuava de forma errática."
+    },
+    {
+      "question": "Quem fabricou a primeira bola oficial de voleibol, em 1896?",
+      "options": [
+        "A A.G. Spalding & Bros.",
+        "O professor Alfred T. Halstead",
+        "Uma fábrica de bolas de ténis",
+        "A própria YMCA de Holyoke"
+      ],
+      "correct": 0,
+      "explanation": "Morgan contactou a A.G. Spalding & Bros., que fez uma bola de couro com câmara de borracha, entre 250 e 340 g — peso parecido com o das bolas de hoje."
+    },
+    {
+      "question": "Porque sugeriu Alfred T. Halstead o nome \"Volley Ball\"?",
+      "options": [
+        "Os jogadores batiam na bola antes de ela tocar no chão",
+        "O jogo era parecido com o ténis de campo",
+        "A bola voava muito alto, por cima da rede",
+        "Era o apelido de família do inventor, William G. Morgan"
+      ],
+      "correct": 0,
+      "explanation": "Um \"voleio\" é bater na bola antes de ela tocar no chão. Como os jogadores passavam o tempo a fazer isso, o nome pegou."
+    },
+    {
+      "question": "No Mintonette de 1895, quantos jogadores podia ter cada equipa?",
+      "options": [
+        "2 por equipa",
+        "6 por equipa",
+        "9 por equipa",
+        "Sem limite"
+      ],
+      "correct": 3,
+      "explanation": "No início não havia limite de jogadores. Hoje são 6 por equipa. Os 9 eram o número de innings."
+    },
+    {
+      "question": "Onde e quando foi introduzida a regra dos 3 toques?",
+      "options": [
+        "Nas Filipinas, em 1916",
+        "Nas Filipinas, em 1920",
+        "No Japão, em 1964",
+        "Nos EUA, em 1895"
+      ],
       "correct": 1,
-      "explanation": "A câmara de ar era demasiado leve e comportava-se de forma imprevisível com as correntes de ar do ginásio. A bola de basquetebol completa, pelo contrário, era pesada demais e causava hematomas nos praticantes."
-    },
-    {
-      "question": "Qual empresa fabricou a primeira bola oficial de voleibol, em 1896?",
-      "options": ["Nike", "Wilson", "A.G. Spalding & Bros.", "Adidas"],
-      "correct": 2,
-      "explanation": "Em 1896, Morgan contactou a empresa A.G. Spalding & Bros. para desenvolver a primeira bola oficial. O resultado foi uma bola de couro com câmara de borracha, pesando entre 250 e 340 gramas — um peso que pouco mudou até hoje."
-    },
-    {
-      "question": "Qual foi o peso estabelecido para a primeira bola oficial de voleibol?",
-      "options": ["100 a 150 gramas", "250 a 340 gramas", "400 a 500 gramas", "600 a 700 gramas"],
-      "correct": 1,
-      "explanation": "A primeira bola Spalding pesava entre 250 e 340 gramas. Curiosamente, o peso da bola de voleibol moderno é praticamente o mesmo — o que demonstra que a engenharia original foi muito acertada."
-    },
-    {
-      "question": "Quem sugeriu o nome 'Volley Ball' e em que ocasião?",
-      "options": ["William Morgan, quando registou o jogo oficialmente", "O Professor Alfred T. Halstead, após observar uma demonstração em Springfield", "James Naismith, amigo de Morgan", "Um jornalista que cobriu o primeiro torneio"],
-      "correct": 1,
-      "explanation": "Em 1896, durante uma conferência de diretores de educação física em Springfield, o Professor Alfred T. Halstead observou que os jogadores passavam o tempo a fazer 'voleios' (bater na bola antes de ela tocar no chão) e sugeriu o nome 'Volley Ball'."
-    },
-    {
-      "question": "Quantos toques eram permitidos nas regras originais do Mintonette de 1895?",
-      "options": ["3 toques por jogada", "6 toques por equipa", "Ilimitados", "Apenas 1 toque por jogador"],
-      "correct": 2,
-      "explanation": "Nas regras originais de 1895, não havia qualquer limite de toques. Uma equipa podia dar 20 ou mais passes entre si antes de enviar a bola para o outro lado. Isto tornava o jogo muito diferente do voleibol explosivo que conhecemos hoje."
-    },
-    {
-      "question": "Onde e quando foi introduzida a regra do máximo de 3 toques por equipa?",
-      "options": ["EUA, em 1900", "Japão, em 1910", "Filipinas, em 1920", "Brasil, em 1930"],
-      "correct": 2,
-      "explanation": "A regra dos 3 toques foi introduzida nas Filipinas em 1920. O conceito de 'remate' (ataque) também nasceu lá em 1916, quando jogadores filipinos começaram a bater na bola com força para cima da rede. Chamavam ao rematador de 'bomberette'."
-    },
-    {
-      "question": "O que era permitido fazer com a bola nas regras originais do Mintonette que hoje seria considerado uma falta?",
-      "options": ["Cabecear a bola para o lado oposto", "Apanhar a bola e lançá-la", "Driblar sozinho até à rede, batendo repetidamente na bola para cima", "Jogar com equipas de tamanho diferente"],
-      "correct": 2,
-      "explanation": "Nas regras originais era permitido 'driblar' — bater na bola repetidamente para cima enquanto se avançava pelo campo, desde que não se saísse dos limites. Esta regra tornava o jogo muito mais individual e menos coletivo do que o atual."
+      "explanation": "A regra dos 3 toques nasceu nas Filipinas em 1920. Em 1916, também lá, tinha nascido o remate."
     }
   ]
 }

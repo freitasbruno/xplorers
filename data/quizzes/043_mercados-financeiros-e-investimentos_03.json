@@ -15,9 +15,9 @@
     {
       "question": "Quando uma página do \"caderno\" da blockchain fica cheia, é selada com um hash. De que depende esse cadeado?",
       "options": [
-        "Do conteúdo dessa página e também da página anterior",
+        "Do conteúdo dessa página e da anterior",
         "Apenas da data e da hora em que foi selada",
-        "Apenas do nome de quem escreveu na página",
+        "Apenas do nome de quem escreveu nela",
         "De uma palavra-passe escolhida pelo banco"
       ],
       "correct": 0,

@@ -2,109 +2,114 @@
   "lesson_id": "computadores_002",
   "questions": [
     {
-      "question": "Qual foi o primeiro computador digital e eletrónico programável, criado durante a II Guerra Mundial para decifrar códigos inimigos?",
-      "options": ["ENIAC", "Colossus", "Mark I", "Babbage Analítica"],
-      "correct": 1,
-      "explanation": "O Colossus foi criado no Reino Unido para decifrar os códigos gerados pelas máquinas Lorenz do exército alemão. Foi o primeiro computador digital e eletrónico programável da história — mas permaneceu em segredo durante décadas após a guerra, pelo que muitas vezes não recebe o devido reconhecimento histórico."
-    },
-    {
-      "question": "Para que foi criado o ENIAC nos Estados Unidos?",
+      "question": "Para que foi criado o Colossus, no Reino Unido?",
       "options": [
-        "Para decifrar mensagens inimigas capturadas",
-        "Para gerir os salários dos soldados americanos",
-        "Para calcular tabelas de trajetórias de artilharia",
-        "Para controlar as comunicações militares transatlânticas"
-      ],
-      "correct": 2,
-      "explanation": "O ENIAC (Electronic Numerical Integrator and Computer) foi criado para calcular tabelas balísticas — as trajetórias que as granadas de artilharia seguem dependendo de variáveis como velocidade, ângulo e vento. Calcular estas tabelas à mão levava dias; o ENIAC fazia-o em horas."
-    },
-    {
-      "question": "Qual era o principal problema das válvulas termiónicas usadas nos primeiros computadores?",
-      "options": [
-        "Eram demasiado lentas para cálculos matemáticos complexos",
-        "Aqueciam muito, queimavam frequentemente e ocupavam muito espaço",
-        "Só funcionavam com corrente contínua, não alternada",
-        "Eram difíceis de programar porque precisavam de ser configuradas manualmente"
-      ],
-      "correct": 1,
-      "explanation": "As válvulas termiónicas eram essencialmente grandes tubos de vidro que geravam muito calor e falhavam com frequência. O ENIAC tinha 18.000 válvulas, e estatisticamente uma falhava a cada dois dias — obrigando os técnicos a percorrer corredores inteiros de equipamento à procura da válvula queimada."
-    },
-    {
-      "question": "Em que ano foi inventado o transístor e onde?",
-      "options": [
-        "1941, nos laboratórios da IBM em Nova Iorque",
-        "1947, nos Laboratórios Bell",
-        "1953, na Universidade de Stanford",
-        "1945, nos laboratórios de Alan Turing no Reino Unido"
-      ],
-      "correct": 1,
-      "explanation": "O transístor foi inventado em 1947 por John Bardeen, Walter Brattain e William Shockley nos Laboratórios Bell da AT&T. Os três partilharam o Prémio Nobel de Física em 1956 por esta invenção que tornou possível toda a tecnologia digital moderna."
-    },
-    {
-      "question": "O que afirma a Lei de Moore?",
-      "options": [
-        "A velocidade da internet duplica a cada 18 meses",
-        "O preço dos computadores cai para metade a cada 5 anos",
-        "O número de transístores num chip duplica aproximadamente a cada dois anos, sem aumentar o custo",
-        "Os computadores tornam-se obsoletos ao fim de 3 anos de uso"
-      ],
-      "correct": 2,
-      "explanation": "Em 1965, Gordon Moore observou que o número de transístores nos chips de silício dobrava aproximadamente a cada dois anos, mantendo o custo por transístor constante ou mesmo a diminuir. Esta lei previu com precisão o ritmo do avanço tecnológico por mais de 50 anos e é a razão pela qual a tecnologia fica continuamente mais poderosa e mais barata."
-    },
-    {
-      "question": "O que tornava os Mainframes diferentes dos computadores pessoais que usamos hoje?",
-      "options": [
-        "Os Mainframes eram mais lentos mas mais fiáveis",
-        "Os utilizadores acediam-lhes através de terminais ligados a uma máquina central, sem ter um computador próprio",
-        "Os Mainframes só processavam texto, nunca imagens ou gráficos",
-        "Os Mainframes eram portáteis e podiam ser transportados entre organizações"
-      ],
-      "correct": 1,
-      "explanation": "Num ambiente de Mainframe, existia uma única máquina poderosa central. Os utilizadores — centenas deles — acediam através de terminais, que eram apenas um monitor e um teclado sem processador próprio. Era como hoje usar uma aplicação na nuvem: o 'computador' estava algures numa sala, não à tua frente."
-    },
-    {
-      "question": "Qual foi a origem do termo 'bug' em informática?",
-      "options": [
-        "Bill Gates usou a palavra para descrever erros no código do MS-DOS",
-        "Vem do inglês arcaico para 'problema' ou 'fantasma'",
-        "Grace Hopper encontrou uma traça real dentro dos circuitos de um computador Mark II",
-        "Foi inventado pelos programadores do ENIAC para classificar tipos de avaria"
-      ],
-      "correct": 2,
-      "explanation": "Em 1947, Grace Hopper — uma das pioneiras da programação — encontrou literalmente uma traça (moth) presa nos relés do computador Harvard Mark II, causando uma avaria. Ela colou o inseto no diário de bordo com a anotação 'primeiro bug encontrado'. Embora o termo já existisse informalmente, este incidente popularizou 'bug' como sinónimo de erro informático."
-    },
-    {
-      "question": "Quantas operações por segundo conseguia fazer o ENIAC, comparado com um processador moderno?",
-      "options": [
-        "ENIAC: 5.000 somas/s vs. moderno: mil milhões/s",
-        "ENIAC: 100 somas/s vs. moderno: um milhão/s",
-        "ENIAC: 50.000 somas/s vs. moderno: cem milhões/s",
-        "ENIAC: 1.000 somas/s vs. moderno: dez milhões/s"
+        "Para decifrar os códigos das máquinas alemãs",
+        "Para calcular trajetórias de balística",
+        "Para fazer as contas dos bancos ingleses",
+        "Para prever o tempo antes das batalhas"
       ],
       "correct": 0,
-      "explanation": "O ENIAC conseguia fazer 5.000 adições por segundo — impressionante para a época, uma vez que substituía dezenas de calculadores humanos. Um processador moderno realiza cerca de mil milhões de operações por segundo, ou seja, é 200.000 vezes mais rápido. E cabe no interior de uma caixa do tamanho de um post-it."
+      "explanation": "O Colossus decifrava as mensagens alemãs e foi o primeiro computador digital, eletrónico e programável. As trajetórias de balística eram trabalho do ENIAC, nos EUA."
     },
     {
-      "question": "Por que razão a invenção do transístor é considerada possivelmente a mais importante do século XX?",
+      "question": "Porque é que o ENIAC foi um marco histórico?",
       "options": [
-        "Porque permitiu criar computadores que não precisavam de eletricidade",
-        "Porque tornou os computadores portáteis, acessíveis e fiáveis, possibilitando toda a revolução digital",
-        "Porque substituiu o papel e a máquina de escrever nas escritórias",
-        "Porque foi a base para a criação da internet e das comunicações por satélite"
+        "Foi o primeiro a ter um ecrã a cores",
+        "Cabia em cima de uma secretária",
+        "Foi o primeiro a usar transístores",
+        "Era todo eletrónico, com válvulas"
       ],
-      "correct": 1,
-      "explanation": "Sem o transístor, os computadores teriam ficado presos na era das válvulas — máquinas enormes, caras, quentes e pouco fiáveis. O transístor tornou possível miniaturizar os computadores, baixar dramaticamente o seu custo e aumentar a sua velocidade de forma exponencial. Toda a tecnologia digital — smartphones, internet, IA, satélites — depende diretamente do transístor."
+      "correct": 3,
+      "explanation": "O ENIAC usava válvulas em vez de interruptores mecânicos. Os transístores só foram inventados em 1947 — e o ENIAC ocupava 160 m²!"
     },
     {
-      "question": "O que significa dizer que o smartphone atual é 'mais potente que o computador que levou o homem à Lua'?",
+      "question": "Qual destes NÃO era um problema das válvulas termiónicas?",
       "options": [
-        "O smartphone pode comunicar diretamente com estações espaciais modernas",
-        "O computador Apollo tinha menos capacidade de cálculo do que um telemóvel de entrada de gama atual",
-        "O smartphone pode simular missões lunares em tempo real",
-        "O computador Apollo era mais lento mas mais preciso que um smartphone"
+        "Aqueciam imenso",
+        "Eram demasiado pequenas",
+        "Queimavam com frequência",
+        "Ocupavam muito espaço"
       ],
       "correct": 1,
-      "explanation": "O computador de bordo do Apollo 11 — o AGC (Apollo Guidance Computer) — tinha uma frequência de 2 MHz e 4 KB de memória RAM. Um smartphone básico atual tem 3 GHz e vários gigabytes de RAM. Graças à Lei de Moore e às décadas de miniaturização, a tecnologia que levou humanos à Lua em 1969 é hoje menos potente do que o dispositivo que usas para tirar selfies."
+      "explanation": "As válvulas eram como lâmpadas de vidro: grandes, quentes e frágeis. O problema era exatamente o contrário de serem pequenas."
+    },
+    {
+      "question": "Onde e quando foi inventado o transístor?",
+      "options": [
+        "Nos Laboratórios Bell, em 1947",
+        "Na IBM, em 1981",
+        "No CERN, em 1989",
+        "Na Intel, por Gordon Moore, em 1965"
+      ],
+      "correct": 0,
+      "explanation": "O transístor nasceu nos Laboratórios Bell em 1947. Faz o mesmo que a válvula, mas é minúsculo, frio, fiável e muito mais rápido."
+    },
+    {
+      "question": "O que faz um transístor?",
+      "options": [
+        "Mostra imagens no ecrã",
+        "Controla o fluxo de eletricidade",
+        "Liga o computador à internet",
+        "Guarda ficheiros e fotografias"
+      ],
+      "correct": 1,
+      "explanation": "O transístor faz o mesmo que a válvula fazia: deixa passar ou bloqueia a eletricidade. Milhares de milhões deles juntos formam um processador."
+    },
+    {
+      "question": "Segundo a Lei de Moore, de quanto em quanto tempo duplica o número de transístores num chip?",
+      "options": [
+        "Aproximadamente a cada seis meses",
+        "Aproximadamente todos os meses",
+        "Aproximadamente a cada dois anos",
+        "Aproximadamente a cada dez anos"
+      ],
+      "correct": 2,
+      "explanation": "Gordon Moore observou em 1965 que os transístores num chip duplicavam a cada dois anos, com o custo igual ou mais baixo."
+    },
+    {
+      "question": "Num mainframe, o que tinha cada utilizador na sua secretária?",
+      "options": [
+        "Uma válvula para ligar e desligar o sistema",
+        "Um ábaco para fazer as contas mais simples",
+        "Um terminal ligado ao computador central",
+        "Um PC pessoal com o seu próprio processador"
+      ],
+      "correct": 2,
+      "explanation": "Os utilizadores tinham só um terminal (monitor e teclado). Todo o processamento era feito no mainframe, que servia centenas de pessoas ao mesmo tempo."
+    },
+    {
+      "question": "O que encontrou Grace Hopper dentro do computador Mark II?",
+      "options": [
+        "Uma traça verdadeira nos circuitos",
+        "Uma válvula queimada pelo calor",
+        "Uma mensagem secreta alemã",
+        "Um erro escrito no programa"
+      ],
+      "correct": 0,
+      "explanation": "Foi uma traça real — um \"bug\" (inseto). A partir daí, \"bug\" passou a significar qualquer erro de software."
+    },
+    {
+      "question": "O que acontecia na cidade de Filadélfia quando o ENIAC era ligado?",
+      "options": [
+        "Os rádios deixavam de funcionar",
+        "Os telefones tocavam sozinhos",
+        "Os elétricos paravam",
+        "As luzes da cidade piscavam"
+      ],
+      "correct": 3,
+      "explanation": "O ENIAC consumia tanta eletricidade que as luzes da Filadélfia piscavam. Pesava 27 toneladas e ocupava 160 m²."
+    },
+    {
+      "question": "Quantas somas por segundo conseguia fazer o ENIAC?",
+      "options": [
+        "50",
+        "5 000",
+        "Mil milhões",
+        "5 milhões"
+      ],
+      "correct": 1,
+      "explanation": "O ENIAC fazia 5 000 somas por segundo. Um processador comum de hoje faz mil milhões — e a tua calculadora científica é mais potente do que o ENIAC inteiro."
     }
   ]
 }

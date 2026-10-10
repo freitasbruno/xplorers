@@ -2,64 +2,114 @@
   "lesson_id": "wwii_001",
   "questions": [
     {
-      "question": "Qual foi o evento económico que criou o terreno fértil para o surgimento de ditaduras na Europa?",
-      "options": ["A crise petrolífera de 1973", "A Grande Depressão de 1929", "A Primeira Guerra Mundial", "A Revolução Industrial"],
+      "question": "Porque é que o crash da Bolsa de Nova Iorque, em 1929, atingiu também a Europa?",
+      "options": [
+        "Os bancos europeus tinham comprado quase toda a Bolsa americana",
+        "A Europa deixou de vender comida aos Estados Unidos",
+        "Os EUA declararam guerra comercial a todos os países europeus",
+        "Os bancos americanos cortaram o crédito e exigiram as dívidas"
+      ],
+      "correct": 3,
+      "explanation": "Os EUA financiavam a reconstrução europeia. Com a crise, cortaram o crédito e exigiram o pagamento — e a Europa afundou-se também."
+    },
+    {
+      "question": "Na Alemanha, que parte da população ativa ficou sem trabalho com a Grande Depressão?",
+      "options": [
+        "Quase metade",
+        "Quase um terço",
+        "Cerca de um décimo",
+        "Cerca de três quartos"
+      ],
       "correct": 1,
-      "explanation": "O colapso da Bolsa de Nova Iorque em outubro de 1929 desencadeou uma crise económica global. Os EUA cortaram o crédito à Europa, causando desemprego massivo e a perda de fé nas democracias, abrindo as portas aos regimes totalitários."
+      "explanation": "Quase um terço da população ativa alemã ficou desempregada. O desespero abriu as portas a quem prometia soluções fáceis."
     },
     {
-      "question": "Qual a percentagem aproximada de trabalhadores alemães que ficou desempregada durante a Grande Depressão?",
-      "options": ["Cerca de 5%", "Cerca de 10%", "Cerca de um terço", "Cerca de metade"],
+      "question": "Porque havia alemães a usar notas de marcos como papel de parede no início dos anos 30?",
+      "options": [
+        "O dinheiro tinha perdido quase todo o valor",
+        "O governo tinha proibido o uso do marco",
+        "As notas eram feitas de papel muito bonito",
+        "Era uma forma de protesto contra Hitler"
+      ],
+      "correct": 0,
+      "explanation": "Com a inflação extrema, o papel das notas valia mais do que aquilo que elas conseguiam comprar."
+    },
+    {
+      "question": "\"Tudo no Estado, nada fora do Estado, nada contra o Estado.\" Que ideologia resume esta frase?",
+      "options": [
+        "O Comunismo de Stalin",
+        "A democracia liberal",
+        "O Fascismo de Mussolini",
+        "O Apaziguamento britânico"
+      ],
       "correct": 2,
-      "explanation": "Quase um terço da população ativa alemã ficou desempregada durante a Grande Depressão. Este nível de desespero tornou muitos alemães recetivos às promessas de Hitler de restaurar o orgulho nacional e a prosperidade."
+      "explanation": "O fascismo italiano punha o Estado acima de tudo: o indivíduo não tinha valor quando comparado com o Estado."
     },
     {
-      "question": "Qual era a principal diferença entre o Nazismo alemão e o Fascismo italiano?",
-      "options": ["O Nazismo permitia outros partidos políticos", "O Nazismo acrescentava uma componente racial violenta e antissemita", "O Fascismo era mais militarista", "O Fascismo tinha um culto ao líder mais intenso"],
+      "question": "O que acrescentou o Nazismo às ideias do Fascismo?",
+      "options": [
+        "O enquadramento dos jovens em organizações",
+        "O culto ao líder e a proibição de outros partidos",
+        "Uma componente racial violenta e o antissemitismo",
+        "A censura da imprensa, da rádio e do cinema"
+      ],
+      "correct": 2,
+      "explanation": "Culto ao líder, partido único e censura eram comuns aos dois regimes. O Nazismo acrescentou o racismo biológico e o antissemitismo."
+    },
+    {
+      "question": "Como se chamava a polícia secreta nazi, usada para silenciar a oposição?",
+      "options": [
+        "Luftwaffe",
+        "Gestapo",
+        "Panzer",
+        "Anschluss"
+      ],
       "correct": 1,
-      "explanation": "Embora ambos os regimes partilhassem bases comuns (culto ao líder, partido único, censura), o Nazismo acrescentava uma componente biológica e racial: o antissemitismo e a crença pseudocientífica na superioridade da 'raça ariana'."
+      "explanation": "A Gestapo prendia e silenciava os opositores. A Luftwaffe era a força aérea; os Panzers, os tanques; e o Anschluss, a anexação da Áustria."
     },
     {
-      "question": "Quando é que Benito Mussolini subiu ao poder em Itália?",
-      "options": ["1918", "1922", "1929", "1933"],
+      "question": "O que tinha de especial a rádio barata Volksempfänger?",
+      "options": [
+        "Era oferecida apenas aos membros do partido nazi",
+        "Tinha um alcance curto para não apanhar emissoras estrangeiras",
+        "Era tão potente que apanhava emissoras de todo o mundo",
+        "Só ligava às horas em que Hitler fazia os seus discursos"
+      ],
       "correct": 1,
-      "explanation": "Mussolini chegou ao poder em 1922, antes da Grande Depressão. Foi a crise global de 1929 que consolidou definitivamente o seu modelo autoritário, tornando o fascismo num exemplo que Hitler e outros viriam a seguir."
+      "explanation": "Era barata para que todas as famílias tivessem uma, e de propósito só chegava a voz do Estado — as emissoras estrangeiras não se ouviam."
     },
     {
-      "question": "O que era o 'Volksempfänger'?",
-      "options": ["Um jornal oficial do regime nazi", "Um campo de treino militar para jovens", "Uma rádio barata fabricada em massa para que todos os alemães ouvissem apenas a propaganda do Estado", "Um título honorífico dado a colaboradores do regime"],
-      "correct": 2,
-      "explanation": "O 'Volksempfänger' (Rádio do Povo) foi um aparelho de rádio barato fabricado em massa pelo regime nazi. Tinha um alcance curto de propósito, para impedir que os cidadãos sintonizassem emissoras estrangeiras — chegava apenas a voz do Estado."
+      "question": "O que foi o Anschluss, em 1938?",
+      "options": [
+        "A invasão da Etiópia pela Itália",
+        "A invasão da Polónia pela Alemanha",
+        "O pacto entre Hitler e Stalin",
+        "A anexação da Áustria pela Alemanha"
+      ],
+      "correct": 3,
+      "explanation": "O Anschluss foi a anexação da Áustria. Fez parte do desafio de Hitler ao Tratado de Versalhes, a par da remilitarização da Renânia."
     },
     {
-      "question": "Que política adotaram a Grã-Bretanha e a França face às exigências crescentes de Hitler nos anos 30?",
-      "options": ["Mobilização militar imediata", "Política de Apaziguamento", "Aliança com a União Soviética", "Sanções económicas severas"],
-      "correct": 1,
-      "explanation": "Traumatizadas pelos horrores da Primeira Guerra Mundial, a Grã-Bretanha e a França adotaram a Política de Apaziguamento — cediam às exigências de Hitler na esperança de manter a paz. Foi um erro fatal: Hitler interpretou cada concessão como um sinal de fraqueza."
+      "question": "Porque é que a Política de Apaziguamento foi um \"erro fatal\"?",
+      "options": [
+        "Hitler via cada concessão como um sinal de fraqueza",
+        "Obrigou a Itália a juntar-se aos Aliados",
+        "Levou a França a declarar guerra demasiado cedo",
+        "Fez os EUA abandonar a Grã-Bretanha"
+      ],
+      "correct": 0,
+      "explanation": "A Grã-Bretanha e a França cediam esperando que Hitler parasse. Em vez disso, ele ficou mais confiante e continuou a exigir."
     },
     {
-      "question": "O que foi o 'Anschluss' de 1938?",
-      "options": ["A invasão da Polónia pela Alemanha", "A criação da Juventude Hitleriana", "A anexação da Áustria pela Alemanha Nazi", "O pacto de não-agressão entre Hitler e Stalin"],
-      "correct": 2,
-      "explanation": "O Anschluss (palavra alemã para 'união') foi a anexação da Áustria pela Alemanha Nazi em março de 1938, unindo os dois países num único estado alemão. Esta ação violava diretamente os termos do Tratado de Versalhes."
-    },
-    {
-      "question": "Qual evento marcou o início oficial da Segunda Guerra Mundial?",
-      "options": ["A ascensão de Hitler ao poder em 1933", "A invasão da Etiópia por Mussolini", "A invasão da Polónia pela Alemanha em setembro de 1939", "O Anschluss austríaco em 1938"],
-      "correct": 2,
-      "explanation": "A 1 de setembro de 1939, a Alemanha invadiu a Polónia. Após perceber que o apaziguamento falhara, a Grã-Bretanha e a França declararam guerra à Alemanha dois dias depois, dando início à Segunda Guerra Mundial."
-    },
-    {
-      "question": "Qual era o objetivo das organizações juvenis como a 'Juventude Hitleriana'?",
-      "options": ["Fornecer educação académica de excelência", "Integrar os jovens desde cedo na ideologia do regime, ensinando-os a obedecer e a valorizar o Estado acima de tudo", "Preparar os jovens para emigrar para outros países", "Oferecer atividades desportivas recreativas"],
-      "correct": 1,
-      "explanation": "A Juventude Hitleriana e organizações similares serviam para enquadrar os jovens na ideologia nazi desde a infância, ensinando-os a obedecer, a marchar e a valorizar o Estado acima de tudo — incluindo a família."
-    },
-    {
-      "question": "Que pacto assinou Hitler antes de invadir a Polónia?",
-      "options": ["O Tratado de Versalhes", "O Pacto do Eixo com Itália e Japão", "O Pacto Molotov-Ribbentrop com a União Soviética", "O Acordo de Munique com a França"],
-      "correct": 2,
-      "explanation": "O Pacto Molotov-Ribbentrop foi um acordo de não-agressão assinado entre a Alemanha Nazi e a União Soviética em agosto de 1939. Garantiu a Hitler que não teria de lutar em duas frentes ao mesmo tempo quando invadiu a Polónia uma semana depois."
+      "question": "Que acontecimento fez a Grã-Bretanha e a França declarar guerra à Alemanha?",
+      "options": [
+        "A invasão da Polónia, em setembro de 1939",
+        "O ataque a Pearl Harbor, em 1941",
+        "A invasão da Etiópia, em 1935",
+        "A anexação da Áustria, em março de 1938"
+      ],
+      "correct": 0,
+      "explanation": "A 1 de setembro de 1939, depois do pacto com Stalin, a Alemanha invadiu a Polónia. Foi o início da Segunda Guerra Mundial."
     }
   ]
 }
