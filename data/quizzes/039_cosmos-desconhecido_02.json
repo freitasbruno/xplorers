@@ -2,114 +2,114 @@
   "lesson_id": "cosmos-desconhecido_002",
   "questions": [
     {
-      "question": "O que provou Albert Einstein em 1915, contrariando a visão de Newton?",
+      "question": "Para Newton, o espaço era um palco rígido e o tempo um relógio igual para todos. O que mostrou Einstein em 1915?",
       "options": [
-        "Que o espaço e o tempo são fixos e universais para todos os observadores",
-        "Que o espaço e o tempo formam uma estrutura única e maleável, deformável pela massa",
-        "Que a luz não é afetada pela gravidade",
-        "Que o tempo só existe dentro de buracos negros"
+        "Que o espaço é rígido, mas o tempo corre ao contrário perto do Sol",
+        "Que o tempo é igual para todos, mas o espaço pode ser dobrado",
+        "Que a gravidade é uma mão invisível que puxa os objetos à distância",
+        "Que o espaço e o tempo são elásticos e a massa consegue dobrá-los"
       ],
-      "correct": 1,
-      "explanation": "Einstein uniu espaço e tempo numa única estrutura — o espaço-tempo — e demonstrou que esta pode ser esticada, dobrada e rasgada pela massa dos corpos celestes, ao contrário do palco rígido e imóvel imaginado por Newton."
+      "correct": 3,
+      "explanation": "Einstein juntou espaço e tempo num só \"tecido\" — o espaço-tempo — e mostrou que ambos se esticam e dobram com a massa. A \"mão invisível\" que puxa é precisamente a ideia antiga que ele substituiu."
     },
     {
-      "question": "Na analogia do trampolim elástico, o que representa a gravidade extrema de um buraco negro?",
+      "question": "Na analogia do trampolim, atiras um berlinde perto de uma bola de ténis e ele curva à volta dela. O que representa isso?",
       "options": [
-        "Uma bola de ténis a afundar ligeiramente o lençol",
-        "Um berlinde a orbitar em torno da bola de ténis",
-        "Um objeto tão pesado que transforma o tecido num poço vertical sem fundo",
-        "O lençol elástico completamente esticado e sem qualquer afundamento"
+        "Uma órbita",
+        "Um buraco de verme",
+        "Uma onda gravitacional",
+        "Um buraco negro"
+      ],
+      "correct": 0,
+      "explanation": "O berlinde segue a curva do tecido afundado pela bola — é assim que a Lua orbita a Terra e a Terra orbita o Sol. Um buraco negro seria um afundamento tão fundo que se torna um poço sem fundo."
+    },
+    {
+      "question": "Uma estrela massiva esgotou o combustível. Porque é que colapsa e pode tornar-se um buraco negro?",
+      "options": [
+        "Deixa de haver pressão da fusão a empurrar para fora contra a gravidade",
+        "A estrela arrefece tanto que o seu gás congela e cai para o centro",
+        "Explode em supernova e espalha toda a sua massa pelo espaço vazio",
+        "Um buraco negro vizinho puxa-a e engole-a numa fração de segundo"
+      ],
+      "correct": 0,
+      "explanation": "Durante a vida da estrela, a fusão nuclear empurra para fora e equilibra a gravidade. Quando o combustível acaba, esse empurrão desaparece e a gravidade esmaga a estrela sobre si própria — numa fração de segundo."
+    },
+    {
+      "question": "Se nem a luz escapa a um buraco negro, como é que conseguimos \"vê-lo\"?",
+      "options": [
+        "Pela singularidade central, que emite uma luz ultravioleta muito forte",
+        "Pelo horizonte de eventos, que reflete a luz das estrelas que o rodeiam",
+        "Pelo disco de acreção, que aquece a milhões de graus e brilha em raios-X",
+        "Pelos buracos de verme, que deixam a luz escapar do lado de dentro"
       ],
       "correct": 2,
-      "explanation": "Enquanto a Terra ou o Sol criam apenas uma curvatura, um objeto com a densidade de um buraco negro estica o tecido do espaço-tempo até criar um poço vertical de inclinação infinita — daí tudo escorregar inevitavelmente para o centro."
+      "explanation": "O que vemos é o turbilhão de gás e poeira à volta do buraco negro: gira tão depressa que, com o atrito, aquece e brilha. O horizonte de eventos e a singularidade não deixam sair luz nenhuma."
     },
     {
-      "question": "Como nasce um buraco negro estelar?",
+      "question": "O que acontece a quem atravessa o horizonte de eventos de um buraco negro?",
       "options": [
-        "Da explosão de um planeta gasoso",
-        "Do colapso de uma estrela massiva (20-30 vezes a massa do Sol) quando esgota o combustível termonuclear",
-        "Da fusão de duas galáxias inteiras",
-        "Do arrefecimento gradual de uma nebulosa"
+        "Pode voltar a sair, desde que vá à velocidade da luz (300 000 km/s)",
+        "Precisaria de ir mais depressa do que a luz para sair — por isso não sai",
+        "Fica congelado para sempre na fronteira, sem nunca a conseguir atravessar",
+        "É imediatamente esmagado num ponto com volume zero e densidade infinita"
       ],
       "correct": 1,
-      "explanation": "Sem a pressão da fusão nuclear a empurrar para fora, uma estrela muito massiva colapsa catastroficamente sobre si própria numa fração de segundo, dando origem a um buraco negro estelar."
+      "explanation": "Dentro do horizonte de eventos, a velocidade de fuga é superior à da luz, e nada no Universo vai mais depressa do que a luz. O \"congelado na fronteira\" é só o que um observador de fora vê — para quem cai, a travessia continua."
     },
     {
-      "question": "Porque é que o disco de acreção brilha intensamente em raios-X?",
+      "question": "O que causa a \"espargueteificação\" perto de um buraco negro de massa estelar?",
       "options": [
-        "Porque reflete a luz das estrelas vizinhas",
-        "Porque o atrito extremo entre o gás e a poeira que giram a velocidades próximas da luz aquece o material a milhões de graus",
-        "Porque está fora do horizonte de eventos e por isso é frio",
-        "Porque a singularidade central emite luz própria"
-      ],
-      "correct": 1,
-      "explanation": "O material do disco de acreção gira a velocidades próximas da luz e o atrito entre as partículas gera temperaturas de milhões de graus, fazendo-o brilhar intensamente — é o que permite aos astrónomos \"ver\" o buraco negro."
-    },
-    {
-      "question": "O que define o horizonte de eventos de um buraco negro?",
-      "options": [
-        "É a superfície sólida do buraco negro",
-        "É a fronteira onde a velocidade de escape necessária ultrapassa a velocidade da luz, tornando o regresso impossível",
-        "É o ponto onde a matéria se torna infinitamente densa",
-        "É a zona onde termina o disco de acreção"
-      ],
-      "correct": 1,
-      "explanation": "O horizonte de eventos não é uma superfície física, mas um limite geométrico: dentro dele, escapar exigiria uma velocidade superior à da luz, o que é impossível — por isso nada consegue regressar."
-    },
-    {
-      "question": "O que é a \"espargueteificação\"?",
-      "options": [
-        "O processo de formação da singularidade",
-        "O esticar extremo de um corpo causado pela enorme diferença de força gravitacional entre a sua parte mais próxima e mais distante do buraco negro",
-        "A rotação do disco de acreção",
-        "A perda de massa de uma estrela antes de colapsar"
-      ],
-      "correct": 1,
-      "explanation": "A diferença de força gravitacional entre os pés e a cabeça de alguém perto de um buraco negro pode ser triliões de vezes maior, esticando o corpo como um fio de massa crua antes de atingir o horizonte de eventos."
-    },
-    {
-      "question": "Segundo a Relatividade Geral, o que acontece ao tempo perto de uma massa gigantesca?",
-      "options": [
-        "Acelera em relação a quem está longe",
-        "Mantém-se sempre igual, independentemente da gravidade",
-        "Abranda em relação a quem está longe — quanto mais forte a gravidade, mais devagar o relógio avança",
-        "Para completamente para qualquer observador"
+        "O calor do disco de acreção derreter o corpo aos poucos",
+        "A singularidade puxar todas as partes do corpo por igual",
+        "Os pés serem puxados com muito mais força do que a cabeça",
+        "O tempo abrandar mais na cabeça do que nos pés do astronauta"
       ],
       "correct": 2,
-      "explanation": "A dilatação gravitacional do tempo é uma regra de ouro da Relatividade Geral: campos gravitacionais mais fortes tornam o tempo mais lento em relação a um observador afastado dessa massa."
+      "explanation": "A diferença de força entre os pés e a cabeça — a força de maré — é tão grande que estica o corpo como esparguete, mesmo antes de chegar ao horizonte de eventos."
     },
     {
-      "question": "Como é que os relógios dos satélites GPS provam a relatividade no dia a dia?",
+      "question": "Os satélites GPS estão a 20 000 km de altitude, onde a gravidade é mais fraca. O que acontece aos seus relógios?",
       "options": [
-        "Avançam mais devagar do que os relógios na Terra, sem qualquer efeito prático",
-        "Avançam cerca de 45 microssegundos mais depressa por dia devido à gravidade mais fraca em órbita, exigindo correção diária",
-        "Não são afetados pela gravidade, apenas pela velocidade orbital",
-        "Só funcionam corretamente perto de buracos negros"
+        "Adiantam-se cerca de 45 microssegundos por dia em relação aos da Terra",
+        "Atrasam-se cerca de 45 microssegundos por dia em relação aos da Terra",
+        "Adiantam-se cerca de 10 segundos por dia em relação aos da Terra",
+        "Nada: os relógios atómicos não são afetados pela gravidade"
       ],
-      "correct": 1,
-      "explanation": "Como a gravidade é mais fraca a 20 000 km de altitude, os relógios atómicos dos satélites avançam mais depressa. Sem a correção diária com as equações de Einstein, a navegação por GPS acumularia um erro de cerca de 10 km por dia."
+      "correct": 0,
+      "explanation": "Menos gravidade significa tempo mais rápido, por isso os relógios dos satélites adiantam-se. Parece pouco, mas sem correção o GPS do telemóvel acumularia um erro de cerca de 10 km por dia."
     },
     {
-      "question": "O que captou o observatório LIGO em 2015 pela primeira vez na história?",
+      "question": "Se a Terra fosse esmagada até ao seu Raio de Schwarzschild, mantendo toda a massa, que tamanho teria o buraco negro?",
       "options": [
-        "A primeira fotografia direta de um buraco negro",
-        "Ondas gravitacionais provocadas pela colisão de dois buracos negros",
-        "O nascimento de uma nova estrela",
-        "Sinais de rádio de uma civilização extraterrestre"
+        "Cerca de 18 km — mais ou menos o tamanho de Lisboa",
+        "Cerca de 1,8 cm — caberia numa moeda de 1 cêntimo",
+        "Cerca de 1,8 mm — mais ou menos um grão de areia",
+        "Cerca de 1,8 m — mais ou menos a altura de um adulto"
       ],
       "correct": 1,
-      "explanation": "O LIGO detetou ondulações no tecido do espaço-tempo — ondas gravitacionais — geradas pela colisão de dois buracos negros a 1,3 mil milhões de anos-luz de distância, confirmando outra previsão de Einstein."
+      "explanation": "Qualquer objeto vira buraco negro se for comprimido abaixo do seu Raio de Schwarzschild. Para a Terra inteira, isso dá uma esfera de apenas 1,8 centímetros!"
     },
     {
-      "question": "No Paradoxo dos Gémeos Cósmicos, porque é que a Sofia envelhece muito menos do que o Pedro?",
+      "question": "O que fizeram os cientistas em 2019 com o Event Horizon Telescope?",
       "options": [
-        "Porque ela dorme mais tempo durante a viagem",
-        "Porque a forte gravidade perto do buraco negro dilata o tempo, fazendo o seu relógio avançar muito mais devagar do que o da Terra",
-        "Porque a nave viaja mais devagar do que a Terra gira",
-        "Porque não há qualquer diferença real, é apenas uma perceção"
+        "Simularam o buraco negro Gargantua para o filme Interstellar",
+        "Captaram ondas gravitacionais da colisão de dois buracos negros",
+        "Fotografaram o buraco negro Sagitário A*, no centro da nossa galáxia",
+        "Fotografaram a sombra do buraco negro da galáxia M87"
+      ],
+      "correct": 3,
+      "explanation": "Em 2019, 8 radiotelescópios combinados revelaram a sombra do buraco negro de M87, a 55 milhões de anos-luz. Sagitário A* só foi fotografado em 2022, as ondas gravitacionais foram captadas pelo LIGO em 2015 e Gargantua foi trabalho de Kip Thorne para o cinema."
+    },
+    {
+      "question": "A Sofia e o Pedro são gémeos de 15 anos. A Sofia passa 2 anos (no seu relógio) a orbitar perto de um buraco negro. Ao regressar…",
+      "options": [
+        "Ambos têm 17 anos, porque o tempo é igual para todos",
+        "A Sofia tem 17 anos e o Pedro é muito mais velho do que ela",
+        "O Pedro tem 17 anos e a Sofia ficou muito mais velha",
+        "A Sofia tem 17 anos e o Pedro continua com 15 anos"
       ],
       "correct": 1,
-      "explanation": "Este é um exemplo direto da dilatação gravitacional do tempo: a gravidade extrema perto do horizonte de eventos faz o relógio da Sofia avançar muito mais devagar do que o relógio na Terra, permitindo-lhe efetivamente \"saltar\" para o futuro."
+      "explanation": "Junto ao buraco negro a gravidade extrema abranda o tempo da Sofia: ela viveu 2 anos, mas na Terra passaram muitos mais. A Sofia viajou para o futuro — o irmão pode até já ser avô!"
     }
   ]
 }

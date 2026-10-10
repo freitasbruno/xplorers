@@ -2,114 +2,114 @@
   "lesson_id": "cosmos-desconhecido_001",
   "questions": [
     {
-      "question": "Segundo a aula, qual foi o papel da gravidade na formação do Sistema Solar?",
+      "question": "Há quanto tempo se formou o Sistema Solar, a partir de uma nuvem de gás e poeira?",
       "options": [
-        "Colapsou o material da nuvem para o centro, acendendo o Sol, e agrupou os restos em planetas",
-        "Afastou os planetas uns dos outros até ficarem a distâncias iguais",
-        "Criou a nuvem de gás e poeira a partir do vazio",
-        "Só atuou depois de os planetas estarem formados, mantendo-os em órbita"
+        "Há cerca de 4,6 mil milhões de anos",
+        "Há cerca de 13,8 mil milhões de anos",
+        "Há cerca de 460 milhões de anos",
+        "Há cerca de 1,6 mil milhões de anos"
       ],
       "correct": 0,
-      "explanation": "A gravidade foi o grande \"engenheiro\" do Sistema Solar: puxou o material da nuvem colossal para o centro, o que acendeu o Sol, e depois agrupou os restos nos planetas. A ideia de esferas alinhadas a distâncias iguais é apenas a representação simplificada dos livros."
+      "explanation": "O Sistema Solar tem cerca de 4,6 mil milhões de anos. Os 13,8 mil milhões de anos são a idade do próprio Universo — o nosso \"bairro cósmico\" é bem mais recente."
     },
     {
-      "question": "Qual é a estrutura interna que Mercúrio, Vénus, Terra e Marte partilham?",
+      "question": "Mercúrio não tem atmosfera. Qual é a consequência direta disso, segundo a aula?",
       "options": [
-        "Um núcleo de gás rodeado por uma crosta de gelo",
-        "Um núcleo denso de metal, um espesso manto rochoso e uma fina crosta",
-        "Uma crosta espessa e um núcleo oco",
-        "Apenas uma camada de rocha sem núcleo definido"
+        "É o planeta mais quente do Sistema Solar, sempre acima dos 400 °C",
+        "O calor não se distribui: passa de 430 °C de dia a −180 °C à noite",
+        "A crosta enrugou e formou escarpas com quilómetros de altura",
+        "O núcleo metálico ficou exposto e ocupa quase todo o planeta"
       ],
       "correct": 1,
-      "explanation": "Os quatro planetas rochosos têm o mesmo design básico: núcleo metálico (ferro e níquel), manto rochoso e fina crosta. É a partir daí que as diferenças — atmosfera, tamanho e história — os tornam mundos tão distintos."
+      "explanation": "Sem atmosfera, nada retém nem espalha o calor, por isso Mercúrio sofre o choque térmico mais violento do Sistema Solar. As escarpas existem, mas resultam de o planeta ter arrefecido e encolhido — e o planeta mais quente é Vénus."
     },
     {
-      "question": "Porque é que Mercúrio sofre o choque térmico mais violento do Sistema Solar (430 °C de dia e −180 °C à noite)?",
+      "question": "Em Vénus, o que demora mais tempo?",
       "options": [
-        "Porque está mais perto do Sol do que qualquer outro planeta e não roda",
-        "Porque tem um núcleo que liberta calor durante o dia",
-        "Porque não tem atmosfera para distribuir o calor",
-        "Porque a sua crosta é feita de gelo"
+        "Nenhum: o dia e o ano de Vénus têm exatamente a mesma duração",
+        "Um ano (225 dias terrestres) — demora mais do que um dia de 24 h",
+        "Um dia (243 dias terrestres) — demora mais do que um ano (225)",
+        "Um ano (365 dias terrestres) — demora mais do que um dia (243)"
       ],
       "correct": 2,
-      "explanation": "Sem atmosfera, o calor não é retido nem distribuído: a superfície aquece imenso enquanto está exposta ao Sol e arrefece drasticamente quando deixa de estar. Compara com Vénus, cuja atmosfera espessa mantém a temperatura sempre elevada."
+      "explanation": "Vénus roda tão devagar sobre si próprio que um dia (243 dias terrestres) é mais longo do que uma volta completa ao Sol (225 dias). E ainda roda ao contrário: lá, o Sol nasce a oeste!"
     },
     {
-      "question": "A superfície de Vénus está constantemente a 475 °C. Qual é a explicação apresentada na aula?",
+      "question": "A pressão à superfície de Vénus é 90 vezes a da Terra. A que é que isso equivale?",
       "options": [
-        "É o planeta mais próximo do Sol",
-        "A sua atmosfera, rica em dióxido de carbono, criou um efeito de estufa descontrolado",
-        "Tem um núcleo de metal líquido que aquece a superfície",
-        "Roda tão depressa que o atrito aquece a superfície"
-      ],
-      "correct": 1,
-      "explanation": "A atmosfera espessa de Vénus deixa entrar o calor do Sol mas não o deixa escapar. Por isso a superfície está constantemente a 475 °C, mesmo sendo Mercúrio o planeta mais próximo do Sol."
-    },
-    {
-      "question": "Porque é que Marte consegue ter o maior vulcão do Sistema Solar, o Monte Olimpo?",
-      "options": [
-        "Porque a sua tectónica de placas parou e os vulcões puderam crescer no mesmo local durante milhões de anos",
-        "Porque tem uma gravidade muito superior à da Terra",
-        "Porque a sua atmosfera espessa empurra a lava para cima",
-        "Porque a sua crosta é mais fina do que a de qualquer outro planeta"
+        "A estar a 900 metros de profundidade no oceano",
+        "A estar no topo do Monte Evereste, sem fato espacial",
+        "A estar a 90 metros de profundidade no oceano",
+        "A estar a 9 quilómetros de profundidade no oceano"
       ],
       "correct": 0,
-      "explanation": "Na Terra, o movimento das placas vai reciclando a superfície e \"afastando\" os vulcões do ponto quente. Em Marte, como a tectónica parou, o vulcão foi crescendo sempre no mesmo sítio até atingir 21 km de altura."
+      "explanation": "A atmosfera espessa de dióxido de carbono pesa tanto que esmaga como 900 metros de oceano. Qualquer sonda que lá pouse tem de ser construída como um submarino de profundidade."
     },
     {
-      "question": "O que distingue estruturalmente os gigantes gasosos e de gelo dos planetas rochosos?",
+      "question": "Porque é que o Monte Olimpo, em Marte, conseguiu crescer até aos 21 km de altura?",
       "options": [
-        "São mais pequenos e têm um núcleo exposto",
-        "Não têm núcleo nem manto",
-        "Não têm uma crosta sólida: são imensas esferas de fluidos e gases onde a pressão aumenta com a profundidade",
-        "Têm uma crosta de gelo com vários quilómetros de espessura"
+        "O núcleo de Marte é maior e mais quente do que o núcleo da Terra",
+        "A atmosfera fina de Marte deixa a lava subir sem resistência",
+        "Marte arrefeceu mais devagar e manteve-se ativo durante mais tempo",
+        "A tectónica de placas parou e o vulcão cresceu sempre no mesmo sítio"
       ],
-      "correct": 2,
-      "explanation": "Depois da Cintura de Asteroides não há superfície onde aterrar. Quem mergulhasse num gigante encontraria apenas fluidos e gases cada vez mais comprimidos. A crosta de gelo é característica de luas como Europa, não dos planetas gigantes."
+      "correct": 3,
+      "explanation": "Marte é pequeno e arrefeceu depressa (e não devagar!), por isso as placas deixaram de se mover. Sem nada a \"arrastar\" o vulcão para longe do ponto quente, a lava foi-se acumulando no mesmo sítio durante milhões de anos."
     },
     {
-      "question": "O que aconteceria ao hidrogénio se mergulhasses fundo em Júpiter?",
+      "question": "O que é, afinal, a Grande Mancha Vermelha de Júpiter?",
       "options": [
-        "Transformar-se-ia em gelo por causa do frio",
-        "Seria comprimido num estado líquido metálico, condutor de eletricidade, e geraria um campo magnético letal",
-        "Escaparia para o espaço em forma de géiseres",
-        "Ficaria igual, pois só a temperatura muda com a profundidade"
+        "Um vulcão de lava gigante, maior do que o próprio Monte Olimpo",
+        "Um anticiclone maior do que a Terra, ativo há mais de 300 anos",
+        "Uma tempestade do tamanho de Portugal, ativa há cerca de 30 anos",
+        "A cratera deixada pelo impacto de um enorme asteroide"
       ],
       "correct": 1,
-      "explanation": "A pressão em Júpiter torna-se tão extrema que o gás hidrogénio é comprimido em hidrogénio líquido metálico. Como conduz eletricidade, contribui para gerar o campo magnético mais letal do Sistema Solar."
+      "explanation": "A Grande Mancha Vermelha é uma tempestade — um anticiclone — maior do que a Terra inteira, que roda há mais de três séculos. Júpiter não tem superfície sólida, por isso não pode ter vulcões nem crateras."
     },
     {
-      "question": "Qual destas afirmações sobre os gigantes do Sistema Solar está correta?",
+      "question": "Em qual destes planetas se registam os ventos mais velozes do Sistema Solar (mais de 2.000 km/h)?",
       "options": [
-        "Saturno é tão pouco denso que flutuaria num oceano suficientemente grande",
-        "A Grande Mancha Vermelha é um vulcão de Júpiter",
-        "Úrano tem os ventos mais velozes do Sistema Solar",
-        "Os anéis de Saturno são feitos exclusivamente de grãos de areia"
+        "Júpiter",
+        "Neptuno",
+        "Úrano",
+        "Saturno"
+      ],
+      "correct": 1,
+      "explanation": "Os ventos de Neptuno são supersónicos — mais rápidos do que o som na Terra. É curioso que o planeta mais longe do Sol, e por isso com menos energia solar, seja o mais ventoso."
+    },
+    {
+      "question": "Úrano e Neptuno têm uma cor azul vibrante. De onde vem essa cor?",
+      "options": [
+        "Do metano misturado na sua \"sopa\" de água e amoníaco",
+        "Da chuva de diamantes que cai no interior destes planetas",
+        "Da luz do Sol, que lá chega tão fraca que só o azul resta",
+        "Dos oceanos de água líquida que cobrem a sua superfície"
       ],
       "correct": 0,
-      "explanation": "Saturno é pouco denso, apesar do seu enorme tamanho. A Grande Mancha Vermelha é um anticiclone (uma tempestade), os ventos mais velozes (mais de 2.000 km/h) registam-se em Neptuno, e os anéis de Saturno vão de grãos de areia a fragmentos do tamanho de arranha-céus."
+      "explanation": "É o metano que dá o tom azul a estes gigantes de gelo. Não têm superfície com oceanos, e a famosa chuva de diamantes acontece bem lá no fundo, longe da vista."
     },
     {
-      "question": "Como é que o oceano de Europa consegue manter-se líquido, apesar de estar tão longe do Sol?",
+      "question": "Europa está muito longe do Sol. Como consegue ter um oceano de água líquida por baixo do gelo?",
       "options": [
-        "Porque a superfície de gelo funciona como uma estufa",
-        "Porque o Sol aquece o oceano através de fendas no gelo",
-        "Porque a fricção de maré, causada pela gravidade de Júpiter, gera calor interno",
-        "Porque a água salgada nunca congela em nenhuma circunstância"
+        "O sal da água impede-a de congelar, seja qual for a temperatura",
+        "A camada de gelo à superfície funciona como uma estufa gigante",
+        "A gravidade de Júpiter estica-a e comprime-a, gerando calor por dentro",
+        "A luz do Sol entra pelas fendas do gelo e aquece o oceano"
       ],
       "correct": 2,
-      "explanation": "A gravidade de Júpiter estica e comprime Europa enquanto ela orbita, gerando calor interno — como o metal de um clipe que aquece ao ser dobrado repetidamente. Este processo chama-se fricção de maré e permite ter água líquida fora da Zona Habitável."
+      "explanation": "Chama-se fricção de maré: como um clipe que aquece quando o dobras muitas vezes, Europa aquece por dentro ao ser deformada por Júpiter. É por isso que pode haver água líquida fora da Zona Habitável."
     },
     {
-      "question": "Porque é que Encélado é considerado, talvez, o local mais promissor para procurar vida?",
+      "question": "A sonda Cassini voou através dos géiseres de Encélado. O que detetou lá?",
       "options": [
-        "Porque está dentro da Zona Habitável do Sol",
-        "Porque tem um oceano subterrâneo e a sonda Cassini detetou nos seus géiseres vapor de água, moléculas orgânicas complexas e sinais de fontes hidrotermais",
-        "Porque a sua superfície é quente e rochosa como a da Terra",
-        "Porque tem mais água líquida à superfície do que a Terra"
+        "Bactérias vivas congeladas dentro dos cristais de gelo",
+        "Lava, enxofre e cinzas de vulcões no fundo do oceano",
+        "Água doce e oxigénio, mas nenhuma molécula orgânica",
+        "Vapor de água, moléculas orgânicas e sinais de fontes hidrotermais"
       ],
-      "correct": 1,
-      "explanation": "Encélado não está na Zona Habitável, mas tem um oceano escondido e géiseres que lançam água para o espaço. A Cassini voou através deles e encontrou vapor de água, moléculas orgânicas e sinais de fontes hidrotermais — ingredientes importantes para a astrobiologia."
+      "correct": 3,
+      "explanation": "A Cassini encontrou ingredientes importantes para a vida — água, moléculas orgânicas complexas e sinais de fontes hidrotermais — mas não encontrou vida. É por isso que Encélado é \"promissor\" e não uma descoberta confirmada."
     }
   ]
 }
