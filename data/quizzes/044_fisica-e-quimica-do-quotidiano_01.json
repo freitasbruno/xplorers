@@ -1,0 +1,65 @@
+{
+  "lesson_id": "fisica-e-quimica-do-quotidiano_001",
+  "questions": [
+    {
+      "question": "O que distingue um átomo de ouro de um átomo de oxigénio?",
+      "options": ["O tipo de eletrões que tem", "A cor das partículas do núcleo", "O número de protões no núcleo", "A velocidade a que gira o átomo"],
+      "correct": 2,
+      "explanation": "Os protões, neutrões e eletrões são iguais em todos os elementos. O que muda é a quantidade de protões no núcleo — o Número Atómico. O oxigénio tem 8 e o ouro tem 79."
+    },
+    {
+      "question": "Se conseguisses retirar um protão a um átomo de Mercúrio (80), em que se transformaria?",
+      "options": ["Em Ouro, que tem 79 protões", "Em Mercúrio com menos massa", "Em Prata, que tem 79 protões", "Num gás nobre muito estável"],
+      "correct": 0,
+      "explanation": "O número de protões define o elemento. Com 80 protões é Mercúrio; com 79 passa a ser Ouro. A Prata tem 47 protões, por isso não seria o resultado."
+    },
+    {
+      "question": "Qual foi a decisão mais ousada de Mendeleev em 1869?",
+      "options": ["Ordenar os elementos por cor", "Inventar 63 elementos novos", "Retirar os metais da tabela", "Deixar espaços vazios na tabela"],
+      "correct": 3,
+      "explanation": "Quando a sequência não batia certo, Mendeleev deixou espaços em branco para elementos ainda por descobrir. Mais tarde, o Gálio e o Germânio encaixaram nas suas previsões."
+    },
+    {
+      "question": "Porque é que a descoberta do Gálio e do Germânio deu tanta força à tabela de Mendeleev?",
+      "options": ["Foram os primeiros metais a ser descobertos", "Confirmaram as previsões feitas para os espaços vazios", "Eram os dois únicos elementos que faltavam", "Provaram que os elementos se ordenam por cor"],
+      "correct": 1,
+      "explanation": "Mendeleev tinha previsto o peso e a cor destes elementos antes de existirem provas. Quando foram encontrados com essas características, ficou claro que a tabela não só arrumava — também previa."
+    },
+    {
+      "question": "Os Gases Nobres (Grupo 18) quase nunca reagem com outros elementos. Porquê?",
+      "options": ["Porque são os elementos mais pesados", "Porque têm a camada de eletrões completa", "Porque não têm protões no núcleo", "Porque só existem dentro das estrelas"],
+      "correct": 1,
+      "explanation": "Com a camada de eletrões completa, os Gases Nobres são muito estáveis e não precisam de se ligar a outros átomos. Daí a alcunha de \"snobs\" da tabela."
+    },
+    {
+      "question": "Qual destes elementos pode explodir só por tocar em água?",
+      "options": ["Hélio, do Grupo 18", "Carbono, do Grupo 14", "Árgon, do Grupo 18", "Potássio, do Grupo 1"],
+      "correct": 3,
+      "explanation": "O Potássio é um metal alcalino (Grupo 1), uma família altamente instável. O Hélio e o Árgon são gases nobres, que quase não reagem com nada."
+    },
+    {
+      "question": "Dois elementos estão na mesma linha (período) da tabela. O que têm em comum?",
+      "options": ["O mesmo número de camadas de eletrões", "O mesmo número de protões no núcleo", "O mesmo feitio químico e a mesma família", "A mesma origem numa supernova recente"],
+      "correct": 0,
+      "explanation": "As linhas (períodos) indicam quantas camadas de eletrões o átomo tem. São as colunas (grupos) que juntam elementos com comportamentos parecidos."
+    },
+    {
+      "question": "A grafite do lápis e o diamante são feitos de quê?",
+      "options": ["Grafite de chumbo, diamante de carbono", "Grafite de carbono, diamante de silício", "Ambos dos mesmos átomos de carbono", "Ambos de lítio sob pressão extrema"],
+      "correct": 2,
+      "explanation": "São exatamente os mesmos átomos de carbono. Na grafite ligam-se em folhas planas que deslizam; no diamante, sob pressão extrema, formam uma grelha 3D rígida. A forma de ligação muda tudo."
+    },
+    {
+      "question": "De onde veio o Ferro que tens no sangue?",
+      "options": ["Do núcleo de estrelas que explodiram", "Diretamente do Big Bang, há 13 mil milhões de anos", "Dos aceleradores de partículas", "Das rochas formadas no fundo do mar"],
+      "correct": 0,
+      "explanation": "O Big Bang criou essencialmente Hidrogénio e Hélio. Os elementos mais pesados, como o Ferro e o Cálcio, foram forjados em estrelas gigantes que explodiram como supernovas — somos poeira de estrelas."
+    },
+    {
+      "question": "No Detetive de Elementos, que par está correto?",
+      "options": ["Uma banana — Flúor", "Pasta de dentes — Flúor", "Sangue humano — Potássio", "Ecrã do telemóvel — Ferro"],
+      "correct": 1,
+      "explanation": "O Flúor está na pasta de dentes e ajuda a proteger o esmalte. As restantes associações estão trocadas: a banana tem Potássio, o sangue tem Ferro e o ecrã tátil usa Índio."
+    }
+  ]
+}

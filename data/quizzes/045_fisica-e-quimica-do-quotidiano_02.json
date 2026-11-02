@@ -1,0 +1,65 @@
+{
+  "lesson_id": "fisica-e-quimica-do-quotidiano_002",
+  "questions": [
+    {
+      "question": "O que é, afinal, a corrente elétrica?",
+      "options": ["Calor que viaja de um lado ao outro do metal", "Eletrões a mover-se na mesma direção", "Protões a saltar entre os átomos", "Um campo magnético preso no fio"],
+      "correct": 1,
+      "explanation": "Nos condutores, os eletrões podem saltar livremente. Quando uma pilha aplica tensão, empurra-os todos no mesmo sentido — esse fluxo organizado é a corrente elétrica."
+    },
+    {
+      "question": "Porque é que os fios elétricos são feitos de metais como o cobre?",
+      "options": ["Porque o cobre não tem eletrões", "Porque o cobre é um íman natural muito forte", "Porque os metais nunca aquecem", "Porque os eletrões se movem livremente"],
+      "correct": 3,
+      "explanation": "Nos metais, os eletrões não estão presos a um único átomo e podem saltar de um para outro. É isso que faz deles bons condutores."
+    },
+    {
+      "question": "Para que serve a pilha num circuito?",
+      "options": ["Aplica a tensão que põe os eletrões a correr", "Guarda os eletrões que saem do fio", "Transforma o cobre num íman permanente", "Cria os eletrões que formam a corrente"],
+      "correct": 0,
+      "explanation": "A pilha cria a \"pressão\" (tensão ou voltagem) que empurra os eletrões. Os eletrões já estão no fio — a pilha só os põe todos a correr na mesma direção."
+    },
+    {
+      "question": "Qual é a grande vantagem de um eletroíman sobre um íman normal?",
+      "options": ["Funciona sem precisar de eletricidade", "Atrai qualquer material, até plástico", "Pode ser ligado e desligado à vontade", "Nunca perde a força com o passar do tempo"],
+      "correct": 2,
+      "explanation": "Um íman normal está sempre \"ligado\". O eletroíman só funciona enquanto passa corrente, por isso pode ser controlado com um interruptor — ideal para erguer e largar objetos pesados."
+    },
+    {
+      "question": "Enrolas um fio num prego e ligas a uma pilha. Queres que agarre mais clipes. O que fazes?",
+      "options": ["Usas um prego mais curto, de plástico", "Afastas as voltas umas das outras", "Dás mais voltas de fio, bem juntas", "Desligas uma das pontas do fio"],
+      "correct": 2,
+      "explanation": "Mais voltas de fio concentradas num espaço menor reforçam o campo magnético. Um núcleo de plástico, afastar as voltas ou cortar o circuito enfraquecem ou desligam o eletroíman."
+    },
+    {
+      "question": "Num motor elétrico, porque é que o eletroíman do centro não para?",
+      "options": ["Os polos trocam e ele é atraído e repelido", "O ferro do centro é mais leve do que o ar", "Os ímanes fixos rodam à volta dele", "A pilha empurra-o com uma mola escondida"],
+      "correct": 0,
+      "explanation": "O motor inverte rapidamente a corrente, e com ela os polos do eletroíman. Assim é sempre atraído por um íman fixo e repelido por outro, girando sem fim."
+    },
+    {
+      "question": "Como é que o comboio SCMaglev atinge 603 km/h?",
+      "options": ["Usa rodas especiais de borracha", "Tem um motor a jato como os aviões", "Corre num túnel sem ar nenhum", "Flutua sobre os carris, sem atrito"],
+      "correct": 3,
+      "explanation": "Super-eletroímanes empurram o comboio para cima, fazendo-o flutuar alguns centímetros acima dos carris. Sem atrito com o chão, chega a velocidades de avião em silêncio."
+    },
+    {
+      "question": "Porque é que um carro elétrico precisa de menos manutenção do que um a gasolina?",
+      "options": ["Porque usa pneus muito mais resistentes", "Porque o motor tem muito menos peças móveis", "Porque não precisa de travões para parar", "Porque a bateria nunca precisa de carga"],
+      "correct": 1,
+      "explanation": "O motor a combustão tem milhares de peças móveis; o elétrico tem essencialmente uma, o rotor. Menos peças significa menos coisas para desgastar ou avariar."
+    },
+    {
+      "question": "O que cria o campo magnético da Terra?",
+      "options": ["O ferro e níquel líquidos do núcleo a rodar", "Os ventos fortes que sopram na alta atmosfera", "A atração da Lua sobre os oceanos do planeta", "As tempestades solares quando chegam à Terra"],
+      "correct": 0,
+      "explanation": "O núcleo externo da Terra é feito de ferro e níquel líquidos em rotação rápida, o que forma um eletroíman gigante. Esse campo, a magnetosfera, até desvia as tempestades solares."
+    },
+    {
+      "question": "Qual destas afirmações sobre a enguia-elétrica é verdadeira?",
+      "options": ["É uma enguia verdadeira do mar Mediterrâneo", "Tem uma bateria de lítio no corpo", "Produz eletricidade com um íman gigante interno", "Empilha cargas em células chamadas eletrócitos"],
+      "correct": 3,
+      "explanation": "A enguia-elétrica é um peixe amazónico (nem é uma enguia verdadeira) com milhares de eletrócitos. Juntos funcionam como pilhas em série e podem passar os 600 volts."
+    }
+  ]
+}

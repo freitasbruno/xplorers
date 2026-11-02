@@ -1,0 +1,65 @@
+{
+  "lesson_id": "fisica-e-quimica-do-quotidiano_003",
+  "questions": [
+    {
+      "question": "Que parte do espectro eletromagnético conseguem os nossos olhos ver?",
+      "options": ["Quase todo o espectro", "Metade do espectro", "Só os raios-X e UV", "Uma fatia minúscula"],
+      "correct": 3,
+      "explanation": "Todas as cores do arco-íris, do vermelho ao violeta, são só uma pequena fatia do espectro. Rádio, micro-ondas, infravermelho, UV, raios-X e gama são invisíveis para nós."
+    },
+    {
+      "question": "Afinal, a luz é uma onda ou uma partícula?",
+      "options": ["Só onda, como Newton provou", "As duas ao mesmo tempo", "Só partícula, como a água", "Nenhuma: é apenas calor"],
+      "correct": 1,
+      "explanation": "A física moderna mostrou que a luz se comporta como onda e como partícula em simultâneo. Às partículas de luz chamamos fotões."
+    },
+    {
+      "question": "O que distingue a luz vermelha de um raio-X?",
+      "options": ["O meio por onde viajam", "A velocidade no vácuo", "A quantidade de energia", "O número de fotões por cor"],
+      "correct": 2,
+      "explanation": "Toda a luz é a mesma coisa; muda apenas a energia, ligada à frequência e ao comprimento de onda. No vácuo, todas viajam à mesma velocidade, cerca de 300 000 km/s."
+    },
+    {
+      "question": "Se \"esticarmos\" uma onda de luz para lá do vermelho, o que obtemos?",
+      "options": ["Ondas com menos energia, como as de rádio", "Ondas com mais energia, como os raios gama", "Luz violeta muito brilhante", "Ondas que só viajam dentro de cabos"],
+      "correct": 0,
+      "explanation": "Esticar a onda tira-lhe energia: abaixo do vermelho estão o infravermelho, as micro-ondas e o rádio. Espremer a onda faz o contrário e leva-nos ao UV, raios-X e gama."
+    },
+    {
+      "question": "Qual destas radiações NÃO pertence à zona de alta energia do espectro?",
+      "options": ["Raios Gama", "Ultravioleta", "Raios-X", "Micro-ondas"],
+      "correct": 3,
+      "explanation": "As micro-ondas são ondas longas e de baixa energia, abaixo do vermelho. Ultravioleta, raios-X e raios gama estão acima do violeta e têm muita energia."
+    },
+    {
+      "question": "Como é que o micro-ondas aquece a comida?",
+      "options": ["Com uma resistência que aquece o ar", "Fazendo vibrar as moléculas de água", "Com luz ultravioleta muito forte", "Com raios-X de muito baixa energia"],
+      "correct": 1,
+      "explanation": "O micro-ondas emite ondas no comprimento exato que faz as moléculas de água vibrarem furiosamente. A fricção entre elas gera o calor que aquece a refeição."
+    },
+    {
+      "question": "Queres jogar online no quarto, com a porta fechada e longe do router. Que banda escolhes?",
+      "options": ["5 GHz, porque atravessa melhor as paredes", "5 GHz, porque tem ondas mais longas", "2.4 GHz, porque contorna melhor obstáculos", "2.4 GHz, porque carrega mais dados"],
+      "correct": 2,
+      "explanation": "Os 2.4 GHz têm ondas mais longas, mais lentas, mas que contornam portas e paredes. Os 5 GHz são mais rápidos, mas bloqueiam facilmente — ótimos só perto do router."
+    },
+    {
+      "question": "Na primeira radiografia, em 1895, o que bloqueou os raios-X?",
+      "options": ["A pele e os músculos da mão", "Os ossos e o anel de casamento", "O ar escuro do laboratório", "As unhas e o sangue da mão"],
+      "correct": 1,
+      "explanation": "Os raios-X atravessaram a carne da mão de Anna Bertha, mas foram travados pelos ossos e pelo anel. Röntgen chamou-lhes \"X\" porque não sabia o que eram."
+    },
+    {
+      "question": "Porque é que a viseira dos astronautas tem uma camada de ouro?",
+      "options": ["Para bloquear os raios gama das estrelas", "Para os astronautas verem no escuro", "Para tornar o capacete mais resistente", "Para refletir o infravermelho do Sol"],
+      "correct": 3,
+      "explanation": "O ouro é dos melhores materiais a refletir a radiação infravermelha (calor) do Sol. Sem ele, a cabeça do astronauta aqueceria demasiado dentro do fato."
+    },
+    {
+      "question": "Porque é que a câmara do telemóvel mostra a lâmpada do comando a piscar?",
+      "options": ["O comando emite luz UV que a câmara vê", "O sensor da câmara capta o infravermelho", "O comando só pisca quando é filmado", "A câmara transforma o som em luz visível"],
+      "correct": 1,
+      "explanation": "O comando comunica com luz infravermelha, invisível para os nossos olhos. O sensor da câmara é mais sensível e capta essa faixa, mostrando-a num tom arroxeado."
+    }
+  ]
+}
