@@ -67,6 +67,11 @@ function topic_badge_class(string $slug): string {
         'videojogos'       => 'badge-videojogos',
         'vida'             => 'badge-vida',
         'wwii'             => 'badge-wwii',
+        'wwi'              => 'badge-wwi',
+        'musica'           => 'badge-musica',
+        'cosmos-desconhecido'                  => 'badge-cosmos-desconhecido',
+        'mercados-financeiros-e-investimentos' => 'badge-mercados-financeiros-e-investimentos',
+        'fisica-e-quimica-do-quotidiano'       => 'badge-fisica-e-quimica-do-quotidiano',
     ];
     return $map[$slug] ?? 'badge-default';
 }

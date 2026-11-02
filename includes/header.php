@@ -114,6 +114,10 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
 .badge-vida            { background: #dcfce7; color: #14532d; }
 .badge-wwii            { background: #fee2e2; color: #991b1b; }
 .badge-wwi             { background: #fecaca; color: #7f1d1d; }
+.badge-musica          { background: #fce7f3; color: #9d174d; }
+.badge-cosmos-desconhecido { background: #e0f2fe; color: #075985; }
+.badge-mercados-financeiros-e-investimentos { background: #ecfccb; color: #3f6212; }
+.badge-fisica-e-quimica-do-quotidiano { background: #cffafe; color: #155e75; }
 .badge-default         { background: #f1f5f9; color: #475569; }
 
 .tab-indicator {

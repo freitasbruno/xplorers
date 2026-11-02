@@ -18,6 +18,9 @@ const TOPIC_META = {
   wwi:             { label: 'Primeira Guerra Mundial', color: '#b91c1c', badge: 'bg-red-700'     },
   wwii:            { label: 'Segunda Guerra Mundial',  color: '#ef4444', badge: 'bg-red-500'     },
   musica:          { label: 'Música',                  color: '#ec4899', badge: 'bg-pink-500'    },
+  'cosmos-desconhecido':                  { label: 'O Cosmos e o Desconhecido', color: '#0ea5e9', badge: 'bg-sky-500'  },
+  'mercados-financeiros-e-investimentos': { label: 'Mercados e Investimentos',  color: '#65a30d', badge: 'bg-lime-600' },
+  'fisica-e-quimica-do-quotidiano':       { label: 'Física e Química',          color: '#06b6d4', badge: 'bg-cyan-500' },
 };
 
 const BATCH = 8;
