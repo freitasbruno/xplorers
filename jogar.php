@@ -15,6 +15,9 @@ $lesson = null;
 if ($criar !== '') {
     $lesson = get_lesson($criar);
     $mode   = ($lesson && get_quiz($lesson)) ? 'create' : 'invalid';
+    // "Todo o tema" needs at least 2 lessons with a quiz in the topic.
+    $topic_pool = $mode === 'create' ? get_topic_quiz_pool($lesson['topic_slug']) : [];
+    $topic_ok   = count($topic_pool) >= 2;
 } elseif ($code !== '') {
     $mode = room_valid_code($code) ? 'room' : 'enter';
 } else {
@@ -94,6 +97,33 @@ body.presenter #r-explanation-text { font-size: 18px; }
   <p class="text-sm mb-8" style="color:var(--muted);">Cada pessoa responde no seu telemóvel.</p>
 
   <form id="create-form" class="flex flex-col gap-6">
+    <?php if ($topic_ok): ?>
+    <fieldset>
+      <legend class="text-xs font-bold uppercase tracking-wide mb-2" style="color:var(--muted);">Quiz</legend>
+      <div class="grid grid-cols-2 gap-3">
+        <label class="choice"><input type="radio" name="scope" value="lesson" checked>
+          <div class="font-bold text-slate-900">📘 Esta aula</div>
+          <div class="text-xs mt-0.5" style="color:var(--muted);">As perguntas desta aula</div>
+        </label>
+        <label class="choice"><input type="radio" name="scope" value="topic">
+          <div class="font-bold text-slate-900">📚 Todo o tema</div>
+          <div class="text-xs mt-0.5" style="color:var(--muted);"><?= htmlspecialchars($lesson['topic_name']) ?> · <?= count($topic_pool) ?> aulas</div>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset id="count-fieldset" class="hidden">
+      <legend class="text-xs font-bold uppercase tracking-wide mb-2" style="color:var(--muted);">Perguntas</legend>
+      <div class="grid grid-cols-3 gap-3">
+        <?php foreach ([10, 15, 20] as $n): ?>
+        <label class="choice text-center"><input type="radio" name="count" value="<?= $n ?>"<?= $n === 10 ? ' checked' : '' ?>>
+          <div class="font-bold text-slate-900"><?= $n ?></div>
+        </label>
+        <?php endforeach; ?>
+      </div>
+    </fieldset>
+    <?php endif; ?>
+
     <fieldset>
       <legend class="text-xs font-bold uppercase tracking-wide mb-2" style="color:var(--muted);">Papel</legend>
       <div class="grid grid-cols-2 gap-3">
@@ -239,6 +269,7 @@ body.presenter #r-explanation-text { font-size: 18px; }
     <div id="r-feedback" class="rounded-2xl p-4 mb-5 text-center font-black text-lg"></div>
     <div id="r-text" class="text-lg font-black text-slate-900 leading-snug mb-5"></div>
     <div id="r-options" class="flex flex-col gap-3 mb-5"></div>
+    <p id="r-source" class="hidden text-xs font-bold mb-2" style="color:var(--muted);"></p>
     <div class="rounded-2xl p-4 mb-6" style="background:#f8faff;border:1.5px solid #bfdbfe;">
       <div class="text-xs font-bold uppercase tracking-wide mb-1.5" style="color:#2563eb;">Explicação</div>
       <p id="r-explanation-text" class="text-sm leading-relaxed text-slate-700"></p>

@@ -126,6 +126,42 @@ test('solo quiz still renders and scores (shared option CSS, textContent renderi
   await expect(page.locator('#result-breakdown > div')).toHaveCount(TOTAL);
 });
 
+test('topic game: 10 questions from the whole topic, source lesson shown on reveal only', async ({ browser }) => {
+  const ctx  = await browser.newContext();
+  const host = await ctx.newPage();
+  await host.goto(`jogar.php?criar=${LESSON}`);
+  await expect(host.locator('#count-fieldset')).toBeHidden();
+  await host.locator('label.choice', { hasText: 'Todo o tema' }).click();
+  await expect(host.locator('#count-fieldset')).toBeVisible();
+  await host.locator('label.choice', { hasText: 'Só apresento' }).click();
+  await host.click('#create-form button[type=submit]');
+  await host.waitForURL(/\?c=[A-Z0-9]{4}$/);
+  const code = new URL(host.url()).searchParams.get('c');
+
+  await expect(host.locator('#game-title')).toHaveText('Todo o tema');
+  const ana = await joinRoom(browser, code, 'Ana');
+  await expect(host.locator('#lobby-players .chip')).toHaveCount(1);
+  await expect(host.locator('#lobby-settings')).toContainText('10 perguntas');
+  await expect(ana.locator('#game-title')).toHaveText('Todo o tema');
+
+  await host.click('#btn-start');
+  await expect(ana.locator('#q-progress')).toHaveText('Pergunta 1 / 10');
+  await option(ana, 0).click();
+  await expect(ana.locator('#s-reveal')).toBeVisible();
+  await expect(ana.locator('#r-source')).toBeVisible();
+  await expect(ana.locator('#r-source')).toHaveText(/^Aula \d+ · /);
+});
+
+test('lesson game never shows the source lesson on reveal', async ({ browser }) => {
+  const { page: host, code } = await createRoom(browser, { role: 'present', pace: 'relaxed' });
+  const ana = await joinRoom(browser, code, 'Ana');
+  await expect(host.locator('#lobby-players .chip')).toHaveCount(1);
+  await host.click('#btn-start');
+  await option(ana, QUIZ.questions[0].correct).click();
+  await expect(ana.locator('#s-reveal')).toBeVisible();
+  await expect(ana.locator('#r-source')).toBeHidden();
+});
+
 test('lesson quiz tab offers "Jogar em grupo" next to "Começar Quiz"', async ({ page }) => {
   await page.goto(`lesson.php?id=${LESSON}`);
   await page.click('#tab-btn-mob-quiz');

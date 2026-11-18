@@ -4,7 +4,8 @@
  * it directly: sala_handle(array $req, float $now): array [http_status, body].
  *
  * Actions:
- *   create  lesson_id, role, pace, name?      → code, host_token, player_id?, token?
+ *   create  lesson_id, role, pace, name?, mode? (lesson|topic), count? (10|15|20, topic only)
+ *                                              → code, host_token, player_id?, token?
  *   join    code, name                         → player_id, token, view
  *   state   code, token? | host_token?, v?     → view | {unchanged} | public info (no identity)
  *   answer  code, token, choice                → view
@@ -25,12 +26,55 @@ function sala_lesson_info(array $lesson): array {
     ];
 }
 
-/** Load lesson + quiz for a room; both must exist. */
+/** Load lesson + quiz; both must exist. */
 function sala_content(string $lesson_id): array {
     $lesson = get_lesson($lesson_id);
     $quiz   = $lesson ? get_quiz($lesson) : null;
     if (!$lesson || !$quiz || empty($quiz['questions'])) throw new RoomError('Quiz não encontrado.', 404);
     return [$lesson, $quiz];
+}
+
+/** Topic info shown in the header of a topic game. */
+function sala_topic_info(array $lesson): array {
+    return [
+        'slug'        => $lesson['topic_slug'],
+        'name'        => $lesson['topic_name'],
+        'badge_class' => topic_badge_class($lesson['topic_slug']),
+    ];
+}
+
+/** Refs for every question of one lesson, in order. */
+function sala_lesson_refs(string $lesson_id): array {
+    [, $quiz] = sala_content($lesson_id);
+    $refs = [];
+    foreach (array_keys($quiz['questions']) as $i) $refs[] = ['l' => $lesson_id, 'i' => $i];
+    return $refs;
+}
+
+/** Draw a fresh set for a topic game. Throws 400 when the topic has no pool or the count is bad. */
+function sala_topic_refs(string $topic_slug, int $count): array {
+    if (!in_array($count, [10, 15, 20], true)) throw new RoomError('Número de perguntas inválido.');
+    $pool = get_topic_quiz_pool($topic_slug);
+    if (count($pool) < 2) throw new RoomError('Este tema só tem um quiz.');
+    return room_draw($pool, $count);
+}
+
+/**
+ * The room's questions, resolved from its refs (a room without refs is a legacy
+ * one-lesson game). Each entry is the quiz question plus `_lesson` (id, class_number, title).
+ */
+function sala_questions(array $room): array {
+    $refs = $room['questions'] ?? sala_lesson_refs($room['lesson_id']);
+    $out  = [];
+    foreach ($refs as $ref) {
+        $lesson = get_lesson((string) $ref['l']);
+        $quiz   = $lesson ? get_quiz($lesson) : null;
+        $q      = $quiz['questions'][$ref['i']] ?? null;
+        if (!$lesson || !$q) throw new RoomError('Quiz não encontrado.', 404);
+        $q['_lesson'] = ['id' => $lesson['id'], 'class_number' => $lesson['class_number'], 'title' => $lesson['title']];
+        $out[] = $q;
+    }
+    return $out;
 }
 
 /** Resolve who is calling. Returns ['is_host' => bool, 'pid' => ?string]. */
@@ -44,9 +88,10 @@ function sala_viewer(array $room, array $req): array {
 }
 
 function sala_full_view(array $room, array $viewer, float $now): array {
-    [$lesson, $quiz] = sala_content($room['lesson_id']);
-    $view = room_view($room, $quiz, $viewer, $now);
+    [$lesson] = sala_content($room['lesson_id']);
+    $view = room_view($room, sala_questions($room), $viewer, $now);
     $view['lesson'] = sala_lesson_info($lesson);
+    if ($view['mode'] === 'topic') $view['topic'] = sala_topic_info($lesson);
     return $view;
 }
 
@@ -58,14 +103,24 @@ function sala_handle(array $req, float $now): array {
         switch ($action) {
 
             case 'create': {
-                [$lesson, $quiz] = sala_content((string) ($req['lesson_id'] ?? ''));
+                [$lesson] = sala_content((string) ($req['lesson_id'] ?? ''));
                 $role = (string) ($req['role'] ?? '');
                 $pace = (string) ($req['pace'] ?? '');
+                $mode = (string) ($req['mode'] ?? 'lesson');
+                if (!in_array($mode, ['lesson', 'topic'], true)) throw new RoomError('Modo inválido.');
+                if ($mode === 'topic') {
+                    $count = (int) ($req['count'] ?? 0);
+                    $refs  = sala_topic_refs($lesson['topic_slug'], $count);
+                } else {
+                    $count = null;
+                    $refs  = sala_lesson_refs($lesson['id']);
+                }
                 $ids  = [];
-                $room = room_create(function (string $code) use ($lesson, $quiz, $role, $pace, $req, $now, &$ids) {
+                $room = room_create(function (string $code) use ($lesson, $refs, $mode, $count, $role, $pace, $req, $now, &$ids) {
                     [$room, $host_token, $pid, $ptoken] = room_new(
-                        $code, $lesson['id'], $role, $pace, count($quiz['questions']),
-                        (string) ($req['name'] ?? ''), $now
+                        $code, $lesson['id'], $role, $pace, $refs,
+                        (string) ($req['name'] ?? ''), $now,
+                        $mode, $mode === 'topic' ? $lesson['topic_slug'] : null, $count
                     );
                     $ids = ['host_token' => $host_token, 'player_id' => $pid, 'token' => $ptoken];
                     return $room;
@@ -95,6 +150,7 @@ function sala_handle(array $req, float $now): array {
                             'full'         => count($room['players']) >= ROOM_MAX_PLAYERS,
                             'lesson'       => sala_lesson_info($lesson),
                         ];
+                        if (($room['mode'] ?? 'lesson') === 'topic') $public['topic'] = sala_topic_info($lesson);
                         return [null, [200, ['public' => $public]]];
                     }
 
@@ -117,8 +173,7 @@ function sala_handle(array $req, float $now): array {
                 return room_with($code, $now, function (array $room) use ($req, $now) {
                     $viewer = sala_viewer($room, $req);
                     if ($viewer['pid'] === null) throw new RoomError('Jogador desconhecido.', 403);
-                    [, $quiz] = sala_content($room['lesson_id']);
-                    $room = room_answer($room, $quiz, $viewer['pid'], (int) ($req['choice'] ?? -1), $now);
+                    $room = room_answer($room, sala_questions($room), $viewer['pid'], (int) ($req['choice'] ?? -1), $now);
                     return [$room, [200, ['view' => sala_full_view($room, $viewer, $now)]]];
                 });
             }
@@ -135,7 +190,9 @@ function sala_handle(array $req, float $now): array {
                         'start'   => room_start($room, $now),
                         'close'   => room_close($room, $now),
                         'next'    => room_next($room, $now),
-                        'restart' => room_restart($room, $now),
+                        'restart' => room_restart($room, $now, ($room['mode'] ?? 'lesson') === 'topic'
+                            ? sala_topic_refs((string) $room['topic_slug'], (int) $room['q_count'])
+                            : null),
                     };
                     $room['host_seen'] = $now;
                     return [$room, [200, ['view' => sala_full_view($room, $viewer, $now)]]];

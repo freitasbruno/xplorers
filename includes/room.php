@@ -66,23 +66,61 @@ function room_pick_avatar(array $room): string {
 }
 
 /**
+ * Pick $n questions from a topic: $pool = [lesson_id => question_count].
+ * Spread evenly (counts differ by at most 1 while every lesson still has
+ * questions left), never repeats a question. Returns refs [{l, i}] in random
+ * order. $n is capped at the pool's total.
+ */
+function room_draw(array $pool, int $n): array {
+    $left = [];
+    foreach ($pool as $lesson_id => $count) {
+        $idx = range(0, max(0, (int) $count) - 1);
+        if (!$idx) continue;
+        shuffle($idx);
+        $left[$lesson_id] = $idx;
+    }
+    $order = array_keys($left);
+    shuffle($order);
+
+    $refs = [];
+    while (count($refs) < $n && $left) {
+        foreach ($order as $lesson_id) {
+            if (count($refs) >= $n) break;
+            if (!$left[$lesson_id]) continue;
+            $refs[] = ['l' => $lesson_id, 'i' => array_pop($left[$lesson_id])];
+        }
+        $left = array_filter($left);
+        $order = array_values(array_filter($order, fn($l) => isset($left[$l])));
+    }
+    shuffle($refs);
+    return $refs;
+}
+
+/**
  * Create a room. Returns [room, host_token, host_player_id|null, host_player_token|null].
  * $role: 'play' | 'present'   $pace: 'timed' | 'relaxed'
+ * $questions: refs [{l: lesson_id, i: index}] fixing the game's questions.
+ * $mode: 'lesson' | 'topic' (topic: $topic_slug and requested $q_count are kept for restart).
  */
-function room_new(string $code, string $lesson_id, string $role, string $pace, int $q_total, ?string $host_name, float $now): array {
+function room_new(string $code, string $lesson_id, string $role, string $pace, array $questions, ?string $host_name, float $now,
+                  string $mode = 'lesson', ?string $topic_slug = null, ?int $q_count = null): array {
     if (!in_array($role, ['play', 'present'], true)) throw new RoomError('Papel inválido.');
     if (!in_array($pace, ['timed', 'relaxed'], true)) throw new RoomError('Ritmo inválido.');
-    if ($q_total < 1) throw new RoomError('Este quiz não tem perguntas.');
+    if (count($questions) < 1) throw new RoomError('Este quiz não tem perguntas.');
 
     $room = [
         'code'         => $code,
         'lesson_id'    => $lesson_id,
+        'mode'         => $mode,
+        'topic_slug'   => $topic_slug,
+        'q_count'      => $q_count,
+        'questions'    => array_values($questions),
         'host_token'   => room_token(),
         'role'         => $role,
         'pace'         => $pace,
         'phase'        => 'lobby',
         'q_index'      => -1,
-        'q_total'      => $q_total,
+        'q_total'      => count($questions),
         'q_started_at' => null,
         'q_deadline'   => null,
         'version'      => 1,
@@ -202,7 +240,7 @@ function room_points(array $room, bool $correct, float $elapsed): int {
     return (int) round(ROOM_POINTS_MAX - (ROOM_POINTS_MAX - ROOM_POINTS_MIN) * $ratio);
 }
 
-function room_answer(array $room, array $quiz, string $pid, int $choice, float $now): array {
+function room_answer(array $room, array $questions, string $pid, int $choice, float $now): array {
     $room = room_tick($room, $now)[0];
     if ($room['phase'] !== 'question') throw new RoomError('Esta pergunta já fechou.', 409);
     if (!isset($room['players'][$pid])) throw new RoomError('Jogador desconhecido.', 403);
@@ -216,7 +254,7 @@ function room_answer(array $room, array $quiz, string $pid, int $choice, float $
     if ($choice < 0 || $choice > 3)                 throw new RoomError('Opção inválida.');
 
     $elapsed = $now - $room['q_started_at'];
-    $correct = $choice === (int) $quiz['questions'][$q]['correct'];
+    $correct = $choice === (int) $questions[$q]['correct'];
     $points  = room_points($room, $correct, $elapsed);
 
     $room['answers'][$key][$pid] = ['choice' => $choice, 'ms' => (int) round($elapsed * 1000), 'points' => $points];
@@ -270,8 +308,14 @@ function room_next(array $room, float $now): array {
     return room_open_question($room, $next, $now);
 }
 
-function room_restart(array $room, float $now): array {
+/** Back to the lobby with scores reset. $questions (refs), when given, replaces the game's questions. */
+function room_restart(array $room, float $now, ?array $questions = null): array {
     if ($room['phase'] !== 'podium') throw new RoomError('O jogo ainda não terminou.', 409);
+    if ($questions !== null) {
+        if (count($questions) < 1) throw new RoomError('Este quiz não tem perguntas.');
+        $room['questions'] = array_values($questions);
+        $room['q_total']   = count($questions);
+    }
     foreach ($room['players'] as $pid => $p) {
         $room['players'][$pid]['score']         = 0;
         $room['players'][$pid]['correct_count'] = 0;
@@ -328,7 +372,7 @@ function room_ranking(array $room, float $now): array {
  * includes the correct answer or explanation while a question is open.
  * $viewer: ['is_host' => bool, 'pid' => ?string]
  */
-function room_view(array $room, array $quiz, array $viewer, float $now): array {
+function room_view(array $room, array $questions, array $viewer, float $now): array {
     $pid   = $viewer['pid'] ?? null;
     $q     = $room['q_index'];
     $key   = room_q_key($q);
@@ -343,6 +387,8 @@ function room_view(array $room, array $quiz, array $viewer, float $now): array {
         'pace'        => $room['pace'],
         'q_index'     => $q,
         'q_total'     => $room['q_total'],
+        'mode'        => $room['mode'] ?? 'lesson',
+        'topic_slug'  => $room['topic_slug'] ?? null,
         'time_limit'  => ROOM_TIME_LIMIT,
         'is_host'     => !empty($viewer['is_host']),
         'host_online' => ($now - $room['host_seen']) < ROOM_HOST_LOST,
@@ -364,7 +410,7 @@ function room_view(array $room, array $quiz, array $viewer, float $now): array {
     }
 
     if (in_array($room['phase'], ['question', 'reveal'], true)) {
-        $src = $quiz['questions'][$q];
+        $src = $questions[$q];
         $eligible = 0;
         foreach ($room['players'] as $p) if (room_is_eligible($p, $q)) $eligible++;
 
@@ -383,6 +429,9 @@ function room_view(array $room, array $quiz, array $viewer, float $now): array {
             $question['correct']     = (int) $src['correct'];
             $question['explanation'] = $src['explanation'] ?? '';
             $question['counts']      = $counts;
+            if (($room['mode'] ?? 'lesson') === 'topic' && isset($src['_lesson'])) {
+                $question['lesson'] = $src['_lesson'];
+            }
         } elseif ($view['me']) {
             // Hide the points of an answer until the question closes — they give the answer away.
             if ($view['me']['answer']) $view['me']['answer'] = ['choice' => $view['me']['answer']['choice']];

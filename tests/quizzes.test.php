@@ -5,6 +5,21 @@ function quiz_files(): array {
     return glob(__DIR__ . '/../data/quizzes/*.json') ?: [];
 }
 
+test('pool: topic quiz pool lists lessons with a quiz, ordered by class number', function () {
+    $pool = get_topic_quiz_pool('cosmos');
+    assert_eq(['cosmos_001', 'cosmos_002', 'cosmos_003'], array_keys($pool));
+    foreach ($pool as $n) assert_true($n > 0, 'has questions');
+    assert_eq(count(get_quiz('001_cosmos_01')['questions']), $pool['cosmos_001']);
+});
+
+test('pool: unknown topic is empty; lessons without a quiz are skipped', function () {
+    assert_eq([], get_topic_quiz_pool('does-not-exist'));
+    foreach (get_lessons() as $l) {
+        $pool = get_topic_quiz_pool($l['topic_slug']);
+        assert_eq(get_quiz($l) !== null && !empty(get_quiz($l)['questions']), isset($pool[$l['id']]), $l['id']);
+    }
+});
+
 test('quizzes: correct answers spread across positions (each 1–4 times in 10)', function () {
     foreach (quiz_files() as $file) {
         $qs = json_decode(file_get_contents($file), true)['questions'];

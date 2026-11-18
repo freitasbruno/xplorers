@@ -3,17 +3,24 @@
 
 require_once __DIR__ . '/../includes/room_store.php';
 
-function fixture_quiz(int $n = 3): array {
+function fixture_questions(int $n = 3): array {
     $qs = [];
     for ($i = 0; $i < $n; $i++) {
         $qs[] = ['question' => "Q$i", 'options' => ['a', 'b', 'c', 'd'], 'correct' => 1, 'explanation' => "E$i"];
     }
-    return ['questions' => $qs];
+    return $qs;
+}
+
+/** Question refs as stored in a room: [{l: lesson_id, i: index}]. */
+function fixture_refs(int $n = 3, string $lesson = 'x'): array {
+    $refs = [];
+    for ($i = 0; $i < $n; $i++) $refs[] = ['l' => $lesson, 'i' => $i];
+    return $refs;
 }
 
 /** Room in lobby with the given players. Returns [room, ids by name]. */
 function fixture_room(string $pace = 'timed', string $role = 'present', array $names = ['Ana', 'Rui'], float $now = 1000.0): array {
-    [$room] = room_new('ABCD', 'x', $role, $pace, 3, $role === 'play' ? 'Host' : null, $now);
+    [$room] = room_new('ABCD', 'x', $role, $pace, fixture_refs(3), $role === 'play' ? 'Host' : null, $now);
     $ids = [];
     foreach ($names as $n) { [$room, $pid] = room_add_player($room, $n, $now); $ids[$n] = $pid; }
     return [$room, $ids];
@@ -89,7 +96,7 @@ test('relaxed pace has no deadline', function () {
 
 test('timed: instant correct = 1000, at deadline = 500, wrong = 0', function () {
     [$room, $ids] = fixture_room('timed', 'present', ['A', 'B', 'C']);
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['A'], 1, 1000.0);
     $room = room_answer($room, $quiz, $ids['C'], 0, 1005.0);
@@ -105,43 +112,43 @@ test('timed: instant correct = 1000, at deadline = 500, wrong = 0', function () 
 test('timed: halfway correct = 750', function () {
     [$room, $ids] = fixture_room('timed', 'present', ['A', 'B']);
     $room = room_start($room, 1000);
-    $room = room_answer($room, fixture_quiz(), $ids['A'], 1, 1010.0);
+    $room = room_answer($room, fixture_questions(), $ids['A'], 1, 1010.0);
     assert_eq(750, $room['players'][$ids['A']]['score']);
 });
 
 test('relaxed: correct = 1000 regardless of time', function () {
     [$room, $ids] = fixture_room('relaxed', 'present', ['A', 'B']);
     $room = room_start($room, 1000);
-    $room = room_answer($room, fixture_quiz(), $ids['A'], 1, 1300.0);
+    $room = room_answer($room, fixture_questions(), $ids['A'], 1, 1300.0);
     assert_eq(1000, $room['players'][$ids['A']]['score']);
 });
 
 test('answer within grace accepted, after grace rejected', function () {
     [$room, $ids] = fixture_room('timed', 'present', ['A', 'B']);
     $room = room_start($room, 1000);
-    $room = room_answer($room, fixture_quiz(), $ids['A'], 1, 1020.8);
+    $room = room_answer($room, fixture_questions(), $ids['A'], 1, 1020.8);
     assert_eq(500, $room['players'][$ids['A']]['score'], 'clamped at min');
-    assert_room_error(fn() => room_answer($room, fixture_quiz(), $ids['B'], 1, 1021.5), 409);
+    assert_room_error(fn() => room_answer($room, fixture_questions(), $ids['B'], 1, 1021.5), 409);
 });
 
 test('double answer rejected', function () {
     [$room, $ids] = fixture_room('timed', 'present', ['A', 'B']);
     $room = room_start($room, 1000);
-    $room = room_answer($room, fixture_quiz(), $ids['A'], 1, 1001);
-    assert_room_error(fn() => room_answer($room, fixture_quiz(), $ids['A'], 2, 1002), 409);
+    $room = room_answer($room, fixture_questions(), $ids['A'], 1, 1001);
+    assert_room_error(fn() => room_answer($room, fixture_questions(), $ids['A'], 2, 1002), 409);
 });
 
 test('invalid option rejected', function () {
     [$room, $ids] = fixture_room();
     $room = room_start($room, 1000);
-    assert_room_error(fn() => room_answer($room, fixture_quiz(), $ids['Ana'], 4, 1001), 400);
+    assert_room_error(fn() => room_answer($room, fixture_questions(), $ids['Ana'], 4, 1001), 400);
 });
 
 // ---- closing ----
 
 test('closes early when all active players answered', function () {
     [$room, $ids] = fixture_room('relaxed');
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
     assert_eq('question', $room['phase']);
@@ -153,7 +160,7 @@ test('ghost players (not seen >15s) do not block early close', function () {
     [$room, $ids] = fixture_room('relaxed', 'present', ['Ana', 'Rui', 'Ghost'], 1000);
     $room['players'][$ids['Ana']]['last_seen'] = 1030;
     $room['players'][$ids['Rui']]['last_seen'] = 1030;
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1030);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1031);
     $room = room_answer($room, $quiz, $ids['Rui'], 1, 1032);
@@ -192,7 +199,7 @@ test('close outside a question is rejected', function () {
 
 test('late joiner not eligible for current question, eligible for next', function () {
     [$room, $ids] = fixture_room('relaxed');
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     [$room, $late] = room_add_player($room, 'Late', 1001);
     assert_room_error(fn() => room_answer($room, $quiz, $late, 1, 1002), 409);
@@ -232,7 +239,7 @@ test('next rejected while question open', function () {
 
 test('restart resets scores and answers, keeps players', function () {
     [$room, $ids] = fixture_room('relaxed');
-    $quiz = fixture_quiz(1);
+    $quiz = fixture_questions(1);
     $room['q_total'] = 1;
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
@@ -256,7 +263,7 @@ test('restart only from podium', function () {
 
 test('view hides correct answer and explanation during question', function () {
     [$room, $ids] = fixture_room('relaxed', 'present', ['Ana', 'Rui']);
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
     $view = room_view($room, $quiz, ['is_host' => false, 'pid' => $ids['Ana']], 1002);
@@ -271,7 +278,7 @@ test('view hides correct answer and explanation during question', function () {
 
 test('view includes correct answer, explanation and counts on reveal', function () {
     [$room, $ids] = fixture_room('relaxed');
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
     $room = room_answer($room, $quiz, $ids['Rui'], 3, 1001);
@@ -285,7 +292,7 @@ test('view includes correct answer, explanation and counts on reveal', function 
 test('presenter host is not a player', function () {
     [$room, $ids] = fixture_room('relaxed', 'present', ['Ana']);
     assert_eq(1, count($room['players']));
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
     assert_eq('reveal', $room['phase'], 'host not waited on');
@@ -298,7 +305,7 @@ test('playing host is a player and is waited on', function () {
     [$room, $ids] = fixture_room('relaxed', 'play', ['Ana']);
     $host = room_host_player_id($room);
     assert_true($host !== null, 'host player exists');
-    $quiz = fixture_quiz();
+    $quiz = fixture_questions();
     $room = room_start($room, 1000);
     $room = room_answer($room, $quiz, $ids['Ana'], 1, 1001);
     assert_eq('question', $room['phase']);
