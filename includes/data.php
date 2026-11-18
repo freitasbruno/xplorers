@@ -35,8 +35,24 @@ function get_quiz(array|string $lesson): ?array {
         $path_rel = 'data/quizzes/' . $lesson . '.json';
     }
     $path = __DIR__ . '/../' . $path_rel;
-    if (!file_exists($path)) return null;
-    return json_decode(file_get_contents($path), true);
+    static $cache = [];
+    if (array_key_exists($path, $cache)) return $cache[$path];
+    if (!file_exists($path)) return $cache[$path] = null;
+    return $cache[$path] = json_decode(file_get_contents($path), true);
+}
+
+/**
+ * Lessons of a topic that have a readable quiz with at least one question,
+ * as [lesson_id => question_count], ordered by class_number.
+ */
+function get_topic_quiz_pool(string $slug): array {
+    $pool = [];
+    foreach (get_topic_lessons($slug) as $lesson) {
+        $quiz = get_quiz($lesson);
+        $n = is_array($quiz) ? count($quiz['questions'] ?? []) : 0;
+        if ($n > 0) $pool[$lesson['id']] = $n;
+    }
+    return $pool;
 }
 
 function parse_md_lesson(string $filepath): ?array {

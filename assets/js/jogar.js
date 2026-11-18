@@ -76,8 +76,18 @@
 
     function role() { return form.querySelector('input[name=role]:checked').value; }
     function syncName() { show(nameWrap, role() === 'play'); }
-    form.addEventListener('change', syncName);
+    // Quiz scope fieldsets only exist when the topic has 2+ quizzes.
+    function topicMode() {
+      var s = form.querySelector('input[name=scope]:checked');
+      return !!s && s.value === 'topic';
+    }
+    function syncScope() {
+      var box = $('count-fieldset');
+      if (box) show(box, topicMode());
+    }
+    form.addEventListener('change', function () { syncName(); syncScope(); });
     syncName();
+    syncScope();
 
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
@@ -85,12 +95,17 @@
       if (role() === 'play' && !name) { errEl.textContent = 'Escreve o teu nome.'; show(errEl, true); return; }
       var btn = form.querySelector('button[type=submit]');
       btn.disabled = true;
-      api('create', {
+      var data = {
         lesson_id: CFG.lessonId,
         role: role(),
         pace: form.querySelector('input[name=pace]:checked').value,
         name: name
-      }).then(function (res) {
+      };
+      if (topicMode()) {
+        data.mode = 'topic';
+        data.count = parseInt(form.querySelector('input[name=count]:checked').value, 10);
+      }
+      api('create', data).then(function (res) {
         if (res.status !== 200) throw new Error(res.body.error || 'Não foi possível criar a sala.');
         if (name) storeSet(KEY_NAME, name);
         storeSet(roomKey(res.body.code), {
@@ -156,10 +171,11 @@
     setScreen('s-error');
   }
 
-  function showLesson(lesson) {
-    $('game-badge').className = 'badge ' + lesson.badge_class;
+  // topic is set only in a topic game: header shows the topic instead of one lesson.
+  function showLesson(lesson, topic) {
+    $('game-badge').className = 'badge ' + (topic ? topic.badge_class : lesson.badge_class);
     $('game-badge').textContent = lesson.topic_name;
-    $('game-title').textContent = 'Aula ' + lesson.class_number + ' — ' + lesson.title;
+    $('game-title').textContent = topic ? 'Todo o tema' : 'Aula ' + lesson.class_number + ' — ' + lesson.title;
     show($('game-lesson'), true);
     var back = 'lesson.php?id=' + encodeURIComponent(lesson.id);
     $('p-back').href = back;
@@ -215,14 +231,14 @@
   function apply(v) {
     offset = v.now * 1000 - Date.now();
     view = v;
-    showLesson(v.lesson);
+    showLesson(v.lesson, v.topic);
     render();
   }
 
   // ----- join -----
 
   function showJoin(pub) {
-    showLesson(pub.lesson);
+    showLesson(pub.lesson, pub.topic);
     $('join-code').textContent = pub.code;
     $('join-sub').textContent = pub.full
       ? 'A sala está cheia.'
@@ -470,6 +486,9 @@
       box.appendChild(node);
     });
 
+    var src = $('r-source');
+    if (q.lesson) src.textContent = 'Aula ' + q.lesson.class_number + ' · ' + q.lesson.title;
+    show(src, !!q.lesson);
     $('r-explanation-text').textContent = q.explanation;
     renderRanking($('r-ranking'), 5);
 
