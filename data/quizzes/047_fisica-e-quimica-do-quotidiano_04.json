@@ -1,0 +1,65 @@
+{
+  "lesson_id": "fisica-e-quimica-do-quotidiano_004",
+  "questions": [
+    {
+      "question": "Largas um balão cheio sem o atar. Porque é que ele voa para a frente?",
+      "options": ["Porque o ar dentro dele é mais leve", "Porque o ar de fora o puxa", "Porque o ar sai para trás e o empurra", "Porque a borracha encolhe de repente"],
+      "correct": 2,
+      "explanation": "É a 3.ª Lei de Newton: o balão empurra o ar para trás e o ar empurra o balão para a frente, com a mesma força. Motores a jato e foguetões usam exatamente a mesma ideia."
+    },
+    {
+      "question": "Porque é que um foguetão tem de levar o seu próprio oxigénio?",
+      "options": ["No espaço não há ar para queimar o combustível", "O oxigénio serve para os astronautas respirarem", "O oxigénio deixa o foguetão mais leve", "Sem oxigénio os motores congelavam"],
+      "correct": 0,
+      "explanation": "Para queimar, o combustível precisa de oxigénio. Um avião tira-o do ar, mas no espaço não há ar, por isso o foguetão leva um \"oxidante\" consigo."
+    },
+    {
+      "question": "Qual destas afirmações sobre os foguetões é um MITO?",
+      "options": ["Funcionam bem no vácuo do espaço", "Empurram os gases para baixo para subir", "Levam o seu próprio oxidante", "Sobem porque se apoiam no ar"],
+      "correct": 3,
+      "explanation": "O foguetão não se apoia no ar: empurra os seus próprios gases e é empurrado por eles. É por isso que funciona perfeitamente no espaço, onde não há ar nenhum."
+    },
+    {
+      "question": "Num motor a jato, o que acontece ao ar depois de ser aspirado pela frente?",
+      "options": ["É arrefecido e guardado num depósito", "É comprimido, misturado com combustível e queimado", "Passa direto para as asas para dar sustentação", "É transformado em eletricidade para as hélices"],
+      "correct": 1,
+      "explanation": "O motor comprime o ar, mistura-o com combustível e queima-o. Os gases quentes saem disparados para trás e, por reação, o avião é empurrado para a frente."
+    },
+    {
+      "question": "O que faz um comboio Maglev flutuar acima da via?",
+      "options": ["Um colchão de ar soprado por ventoinhas", "Ímanes com polos iguais que se repelem", "Rodas muito pequenas e escondidas", "Um gás mais leve do que o ar"],
+      "correct": 1,
+      "explanation": "Ímanes potentes na via e no comboio repelem-se porque têm polos iguais virados uns para os outros. Essa força levanta o comboio alguns centímetros."
+    },
+    {
+      "question": "Sem rodas a tocar na via, qual é o principal travão que sobra a um Maglev?",
+      "options": ["O atrito das rodas nos carris", "O peso dos passageiros", "A gravidade da Lua", "A resistência do ar"],
+      "correct": 3,
+      "explanation": "Como o Maglev não toca na via, o atrito das rodas desaparece. Fica a resistência do ar, que é por isso que o seu nariz é tão comprido e aerodinâmico."
+    },
+    {
+      "question": "Como é que os ímanes da via fazem o Maglev andar para a frente?",
+      "options": ["Trocam de polo em sequência, puxando e empurrando", "Ficam sempre com o mesmo polo e aquecem", "Disparam gases quentes para trás do comboio", "Fazem girar umas rodas escondidas no chão"],
+      "correct": 0,
+      "explanation": "Os ímanes da via ligam-se e trocam de polo em sequência: puxam o comboio pela frente e empurram-no por trás. É como um motor elétrico \"desenrolado\" ao longo da via."
+    },
+    {
+      "question": "De 100 unidades de energia da gasolina, cerca de quantas chegam às rodas de um carro?",
+      "options": ["Cerca de 90", "Cerca de 60", "Cerca de 25", "Cerca de 5"],
+      "correct": 2,
+      "explanation": "Só cerca de um quarto da energia da gasolina vira movimento; o resto perde-se sobretudo em calor. Um motor elétrico aproveita cerca de 85 a 90% da energia da bateria."
+    },
+    {
+      "question": "Um carro elétrico está a travar numa descida. O que pode acontecer à bateria?",
+      "options": ["Carrega, porque o motor funciona como gerador", "Descarrega mais depressa para travar", "Desliga-se para não aquecer demais", "Fica igual, porque travar não gasta energia"],
+      "correct": 0,
+      "explanation": "Na travagem regenerativa, o motor funciona ao contrário, como um gerador: transforma o movimento em eletricidade e devolve-a à bateria."
+    },
+    {
+      "question": "Porque é que os aviões a jato voam a 10 a 12 km de altitude?",
+      "options": ["Para fugir aos pássaros e às nuvens", "Porque o ar rarefeito oferece menos resistência", "Porque lá em cima a gravidade desaparece", "Para estarem mais perto dos satélites"],
+      "correct": 1,
+      "explanation": "Lá em cima o ar é muito mais rarefeito. Com menos ar à frente, a resistência diminui e o avião gasta menos combustível. A gravidade continua lá, quase igual."
+    }
+  ]
+}

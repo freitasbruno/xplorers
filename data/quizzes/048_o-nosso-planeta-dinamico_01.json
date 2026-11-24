@@ -1,0 +1,65 @@
+{
+  "lesson_id": "o-nosso-planeta-dinamico_001",
+  "questions": [
+    {
+      "question": "Qual é a camada da Terra onde vivemos?",
+      "options": ["O manto", "A crosta", "O núcleo externo", "O núcleo interno"],
+      "correct": 1,
+      "explanation": "Vivemos na crosta, a \"casca\" da Terra, que tem entre 5 e 70 km de espessura. Comparada com o tamanho do planeta, é tão fina como a casca de um ovo."
+    },
+    {
+      "question": "O núcleo interno está a cerca de 5 000 °C. Porque é que é sólido?",
+      "options": ["Porque é feito de pedra muito dura", "Porque está a arrefecer depressa", "Porque o núcleo externo o congela", "Porque a pressão lá é gigantesca"],
+      "correct": 3,
+      "explanation": "Apesar do calor enorme, o peso de todo o planeta por cima cria uma pressão tão grande que o ferro e o níquel ficam sólidos. O núcleo externo, com menos pressão, é líquido."
+    },
+    {
+      "question": "Qual foi uma das pistas que levou Alfred Wegener à ideia da Pangeia?",
+      "options": ["Havia os mesmos fósseis dos dois lados do Atlântico", "Os vulcões dos Açores e do Havai tinham a mesma idade", "Os sismos aconteciam sempre no mesmo dia", "O centro da Terra era feito de ferro"],
+      "correct": 0,
+      "explanation": "Wegener reparou que as costas da América do Sul e de África encaixam e que havia os mesmos fósseis e rochas dos dois lados. Só nos anos 60 a ciência lhe deu razão."
+    },
+    {
+      "question": "A que velocidade se movem, mais ou menos, as placas tectónicas?",
+      "options": ["Uns metros por dia", "Uns quilómetros por ano", "Uns centímetros por ano", "Não se movem de todo"],
+      "correct": 2,
+      "explanation": "As placas movem-se uns poucos centímetros por ano, mais ou menos à velocidade a que crescem as unhas. Parece pouco, mas em milhões de anos abre oceanos inteiros."
+    },
+    {
+      "question": "O que acontece quando duas placas chocam de frente, como a Índia e a Ásia?",
+      "options": ["Abre-se um oceano novo entre elas", "Uma placa desaparece sem deixar rasto", "As placas param e arrefecem", "A crosta enruga-se e formam-se montanhas"],
+      "correct": 3,
+      "explanation": "O choque entre placas pode enrugar a crosta para cima: foi assim que a Índia, ao chocar contra a Ásia, ergueu os Himalaias. Onde as placas se afastam é que nasce crosta nova."
+    },
+    {
+      "question": "Porque é que o Oceano Atlântico está a ficar mais largo?",
+      "options": ["Porque as placas no meio dele se afastam", "Porque o nível do mar está a subir", "Porque a Lua puxa as margens com a maré", "Porque os rios lhe trazem mais terra"],
+      "correct": 0,
+      "explanation": "No meio do Atlântico há uma cordilheira submarina onde as placas se afastam e o magma cria crosta nova. O oceano alarga cerca de 2,5 cm por ano."
+    },
+    {
+      "question": "Um sismo tem magnitude 6 e outro tem magnitude 5. Quanta energia a mais tem o primeiro?",
+      "options": ["Mais 1 vez", "Cerca de 2 vezes", "Cerca de 1 000 vezes", "Cerca de 32 vezes"],
+      "correct": 3,
+      "explanation": "Cada ponto a mais na escala de magnitude significa cerca de 32 vezes mais energia. Dois pontos a mais (de 5 para 7) já dão cerca de mil vezes mais."
+    },
+    {
+      "question": "Qual é a diferença entre hipocentro e epicentro?",
+      "options": ["O hipocentro é o abalo e o epicentro a réplica", "O hipocentro é em profundidade, o epicentro à superfície", "O hipocentro é no mar e o epicentro em terra", "O hipocentro mede a força e o epicentro mede a duração"],
+      "correct": 1,
+      "explanation": "O hipocentro é o ponto lá em baixo onde a rocha parte. O epicentro é o ponto da superfície mesmo por cima dele, onde normalmente o tremor se sente com mais força."
+    },
+    {
+      "question": "O que fez o Marquês de Pombal depois do terramoto de 1755?",
+      "options": ["Reconstruiu a Baixa com a gaiola pombalina", "Mudou a capital de Lisboa para o Porto", "Construiu um muro contra os tsunamis", "Proibiu as pessoas de viver junto ao rio"],
+      "correct": 0,
+      "explanation": "Pombal reconstruiu a Baixa com a gaiola pombalina, uma estrutura de madeira dentro das paredes para resistir a sismos, e enviou um inquérito às paróquias que ajudou a nascer a sismologia."
+    },
+    {
+      "question": "Porque é que os Açores têm vulcões e sismos frequentes?",
+      "options": ["Porque estão muito perto da linha do Equador", "Porque têm muitos rios subterrâneos", "Porque estão bem no centro de uma só placa", "Porque estão onde três placas se encontram"],
+      "correct": 3,
+      "explanation": "Os Açores ficam no encontro das placas Norte-Americana, Euroasiática e Africana. Essas fronteiras são zonas de magma, vulcões e sismos, como o Capelinhos ou o Pico."
+    }
+  ]
+}

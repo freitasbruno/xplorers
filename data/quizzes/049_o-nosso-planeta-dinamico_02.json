@@ -1,0 +1,65 @@
+{
+  "lesson_id": "o-nosso-planeta-dinamico_002",
+  "questions": [
+    {
+      "question": "Qual é o gás que existe em maior quantidade no ar que respiramos?",
+      "options": ["Oxigénio", "Dióxido de carbono", "Árgon", "Azoto"],
+      "correct": 3,
+      "explanation": "Cerca de 78% do ar é azoto e só 21% é oxigénio. O CO₂ é apenas uns 0,04%, mas tem um papel enorme no efeito de estufa."
+    },
+    {
+      "question": "Em que camada da atmosfera acontecem as nuvens, a chuva e as trovoadas?",
+      "options": ["Na estratosfera", "Na troposfera", "Na mesosfera", "Na termosfera"],
+      "correct": 1,
+      "explanation": "Todo o \"tempo\" acontece na troposfera, a camada de baixo, entre o chão e cerca de 12 km. Os aviões a jato voam logo acima, na parte de baixo da estratosfera."
+    },
+    {
+      "question": "Para que serve a camada de ozono, na estratosfera?",
+      "options": ["Absorve a maior parte dos raios UV do Sol", "Produz quase todo o oxigénio que respiramos", "Queima os meteoros que caem do espaço", "Guarda o calor durante a noite"],
+      "correct": 0,
+      "explanation": "A camada de ozono funciona como um escudo que absorve a maior parte da radiação ultravioleta. Os meteoros ardem mais acima, na mesosfera."
+    },
+    {
+      "question": "Vês uma \"estrela cadente\". Em que camada é que o meteoro está a arder?",
+      "options": ["Na troposfera", "Na estratosfera", "Na mesosfera", "Fora da atmosfera"],
+      "correct": 2,
+      "explanation": "A maioria dos meteoros arde na mesosfera, entre os 50 e os 85 km. É também a camada mais fria da atmosfera, abaixo de −90 °C."
+    },
+    {
+      "question": "Sem efeito de estufa natural, como seria a temperatura média da Terra?",
+      "options": ["Cerca de −18 °C", "Cerca de 15 °C", "Cerca de 40 °C", "Igual à de hoje"],
+      "correct": 0,
+      "explanation": "Sem os gases de estufa, o calor escaparia todo para o espaço e a média seria de uns −18 °C. O efeito natural mantém-na em cerca de 15 °C."
+    },
+    {
+      "question": "Que tipo de luz é \"apanhada\" pelos gases de estufa quando o chão a devolve?",
+      "options": ["Luz ultravioleta", "Raios-X", "Luz visível azul", "Luz infravermelha"],
+      "correct": 3,
+      "explanation": "O chão aquecido devolve energia sob a forma de infravermelho, invisível. Gases como o CO₂ e o vapor de água apanham parte dessa radiação e devolvem-na à Terra."
+    },
+    {
+      "question": "Vénus está mais longe do Sol do que Mercúrio. Porque é que é mais quente?",
+      "options": ["Porque roda mais depressa", "Porque tem vulcões em toda a superfície", "Porque a sua atmosfera de CO₂ prende o calor", "Porque é maior do que Mercúrio"],
+      "correct": 2,
+      "explanation": "A atmosfera de Vénus é quase toda de CO₂, o que cria um efeito de estufa extremo: cerca de 465 °C. A distância ao Sol não é tudo."
+    },
+    {
+      "question": "Qual destes é um ingrediente essencial para nascer um furacão?",
+      "options": ["Ar muito frio e seco", "Água do mar a pelo menos 26 °C", "Uma cordilheira de montanhas", "Neve no topo das nuvens"],
+      "correct": 1,
+      "explanation": "Um furacão alimenta-se do calor e da humidade do mar quente. É por isso que perde força quando chega a terra ou a águas mais frias."
+    },
+    {
+      "question": "Estás no olho de um furacão. O que é mais provável encontrares?",
+      "options": ["Os ventos mais fortes de todos", "Granizo do tamanho de laranjas", "Uma tempestade de areia", "Uma zona calma, às vezes com céu azul"],
+      "correct": 3,
+      "explanation": "O olho é uma zona estranhamente calma. Os ventos mais violentos estão na parede à volta dele, por isso a calma dura pouco."
+    },
+    {
+      "question": "Um tufão e um furacão são…",
+      "options": ["a mesma tempestade, com nomes diferentes", "tempestades de neve e de chuva", "um mais forte e outro mais fraco", "tempestades em terra e no mar"],
+      "correct": 0,
+      "explanation": "É a mesma tempestade: chama-se furacão no Atlântico, tufão no Pacífico perto da Ásia e ciclone no Oceano Índico. Em todos, o vento gira à volta de um olho calmo."
+    }
+  ]
+}

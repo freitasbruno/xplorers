@@ -1,0 +1,65 @@
+{
+  "lesson_id": "o-nosso-planeta-dinamico_003",
+  "questions": [
+    {
+      "question": "Desces 10 metros debaixo de água. O que acontece à pressão?",
+      "options": ["Aumenta o equivalente a toda a atmosfera", "Diminui para metade do que era", "Fica exatamente igual", "Aumenta logo mil vezes de uma só vez"],
+      "correct": 0,
+      "explanation": "A cada 10 metros, a pressão aumenta o equivalente a toda a atmosfera por cima de nós. Por isso, a 100 metros já é 11 vezes maior do que à superfície."
+    },
+    {
+      "question": "Se pusessem o Monte Evereste no fundo do Challenger Deep, o que aconteceria?",
+      "options": ["O cume ficaria uns 2 km acima do mar", "O cume ficaria mesmo à superfície", "O cume ficaria mais de 2 km debaixo de água", "A montanha não caberia na fossa"],
+      "correct": 2,
+      "explanation": "O Challenger Deep tem quase 11 000 m e o Evereste mede 8 849 m. Mesmo lá dentro, o cume ficaria mais de 2 km abaixo da superfície."
+    },
+    {
+      "question": "Porque é que os peixes do abismo não têm bolsas de ar no corpo?",
+      "options": ["Porque não precisam de respirar", "Porque a pressão as esmagaria", "Porque lá em baixo não há oxigénio", "Porque ficariam leves demais e subiriam"],
+      "correct": 1,
+      "explanation": "Uma bolsa de ar seria esmagada pela pressão enorme do fundo do mar. Por isso, estes peixes não a têm e muitos são moles e gelatinosos."
+    },
+    {
+      "question": "Até que profundidade chega luz suficiente para as algas fazerem fotossíntese?",
+      "options": ["Até ao fundo de todos os oceanos", "Até cerca de 4 000 metros", "Até cerca de 1 000 metros", "Até cerca de 200 metros"],
+      "correct": 3,
+      "explanation": "A luz suficiente para a fotossíntese só chega aos primeiros 200 metros. A partir dos 1 000 metros já não chega nenhum raio de sol."
+    },
+    {
+      "question": "Junto às fontes hidrotermais, de onde vem a energia na base da cadeia alimentar?",
+      "options": ["Da luz do Sol que chega ao fundo", "Das algas que caem da superfície", "Do calor dos peixes que lá vivem", "De químicos que saem do fundo do mar"],
+      "correct": 3,
+      "explanation": "As bactérias das fontes fazem quimiossíntese: usam a energia de químicos como o sulfureto de hidrogénio, em vez da luz. Todo o oásis depende delas."
+    },
+    {
+      "question": "A água das fontes hidrotermais sai a até 400 °C. Porque é que não ferve?",
+      "options": ["Porque é água salgada", "Por causa da enorme pressão", "Porque arrefece logo à saída", "Porque não tem oxigénio"],
+      "correct": 1,
+      "explanation": "A pressão enorme do fundo do mar impede a água de ferver, mesmo muito acima dos 100 °C. À superfície, isso seria impossível."
+    },
+    {
+      "question": "Os vermes tubulares gigantes não têm boca. Como se alimentam?",
+      "options": ["Absorvem a luz pela pele", "Comem através das raízes", "Têm bactérias dentro do corpo", "Caçam peixes pequenos de noite"],
+      "correct": 2,
+      "explanation": "As bactérias vivem dentro dos vermes e fabricam alimento com os químicos das fontes. Os vermes dão-lhes casa, e elas dão-lhes comida."
+    },
+    {
+      "question": "Qual destas NÃO é uma forma de os animais usarem a bioluminescência?",
+      "options": ["Aquecer o corpo na água fria", "Atrair presas com uma luz", "Esconder a sombra da barriga", "Confundir os predadores"],
+      "correct": 0,
+      "explanation": "A bioluminescência é uma luz \"fria\", sem calor, por isso não serve para aquecer. Serve para caçar, esconder-se, defender-se e comunicar."
+    },
+    {
+      "question": "Porque é que a luz de quase todos os animais do abismo é azul-esverdeada?",
+      "options": ["Porque é a cor das suas escamas", "Porque é a cor que viaja mais longe na água", "Porque é a única cor que conseguem fabricar", "Porque assusta todos os predadores"],
+      "correct": 1,
+      "explanation": "A luz azul-esverdeada é a que viaja mais longe na água. Um peixe-dragão usa luz vermelha precisamente porque quase ninguém lá em baixo a consegue ver."
+    },
+    {
+      "question": "O que há perto dos Açores, a cerca de 1 700 m de profundidade?",
+      "options": ["Os destroços do Titanic", "O ponto mais fundo da Terra", "Uma cidade submarina antiga", "O campo hidrotermal Lucky Strike"],
+      "correct": 3,
+      "explanation": "Lucky Strike é um dos campos de fontes hidrotermais perto dos Açores, estudado por cientistas de todo o mundo. O Titanic está a uns 3 800 m, no Atlântico Norte."
+    }
+  ]
+}

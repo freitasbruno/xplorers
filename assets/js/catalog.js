@@ -21,6 +21,7 @@ const TOPIC_META = {
   'cosmos-desconhecido':                  { label: 'O Cosmos e o Desconhecido', color: '#0ea5e9', badge: 'bg-sky-500'  },
   'mercados-financeiros-e-investimentos': { label: 'Mercados e Investimentos',  color: '#65a30d', badge: 'bg-lime-600' },
   'fisica-e-quimica-do-quotidiano':       { label: 'Física e Química',          color: '#06b6d4', badge: 'bg-cyan-500' },
+  'o-nosso-planeta-dinamico':             { label: 'Planeta Dinâmico',          color: '#0d9488', badge: 'bg-teal-600' },
 };
 
 const BATCH = 8;

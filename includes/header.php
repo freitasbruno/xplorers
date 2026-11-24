@@ -118,6 +118,8 @@ header, main, footer, nav, section, aside { position: relative; z-index: 1; }
 .badge-cosmos-desconhecido { background: #e0f2fe; color: #075985; }
 .badge-mercados-financeiros-e-investimentos { background: #ecfccb; color: #3f6212; }
 .badge-fisica-e-quimica-do-quotidiano { background: #cffafe; color: #155e75; }
+.badge-o-nosso-planeta-dinamico { background: #ccfbf1; color: #115e59; }
+.badge-o-nosso-planeta-dinamico { background: #ccfbf1; color: #115e59; }
 .badge-default         { background: #f1f5f9; color: #475569; }
 
 .tab-indicator {
